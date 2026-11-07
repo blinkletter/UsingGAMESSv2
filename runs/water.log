@@ -1,0 +1,961 @@
+1 : /Users/blink/github/UsingGAMESSv2/inputs/water.inp
+2 : 00
+3 : 1
+----- GAMESS execution script 'rungms' -----
+This job is running on host MonkeyBook.local
+under operating system Darwin at Fri Nov 6 16:48:27 AST 2026
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
+/dev/disk3s5   971298980 488301952 453136936    52% 3629387 4531369360    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
+Copying input file /Users/blink/github/UsingGAMESSv2/inputs/water.inp to your run's scratch directory...
+cp /Users/blink/github/UsingGAMESSv2/inputs/water.inp /Users/blink/github/gamess2023R2claude/scr/water.F05
+unset echo
+setenv NO_STOP_MESSAGE 1
+setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv EXTBAS /dev/null
+setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/water.nucbas
+setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/water.posbas
+setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/water.efp
+setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/water.gamma
+setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/water.trj
+setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/water.rst
+setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/water.qmw
+setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/water.dip
+setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/water.hs1
+setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/water.hs2
+setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/water.FCIDUMP
+setenv XYZ /Users/blink/github/gamess2023R2claude/scr/water.xyz
+setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/water.F04
+setenv INPUT /Users/blink/github/gamess2023R2claude/scr/water.F05
+setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/water.dat
+setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/water.namdrst
+setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/water.F08
+setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/water.F09
+setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/water.F10
+setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/water.F11
+setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/water.F12
+setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/water.F13
+setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/water.F14
+setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/water.F15
+setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/water.F16
+setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/water.F17
+setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/water.F18
+setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/water.F19
+setenv DASORT /Users/blink/github/gamess2023R2claude/scr/water.F20
+setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/water.F21
+setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/water.F21
+setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/water.F22
+setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/water.F23
+setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/water.F24
+setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/water.F25
+setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/water.F26
+setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/water.F27
+setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/water.F26
+setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/water.F27
+setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/water.F26
+setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/water.cosmo
+setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/water.pot
+setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/water.F28
+setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/water.F29
+setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/water.F30
+setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/water.F31
+setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/water.F32
+setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/water.F33
+setenv SORESC /Users/blink/github/gamess2023R2claude/scr/water.F34
+setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/water.F26R
+setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/water.F27R
+setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/water.wrf
+setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/water.F37
+setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/water.F38
+setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/water.F39
+setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/water.F40
+setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/water.F41
+setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/water.F42
+setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/water.F43
+setenv REMD /Users/blink/github/gamess2023R2claude/scr/water.F44
+setenv UNV /Users/blink/github/gamess2023R2claude/scr/water.F45
+setenv UNPV /Users/blink/github/gamess2023R2claude/scr/water.F46
+setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/water.F50
+setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/water.F51
+setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/water.F52
+setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/water.F53
+setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/water.F54
+setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/water.F55
+setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/water.F56
+setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/water.F57
+setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/water.F58
+setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/water.F59
+setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/water.F60
+setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/water.F61
+setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/water.F62
+setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/water.F63
+setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/water.F64
+setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/water.F61
+setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/water.F62
+setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/water.F63
+setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/water.F64
+setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/water.F65
+setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/water.F66
+setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/water.F67
+setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/water.F68
+setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/water.F67
+setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/water.F68
+setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/water.F69
+setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/water.F69
+setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/water.F70
+setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/water.F71
+setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/water.F72
+setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/water.F73
+setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/water.F51
+setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/water.F52
+setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/water.F53
+setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/water.F54
+setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/water.F55
+setenv KI /Users/blink/github/gamess2023R2claude/scr/water.F47
+setenv BI /Users/blink/github/gamess2023R2claude/scr/water.F48
+setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/water.F49
+setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/water.F50
+setenv PVP /Users/blink/github/gamess2023R2claude/scr/water.F51
+setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/water.F52
+setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/water.F53
+setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/water.F54
+setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/water.F55
+setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/water.F70
+setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/water.F71
+setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/water.F72
+setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/water.F73
+setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/water.F74
+setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/water.F75
+setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/water.F70
+setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/water.F71
+setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/water.F72
+setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/water.F73
+setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/water.F74
+setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/water.F75
+setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/water.F76
+setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/water.F77
+setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/water.F78
+setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/water.F79
+setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/water.F80
+setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/water.F81
+setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/water.F82
+setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/water.F83
+setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/water.F84
+setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/water.F85
+setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/water.F86
+setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/water.F87
+setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/water.F88
+setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/water.F89
+setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/water.F90
+setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/water.F91
+setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/water.F92
+setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/water.F93
+setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/water.F94
+setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/water.F95
+setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/water.F96
+setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/water.F97
+setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/water.F98
+setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/water.F99
+unset echo
+/Users/blink/github/UsingGAMESSv2/runs/water.dat
+/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x water -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+
+ Distributed Data Interface kickoff program.
+ Initiating 1 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2023R2claude/gamess.00.x water 
+
+          *******************************************************
+          *                                                     *
+          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *                                                     *
+          *              doi.org/10.1063/5.0005188              *
+          *                                                     *
+          **************** 64 BIT LINUX VERSION *****************
+
+  GAMESS HAS BEEN MADE POSSIBLE WITH IMPORTANT CONTRIBUTIONS FROM
+  THE FOLLOWING INDIVIDUALS (IN ALPHABETICAL ORDER):
+
+     IVANA ADAMOVIC, CHRISTINE AIKENS, TOMOKO AKAMA,
+     MELISA ALKAN, YURI ALEXEEV, YURIKO AOKI, POOJA ARORA,
+     TOSHIO ASADA, ANDREY ASADCHEV, KIM K. BALDRIDGE,
+     PRADIPTA BANDYOPADHYAY, TAYLOR A. BARNES, MARIA BARYSZ,
+     ROB BELL, JONATHAN BENTZ, COLLEEN BERTONI,
+     JERRY A. BOATZ, BRETT BODE, KURT BRORSEN, KURT R. BRORSEN,
+     LAIMUTIS BYTAUTAS, CALEB CARLIN, LAURA CARRINGTON,
+     GALINA CHABAN, BENOIT CHAMPAGNE, WEI CHEN, MAHITO CHIBA,
+     DAN CHIPMAN, CHEOL HO CHOI, TANNER CULPITT,
+     DIPAYAN DATTA, PAUL DAY, ALBERT DEFUSCO,
+     NUWAN DESILVA, J. EMILIANO DEUSTUA,
+     TIM DUDLEY, MICHEL DUPUIS, STEVEN T. ELBERT,
+     DMITRI FEDOROV, KATHERINE FERRERAS, MICHAEL FILATOV,
+     ALEX FINDLATER,GRAHAM FLETCHER, MARK FREITAG,
+     CHRISTIAN FRIEDL, DAVID GARMER, 
+     IGOR S. GERASIMOV, KURT GLAESEMANN,
+     MARK S. GORDON, JEFFREY R. GOUR, FENG LONG GU,
+     EMILIE B. GUIDEZ, ANASTASIA GUNINA, SHARON HAMMES-SCHIFFER,
+     MASATAKE HARUTA, KIMIHIKO HIRAO, YASUHIRO IKABATA,
+     TZVETELIN IORDANOV, STEPHAN IRLE, KAZUYA ISHIMURA,
+     JOE IVANIC, FRANK JENSEN, JAN H. JENSEN, VISVALDAS KAIRYS,
+     MUNEAKI KAMIYA, MICHIO KATOUDA, NAOAKI KAWAKAMI, DAN KEMP,
+     BERNARD KIRTMAN, KAZUO KITAURA, MARIUSZ KLOBUKOWSKI,
+     MASATO KOBAYASHI, KONSTANTIN KOMAROV, PRAKASHAN KORAMBATH,
+     JACEK KORCHOWIEC, SHIRO KOSEKI, KAROL KOWALSKI,
+     JIMMY KROMANN, STANISLAW A. KUCHARSKI, HENRY KURTZ,
+     SAROM SOK LEANG, SEUNGHOON LEE, HUI LI, SHUHUA LI, WEI LI,
+     JESSE J. LUTZ, ALEKSANDR O. LYKHIN,
+     ILIAS MAGOULAS, MARCIN MAKOWSKI,
+     JOANI MATO, NIKITA MATSUNAGA, BENEDETTA MENNUCCI,
+     GRANT MERRILL, NORIYUKI MINEZAWA, VLADIMIR MIRONOV,
+     EISAKU MIYOSHI, JOHN A. MONTGOMERY JR., HIROTOSHI MORI,
+     JONATHAN MULLIN, MONIKA MUSIAL, SHIGERU NAGASE,
+     TAKESHI NAGATA, HIROMI NAKAI, TAKAHITO NAKAJIMA,
+     YUYA NAKAJIMA, HARUYUKI NAKANO, HIROYA NAKATA, SEAN NEDD,
+     HEATHER NETZLOFF, KIET A. NGUYEN, YOSHIO NISHIMOTO,
+     BOSILJKA NJEGIC, RYAN OLSON, MIKE PAK, ROBERTO PEVERATI,
+     BUU PHAM, PIOTR PIECUCH, ANNA POMOGAEVA, DAVID POOLE,
+     SPENCER PRUITT, OLIVIER QUINET, LUKE ROSKOP,
+     KLAUS RUEDENBERG, ANDREW SAND, TOSAPORN SATTASATHUCHANA,
+     NOZOMI SAWADA, MICHAEL W. SCHMIDT, PATRICK E. SCHNEIDER,
+     JUNJI SEINO, PRACHI SHARMA, JUN SHEN, JIM SHOEMAKER,
+     GEORGE SCHOENDORFF, YINAN SHU, DEJUN SI, JONATHAN SKONE,
+     LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
+     CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
+     CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
+     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
+     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
+     AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
+     PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
+     SOOHAENG YOO, TAKESHI YOSHIKAWA, FEDERICO ZAHARIEV,
+     TOBY ZENG
+
+  WHO ARE SUPPORTED BY THEIR INSTITUTION/UNIVERSITY/COMPANY/GROUP
+  (IN ALPHABETICAL ORDER):
+
+     EP ANALYTICS,
+     FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX,
+     INSTITUTE FOR MOLECULAR SCIENCE, IOWA STATE UNIVERSITY,
+     JACKSON STATE UNIVERSITY, JOHANNES KEPLER UNIVERSITY LINZ,
+     KYUNGPOOK NATIONAL UNIVERSITY
+     KYUSHU UNIVERSITY, MICHIGAN STATE UNIVERSITY,
+     MIE UNIVERSITY, THE MOLECULAR SCIENCES SOFTWARE INSTITUTE,
+     MOSCOW STATE UNIVERSITY,
+     N. COPERNICUS UNIVERSITY, NAGOYA UNIVERSITY,
+     NANJING UNIVERSITY, NAT. INST. OF ADVANCED INDUSTRIAL
+     SCIENCE AND TECHNOLOGY, NATIONAL INST. OF STANDARDS AND
+     TECHNOLOGY, NESMEYANOV INSTITUTE OF ORGANOELEMENT COMPOUNDS
+     OF RUSSIAN ACADEMY OF SCIENCES, OSAKA PREFECTURE UNIVERSITY,
+     PENNSYLVANIA STATE UNIVERSITY, TOKYO INSTITUTE OF TECHNOLOGY,
+     UNIVERSITY OF AARHUS, UNIVERSITY OF ALBERTA,
+     UNIVERSITY OF CALIFORNIA AT SANTA BARBARA,
+     UNIVERSITY OF COPENHAGEN, UNIVERSITY OF IOWA,
+     UNIVERSITY OF MEMPHIS, UNIVERSITY OF MINNESOTA,
+     UNIVERSITY OF NEBRASKA, UNIVERSITY OF NEW ENGLAND,
+     UNIVERSITY OF NOTRE DAME, UNIVERSITY OF PISA,
+     UNIVERSITY OF SILESIA, UNIVERSITY OF TOKYO,
+     UNIVERSITY OF ZURICH, WASEDA UNIVERSITY,
+     YALE UNIVERSITY
+
+  GAMESS SOFTWARE MANAGEMENT TEAM FOR THIS RELEASE:
+     MARK S. GORDON (TEAM LEAD),
+     BRETT BODE (SENIOR ADVISOR),
+     GIUSEPPE BARCA,
+     COLLEEN BERTONI,
+     KRISTOPHER KEIPERT (ADVISOR),
+     SAROM S. LEANG (DEVELOPMENT LEAD),
+     BUU PHAM,
+     JACKSON HAYES (WEBSITE ADMINISTRATOR),
+     PENG XU
+
+ EXECUTION OF GAMESS BEGUN 16:48:27 06-NOV-2026    
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0 COORD=CART $END    
+ INPUT CARD> $SYSTEM TIMLIM=525600 MEMORY=1000000 $END                                      
+ INPUT CARD> $BASIS GBASIS=AM1 $END                                                         
+ INPUT CARD> $SCF DIRSCF=.TRUE. $END                                                        
+ INPUT CARD> $STATPT OPTTOL=0.0001 NSTEP=100 $END                                           
+ INPUT CARD> $DATA                                                                          
+ INPUT CARD>Water                                                                           
+ INPUT CARD>CNV 2                                                                           
+ INPUT CARD>                                                                                
+ INPUT CARD>O     8.0   0.0   0.0   0.0                                                     
+ INPUT CARD>H     1.0  -0.7   0.0  -0.7                                                     
+ INPUT CARD>H     1.0   0.7   0.0  -0.7                                                     
+ INPUT CARD> $END                                                                           
+      1000000 WORDS OF MEMORY AVAILABLE
+
+
+                    * * * WARNING * * *
+ OLD KEYWORD COORD=CART SELECTED, AUTOMATICALLY CHANGED TO COORD=PRINAXIS.
+ YOUR MOLECULE'S COORDINATES WILL BE CHANGED TO PRINCIPAL AXES BY
+   A) TRANSLATION TO THE CENTER OF MASS, THEN
+   B) ROTATION TO HAVE A DIAGONAL MOMENT OF INERTIA TENSOR.
+
+ HOWEVER, NOTHING ELSE IN YOUR INPUT WILL BE ROTATED IN THE SAME WAY,
+ SO IF YOU HAVE A $VEC, $VIB, $GRAD, $HESS, EFP PARTICLE COORDINATES,
+ OR ANYTHING ELSE THAT DEPENDS ON THE INITIAL ORIENTATION, THAT DATA
+ WILL NOT BE USED CORRECTLY IN THIS RUN.
+
+ THE PURPOSE OF COORD=PRINAXIS IS TO BE USED ONCE, ONLY AT THE VERY
+ BEGINNING OF A SERIES OF COMPUTATIONS, PERHAPS TO FIND THE SYMMETRY
+ UNIQUE ATOMS FROM AN ARBITRARY INITIAL ORIENTATION.
+
+ AFTER THE FIRST RUN, YOU SHOULD USE ONLY COORD=UNIQUE, TO ENSURE THAT
+ THE COORDINATES WHICH YOU READ IN ARE THE COORDINATES THAT ARE USED.
+
+
+     BASIS OPTIONS
+     -------------
+     GBASIS=AM1          IGAUSS=       0      POLAR=NONE    
+     NDFUNC=       0     NFFUNC=       0     DIFFSP=       F
+     NPFUNC=       0      DIFFS=       F     BASNAM=        
+
+
+     RUN TITLE
+     ---------
+ Water                                                                           
+
+ THE POINT GROUP OF THE MOLECULE IS CNV     
+ THE ORDER OF THE PRINCIPAL AXIS IS     2
+
+ THE MOMENTS OF INERTIA ARE (AMU-ANGSTROM**2)
+ IXX=     0.877   IYY=     1.865   IZZ=     0.988
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ O           8.0     0.0000000000        0.0000000000        0.1480419449
+ H           1.0     1.3228081914       -0.0000000000       -1.1747662465
+ H           1.0    -1.3228081914        0.0000000000       -1.1747662465
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 O          2 H          3 H     
+
+   1 O       0.0000000    0.9899495 *  0.9899495 *
+   2 H       0.9899495 *  0.0000000    1.4000000 *
+   3 H       0.9899495 *  1.4000000 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =    3
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =    6
+ NUMBER OF ELECTRONS                          =    8
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    1
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =    4
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =    4
+ TOTAL NUMBER OF ATOMS                        =    3
+ THE NUCLEAR REPULSION ENERGY IS        8.9307796669
+
+ THE PARAMETERS USED IN THIS CALCULATION ARE DESCRIBED IN:
+
+  H: (AM1): M.J.S. DEWAR ET AL, J. AM. CHEM. SOC. 107 3902-3909 (1985)          
+  O: (AM1): M.J.S. DEWAR ET AL, J. AM. CHEM. SOC. 107 3902-3909 (1985)          
+
+ THERE ARE    1 HEAVY AND    2 LIGHT ATOMS,
+ YIELDING A TOTAL OF        21 MOPAC 2E- INTEGRALS.
+
+     $CONTRL OPTIONS
+     ---------------
+ SCFTYP=RHF          RUNTYP=OPTIMIZE     EXETYP=RUN     
+ MPLEVL=       0     CITYP =NONE         CCTYP =NONE         VBTYP =NONE    
+ DFTTYP=NONE         TDDFT =NONE    
+ MULT  =       1     ICHARG=       0     NZVAR =       0     COORD =PRINAXIS
+ PP    =NONE         RELWFN=NONE         LOCAL =NONE         NUMGRD=       F
+ ISPHER=      -1     NOSYM =       0     MAXIT =      30     UNITS =ANGS    
+ PLTORB=       F     MOLPLT=       F     AIMPAC=       F     FRIEND=        
+ NPRINT=       7     IREST =       0     GEOM  =INPUT   
+ NORMF =       0     NORMP =       0     ITOL  =      20     ICUT  =       9
+ INTTYP=BEST         GRDTYP=BEST         QMTTOL= 1.0E-06
+
+     $SYSTEM OPTIONS
+     ---------------
+  REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
+ DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
+ MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
+ TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
+ PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
+
+          ----------------
+          PROPERTIES INPUT
+          ----------------
+
+     MOMENTS            FIELD           POTENTIAL          DENSITY
+ IEMOM =       1   IEFLD =       0   IEPOT =       0   IEDEN =       0
+ WHERE =COMASS     WHERE =NUCLEI     WHERE =NUCLEI     WHERE =NUCLEI  
+ OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH    
+ IEMINT=       0   IEFINT=       0                     IEDINT=       0
+                                                       MORB  =       0
+          EXTRAPOLATION IN EFFECT
+ ORBITAL PRINTING OPTION: NPREO=     1     6     2     1
+
+     -------------------------------
+     INTEGRAL TRANSFORMATION OPTIONS
+     -------------------------------
+     NWORD  =            0
+     CUTTRF = 1.0E-09     MPTRAN =       0
+     DIRTRF =       T     AOINTS =DUP     
+
+          ----------------------
+          INTEGRAL INPUT OPTIONS
+          ----------------------
+ NOPK  =       1 NORDER=       0 SCHWRZ=       T
+
+     ------------------------------------------
+     THE POINT GROUP IS CNV, NAXIS= 2, ORDER= 4
+     ------------------------------------------
+
+     DIMENSIONS OF THE SYMMETRY SUBSPACES ARE
+ A1  =    3     A2  =    0     B1  =    2     B2  =    1
+
+ ..... DONE SETTING UP THE RUN .....
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.48%
+
+
+          -----------------------------
+          STATIONARY POINT LOCATION RUN
+          -----------------------------
+
+ OBTAINING INITIAL HESSIAN, HESS=GUESS   
+ CARTESIAN COORDINATE OPTIMIZATION USING BADGER'S RULE FORCE CONSTANT GUESS
+
+          PARAMETERS CONTROLLING GEOMETRY SEARCH ARE
+          METHOD =QA                  UPHESS =BFGS    
+          NNEG   =         0          NFRZ   =         0
+          NSTEP  =       100          IFOLOW =         1
+          HESS   =GUESS               RESTAR =         F
+          IHREP  =         0          HSSEND =         F
+          NPRT   =         0          NPUN   =         0
+          OPTTOL = 1.000E-04          RMIN   = 1.500E-03
+          RMAX   = 1.000E-01          RLIM   = 7.000E-02
+          DXMAX  = 3.000E-01          PURIFY =         F
+          MOVIE  =         F          TRUPD  =         T
+          TRMAX  = 5.000E-01          TRMIN  = 5.000E-02
+          ITBMAT =         5          STPT   =         F
+          STSTEP = 1.000E-02          PROJCT=          T
+
+ BEGINNING GEOMETRY SEARCH POINT NSERCH=   0 ...
+
+ COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0783404292
+ H           1.0  -0.7000000000   0.0000000000  -0.6216595708
+ COORDINATES OF ALL ATOMS ARE (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0783404292
+ H           1.0   0.7000000000  -0.0000000000  -0.6216595708
+ H           1.0  -0.7000000000   0.0000000000  -0.6216595708
+
+          ********************
+          1 ELECTRON INTEGRALS
+          ********************
+
+          **************************
+          1 AND 2 ELECTRON INTEGRALS
+          **************************
+
+ MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE        63 WORDS.
+ ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.73%
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.90%
+
+          -------------
+          GUESS OPTIONS
+          -------------
+          GUESS =HUCKEL            NORB  =       0          NORDER=       0
+          MIX   =       F          PRTMO =       F          PUNMO =       F
+          TOLZ  = 1.0E-08          TOLE  = 1.0E-05
+          SYMDEN=       F          PURIFY=       F
+
+ INITIAL GUESS ORBITALS GENERATED BY HUCKEL   ROUTINE.
+
+ SYMMETRIES FOR INITIAL GUESS ORBITALS FOLLOW.   BOTH SET(S).
+     4 ORBITALS ARE OCCUPIED (    0 CORE ORBITALS).
+     1=A1       2=B1       3=A1       4=B2       5=A1       6=B1  
+ ...... END OF INITIAL ORBITAL SELECTION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.66%
+
+          --------------------------
+               R-AM1 SCF CALCULATION
+          --------------------------
+
+     NUCLEAR ENERGY =         5.2364410893
+     MAXIT =   30     NPUNCH=    2
+     EXTRAP=T  DAMP=F  SHIFT=F  RSTRCT=F  DIIS=F  DEM=F  SOSCF=F
+     DENSITY MATRIX CONV=  2.00E-05
+     MEMORY REQUIRED FOR RHF ITERS=       405 WORDS.
+
+                                                                                   NONZERO     BLOCKS
+ ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR      INTEGRALS    SKIPPED
+   1  0  0      -12.6459526789   -12.6459526789   0.270940723   0.000000000              0          0
+   2  1  0      -12.7904757388    -0.1445230599   0.080549739   0.000000000              0          0
+   3  2  0      -12.8017138330    -0.0112380941   0.031315395   0.000000000              0          0
+   4  3  0      -12.8026551841    -0.0009413511   0.011947921   0.000000000              0          0
+   5  4  0      -12.8027524511    -0.0000972671   0.004656381   0.000000000              0          0
+   6  0  0      -12.8027653293    -0.0000128781   0.003157861   0.000000000              0          0
+   7  1  0      -12.8027678752    -0.0000025460   0.000039141   0.000000000              0          0
+   8  2  0      -12.8027678779    -0.0000000026   0.000018620   0.000000000              0          0
+   9  3  0      -12.8027678782    -0.0000000004   0.000008653   0.000000000              0          0
+
+          -----------------
+          DENSITY CONVERGED
+          -----------------
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
+     TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
+
+ FINAL R-AM1 ENERGY IS      -12.8027678782 AFTER   9 ITERATIONS
+
+ HEAT OF FORMATION IS       -55.13413 KCAL/MOL
+
+
+          ------------
+          EIGENVECTORS
+          ------------
+
+                      1          2          3          4          5
+                   -1.3308    -0.6319    -0.5745    -0.4590     0.1671
+                     A1         B1         A1         B2         A1  
+    1  O  1  S    0.894659  -0.000000   0.377929  -0.000000  -0.238231
+    2  O  1  X   -0.000000   0.782262   0.000000   0.000000  -0.000000
+    3  O  1  Y   -0.000000   0.000000  -0.000000   1.000000   0.000000
+    4  O  1  Z   -0.163156  -0.000000   0.772825  -0.000000   0.613287
+    5  H  2  S    0.294079   0.440492  -0.360493   0.000000   0.532506
+    6  H  3  S    0.294079  -0.440492  -0.360493  -0.000000   0.532506
+
+                      6
+                    0.1949
+                     B1  
+    1  O  1  S   -0.000000
+    2  O  1  X    0.622950
+    3  O  1  Y   -0.000000
+    4  O  1  Z    0.000000
+    5  H  2  S   -0.553143
+    6  H  3  S    0.553143
+ ...... END OF RHF CALCULATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    83.25%
+
+     ----------------------------------------------------------------
+     PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
+     ----------------------------------------------------------------
+
+                    -------------
+                    MOPAC CHARGES
+                    -------------
+         ATOM NO.   TYPE          CHARGE        ATOM  ELECTRON DENSITY
+           1         O             -0.3581          6.3581
+           2         H              0.1791          0.8209
+           3         H              0.1791          0.8209
+
+          ---------------------
+          ELECTROSTATIC MOMENTS
+          ---------------------
+
+ POINT   1           X           Y           Z (ANGS)      CHARGE
+                 0.000000    0.000000    0.000000        0.00 (A.U.)
+         DX          DY          DZ         /D/  (DEBYE)
+     0.000000    0.000000   -1.945052    1.945052
+ ...... END OF PROPERTY EVALUATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.71%
+
+          NSERCH=  0     ENERGY=     -12.8027679
+
+                                 -----------------------
+                                 GRADIENT (HARTREE/BOHR)
+                                 -----------------------
+        ATOM     ZNUC       DE/DX         DE/DY         DE/DZ
+ --------------------------------------------------------------
+    1  O            8.0     0.0000000     0.0000000     0.0593284
+    2  H            1.0    -0.0063543     0.0000000    -0.0296642
+    3  H            1.0     0.0063543     0.0000000    -0.0296642
+
+          MAXIMUM GRADIENT = 0.0593284    RMS GRADIENT = 0.0244052
+
+ NSERCH:   0  E=      -12.8027678782  GRAD. MAX=  0.0593284  R.M.S.=  0.0244052
+
+          FORCE CONSTANT MATRIX NOT UPDATED --- TAKING FIRST STEP
+          MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
+               NR STEP HAS LENGTH         =   0.474433
+          TRIM/QA LAMBDA FOR NON-TS MODES =  -0.06454854
+          TRIM/QA STEP HAS LENGTH         =   0.300000
+          RADIUS OF STEP TAKEN=   0.30000  CURRENT TRUST RADIUS=   0.30000
+
+ BEGINNING GEOMETRY SEARCH POINT NSERCH=   1 ...
+
+ COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000  -0.0197579410
+ H           1.0  -0.7733745023  -0.0000000000  -0.5726103857
+ COORDINATES OF ALL ATOMS ARE (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000  -0.0197579410
+ H           1.0   0.7733745023  -0.0000000000  -0.5726103857
+ H           1.0  -0.7733745023  -0.0000000000  -0.5726103857
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 O          2 H          3 H     
+
+   1 O       0.0000000    0.9506597 *  0.9506597 *
+   2 H       0.9506597 *  0.0000000    1.5467490 *
+   3 H       0.9506597 *  1.5467490 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+ MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE        63 WORDS.
+ ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.15%
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.18%
+
+          --------------------------
+               R-AM1 SCF CALCULATION
+          --------------------------
+     DENSITY MATRIX CONV=  4.00E-04
+
+                                                                                   NONZERO     BLOCKS
+ ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR      INTEGRALS    SKIPPED
+   1  0  0      -12.8040461839   -12.8040461839   0.064963729   0.000000000              0          0
+   2  1  0      -12.8074334142    -0.0033872303   0.030576821   0.000000000              0          0
+   3  2  0      -12.8081265194    -0.0006931052   0.014418631   0.000000000              0          0
+   4  3  0      -12.8082756295    -0.0001491101   0.006801618   0.000000000              0          0
+   5  0  0      -12.8083081355    -0.0000325060   0.006061994   0.000000000              0          0
+   6  1  0      -12.8083172647    -0.0000091292   0.000010477   0.000000000              0          0
+   7  2  0      -12.8083172648    -0.0000000001   0.000003312   0.000000000              0          0
+
+          -----------------
+          DENSITY CONVERGED
+          -----------------
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
+     TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
+
+ FINAL R-AM1 ENERGY IS      -12.8083172648 AFTER   7 ITERATIONS
+
+ HEAT OF FORMATION IS       -58.61653 KCAL/MOL
+
+ ...... END OF RHF CALCULATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    86.68%
+
+          NSERCH=  1     ENERGY=     -12.8083173
+
+                                 -----------------------
+                                 GRADIENT (HARTREE/BOHR)
+                                 -----------------------
+        ATOM     ZNUC       DE/DX         DE/DY         DE/DZ
+ --------------------------------------------------------------
+    1  O            8.0     0.0000000     0.0000000    -0.0246683
+    2  H            1.0     0.0001648     0.0000000     0.0123342
+    3  H            1.0    -0.0001648     0.0000000     0.0123342
+
+          MAXIMUM GRADIENT = 0.0246683    RMS GRADIENT = 0.0100711
+
+ NSERCH:   1  E=      -12.8083172648  GRAD. MAX=  0.0246683  R.M.S.=  0.0100711
+
+          HESSIAN UPDATED USING THE BFGS FORMULA
+             ACTUAL ENERGY CHANGE WAS  -0.0055493866
+          PREDICTED ENERGY CHANGE WAS  -0.0120344459 RATIO=  0.461
+          MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
+               NR STEP HAS LENGTH         =   0.078614
+          RADIUS OF STEP TAKEN=   0.07861  CURRENT TRUST RADIUS=   0.30000
+
+ BEGINNING GEOMETRY SEARCH POINT NSERCH=   2 ...
+
+ COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0074174524
+ H           1.0  -0.7557267075   0.0000000000  -0.5861980825
+ COORDINATES OF ALL ATOMS ARE (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0074174524
+ H           1.0   0.7557267075  -0.0000000000  -0.5861980825
+ H           1.0  -0.7557267075   0.0000000000  -0.5861980825
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 O          2 H          3 H     
+
+   1 O       0.0000000    0.9609902 *  0.9609902 *
+   2 H       0.9609902 *  0.0000000    1.5114534 *
+   3 H       0.9609902 *  1.5114534 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+ MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE        63 WORDS.
+ ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    86.98%
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    87.01%
+
+          --------------------------
+               R-AM1 SCF CALCULATION
+          --------------------------
+     DENSITY MATRIX CONV=  1.00E-04
+
+                                                                                   NONZERO     BLOCKS
+ ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR      INTEGRALS    SKIPPED
+   1  0  0      -12.8089573566   -12.8089573566   0.019121501   0.000000000              0          0
+   2  1  0      -12.8092389122    -0.0002815556   0.008983665   0.000000000              0          0
+   3  2  0      -12.8092959550    -0.0000570428   0.004162389   0.000000000              0          0
+   4  3  0      -12.8093079376    -0.0000119826   0.001918297   0.000000000              0          0
+   5  0  0      -12.8093104723    -0.0000025347   0.001633205   0.000000000              0          0
+   6  1  0      -12.8093111534    -0.0000006811   0.000001856   0.000000000              0          0
+   7  2  0      -12.8093111534    -0.0000000000   0.000000637   0.000000000              0          0
+
+          -----------------
+          DENSITY CONVERGED
+          -----------------
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
+     TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
+
+ FINAL R-AM1 ENERGY IS      -12.8093111534 AFTER   7 ITERATIONS
+
+ HEAT OF FORMATION IS       -59.24022 KCAL/MOL
+
+ ...... END OF RHF CALCULATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    88.13%
+
+          NSERCH=  2     ENERGY=     -12.8093112
+
+                                 -----------------------
+                                 GRADIENT (HARTREE/BOHR)
+                                 -----------------------
+        ATOM     ZNUC       DE/DX         DE/DY         DE/DZ
+ --------------------------------------------------------------
+    1  O            8.0     0.0000000     0.0000000    -0.0007158
+    2  H            1.0     0.0000754     0.0000000     0.0003579
+    3  H            1.0    -0.0000754     0.0000000     0.0003579
+
+          MAXIMUM GRADIENT = 0.0007158    RMS GRADIENT = 0.0002944
+
+ NSERCH:   2  E=      -12.8093111534  GRAD. MAX=  0.0007158  R.M.S.=  0.0002944
+
+          HESSIAN UPDATED USING THE BFGS FORMULA
+             ACTUAL ENERGY CHANGE WAS  -0.0009938886
+          PREDICTED ENERGY CHANGE WAS  -0.0009556083 RATIO=  1.040
+          MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
+               NR STEP HAS LENGTH         =   0.002755
+          RADIUS OF STEP TAKEN=   0.00276  CURRENT TRUST RADIUS=   0.15723
+
+ BEGINNING GEOMETRY SEARCH POINT NSERCH=   3 ...
+
+ COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0083001974
+ H           1.0  -0.7550350899   0.0000000000  -0.5866394550
+ COORDINATES OF ALL ATOMS ARE (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0083001974
+ H           1.0   0.7550350899  -0.0000000000  -0.5866394550
+ H           1.0  -0.7550350899   0.0000000000  -0.5866394550
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 O          2 H          3 H     
+
+   1 O       0.0000000    0.9612654 *  0.9612654 *
+   2 H       0.9612654 *  0.0000000    1.5100702 *
+   3 H       0.9612654 *  1.5100702 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+ MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE        63 WORDS.
+ ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    88.35%
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    88.37%
+
+          --------------------------
+               R-AM1 SCF CALCULATION
+          --------------------------
+     DENSITY MATRIX CONV=  2.00E-05
+
+                                                                                   NONZERO     BLOCKS
+ ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR      INTEGRALS    SKIPPED
+   1  0  0      -12.8093117650   -12.8093117650   0.000615730   0.000000000              0          0
+   2  1  0      -12.8093120476    -0.0000002826   0.000286165   0.000000000              0          0
+   3  2  0      -12.8093121057    -0.0000000581   0.000132144   0.000000000              0          0
+   4  3  0      -12.8093121179    -0.0000000122   0.000060863   0.000000000              0          0
+   5  4  0      -12.8093121205    -0.0000000026   0.000028004   0.000000000              0          0
+   6  5  0      -12.8093121210    -0.0000000005   0.000012881   0.000000000              0          0
+
+          -----------------
+          DENSITY CONVERGED
+          -----------------
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
+     TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
+
+ FINAL R-AM1 ENERGY IS      -12.8093121210 AFTER   6 ITERATIONS
+
+ HEAT OF FORMATION IS       -59.24083 KCAL/MOL
+
+ ...... END OF RHF CALCULATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.20%
+
+          NSERCH=  3     ENERGY=     -12.8093121
+
+                                 -----------------------
+                                 GRADIENT (HARTREE/BOHR)
+                                 -----------------------
+        ATOM     ZNUC       DE/DX         DE/DY         DE/DZ
+ --------------------------------------------------------------
+    1  O            8.0     0.0000000     0.0000000     0.0000133
+    2  H            1.0    -0.0000101     0.0000000    -0.0000066
+    3  H            1.0     0.0000101     0.0000000    -0.0000066
+
+          MAXIMUM GRADIENT = 0.0000133    RMS GRADIENT = 0.0000072
+
+ NSERCH:   3  E=      -12.8093121210  GRAD. MAX=  0.0000133  R.M.S.=  0.0000072
+
+
+      ***** EQUILIBRIUM GEOMETRY LOCATED *****
+ COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0083001974
+ H           1.0  -0.7550350899   0.0000000000  -0.5866394550
+ COORDINATES OF ALL ATOMS ARE (ANGS)
+   ATOM   CHARGE       X              Y              Z
+ ------------------------------------------------------------
+ O           8.0   0.0000000000   0.0000000000   0.0083001974
+ H           1.0   0.7550350899  -0.0000000000  -0.5866394550
+ H           1.0  -0.7550350899   0.0000000000  -0.5866394550
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 O          2 H          3 H     
+
+   1 O       0.0000000    0.9612654 *  0.9612654 *
+   2 H       0.9612654 *  0.0000000    1.5100702 *
+   3 H       0.9612654 *  1.5100702 *  0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+          NUCLEAR ENERGY    =        5.3178482139
+          ELECTRONIC ENERGY =      -18.1271603349
+          TOTAL ENERGY      =      -12.8093121210
+
+          ------------------
+          MOLECULAR ORBITALS
+          ------------------
+
+                      1          2          3          4          5
+                   -1.3386    -0.6688    -0.5495    -0.4580     0.1624
+                     A1         B1         A1         B2         A1  
+    1  O  1  S   -0.895464   0.000000   0.359880   0.000000  -0.261972
+    2  O  1  X    0.000000  -0.770172   0.000000  -0.000000   0.000000
+    3  O  1  Y    0.000000   0.000000   0.000000  -1.000000   0.000000
+    4  O  1  Z    0.153462   0.000000   0.802036   0.000000   0.577224
+    5  H  2  S   -0.295460  -0.451018  -0.337064  -0.000000   0.546892
+    6  H  3  S   -0.295460   0.451018  -0.337064   0.000000   0.546892
+
+                      6
+                    0.2275
+                     B1  
+    1  O  1  S    0.000000
+    2  O  1  X   -0.637836
+    3  O  1  Y    0.000000
+    4  O  1  Z   -0.000000
+    5  H  2  S    0.544594
+    6  H  3  S   -0.544594
+
+     ----------------------------------------------------------------
+     PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
+     ----------------------------------------------------------------
+
+                    -------------
+                    MOPAC CHARGES
+                    -------------
+         ATOM NO.   TYPE          CHARGE        ATOM  ELECTRON DENSITY
+           1         O             -0.3827          6.3827
+           2         H              0.1913          0.8087
+           3         H              0.1913          0.8087
+
+          ---------------------
+          ELECTROSTATIC MOMENTS
+          ---------------------
+
+ POINT   1           X           Y           Z (ANGS)      CHARGE
+                 0.000000    0.000000    0.000000        0.00 (A.U.)
+         DX          DY          DZ         /D/  (DEBYE)
+     0.000000   -0.000000   -1.860509    1.860509
+ ...... END OF PROPERTY EVALUATION ......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.75%
+  $VIB   
+          IVIB=   0 IATOM=   0 ICOORD=   0 E=      -12.8093121210
+  0.000000000E+00 0.000000000E+00 1.328436421E-05-1.012385366E-05 0.000000000E+00
+ -6.642183485E-06 1.012385366E-05 0.000000000E+00-6.642180721E-06
+  5.087066558E-15-1.203814937E-17-1.860509473E+00
+ ......END OF GEOMETRY SEARCH......
+ STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.86%
+               580000  WORDS OF DYNAMIC MEMORY USED
+ EXECUTION OF GAMESS TERMINATED NORMALLY 16:48:28 06-NOV-2026    
+ DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
+
+ ----------------------------------------
+ CPU timing information for all processes
+ ========================================
+ 0: 0.04 + 0.04 = 0.08
+ ----------------------------------------
+ ddikick.x: exited gracefully.
+unset echo
+----- accounting info -----
+Files used on the parent node MonkeyBook.local were:
+-rw-r--r--@ 1 blink  staff      318 Nov  6 16:48 /Users/blink/github/gamess2023R2claude/scr/water.F05
+-rw-r--r--@ 1 blink  staff  1505120 Nov  6 16:48 /Users/blink/github/gamess2023R2claude/scr/water.F10
+-rw-r--r--@ 1 blink  staff   130880 Nov  6 16:48 /Users/blink/github/gamess2023R2claude/scr/water.F26R
+-rw-r--r--@ 1 blink  staff        0 Nov  6 16:48 /Users/blink/github/gamess2023R2claude/scr/water.F27R
+ls: No match.
+ls: No match.
+ls: No match.
+Fri Nov  6 16:48:29 AST 2026
+0.054u 0.076s 0:01.16 10.3%	0+0k 0+0io 107pf+0w

@@ -3,3 +3,22 @@
 
 # MyST build outputs
 _build
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# GAMESS runs: keep the small .log files, ignore data and generated files
+runs/*
+!runs/*.log
+
+# Butane torsion scans (chapter 5): 38 logs, up to 10 MB each. The notebooks
+# keep their saved outputs and data/butane_result.txt holds the results.
+runs/butane-SCAN_*.log
+runs/butane_SCAN_*.log
+
+# Diels-Alder scan and IRC (chapter 8A): 32 + 2 logs, about 30 MB in all. The
+# notebooks keep their saved outputs and data/cyclohexene_scan_results.txt
+# holds the scan results.
+runs/Cyclohexene_Cs_SCAN_*.log
+runs/Diels_Alder_IRC_*.log

@@ -1,0 +1,62 @@
+version: 1
+project:
+  title: Fun With GAMESS (Python edition)
+  authors:
+    - name: Barry Linkletter
+      affiliations:
+        - University of Prince Edward Island
+  copyright: '2026'
+  description: A webbook of GAMESS exercises for chemistry students, run from Python notebooks.
+  license: CC-BY-NC-4.0
+  bibliography:
+    - references.bib
+
+  exclude:
+    - _build
+    - Thumbs.db
+    - .DS_Store
+    - '**.ipynb_checkpoints'
+    - CLAUDE.md
+    - runs/**
+  github: blinkletter/UsingGAMESSv2
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  # Mirrors ~/github/UsingGAMESS/myst.yml. Pages are added here as they are
+  # converted; converted pages swap .md for .ipynb but keep their names.
+  toc:
+    - file: start.md
+    - file: 1_Setup.ipynb
+      children:
+        - file: 1A_Unix.ipynb
+        - file: 1C-CompilingGAMESS-USonM5MacBookAir.md
+        - file: 1B-CompileInstruction2023.md
+        # - file: CompileGamessQ.md
+    - file: 2_SmallMolecules.ipynb
+    - file: 3_Visual_Input.ipynb
+    - file: 4_Ethane.ipynb
+    - file: 5_Rotation_Profiles.ipynb
+      children:
+        - file: 5_Rotation_Profiles_Workflow.ipynb
+        - file: 5_Rotation_Profiles_Workflow_Data.ipynb
+    - file: 6_Pi_Orbitals.ipynb
+    - file: 6_Benzene.ipynb
+    - file: 7_Butadiene.ipynb
+      children:
+        - file: butadiene.inp.md
+        - file: butadiene.log.md
+    - file: 8A_Diels_Alder.ipynb
+      children:
+        - file: 8_Reaction_Coord_Scan_Data.ipynb
+    - file: 9_Solvent.ipynb
+      children:
+        - file: 10_Solvent_IRC_Plots.ipynb
+        - file: 10_Solvent_IRC_Plots-Data.ipynb
+site:
+  options:
+    logo: images/Solvent_plot3.png
+    logo_text: Fun with GAMESS
+    style: ./custom.css
+    folders: true
+  template: book-theme

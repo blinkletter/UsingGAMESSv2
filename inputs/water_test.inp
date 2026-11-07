@@ -1,0 +1,14 @@
+! Water, RHF/STO-3G geometry optimisation.
+! A small, fast job (a few seconds) used to test a new GAMESS installation.
+ $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0 COORD=CART $END
+ $SYSTEM TIMLIM=10 MWORDS=10 $END
+ $BASIS GBASIS=STO NGAUSS=3 $END
+ $STATPT OPTTOL=0.0001 NSTEP=100 $END
+ $DATA
+Water test job
+CNV 2
+
+O     8.0   0.0   0.0   0.0
+H     1.0  -0.7   0.0  -0.7
+H     1.0   0.7   0.0  -0.7
+ $END

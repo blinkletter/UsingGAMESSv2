@@ -1,0 +1,14 @@
+! Water, RHF/STO-nG geometry optimisation.
+! Template: the placeholder after NGAUSS= is replaced by 2, 3 or 6 (STO-2G, STO-3G, STO-6G).
+ $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0 COORD=CART $END
+ $SYSTEM TIMLIM=10 MWORDS=10 $END
+ $BASIS GBASIS=STO NGAUSS=NUMBER $END
+ $STATPT OPTTOL=0.0001 NSTEP=100 $END
+ $DATA
+Water, STO-nG basis
+CNV 2
+
+O     8.0   0.0   0.0   0.0
+H     1.0  -0.7   0.0  -0.7
+H     1.0   0.7   0.0  -0.7
+ $END
