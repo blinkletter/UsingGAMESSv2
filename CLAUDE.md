@@ -13,7 +13,7 @@ computer after installing GAMESS.
 | `~/github/UsingGAMESSv2` | This book. All new and edited files go here. | Yes |
 | `~/github/UsingGAMESS` | Original book (`.md` pages + a few `.ipynb`). Source material to convert. | **No. Read only.** |
 | `~/github/GAMESS-docs` | GAMESS manual (`02-docs-input.txt` is the input reference). | **No. Read only.** |
-| `~/github/gamess2023R2claude` | GAMESS 2023 R2 build: `gamess.00.x`, `rungms`, `gms`, `auxdata/`, `scr/`, `restart/`. | **Only** run scripts such as `rungms` and `gms` may be edited, when needed. Change nothing else there. |
+| `~/github/gamess2024R2claude/gamess` | GAMESS 2024 R2 build (note the `gamess/` subfolder): `gamess.00.x`, `rungms`, `gms`, `auxdata/`, `scr/`, `restart/`. | **Only** run scripts such as `rungms` and `gms` may be edited, when needed. Change nothing else there. |
 
 - Never write build output, scratch files or test runs into the read-only folders.
 - Before editing `rungms` or `gms`, make a dated backup copy beside it and tell

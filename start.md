@@ -5,6 +5,13 @@ This resource is intended to help organic chemistry students set up the ***GAMES
 ```{figure} images/SN2_2_copy.gif
 ```
 
+## Preface to the *Python* Edition
+
+This book, Fun with GAMESS (*Python* edition), is an **update** of a previous web book, [Fun with GAMESS](https://blinkletter.github.io/UsingGAMESS). That work presented using the GAMESS system via a terminal emulator in a *Unix* system. That's still a good way to go, but to make things **more accessible** for students I have converted everything to *Python* in *Jupyter* notebooks. I used a LLM system to perform the conversion, and it did an amazing job. These pages are **adapted** from my own original work and I have included an AI statement at the bottom of each page to identify the contribution of the LLM (tl:dr it did all the *Python*). Students can explore simple computaional chemistry examples using the hard core terminal (party like its 1999!) or *Jupyter* notebooks (the future is here). Students must have a GAMESS executable file **installed on their own computer** to use the *Jupyter* notebooks. 
+
+I **also** completely changed the exercises to run in the *Psi4* system. That new web book, [Fun with Psi4](https://blinkletter.github.io/UsingPsi4), is also available. It explores the **same examples** as this book, but uses the *Python* version of *Psi4*. This is a **better choice** for students as it will run via Google Colab and students will not need to install any software.
+
+
 # Table of Contents
 
 Below is a list of the chapters in this book and some notes on what you will find in each.
