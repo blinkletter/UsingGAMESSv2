@@ -42,4 +42,4 @@ Below is a list of the chapters in this book and some notes on what you will fin
 
 ## AI Statement
 
-This page is copied from `start.md` in the original book with the help of Claude (Anthropic). The author's text is unchanged except that the chapter 1 link now points to the notebook `1_Setup.ipynb`, and chapters not yet converted to notebooks are marked "(not yet converted)" instead of linked.
+This page is copied from the [original book](https://blinkletter.github.io/UsingGAMESS) with the help of Claude (Anthropic). The author's text is unchanged except that the chapter 1 link now points to the notebook `1_Setup.ipynb` instead of a markdown file.
