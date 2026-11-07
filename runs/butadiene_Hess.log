@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 18:30:22 AST 2026
+under operating system Darwin at Sat Nov 7 14:22:34 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 489058948 452379944    52% 3639520 4523799440    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 495058032 447430084    53% 3685008 4474300840    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.inp /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F05
+cp /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.inp /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.trj
@@ -32,149 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F99
 unset echo
 /Users/blink/github/UsingGAMESSv2/runs/butadiene_Hess.dat
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x butadiene_Hess -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_Hess -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x butadiene_Hess 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_Hess 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -229,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -275,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 18:30:22 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 14:22:34 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=HESSIAN MAXIT=30 MULT=1 COORD=UNIQUE NZVAR=24        
@@ -289,14 +296,14 @@ unset echo
  INPUT CARD>C1                                                                              
  INPUT CARD> C        6.0   -1.6947810072    0.3556940147   -0.0059070135                   
  INPUT CARD> C        6.0   -0.6694458282   -0.4389900605    0.2164066777                   
- INPUT CARD> C        6.0    0.6689345848   -0.2609668840   -0.4148035215                   
+ INPUT CARD> C        6.0    0.6689345848   -0.2609668840   -0.4148035214                   
  INPUT CARD> C        6.0    1.6952658907    0.2974860987    0.1910445161                   
- INPUT CARD> H        1.0   -1.6212506697    1.2038893603   -0.6603746198                   
+ INPUT CARD> H        1.0   -1.6212506696    1.2038893603   -0.6603746198                   
  INPUT CARD> H        1.0   -2.6468841214    0.1910757859    0.4616181802                   
  INPUT CARD> H        1.0   -0.7770883034   -1.2826907673    0.8761615046                   
  INPUT CARD> H        1.0    0.7756145478   -0.6331604171   -1.4191865188                   
  INPUT CARD> H        1.0    1.6225581533    0.6762581602    1.1932409953                   
- INPUT CARD> H        1.0    2.6473642549    0.4015916098   -0.2935828324                   
+ INPUT CARD> H        1.0    2.6473642548    0.4015916098   -0.2935828324                   
  INPUT CARD> $END                                                                           
  INPUT CARD> $ZMAT IZMAT(1)=1,2,1, 1,3,2, 2,3,2,1, 1,4,3, 2,4,3,2, 3,4,3,2,1, 1,5,1,        
  INPUT CARD>    2,5,1,2, 3,5,1,2,3, 1,6,1, 2,6,1,5, 3,6,1,5,2, 1,7,2, 2,7,2,1, 3,7,2,1,3,   
@@ -322,14 +329,14 @@ unset echo
            CHARGE         X                   Y                   Z
  C           6.0    -3.2026717128        0.6721642233       -0.0111626369
  C           6.0    -1.2650691789       -0.8295709257        0.4089493228
- C           6.0     1.2641030690       -0.4931559026       -0.7838649944
+ C           6.0     1.2641030690       -0.4931559026       -0.7838649942
  C           6.0     3.2035880098        0.5621672117        0.3610217869
- H           1.0    -3.0637195231        2.2750210105       -1.2479270807
+ H           1.0    -3.0637195230        2.2750210105       -1.2479270807
  H           1.0    -5.0018857107        0.3610808782        0.8723318715
  H           1.0    -1.4684839617       -2.4239340772        1.6557051647
  H           1.0     1.4656989674       -1.1964996946       -2.6818736460
  H           1.0     3.0661903089        1.2779426197        2.2548985184
- H           1.0     5.0027930315        0.7588981015       -0.5547911079
+ H           1.0     5.0027930313        0.7588981015       -0.5547911079
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -464,7 +471,7 @@ unset echo
  NUMBER OF OCCUPIED ORBITALS (ALPHA)          =   15
  NUMBER OF OCCUPIED ORBITALS (BETA )          =   15
  TOTAL NUMBER OF ATOMS                        =   10
- THE NUCLEAR REPULSION ENERGY IS      104.6440589535
+ THE NUCLEAR REPULSION ENERGY IS      104.6440589547
 
      $CONTRL OPTIONS
      ---------------
@@ -483,10 +490,10 @@ unset echo
      ---------------
   REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
  DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
- MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ MEMDDI DISTRIBUTED OVER   4 PROCESSORS IS           0 WORDS/PROCESSOR.
  TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
  TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
- PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
  MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
 
           ----------------
@@ -502,6 +509,13 @@ unset echo
           EXTRAPOLATION IN EFFECT
           SOSCF IN EFFECT
  ORBITAL PRINTING OPTION: NPREO=     1    48     2     1
+
+     ----------------------
+     TARGET OFFLOAD OPTIONS
+     ----------------------
+     RHF    =       F
+     CPHF    =       F
+     MAKEFP =       F
 
      -------------------------------
      INTEGRAL TRANSFORMATION OPTIONS
@@ -523,8 +537,8 @@ unset echo
  A   =   48
 
  ..... DONE SETTING UP THE RUN .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.51%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.04%
 
      ---------------------------------
      HESSIAN MATRIX CONTROL PARAMETERS
@@ -583,7 +597,7 @@ unset echo
    6 TORSION   4  3  2  1               1.7453293     100.0000000
    7 STRETCH   5  1                     2.0292964       1.0738575
    8 BEND      5  1  2                  2.1252888     121.7700803
-   9 TORSION   5  1  2  3              -0.0132690      -0.7602575
+   9 TORSION   5  1  2  3              -0.0132690      -0.7602574
   10 STRETCH   6  1                     2.0284246       1.0733962
   11 BEND      6  1  5                  2.0345654     116.5720129
   12 TORSION   6  1  5  2               3.1371625     179.7461716
@@ -611,8 +625,8 @@ unset echo
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.93%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.60%
 
           -------------
           GUESS OPTIONS
@@ -631,8 +645,8 @@ unset echo
     12=A       13=A       14=A       15=A       16=A       17=A       18=A   
     19=A       20=A       21=A       22=A       23=A       24=A       25=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.15%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.64%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -654,14 +668,14 @@ unset echo
  DIRECT SCF METHOD SKIPS INTEGRAL STORAGE ON DISK.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.11%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    65.27%
 
           --------------------------
                  RHF SCF CALCULATION
           --------------------------
 
-     NUCLEAR ENERGY =       104.6440589535
+     NUCLEAR ENERGY =       104.6440589547
      MAXIT =   30     NPUNCH=    2
      EXTRAP=T  DAMP=F  SHIFT=F  RSTRCT=F  DIIS=F  DEM=F  SOSCF=T
      DENSITY MATRIX CONV=  2.00E-05
@@ -688,11 +702,13 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0504706800 AFTER  10 ITERATIONS
+
+ Alpha HOMO=    -9.887835 eV, LUMO=    4.590908 eV, gap=   14.478743 eV
 
           ------------
           EIGENVECTORS
@@ -701,7 +717,7 @@ unset echo
                       1          2          3          4          5
                   -11.1766   -11.1766   -11.1634   -11.1634    -1.0890
                      A          A          A          A          A   
-    1  C  1  S   -0.013835  -0.004248   0.387561   0.907367  -0.098251
+    1  C  1  S   -0.013835  -0.004248   0.387562   0.907367  -0.098251
     2  C  1  S    0.000395  -0.004598   0.037954   0.088852   0.111591
     3  C  1  X    0.000410  -0.002299   0.000053   0.000178   0.066847
     4  C  1  Y   -0.000780   0.000906   0.000068  -0.000258  -0.043207
@@ -715,7 +731,7 @@ unset echo
    12  C  2  X   -0.000582  -0.000099   0.000038   0.002155  -0.003282
    13  C  2  Y   -0.000379   0.000600  -0.000962  -0.001514   0.043671
    14  C  2  Z    0.000585  -0.000285   0.000320   0.000481  -0.027464
-   15  C  2  S    0.060893  -0.053078   0.011612   0.022778   0.303546
+   15  C  2  S    0.060893  -0.053078   0.011612   0.022777   0.303546
    16  C  2  X    0.011989   0.010772  -0.003648  -0.012553  -0.007717
    17  C  2  Y    0.005466  -0.008069   0.004176   0.008595   0.018137
    18  C  2  Z   -0.007563   0.004121  -0.002755  -0.001492  -0.014225
@@ -724,11 +740,11 @@ unset echo
    21  C  3  X   -0.000569   0.000157  -0.001520   0.001531   0.003317
    22  C  3  Y    0.000052   0.000357  -0.001185   0.000296   0.022749
    23  C  3  Z    0.000749   0.000486  -0.001394   0.000332   0.046288
-   24  C  3  S   -0.065843  -0.046794   0.024139  -0.008419   0.303526
+   24  C  3  S   -0.065843  -0.046794   0.024139  -0.008420   0.303526
    25  C  3  X    0.010860  -0.011914   0.011325  -0.006549   0.007733
    26  C  3  Y   -0.001159  -0.004599   0.006027  -0.003252   0.007955
    27  C  3  Z   -0.010031  -0.006777   0.007270  -0.001036   0.021611
-   28  C  4  S    0.013348  -0.005600   0.907442  -0.387386  -0.098239
+   28  C  4  S    0.013348  -0.005600   0.907441  -0.387387  -0.098239
    29  C  4  S   -0.000848  -0.004537   0.088861  -0.037932   0.111576
    30  C  4  X    0.000637   0.002248  -0.000162   0.000092  -0.066897
    31  C  4  Y    0.000546   0.000735  -0.000070   0.000163  -0.032088
@@ -1218,8 +1234,8 @@ unset echo
    47  H 10  S    0.142732  -0.015975   0.025024
    48  H 10  S    0.428652  -0.315505   0.125831
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.15 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.80%
+ CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.89%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1231,18 +1247,18 @@ unset echo
 
          WAVEFUNCTION NORMALIZATION =       1.0000000000
 
-                ONE ELECTRON ENERGY =    -413.4421531849
-                TWO ELECTRON ENERGY =     154.7476235514
-           NUCLEAR REPULSION ENERGY =     104.6440589535
+                ONE ELECTRON ENERGY =    -413.4421531872
+                TWO ELECTRON ENERGY =     154.7476235525
+           NUCLEAR REPULSION ENERGY =     104.6440589547
                                       ------------------
                        TOTAL ENERGY =    -154.0504706800
 
- ELECTRON-ELECTRON POTENTIAL ENERGY =     154.7476235514
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -567.1805540559
-   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     104.6440589535
+ ELECTRON-ELECTRON POTENTIAL ENERGY =     154.7476235525
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -567.1805540585
+   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     104.6440589547
                                       ------------------
-             TOTAL POTENTIAL ENERGY =    -307.7888715510
-               TOTAL KINETIC ENERGY =     153.7384008710
+             TOTAL POTENTIAL ENERGY =    -307.7888715513
+               TOTAL KINETIC ENERGY =     153.7384008712
                  VIRIAL RATIO (V/T) =       2.0020298755
 
           ---------------------------------------
@@ -1255,10 +1271,10 @@ unset echo
 
                   2.000000   2.000000   2.000000   2.000000   2.000000
 
-    1             0.002368   0.006497   0.306421   1.680200   0.308997
+    1             0.002368   0.006497   0.306423   1.680198   0.308997
     2             0.898666   1.090489   0.001497   0.006909   0.648565
     3             1.094499   0.894658   0.006750   0.001656   0.648480
-    4             0.003129   0.005736   1.680293   0.306329   0.308924
+    4             0.003129   0.005736   1.680291   0.306331   0.308924
     5            -0.000042   0.000003   0.000427   0.002005   0.013529
     6            -0.000002   0.000078   0.000358   0.002139   0.004057
     7             0.000620   0.001324   0.000017   0.000027   0.024939
@@ -1412,19 +1428,19 @@ unset echo
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000   -0.000000   -0.000000        0.00 (A.U.)
+                -0.000000   -0.000000    0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
     -0.000090   -0.066797   -0.018966    0.069437
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.79%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.38%
 
      ---------------------------------------------
      1ST AND 2ND INTEGRAL DERIVATIVE CONTRIBUTIONS
      ---------------------------------------------
  ...... END OF 1-ELECTRON GRAD+HESS+FOCKDER ......
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.81%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.41%
 
      ----------------------------------------------
      TWO ELECTRON INTEGRAL DERIVATIVE CONTRIBUTIONS
@@ -1433,11 +1449,11 @@ unset echo
       53163 WORDS REQUIRED,    999999 WORDS AVAILABLE
  THE COARSE/FINE SCHWARZ SCREENINGS SKIPPED       8102/      1395 BLOCKS.
  THE NUMBER OF DERIVATIVE INTEGRAL BLOCKS COMPUTED WAS     35533
- STEP CPU TIME =     0.80 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    98.86%
+ CPU     0: STEP CPU TIME=     0.15 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    92.41%
  ...... END OF 2-ELECTRON GRAD+HESS+FOCKDER ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    98.86%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    92.41%
 
      -------------------------------------------
      COUPLED-PERTURBED CLOSED SHELL HARTREE-FOCK
@@ -1450,8 +1466,8 @@ unset echo
  -WXY- AND -YA- WILL USE    198213 WORDS,
                THERE ARE    999999 WORDS OF REPLICATED MEMORY AVAILABLE.
         TIME FOR -FA-   =        0.000
-        TIME FOR -TA-   =        0.002
-        TIME FOR -FCK-  =        0.057
+        TIME FOR -TA-   =        0.001
+        TIME FOR -FCK-  =        0.010
  PRECONDITIONED CONJUGATE GRADIENT SOLVER     CONV. TOLERANCE=5.00E-05
              MAXIMUM          RESPONSES        NONZERO     BLOCKS
  ITER    RESPONSE ERROR        IMPROVED   AO INTEGRALS    SKIPPED
@@ -1466,10 +1482,10 @@ unset echo
    9       2.24210E-05             9            514593      21169
  THE CPHF HAS CONVERGED AFTER  9 ITERATIONS.
  IT REQUIRED   249 FOCK-LIKE BUILDS TO FIND THE  30 SYMMETRY UNIQUE RESPONSES.
-        TIME FOR -YA-   =        0.460
+        TIME FOR -YA-   =        0.075
  ...... DONE WITH CPHF CONTRIBUTIONS ......
- STEP CPU TIME =     0.52 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.18%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    90.09%
 
           ---------------
           ENERGY GRADIENT
@@ -1610,30 +1626,30 @@ unset echo
                 D/DY    -0.111305383   -0.448389186   -0.911947900
                 D/DZ    -0.335080998   -0.823773561   -0.743143968
      C          D/DX     0.712589463   -0.272562531   -0.229618081
-                D/DY     0.159377211    0.246840585   -0.914055992
+                D/DY     0.159377212    0.246840585   -0.914055992
                 D/DZ    -0.494968210   -0.821425609   -0.496730546
      C          D/DX     0.712711066    0.350851089   -0.051490313
-                D/DY     0.122553326   -0.733570320    0.768535031
-                D/DZ    -0.504155546    0.676220587    0.483625408
-     C          D/DX    -0.446769952    0.390963041   -0.448854812
+                D/DY     0.122553325   -0.733570320    0.768535031
+                D/DZ    -0.504155546    0.676220587    0.483625409
+     C          D/DX    -0.446769953    0.390963041   -0.448854812
                 D/DY     0.270079993   -1.305452311    0.566289245
                 D/DZ    -0.226155187    0.477609259    0.113511129
      H          D/DX     0.352226410    0.004283491    0.218707699
                 D/DY     0.096931102   -0.004054988    0.559105232
                 D/DZ     0.126090822    0.596186542    0.309181588
-     H          D/DX    -0.487442767   -0.012817288    0.345111878
+     H          D/DX    -0.487442766   -0.012817288    0.345111878
                 D/DY    -0.065729477    0.410600066    0.319786273
                 D/DZ     0.401252942    0.280241340    0.429885132
      H          D/DX    -0.130325693   -0.086033953    0.122274699
                 D/DY    -0.025240627   -0.030912826    0.550498878
                 D/DZ     0.317833204    0.601465690    0.326881861
-     H          D/DX    -0.130232616    0.009836053    0.148573681
-                D/DY    -0.144646431    0.582268569   -0.393377957
-                D/DZ     0.283260592   -0.444420269   -0.286414343
+     H          D/DX    -0.130232616    0.009836054    0.148573681
+                D/DY    -0.144646430    0.582268569   -0.393377957
+                D/DZ     0.283260592   -0.444420269   -0.286414344
      H          D/DX     0.351975137   -0.118240934    0.183244467
                 D/DY    -0.148675765    0.598400540   -0.381332594
-                D/DZ     0.055758931   -0.418030448   -0.293269531
-     H          D/DX    -0.487443775   -0.168696708    0.300592741
+                D/DZ     0.055758931   -0.418030449   -0.293269532
+     H          D/DX    -0.487443774   -0.168696708    0.300592741
                 D/DY    -0.153430882    0.684276704   -0.163473312
                 D/DZ     0.376101387   -0.124037747    0.156416974
 
@@ -1679,46 +1695,46 @@ unset echo
     REDUCED MASS:      1.85398     2.36168     5.39410     5.40477     5.40681
     IR INTENSITY:      0.00387     0.00015     0.00000     0.00000     0.00000
 
-  1   C            X -0.06035501 -0.02180741  0.10822861  0.02379675  0.07793486
-                   Y -0.06819958 -0.10635752 -0.03231333  0.13333660  0.00041288
-                   Z -0.05776517  0.03743095 -0.08012354 -0.01615530  0.11158333
-  2   C            X  0.02024198  0.02563633  0.10994376  0.02353725  0.07719778
-                   Y  0.06874185 -0.07815409 -0.02849567  0.13320039 -0.00025512
-                   Z  0.06309046 -0.08067142 -0.07437543 -0.01544211  0.11259830
-  3   C            X -0.02011780  0.02309847  0.11025559  0.02399793  0.07720660
-                   Y  0.09182528  0.11112986 -0.02872156  0.13301534 -0.00260919
-                   Z -0.01766713 -0.03267954 -0.07377702 -0.01451722  0.11195322
-  4   C            X  0.06023558 -0.02094274  0.10813073  0.02367749  0.07793577
-                   Y -0.08840660  0.07577868 -0.02269499  0.13281125 -0.00267328
-                   Z  0.01346502  0.07454911 -0.07573716 -0.01378534  0.11077572
-  5   H            X -0.16233164 -0.06688072  0.10690615  0.02436292  0.07861351
-                   Y -0.19298631  0.00691300 -0.03584112  0.13332526 -0.00071560
-                   Z -0.23182702  0.17915685 -0.08484406 -0.01610673  0.11019673
-  6   H            X -0.02618255 -0.01762182  0.10807242  0.02345091  0.07789097
-                   Y -0.05370539 -0.24437971 -0.03203777  0.13346533  0.00211917
-                   Z  0.01641008 -0.00264644 -0.08034408 -0.01681355  0.11209587
-  7   H            X  0.13245327  0.07011507  0.11125582  0.02296772  0.07652711
-                   Y  0.20817932 -0.19441723 -0.02502489  0.13321876  0.00091571
-                   Z  0.25802328 -0.22207198 -0.06972347 -0.01551154  0.11398639
-  8   H            X -0.13208646  0.06082459  0.11239198  0.02462319  0.07655572
-                   Y  0.31332148  0.28424416 -0.03417161  0.13305298 -0.00431818
-                   Z -0.11052947 -0.09280802 -0.07153112 -0.01446478  0.11251775
-  9   H            X  0.16201610 -0.05929889  0.10598804  0.02305582  0.07859586
-                   Y -0.28646765 -0.09492451 -0.01717079  0.13277084 -0.00099976
-                   Z  0.09627616  0.13627430 -0.07798038 -0.01381479  0.11019082
- 10   H            X  0.02607478 -0.02060061  0.10844535  0.02402623  0.07790497
-                   Y -0.03684007  0.21643450 -0.02306437  0.13267822 -0.00440362
-                   Z -0.04206761  0.10542455 -0.07519721 -0.01312921  0.11034418
+  1   C            X -0.06035501 -0.02180741  0.10822830  0.02379314  0.07793640
+                   Y -0.06819958 -0.10635752 -0.03230920  0.13333760  0.00041288
+                   Z -0.05776517  0.03743094 -0.08012552 -0.01615319  0.11158218
+  2   C            X  0.02024198  0.02563632  0.10994344  0.02353359  0.07719934
+                   Y  0.06874185 -0.07815408 -0.02849155  0.13320128 -0.00025506
+                   Z  0.06309046 -0.08067142 -0.07437743 -0.01544018  0.11259724
+  3   C            X -0.02011780  0.02309847  0.11025528  0.02399426  0.07720817
+                   Y  0.09182528  0.11112986 -0.02871741  0.13301623 -0.00260913
+                   Z -0.01766713 -0.03267954 -0.07377899 -0.01451531  0.11195219
+  4   C            X  0.06023558 -0.02094274  0.10813041  0.02367388  0.07793731
+                   Y -0.08840660  0.07577869 -0.02269085  0.13281197 -0.00267314
+                   Z  0.01346502  0.07454912 -0.07573909 -0.01378337  0.11077467
+  5   H            X -0.16233164 -0.06688072  0.10690583  0.02435935  0.07861504
+                   Y -0.19298631  0.00691300 -0.03583697  0.13332637 -0.00071564
+                   Z -0.23182702  0.17915684 -0.08484601 -0.01610448  0.11019551
+  6   H            X -0.02618255 -0.01762182  0.10807210  0.02344730  0.07789250
+                   Y -0.05370539 -0.24437971 -0.03203367  0.13346631  0.00211919
+                   Z  0.01641008 -0.00264645 -0.08034609 -0.01681144  0.11209470
+  7   H            X  0.13245327  0.07011506  0.11125550  0.02296402  0.07652868
+                   Y  0.20817932 -0.19441723 -0.02502079  0.13321953  0.00091582
+                   Z  0.25802328 -0.22207198 -0.06972550 -0.01550976  0.11398540
+  8   H            X -0.13208646  0.06082460  0.11239169  0.02461945  0.07655733
+                   Y  0.31332148  0.28424415 -0.03416741  0.13305404 -0.00431821
+                   Z -0.11052947 -0.09280801 -0.07153311 -0.01446294  0.11251675
+  9   H            X  0.16201610 -0.05929889  0.10598771  0.02305228  0.07859736
+                   Y -0.28646765 -0.09492450 -0.01716669  0.13277138 -0.00099954
+                   Z  0.09627616  0.13627431 -0.07798230 -0.01381274  0.11018974
+ 10   H            X  0.02607478 -0.02060061  0.10844504  0.02402261  0.07790651
+                   Y -0.03684007  0.21643450 -0.02306021  0.13267895 -0.00440349
+                   Z -0.04206761  0.10542457 -0.07519913 -0.01312726  0.11034315
 
- TRANS. SAYVETZ    X  0.00000000  0.03809147  5.89687413  1.28371487  4.19303543
-                   Y -0.00134685  0.00242895 -1.51532635  7.19312281 -0.06895673
-                   Z -0.00034368  0.08768689 -4.11137469 -0.80934324  6.03749615
-               TOTAL  0.00139000  0.09563394  7.34661421  7.35146081  7.35103128
+ TRANS. SAYVETZ    X  0.00000000  0.03809141  5.89685729  1.28351834  4.19311930
+                   Y -0.00134685  0.00242899 -1.51510278  7.19316994 -0.06895317
+                   Z -0.00034368  0.08768698 -4.11148125 -0.80923614  6.03743796
+               TOTAL  0.00139000  0.09563400  7.34661421  7.35146082  7.35103130
 
-   ROT. SAYVETZ    X  0.00527145  5.86095188 -0.18305480  0.00092630 -0.05827924
-                   Y -0.01486920 -3.04196015 -0.24304809 -0.14246090  0.05711588
-                   Z  0.00248066 13.79460135  0.50363962 -0.03093827 -0.21496652
-               TOTAL  0.01596982 15.29363609  0.58841678  0.14578457  0.22993325
+   ROT. SAYVETZ    X  0.00527145  5.86095170 -0.18305350  0.00093204 -0.05828196
+                   Y -0.01486920 -3.04196135 -0.24305094 -0.14245326  0.05711004
+                   Z  0.00248065 13.79460154  0.50364118 -0.03095286 -0.21495981
+               TOTAL  0.01596982 15.29363644  0.58841888  0.14578024  0.22992621
 
                             6           7           8           9          10
        FREQUENCY:         5.45        7.77      374.67      403.60      731.92  
@@ -1727,45 +1743,45 @@ unset echo
     IR INTENSITY:      0.00013     0.00002     0.05489     0.04739     0.36366
 
   1   C            X  0.02312512  0.01697578  0.11582019  0.04449205 -0.05932667
-                   Y  0.09398448  0.07514965  0.02539931  0.00652807  0.03689231
-                   Z  0.13569884 -0.11584955 -0.01059700 -0.05609596  0.01356274
-  2   C            X -0.00977424 -0.03661992  0.03400682 -0.04708727 -0.07311920
+                   Y  0.09398449  0.07514965  0.02539931  0.00652807  0.03689231
+                   Z  0.13569885 -0.11584957 -0.01059700 -0.05609596  0.01356274
+  2   C            X -0.00977425 -0.03661992  0.03400682 -0.04708727 -0.07311920
                    Y  0.00284345  0.01523480 -0.05776640 -0.07965450 -0.04511331
-                   Z -0.03865005 -0.08286855  0.04360447  0.06330879 -0.08550869
-  3   C            X -0.03096672  0.02270943 -0.03412556 -0.04694660  0.07301872
-                   Y  0.02683721 -0.00498230 -0.02623128  0.03464621 -0.08333903
-                   Z -0.07687136  0.03737217 -0.06727335  0.09580687  0.04908933
-  4   C            X  0.02952638 -0.00162546 -0.11572996  0.04464169  0.05938227
-                   Y -0.12418544 -0.08905894  0.01626454  0.02383052  0.03845448
-                   Z -0.04004554  0.15615751  0.02230151 -0.05123073  0.00779280
-  5   H            X  0.03750664  0.10806256  0.20077599  0.28810298 -0.20529996
-                   Y  0.19169055  0.11333681 -0.11926242  0.08546241 -0.06462336
-                   Z  0.26393883 -0.05612519 -0.19008786  0.07207467 -0.13394887
-  6   H            X  0.03719878 -0.02837081  0.12602692 -0.08934629  0.07000374
+                   Z -0.03865005 -0.08286856  0.04360447  0.06330879 -0.08550869
+  3   C            X -0.03096673  0.02270944 -0.03412556 -0.04694660  0.07301872
+                   Y  0.02683722 -0.00498230 -0.02623128  0.03464621 -0.08333903
+                   Z -0.07687134  0.03737216 -0.06727335  0.09580687  0.04908933
+  4   C            X  0.02952637 -0.00162546 -0.11572996  0.04464169  0.05938227
+                   Y -0.12418544 -0.08905893  0.01626454  0.02383052  0.03845448
+                   Z -0.04004550  0.15615749  0.02230151 -0.05123073  0.00779280
+  5   H            X  0.03750664  0.10806257  0.20077599  0.28810298 -0.20529996
+                   Y  0.19169057  0.11333680 -0.11926242  0.08546240 -0.06462336
+                   Z  0.26393886 -0.05612524 -0.19008787  0.07207467 -0.13394887
+  6   H            X  0.03719878 -0.02837081  0.12602693 -0.08934629  0.07000374
                    Y  0.07383412  0.08807115  0.27169102  0.03102151  0.18826977
-                   Z  0.15726491 -0.20365233  0.09423221 -0.32266157  0.33675492
-  7   H            X -0.02382689 -0.12810903  0.07074283 -0.17001206 -0.10535617
-                   Y -0.09378585 -0.02174563  0.08315917 -0.19129618  0.12443638
-                   Z -0.16449792 -0.14506887  0.22413589 -0.10375120  0.12799129
-  8   H            X -0.10079524  0.08792223 -0.07079436 -0.16956708  0.10562339
-                   Y  0.17721553  0.05333203  0.18867590  0.21718387  0.17285876
-                   Z -0.13999870  0.02268934 -0.14707755  0.01235180 -0.04365611
-  9   H            X  0.09936253 -0.06637260 -0.20063316  0.28821542  0.20517454
-                   Y -0.27615209 -0.14877616 -0.20108811 -0.11061793 -0.12548419
-                   Z  0.02245218  0.17402715  0.09929916  0.01627341  0.08003123
+                   Z  0.15726491 -0.20365236  0.09423221 -0.32266157  0.33675492
+  7   H            X -0.02382690 -0.12810903  0.07074283 -0.17001206 -0.10535617
+                   Y -0.09378586 -0.02174561  0.08315917 -0.19129618  0.12443638
+                   Z -0.16449793 -0.14506886  0.22413589 -0.10375120  0.12799129
+  8   H            X -0.10079524  0.08792224 -0.07079436 -0.16956708  0.10562339
+                   Y  0.17721555  0.05333201  0.18867590  0.21718387  0.17285876
+                   Z -0.13999869  0.02268934 -0.14707755  0.01235180 -0.04365611
+  9   H            X  0.09936252 -0.06637260 -0.20063316  0.28821542  0.20517454
+                   Y -0.27615210 -0.14877613 -0.20108811 -0.11061793 -0.12548419
+                   Z  0.02245221  0.17402712  0.09929916  0.01627341  0.08003123
  10   H            X  0.01162466  0.04255055 -0.12577890 -0.08911344 -0.06961133
-                   Y -0.10137046 -0.10127764  0.28107157  0.14268932  0.33689756
-                   Z -0.07031777  0.24031977  0.06201292 -0.29101072 -0.18780582
+                   Y -0.10137045 -0.10127764  0.28107157  0.14268932  0.33689756
+                   Z -0.07031773  0.24031976  0.06201292 -0.29101072 -0.18780582
 
- TRANS. SAYVETZ    X  0.20447487  0.03308360 -0.00000017 -0.00006587 -0.00000003
-                   Y -0.03503531 -0.06107442  0.00018693  0.00001167  0.00003651
-                   Z -0.16903713 -0.02981930  0.00005741 -0.00008179  0.00000435
-               TOTAL  0.26760232  0.07558968  0.00019555  0.00010566  0.00003676
+ TRANS. SAYVETZ    X  0.20447454  0.03308372 -0.00000017 -0.00006587 -0.00000003
+                   Y -0.03503508 -0.06107435  0.00018693  0.00001167  0.00003651
+                   Z -0.16903622 -0.02982011  0.00005741 -0.00008179  0.00000435
+               TOTAL  0.26760146  0.07559000  0.00019555  0.00010566  0.00003676
 
-   ROT. SAYVETZ    X  5.04389687  2.05624297 -0.00123752  0.02153572 -0.00034567
-                   Y  9.99589386-16.66753874 -0.01156380 -0.00098039 -0.00038336
-                   Z-11.03253802 -9.01959913 -0.00288872  0.00378303  0.00000078
-               TOTAL 15.71864131 19.06274249  0.01198322  0.02188744  0.00051619
+   ROT. SAYVETZ    X  5.04389733  2.05624235 -0.00123752  0.02153573 -0.00034567
+                   Y  9.99589254-16.66753935 -0.01156380 -0.00098040 -0.00038336
+                   Z-11.03253802 -9.01959886 -0.00288872  0.00378302  0.00000078
+               TOTAL 15.71864063 19.06274283  0.01198322  0.02188744  0.00051619
 
                            11          12          13          14          15
        FREQUENCY:       787.77      924.93     1115.89     1122.69     1150.38  
@@ -1780,7 +1796,7 @@ unset echo
                    Y  0.10571096  0.04554028 -0.00994481 -0.00233034  0.04489422
                    Z  0.05316713 -0.09120126 -0.01172243 -0.00177309  0.03568146
   3   C            X  0.04894565 -0.09070319  0.00374836 -0.00087943 -0.02439141
-                   Y -0.11797886 -0.00898961 -0.01463638  0.00288151  0.05688743
+                   Y -0.11797886 -0.00898961 -0.01463638  0.00288152  0.05688743
                    Z -0.01021653  0.10156219  0.00476580 -0.00028340 -0.00671176
   4   C            X -0.02265806 -0.07863342  0.01874889  0.02316664  0.02734543
                    Y -0.00396639 -0.01779388 -0.06164144 -0.07721608 -0.06780621
@@ -1791,7 +1807,7 @@ unset echo
   6   H            X -0.07210064  0.22022668  0.03791886 -0.07916840  0.10035101
                    Y -0.35413617 -0.22757681  0.07754715 -0.12911248  0.31470435
                    Z -0.23483614  0.18638563  0.10374572 -0.20300451  0.33326717
-  7   H            X -0.10941092  0.05344281  0.09493286 -0.04945641 -0.01211142
+  7   H            X -0.10941092  0.05344281  0.09493286 -0.04945641 -0.01211143
                    Y -0.00212602  0.07955566  0.19719776 -0.14218692 -0.23091391
                    Z -0.10672329 -0.05629128  0.26662497 -0.18983964 -0.32190103
   8   H            X -0.10933968 -0.05328294 -0.09462566 -0.04929570  0.01096473
@@ -1800,8 +1816,8 @@ unset echo
   9   H            X -0.13256027  0.21349278 -0.15465094 -0.13702684 -0.07444848
                    Y -0.24496772  0.03381878  0.48713723  0.47795669  0.01053064
                    Z  0.06850180  0.01196394 -0.19543130 -0.18906644 -0.01764138
- 10   H            X -0.07159054 -0.22048628 -0.03769268 -0.07897093 -0.09934784
-                   Y  0.42488425 -0.09563736  0.12032207  0.21655465  0.44234165
+ 10   H            X -0.07159054 -0.22048628 -0.03769268 -0.07897093 -0.09934783
+                   Y  0.42488425 -0.09563736  0.12032208  0.21655465  0.44234164
                    Z -0.01406436 -0.27808479 -0.04747423 -0.10506964 -0.11783694
 
  TRANS. SAYVETZ    X -0.00001359 -0.00000001  0.00000001 -0.00000442 -0.00000002
@@ -1809,7 +1825,7 @@ unset echo
                    Z -0.00002514 -0.00000486  0.00000277  0.00000310 -0.00000100
                TOTAL  0.00002880  0.00001319  0.00000540  0.00000610  0.00000914
 
-   ROT. SAYVETZ    X -0.00337673 -0.00000064  0.00004046 -0.00012153 -0.00017559
+   ROT. SAYVETZ    X -0.00337673 -0.00000064  0.00004047 -0.00012153 -0.00017559
                    Y -0.00002915  0.00266705  0.00035664 -0.00010971  0.00024240
                    Z  0.00033953  0.00079602  0.00007295  0.00043329  0.00029471
                TOTAL  0.00339388  0.00278331  0.00036627  0.00046319  0.00042006
@@ -1824,28 +1840,28 @@ unset echo
                    Y -0.01519064 -0.03885698 -0.01960740  0.06082319  0.06191039
                    Z -0.05539274  0.01564340  0.04857595 -0.04297659 -0.04123876
   2   C            X  0.00545505  0.04317491  0.03478639 -0.00964786 -0.01334491
-                   Y  0.01190508  0.07278597  0.03136137 -0.04193754 -0.05321971
-                   Z  0.05000641  0.02108356 -0.10570011  0.04975316  0.03174340
+                   Y  0.01190508  0.07278597  0.03136137 -0.04193755 -0.05321971
+                   Z  0.05000641  0.02108356 -0.10570011  0.04975316  0.03174339
   3   C            X  0.00546940  0.04310739 -0.03478062 -0.00965891  0.01324148
-                   Y -0.03652811 -0.07306121 -0.02874568  0.00972786 -0.02862172
+                   Y -0.03652811 -0.07306121 -0.02874568  0.00972786 -0.02862173
                    Z  0.03635816 -0.02032267  0.10644411  0.06457670 -0.05468842
   4   C            X  0.01608023 -0.06822368  0.03373258 -0.01257137  0.00883103
                    Y  0.04215739  0.02494692  0.00875435 -0.02934070  0.03093203
                    Z -0.03924077  0.03375764 -0.05164736 -0.06877418  0.06730537
-  5   H            X -0.17819557  0.26281789  0.24280483 -0.25516036 -0.27551987
-                   Y -0.00421544 -0.07954661 -0.12136594  0.12558212  0.12555336
+  5   H            X -0.17819557  0.26281789  0.24280483 -0.25516037 -0.27551986
+                   Y -0.00421544 -0.07954661 -0.12136594  0.12558212  0.12555335
                    Z -0.05707486 -0.01329685 -0.06436585  0.00977187  0.00342102
   6   H            X  0.20139482 -0.15164604 -0.14074052  0.01315260  0.00970170
                    Y  0.07411618  0.32636087  0.19295776 -0.00982269 -0.00380861
-                   Z  0.35902620 -0.03428526 -0.11097866  0.00396066 -0.00438365
-  7   H            X -0.28022867  0.18771481  0.37468793  0.50538679  0.50722615
-                   Y -0.21865831 -0.15858604  0.04184555 -0.18815441 -0.18101159
+                   Z  0.35902619 -0.03428526 -0.11097866  0.00396066 -0.00438365
+  7   H            X -0.28022867  0.18771481  0.37468793  0.50538680  0.50722613
+                   Y -0.21865831 -0.15858604  0.04184555 -0.18815442 -0.18101158
                    Z -0.29100543 -0.24990466 -0.03928718 -0.05075855 -0.04075721
-  8   H            X -0.27990129  0.18812909 -0.37446288  0.50781566 -0.50537170
-                   Y  0.34008395  0.26586240  0.01559211  0.18687131 -0.17404343
+  8   H            X -0.27990129  0.18812909 -0.37446288  0.50781564 -0.50537172
+                   Y  0.34008396  0.26586240  0.01559211  0.18687131 -0.17404343
                    Z -0.13321958 -0.12964510  0.05553235  0.05553172 -0.05982776
-  9   H            X -0.17793562  0.26293346 -0.24284296 -0.25642618  0.27459292
-                   Y  0.03365664  0.07441067 -0.13672886 -0.11211524  0.10783476
+  9   H            X -0.17793562  0.26293346 -0.24284296 -0.25642617  0.27459293
+                   Y  0.03365664  0.07441067 -0.13672886 -0.11211524  0.10783477
                    Z -0.04623912  0.03033216 -0.00880845 -0.05775819  0.06264196
  10   H            X  0.20143415 -0.15205957  0.14087302  0.01319816 -0.00964985
                    Y -0.25288448 -0.25959983  0.10578416  0.00629607 -0.00551633
@@ -1867,36 +1883,36 @@ unset echo
     REDUCED MASS:      1.22242     1.20025     3.46448     4.83305     1.06895
     IR INTENSITY:      0.00934     0.07083     0.31492     0.02621     0.25934
 
-  1   C            X  0.01103985  0.01030303  0.10516948  0.09804789  0.02536113
+  1   C            X  0.01103985  0.01030303  0.10516948  0.09804789  0.02536112
                    Y  0.00375691 -0.02192464 -0.07718998 -0.07112281 -0.01388423
                    Z -0.00823105  0.01151068  0.01745859  0.01845375  0.00110414
-  2   C            X -0.07446382  0.07875718 -0.09882949 -0.13150513 -0.00533062
-                   Y  0.04694704 -0.01804217  0.07146461  0.06038075 -0.03267894
-                   Z  0.00576989 -0.00655694 -0.00629586 -0.00835390  0.02594329
-  3   C            X -0.07451493 -0.07880902 -0.09898673  0.13152157  0.00528018
+  2   C            X -0.07446382  0.07875718 -0.09882949 -0.13150513 -0.00533061
+                   Y  0.04694704 -0.01804217  0.07146461  0.06038075 -0.03267893
+                   Z  0.00576989 -0.00655694 -0.00629586 -0.00835390  0.02594328
+  3   C            X -0.07451493 -0.07880902 -0.09898673  0.13152157  0.00528019
                    Y -0.04289415 -0.01872001 -0.05742202  0.04680865 -0.01419186
-                   Z -0.01970973 -0.00387231 -0.04283703  0.03871557 -0.03917086
+                   Z -0.01970973 -0.00387231 -0.04283703  0.03871557 -0.03917088
   4   C            X  0.01104650 -0.01031366  0.10531582 -0.09807315 -0.02531316
                    Y  0.00111327 -0.01260298  0.05643819 -0.05070069 -0.01116319
                    Z -0.00896392 -0.02128742  0.05535489 -0.05296102 -0.00814940
-  5   H            X  0.37484201 -0.37797610 -0.20156986 -0.15518876  0.02295810
-                   Y -0.08643739  0.08179899 -0.01103414 -0.03318818  0.21494181
-                   Z -0.06223034  0.08574828  0.09772152  0.07042225 -0.16747018
-  6   H            X  0.18810830 -0.18430614  0.00817306  0.03321387 -0.31748409
-                   Y -0.36832652  0.37766758  0.15605111  0.12055039 -0.06004837
-                   Z  0.18980693 -0.22298424 -0.13538902 -0.08330219  0.15898375
-  7   H            X  0.19227854 -0.15637351  0.11808989  0.10963336  0.04947678
-                   Y -0.03185061  0.03215635  0.01954447  0.02367414  0.39999937
-                   Z -0.06502669  0.02200654 -0.06793246 -0.04677081 -0.31521146
-  8   H            X  0.19233326  0.15647411  0.11815412 -0.10955520 -0.04894704
-                   Y  0.06098222  0.03873029  0.01886854 -0.00423142  0.17487598
-                   Z -0.03875363 -0.00196708 -0.06816935  0.05225532  0.47743009
+  5   H            X  0.37484201 -0.37797610 -0.20156986 -0.15518876  0.02295809
+                   Y -0.08643739  0.08179899 -0.01103414 -0.03318818  0.21494177
+                   Z -0.06223034  0.08574828  0.09772152  0.07042225 -0.16747015
+  6   H            X  0.18810830 -0.18430614  0.00817306  0.03321387 -0.31748402
+                   Y -0.36832652  0.37766758  0.15605111  0.12055038 -0.06004836
+                   Z  0.18980693 -0.22298424 -0.13538902 -0.08330219  0.15898372
+  7   H            X  0.19227854 -0.15637351  0.11808989  0.10963336  0.04947676
+                   Y -0.03185061  0.03215635  0.01954447  0.02367414  0.39999925
+                   Z -0.06502669  0.02200654 -0.06793246 -0.04677081 -0.31521137
+  8   H            X  0.19233326  0.15647411  0.11815412 -0.10955521 -0.04894706
+                   Y  0.06098222  0.03873029  0.01886854 -0.00423142  0.17487604
+                   Z -0.03875363 -0.00196708 -0.06816935  0.05225532  0.47743025
   9   H            X  0.37491407  0.37822190 -0.20173126  0.15509729 -0.02266162
-                   Y  0.10575836  0.11419630 -0.04167384  0.00850447  0.09469286
-                   Z -0.00773479 -0.03019358  0.08908685 -0.07735906  0.25417746
- 10   H            X  0.18841707  0.18470357  0.00804689 -0.03309552  0.31668718
-                   Y  0.21362765  0.20428479 -0.06187135  0.05894259  0.03185435
-                   Z  0.35465889  0.38797936 -0.19727267  0.13411381 -0.16652584
+                   Y  0.10575836  0.11419630 -0.04167384  0.00850447  0.09469287
+                   Z -0.00773479 -0.03019358  0.08908685 -0.07735906  0.25417750
+ 10   H            X  0.18841707  0.18470357  0.00804689 -0.03309552  0.31668724
+                   Y  0.21362765  0.20428479 -0.06187135  0.05894259  0.03185436
+                   Z  0.35465889  0.38797936 -0.19727267  0.13411381 -0.16652587
 
  TRANS. SAYVETZ    X  0.00000737  0.00000001  0.00001142  0.00000000 -0.00000000
                    Y -0.00000081 -0.00000111 -0.00000059  0.00000624 -0.00000199
@@ -1905,7 +1921,7 @@ unset echo
 
    ROT. SAYVETZ    X -0.00039318  0.00004884 -0.00103174  0.00003164 -0.00001318
                    Y -0.00028080  0.00070948 -0.00034319 -0.00103965 -0.00008426
-                   Z  0.00076593  0.00023049  0.00134817 -0.00034749 -0.00004967
+                   Z  0.00076592  0.00023049  0.00134817 -0.00034749 -0.00004967
                TOTAL  0.00090558  0.00074758  0.00173200  0.00109664  0.00009869
 
                            26          27          28          29          30
@@ -1914,36 +1930,36 @@ unset echo
     REDUCED MASS:      1.07389     1.07816     1.08325     1.11465     1.11500
     IR INTENSITY:      0.23598     0.38927     0.00945     0.77457     0.13062
 
-  1   C            X -0.02079805 -0.03010423 -0.02573585 -0.03731512 -0.03946169
-                   Y  0.00943081  0.02979912  0.02798405 -0.03399223 -0.03572413
-                   Z  0.00061073 -0.01114767 -0.01142640  0.03870009  0.04088021
+  1   C            X -0.02079806 -0.03010423 -0.02573585 -0.03731515 -0.03946167
+                   Y  0.00943081  0.02979912  0.02798405 -0.03399225 -0.03572411
+                   Z  0.00061073 -0.01114767 -0.01142640  0.03870012  0.04088019
   2   C            X  0.00442997  0.00370603  0.00230890 -0.00041716 -0.00125268
-                   Y  0.03731619 -0.02671564 -0.03220278 -0.00707763 -0.00785507
-                   Z -0.02928369  0.01845284  0.02303418  0.00535737  0.00628361
-  3   C            X  0.00439648  0.00372858 -0.00237210 -0.00047767  0.00122270
-                   Y -0.01645024  0.01294290 -0.01539300  0.00338997 -0.00321170
-                   Z -0.04462407  0.02945088 -0.03665819  0.00876780 -0.00901035
-  4   C            X -0.02085864 -0.03003444  0.02599891 -0.03932639  0.03734191
-                   Y -0.00833025 -0.01937885  0.01791954  0.00916411 -0.00854361
-                   Z -0.00439787 -0.02493678  0.02452853  0.05362015 -0.05076400
-  5   H            X -0.01653593 -0.03593187 -0.03202626  0.02304006  0.02452751
-                   Y -0.15870932 -0.36511825 -0.33345131  0.34684349  0.36527315
-                   Z  0.12308805  0.28307265  0.25869181 -0.26495716 -0.27918547
-  6   H            X  0.26702880  0.31976252  0.26920943  0.41818117  0.44120475
-                   Y  0.04908548  0.06107248  0.04963684  0.06799478  0.07117723
-                   Z -0.13380460 -0.16071905 -0.13545338 -0.20181907 -0.21352674
-  7   H            X -0.05560029  0.03048774  0.04199238  0.00836876  0.00729401
-                   Y -0.45076578  0.26917169  0.33463292  0.07516945  0.08099685
-                   Z  0.35103844 -0.20881617 -0.26354335 -0.05767557 -0.06363890
-  8   H            X -0.05524139  0.02986862 -0.04176774  0.00865671 -0.00674772
-                   Y  0.20009937 -0.11848721  0.14723567 -0.03559162  0.03369779
-                   Z  0.53673199 -0.31594585  0.40154909 -0.09358959  0.09176711
-  9   H            X -0.01639862 -0.03539747  0.03193014  0.02400188 -0.02294408
-                   Y  0.07056032  0.16141538 -0.14914131 -0.16505035  0.15598888
-                   Z  0.18811409  0.43011133 -0.39778609 -0.43046339  0.40714453
- 10   H            X  0.26765264  0.31875302 -0.27171778  0.44096590 -0.41773754
-                   Y  0.02817824  0.03186269 -0.02876137  0.05016717 -0.04827445
-                   Z -0.14006991 -0.16842921  0.14275550 -0.21892296  0.20759214
+                   Y  0.03731620 -0.02671564 -0.03220278 -0.00707764 -0.00785507
+                   Z -0.02928370  0.01845284  0.02303418  0.00535737  0.00628361
+  3   C            X  0.00439647  0.00372858 -0.00237210 -0.00047767  0.00122270
+                   Y -0.01645023  0.01294290 -0.01539300  0.00338997 -0.00321170
+                   Z -0.04462406  0.02945088 -0.03665819  0.00876779 -0.00901036
+  4   C            X -0.02085863 -0.03003444  0.02599891 -0.03932636  0.03734194
+                   Y -0.00833025 -0.01937885  0.01791954  0.00916411 -0.00854362
+                   Z -0.00439787 -0.02493678  0.02452853  0.05362012 -0.05076404
+  5   H            X -0.01653593 -0.03593187 -0.03202626  0.02304008  0.02452749
+                   Y -0.15870937 -0.36511825 -0.33345132  0.34684375  0.36527291
+                   Z  0.12308810  0.28307265  0.25869182 -0.26495735 -0.27918529
+  6   H            X  0.26702888  0.31976252  0.26920943  0.41818148  0.44120446
+                   Y  0.04908550  0.06107248  0.04963684  0.06799483  0.07117718
+                   Z -0.13380464 -0.16071905 -0.13545338 -0.20181922 -0.21352660
+  7   H            X -0.05560030  0.03048774  0.04199238  0.00836876  0.00729401
+                   Y -0.45076589  0.26917169  0.33463292  0.07516951  0.08099679
+                   Z  0.35103852 -0.20881617 -0.26354336 -0.05767561 -0.06363886
+  8   H            X -0.05524138  0.02986861 -0.04176774  0.00865670 -0.00674773
+                   Y  0.20009933 -0.11848721  0.14723566 -0.03559160  0.03369782
+                   Z  0.53673188 -0.31594582  0.40154907 -0.09358953  0.09176718
+  9   H            X -0.01639862 -0.03539747  0.03193014  0.02400186 -0.02294410
+                   Y  0.07056029  0.16141539 -0.14914132 -0.16505024  0.15598900
+                   Z  0.18811401  0.43011135 -0.39778610 -0.43046311  0.40714483
+ 10   H            X  0.26765254  0.31875303 -0.27171779  0.44096561 -0.41773785
+                   Y  0.02817823  0.03186269 -0.02876137  0.05016714 -0.04827449
+                   Z -0.14006985 -0.16842922  0.14275550 -0.21892282  0.20759229
 
  TRANS. SAYVETZ    X  0.00000112  0.00000430 -0.00000002  0.00000252  0.00000007
                    Y -0.00000020 -0.00000066  0.00000274  0.00000047  0.00000085
@@ -1963,11 +1979,11 @@ unset echo
   MODE FREQ(CM**-1)  SYMMETRY  RED. MASS  IR INTENS.
      1     165.068    A        1.853981    0.003873
      2      10.253    A        2.361683    0.000151
-     3       0.204    A        5.394101    0.000000
-     4       0.049    A        5.404767    0.000000
+     3       0.204    A        5.394100    0.000000
+     4       0.049    A        5.404768    0.000000
      5       0.130    A        5.406814    0.000000
      6       5.449    A        2.539173    0.000134
-     7       7.772    A        3.170298    0.000021
+     7       7.772    A        3.170299    0.000021
      8     374.669    A        1.838359    0.054888
      9     403.603    A        1.653002    0.047392
     10     731.923    A        1.781578    0.363661
@@ -2009,7 +2025,7 @@ unset echo
      FROM THE FOLLOWING THERMOCHEMICAL ANALYSIS.
       8 -     30 VIBRATIONAL MODES ARE USED IN THERMOCHEMISTRY.
  THE HARMONIC ZERO POINT ENERGY IS (SCALED BY   1.000)
-        0.091350 HARTREE/MOLECULE    20049.035215 CM**-1/MOLECULE 
+        0.091350 HARTREE/MOLECULE    20049.035216 CM**-1/MOLECULE 
        57.323126 KCAL/MOL              239.839958 KJ/MOL
 
                Q               LN Q
@@ -2042,29 +2058,30 @@ unset echo
      *     THE VIBRATIONAL ANALYSIS IS NOT VALID !!!       *
      *******************************************************
  ......END OF NORMAL COORDINATE ANALYSIS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.18%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    89.69%
  AN INPUT FILE FOR -MOLPLT- HAS BEEN PUNCHED.
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 18:30:24 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 14:22:34 07-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 1.472 + 0.29 = 1.501
+ 0: 0.264 + 0.12 = 0.276
+ 1: 0.256 + 0.08 = 0.265
+ 2: 0.256 + 0.09 = 0.266
+ 3: 0.257 + 0.07 = 0.264
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     1158 Nov  6 18:30 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F05
--rw-r--r--@ 1 blink  staff  2159520 Nov  6 18:30 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F10
--rw-r--r--@ 1 blink  staff   282480 Nov  6 18:30 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F18
--rw-r--r--@ 1 blink  staff   130880 Nov  6 18:30 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F26R
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:30 /Users/blink/github/gamess2023R2claude/scr/butadiene_Hess.F27R
+-rw-r--r--@ 1 blink  staff     1158 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F05
+-rw-r--r--@ 1 blink  staff  2159520 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F10
+-rw-r--r--@ 1 blink  staff   282480 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_Hess.F18
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 18:30:25 AST 2026
-1.553u 0.121s 0:02.72 61.3%	0+0k 0+0io 65pf+0w
+Sat Nov  7 14:22:35 AST 2026
+1.093u 0.107s 0:01.46 81.5%	0+0k 0+0io 123pf+0w

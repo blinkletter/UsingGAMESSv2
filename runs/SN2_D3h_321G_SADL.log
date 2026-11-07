@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 18:29:28 AST 2026
+under operating system Darwin at Sat Nov 7 14:23:38 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 488855064 452583828    52% 3639476 4525838280    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 495094780 447393336    53% 3685029 4473933360    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.inp /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F05
+cp /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.inp /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.trj
@@ -32,149 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F99
 unset echo
 /Users/blink/github/UsingGAMESSv2/runs/SN2_D3h_321G_SADL.dat
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x SN2_D3h_321G_SADL -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x SN2_D3h_321G_SADL -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x SN2_D3h_321G_SADL 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x SN2_D3h_321G_SADL 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -229,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -275,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 18:29:28 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 14:23:38 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=ROHF RUNTYP=SADPOINT DFTTYP=B3LYP MAXIT=30                      
@@ -290,44 +297,44 @@ unset echo
  INPUT CARD>SN2                                                                             
  INPUT CARD>DNH 3                                                                           
  INPUT CARD>                                                                                
- INPUT CARD> CL      17.0    0.0000000000   -0.0000000000    2.3842905250                   
- INPUT CARD> C        6.0   -0.0000000000    0.0000000000    0.0000000000                   
- INPUT CARD> H        1.0    1.0737765083   -0.0000000000    0.0000000000                   
+ INPUT CARD> CL      17.0    0.0000000000   -0.0000000000    2.3842905263                   
+ INPUT CARD> C        6.0   -0.0000000000    0.0000000000   -0.0000000000                   
+ INPUT CARD> H        1.0    1.0737765083    0.0000000000   -0.0000000000                   
  INPUT CARD> $END                                                                           
  INPUT CARD> $ZMAT AUTO=.TRUE. DLC=.TRUE. NONVDW(1)=1,3, 2,3 $END                           
  INPUT CARD> $HESS                                                                          
- INPUT CARD>ENERGY IS     -955.6090406226 E(NUC) IS      107.7130904606                     
- INPUT CARD> 1  1 6.81039603E-03 5.43408674E-09-3.05580402E-05 1.94460703E-03 4.60826874E-09
- INPUT CARD> 1  2 6.80008440E-06-1.18767595E-02-7.37503483E-09 5.90551510E-05 4.07502816E-04
- INPUT CARD> 1  3-1.14165928E-03 3.61953192E-03 4.28126011E-04 1.11164409E-03 3.63565563E-03
- INPUT CARD> 1  4 2.36923237E-03-3.28678086E-05-7.25518755E-03                              
- INPUT CARD> 2  1 5.43408674E-09 6.79042664E-03-9.84641164E-09 4.60826874E-09 1.91649770E-03
- INPUT CARD> 2  2-2.08146872E-08 6.50354608E-09-1.20404956E-02 5.75928623E-08-1.09973728E-03
- INPUT CARD> 2  3 1.72907132E-03-6.28783124E-03 1.15356609E-03 1.70844812E-03 6.27852221E-03
- INPUT CARD> 2  4 9.05419394E-06-2.32658240E-04 9.30903043E-06                              
- INPUT CARD> 3  1-3.05580402E-05-9.84641164E-09 4.84238684E-02-6.80008440E-06 2.08146872E-08
- INPUT CARD> 3  2-1.82689325E-02-6.29127690E-07-2.36298684E-09 1.71846221E-02-8.31431918E-04
- INPUT CARD> 3  3 1.46762567E-03-1.57681942E-02-8.55285155E-04-1.45385400E-03-1.57681942E-02
- INPUT CARD> 3  4 1.68671707E-03-1.37716728E-05-1.57681942E-02                              
- INPUT CARD> 4  1 1.94460703E-03 4.60826874E-09-6.80008440E-06 6.81039603E-03 5.43408674E-09
- INPUT CARD> 4  2 3.05580402E-05-1.18769104E-02-7.37503863E-09-5.90234105E-05 4.07455637E-04
- INPUT CARD> 4  3-1.14168737E-03-3.61953323E-03 4.07454535E-04 1.14169462E-03-3.61953120E-03
- INPUT CARD> 4  4 2.35869616E-03 2.86593700E-09 7.26226213E-03                              
- INPUT CARD> 5  1 4.60826874E-09 1.91649770E-03 2.08146872E-08 5.43408674E-09 6.79042664E-03
- INPUT CARD> 5  2 9.84641164E-09 6.50354608E-09-1.20406511E-02-5.75928623E-08-1.09976536E-03
- INPUT CARD> 5  3 1.72905658E-03 6.28783352E-03 1.09978317E-03 1.72910425E-03-6.28781679E-03
- INPUT CARD> 5  4-3.19434834E-08-1.78432544E-04 1.01997249E-08                              
- INPUT CARD> 6  1 6.80008440E-06-2.08146872E-08-1.82689325E-02 3.05580402E-05 9.84641164E-09
- INPUT CARD> 6  2 4.84238684E-02 4.86166681E-07 7.62741348E-10 1.71845651E-02 8.31419874E-04
- INPUT CARD> 6  3-1.46760882E-03-1.57681722E-02 8.31418373E-04 1.46761102E-03-1.57681904E-02
- INPUT CARD> 6  4-1.68164807E-03-8.49466356E-11-1.57577526E-02                              
- INPUT CARD> 7  1-1.18767595E-02 6.50354608E-09-6.29127690E-07-1.18769104E-02 6.50354608E-09
- INPUT CARD> 7  2 4.86166681E-07 6.83680491E-01 8.14181819E-08 1.91895849E-07-1.37821905E-01
- INPUT CARD> 7  3 1.42330538E-01 2.69314993E-09-1.37821901E-01-1.42330496E-01 2.95167461E-09
- INPUT CARD> 7  4-3.84516019E-01-1.14191386E-08-2.28411524E-07                              
- INPUT CARD> 8  1-7.37503483E-09-1.20404956E-02-2.36298684E-09-7.37503863E-09-1.20406511E-02
- INPUT CARD> 8  2 7.62741348E-10 8.14181819E-08 6.85269901E-01 2.56993536E-09 1.42312187E-01
- INPUT CARD> 8  3-3.02430379E-01-4.96319110E-09-1.42312212E-01-3.02430340E-01 4.81393180E-09
+ INPUT CARD>ENERGY IS     -955.6090406226 E(NUC) IS      107.7130904090                     
+ INPUT CARD> 1  1 6.81039603E-03 5.43422774E-09-3.05580430E-05 1.94460704E-03 4.60841788E-09
+ INPUT CARD> 1  2 6.80008504E-06-1.18767595E-02-7.33216417E-09 5.90551515E-05 4.07502792E-04
+ INPUT CARD> 1  3-1.14165927E-03 3.61953195E-03 4.28126005E-04 1.11164410E-03 3.63565560E-03
+ INPUT CARD> 1  4 2.36923236E-03-3.28678159E-05-7.25518755E-03                              
+ INPUT CARD> 2  1 5.43422774E-09 6.79042664E-03-9.84628819E-09 4.60841788E-09 1.91649771E-03
+ INPUT CARD> 2  2-2.08142995E-08 6.50354597E-09-1.20404956E-02 5.75929406E-08-1.09973728E-03
+ INPUT CARD> 2  3 1.72907131E-03-6.28783123E-03 1.15356609E-03 1.70844810E-03 6.27852223E-03
+ INPUT CARD> 2  4 9.05418062E-06-2.32658255E-04 9.30899227E-06                              
+ INPUT CARD> 3  1-3.05580430E-05-9.84628819E-09 4.84238585E-02-6.80008504E-06 2.08142995E-08
+ INPUT CARD> 3  2-1.82689305E-02-6.29128428E-07-2.36073265E-09 1.71846232E-02-8.31431920E-04
+ INPUT CARD> 3  3 1.46762567E-03-1.57681932E-02-8.55285157E-04-1.45385400E-03-1.57681932E-02
+ INPUT CARD> 3  4 1.68671708E-03-1.37716725E-05-1.57681932E-02                              
+ INPUT CARD> 4  1 1.94460704E-03 4.60841788E-09-6.80008504E-06 6.81039603E-03 5.43422774E-09
+ INPUT CARD> 4  2 3.05580430E-05-1.18769103E-02-7.33142426E-09-5.90234108E-05 4.07455613E-04
+ INPUT CARD> 4  3-1.14168736E-03-3.61953327E-03 4.07454552E-04 1.14169462E-03-3.61953115E-03
+ INPUT CARD> 4  4 2.35869615E-03 2.83699790E-09 7.26226211E-03                              
+ INPUT CARD> 5  1 4.60841788E-09 1.91649771E-03 2.08142995E-08 5.43422774E-09 6.79042664E-03
+ INPUT CARD> 5  2 9.84628819E-09 6.50354597E-09-1.20406511E-02-5.75929406E-08-1.09976536E-03
+ INPUT CARD> 5  3 1.72905657E-03 6.28783350E-03 1.09978317E-03 1.72910425E-03-6.28781677E-03
+ INPUT CARD> 5  4-3.19437202E-08-1.78432547E-04 1.01999093E-08                              
+ INPUT CARD> 6  1 6.80008504E-06-2.08142995E-08-1.82689305E-02 3.05580430E-05 9.84628819E-09
+ INPUT CARD> 6  2 4.84238585E-02 4.86166556E-07 7.61060158E-10 1.71845662E-02 8.31419875E-04
+ INPUT CARD> 6  3-1.46760882E-03-1.57681712E-02 8.31418371E-04 1.46761102E-03-1.57681894E-02
+ INPUT CARD> 6  4-1.68164807E-03-8.45083765E-11-1.57577516E-02                              
+ INPUT CARD> 7  1-1.18767595E-02 6.50354597E-09-6.29128428E-07-1.18769103E-02 6.50354597E-09
+ INPUT CARD> 7  2 4.86166556E-07 6.83680491E-01 8.14096488E-08 1.91895355E-07-1.37821905E-01
+ INPUT CARD> 7  3 1.42330538E-01 2.73323287E-09-1.37821901E-01-1.42330497E-01 2.91177511E-09
+ INPUT CARD> 7  4-3.84516019E-01-1.14160704E-08-2.28411400E-07                              
+ INPUT CARD> 8  1-7.33216417E-09-1.20404956E-02-2.36073265E-09-7.33142426E-09-1.20406511E-02
+ INPUT CARD> 8  2 7.61060158E-10 8.14096488E-08 6.85269901E-01 2.58552349E-09 1.42312187E-01
+ INPUT CARD> 8  3-3.02430379E-01-4.94026102E-09-1.42312212E-01-3.02430340E-01 4.83717961E-09
       1000000 WORDS OF MEMORY AVAILABLE
 
      BASIS OPTIONS
@@ -346,12 +353,12 @@ unset echo
 
  ATOM      ATOMIC                      COORDINATES (BOHR)
            CHARGE         X                   Y                   Z
- CL         17.0     0.0000000000        0.0000000000       -4.5056557674
- CL         17.0     0.0000000000       -0.0000000000        4.5056557674
- C           6.0    -0.0000000000        0.0000000000        0.0000000000
+ CL         17.0     0.0000000000        0.0000000000       -4.5056557698
+ CL         17.0     0.0000000000       -0.0000000000        4.5056557698
+ C           6.0    -0.0000000000        0.0000000000       -0.0000000000
  H           1.0    -1.0145716864        1.7572897087        0.0000000000
  H           1.0    -1.0145716864       -1.7572897087        0.0000000000
- H           1.0     2.0291433727       -0.0000000000        0.0000000000
+ H           1.0     2.0291433727        0.0000000000       -0.0000000000
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -425,7 +432,7 @@ unset echo
  NUMBER OF OCCUPIED ORBITALS (ALPHA)          =   22
  NUMBER OF OCCUPIED ORBITALS (BETA )          =   22
  TOTAL NUMBER OF ATOMS                        =    6
- THE NUCLEAR REPULSION ENERGY IS      107.7130904606
+ THE NUCLEAR REPULSION ENERGY IS      107.7130904090
 
  SELECTED MURRAY-HANDY-LAMING RADIAL GRID
 
@@ -461,10 +468,10 @@ unset echo
      ---------------
   REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
  DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
- MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ MEMDDI DISTRIBUTED OVER   4 PROCESSORS IS           0 WORDS/PROCESSOR.
  TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
  TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
- PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
  MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
 
           ----------------
@@ -480,6 +487,13 @@ unset echo
           EXTRAPOLATION IN EFFECT
           DIIS IN EFFECT
  ORBITAL PRINTING OPTION: NPREO=     1    41     2     1
+
+     ----------------------
+     TARGET OFFLOAD OPTIONS
+     ----------------------
+     RHF    =       F
+     CPHF    =       F
+     MAKEFP =       F
 
      -------------------------------
      INTEGRAL TRANSFORMATION OPTIONS
@@ -527,22 +541,23 @@ unset echo
 
           INDEP./SYM. INTERNAL COORDINATES
           --------------------------------
- CRD  1=   0.3219 (  6)  0.2438 (  7) -0.5656 (  8)  0.3219 (  9)  0.2438 ( 10)
-          -0.5656 ( 11) -0.1165 ( 12)
- CRD  2=  -0.4673 (  6)  0.5124 (  7) -0.4673 (  9)  0.5124 ( 10)  0.1056 ( 14)
- CRD  3=  -0.4456 (  6)  0.5408 (  8)  0.4456 (  9) -0.5408 ( 11)
- CRD  4=   0.3672 (  6) -0.5694 (  7)  0.2023 (  8) -0.3672 (  9)  0.5694 ( 10)
-          -0.2023 ( 11)
- CRD  5=   0.4196 (  1) -0.4196 (  2)  0.3286 (  6)  0.3286 (  7)  0.3286 (  8)
-          -0.3286 (  9) -0.3286 ( 10) -0.3286 ( 11)
- CRD  6=  -0.4507 (  3)  0.4202 (  5)  0.5741 ( 12) -0.5353 ( 14)
- CRD  7=   0.2250 (  3) -0.5028 (  4)  0.2778 (  5) -0.2867 ( 12)  0.6405 ( 13)
-          -0.3539 ( 14)
- CRD  8=   0.7071 (  1)  0.7071 (  2)
- CRD  9=  -0.5774 (  3) -0.5774 (  4) -0.5774 (  5)
- CRD 10=   0.2122 (  3) -0.6248 (  4)  0.4127 (  5)  0.1022 (  6)  0.1022 (  9)
-           0.1640 ( 12) -0.4829 ( 13)  0.3189 ( 14)
- CRD 11=  -0.5990 (  3)  0.1158 (  4)  0.4832 (  5) -0.4630 ( 12)  0.3735 ( 14)
+ CRD  1=  -0.3618 (  6)  0.5594 (  7) -0.1976 (  8) -0.3618 (  9)  0.5594 ( 10)
+          -0.1976 ( 11)  0.1153 ( 14)
+ CRD  2=   0.4371 (  6) -0.5319 (  8)  0.4371 (  9) -0.5319 ( 11) -0.1096 ( 12)
+ CRD  3=   0.5022 (  7) -0.4977 (  8) -0.5022 ( 10)  0.4977 ( 11)
+ CRD  4=   0.5773 (  6) -0.2848 (  7) -0.2926 (  8) -0.5773 (  9)  0.2848 ( 10)
+           0.2926 ( 11)
+ CRD  5=  -0.4196 (  1)  0.4196 (  2) -0.3286 (  6) -0.3286 (  7) -0.3286 (  8)
+           0.3286 (  9)  0.3286 ( 10)  0.3286 ( 11)
+ CRD  6=   0.4916 (  3) -0.1505 (  4) -0.3411 (  5) -0.6262 ( 12)  0.1917 ( 13)
+           0.4345 ( 14)
+ CRD  7=  -0.1100 (  3)  0.4807 (  4) -0.3707 (  5)  0.1402 ( 12) -0.6124 ( 13)
+           0.4722 ( 14)
+ CRD  8=   0.5758 (  3)  0.5758 (  4)  0.5758 (  5)
+ CRD  9=   0.7052 (  1)  0.7052 (  2)
+ CRD 10=  -0.5843 (  3)  0.5086 (  4) -0.4516 ( 12)  0.3930 ( 13)
+ CRD 11=  -0.2499 (  3) -0.3811 (  4)  0.6309 (  5) -0.1032 (  7) -0.1032 ( 10)
+          -0.1931 ( 12) -0.2945 ( 13)  0.4876 ( 14)
  CRD 12=   0.5692 (  1) -0.5692 (  2) -0.2423 (  6) -0.2423 (  7) -0.2423 (  8)
            0.2423 (  9)  0.2423 ( 10)  0.2423 ( 11)
 
@@ -580,8 +595,8 @@ unset echo
  E'  =    7
 
  ..... DONE SETTING UP THE RUN .....
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    96.84%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    81.96%
 
 
           -----------------------------
@@ -591,7 +606,7 @@ unset echo
  OBTAINING INITIAL HESSIAN, HESS=READ    
 
  $HESS GROUP READ FROM CARDS
- ENERGY IS     -955.6090406226 E(NUC) IS      107.7130904606                     
+ ENERGY IS     -955.6090406226 E(NUC) IS      107.7130904090                     
 
           PARAMETERS CONTROLLING GEOMETRY SEARCH ARE
           METHOD =QA                  UPHESS =POWELL  
@@ -613,18 +628,18 @@ unset echo
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- CL         17.0   0.0000000000  -0.0000000000   2.3842905250
- C           6.0  -0.0000000000   0.0000000000   0.0000000000
- H           1.0   1.0737765083  -0.0000000000   0.0000000000
+ CL         17.0   0.0000000000  -0.0000000000   2.3842905263
+ C           6.0  -0.0000000000   0.0000000000  -0.0000000000
+ H           1.0   1.0737765083   0.0000000000  -0.0000000000
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- CL         17.0   0.0000000000   0.0000000000  -2.3842905250
- CL         17.0   0.0000000000  -0.0000000000   2.3842905250
- C           6.0  -0.0000000000   0.0000000000   0.0000000000
+ CL         17.0   0.0000000000   0.0000000000  -2.3842905263
+ CL         17.0   0.0000000000  -0.0000000000   2.3842905263
+ C           6.0  -0.0000000000   0.0000000000  -0.0000000000
  H           1.0  -0.5368882541   0.9299177342   0.0000000000
  H           1.0  -0.5368882542  -0.9299177342   0.0000000000
- H           1.0   1.0737765083  -0.0000000000   0.0000000000
+ H           1.0   1.0737765083   0.0000000000  -0.0000000000
 
 
                      --------------------
@@ -653,8 +668,8 @@ unset echo
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    97.37%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.40%
 
           -------------
           GUESS OPTIONS
@@ -679,8 +694,8 @@ unset echo
     19=E''     20=E'      21=?E'     22=?A1'    23=A2"     24=E'      25=E'  
     26=A1'     27=A1'     28=A1'     29=A1'     30=A1'     31=A2"     32=A2" 
  ...... END OF INITIAL ORBITAL SELECTION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    97.86%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    83.47%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -702,14 +717,14 @@ unset echo
  DIRECT SCF METHOD SKIPS INTEGRAL STORAGE ON DISK.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.52%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    87.61%
 
           ---------------------------
              RO-B3LYP SCF CALCULATION
           ---------------------------
 
-     NUCLEAR ENERGY =       107.7130904606
+     NUCLEAR ENERGY =       107.7130904090
      MAXIT = 30     NPUNCH=  2     MULT=  1
      EXTRAP=T  DAMP=F  SHIFT=F  RSTRCT=F  DIIS=T  SOSCF=F
          DENSITY MATRIX CONVERGENCE THRESHOLD=  2.00E-05
@@ -740,15 +755,15 @@ unset echo
 
                                                                                 NONZERO     BLOCKS
  ITER EX      TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR      INTEGRALS    SKIPPED
-   1  0     -953.7155944335  -953.7155944335   0.364226975   1.332656255          34395        659
+   1  0     -953.7155944336  -953.7155944336   0.364226975   1.332656256          34395        659
           * * *   INITIATING DIIS PROCEDURE   * * *
    2  1     -954.0364204124    -0.3208259789   0.103643993   0.076958698          34343        691
    3  2     -954.0550951739    -0.0186747615   0.026203427   0.038009532          34210        733
    4  3     -954.0584195871    -0.0033244132   0.024435476   0.013966145          33907        773
-   5  4     -954.0593383263    -0.0009187392   0.003058090   0.003333892          34086        764
+   5  4     -954.0593383264    -0.0009187392   0.003058090   0.003333892          34086        764
  CONVERGED TO SWOFF, SO DFT CALCULATION IS NOW SWITCHED ON.
           * * *   INITIATING DIIS PROCEDURE   * * *
-   6  5     -955.5792623610    -1.5199240347   0.100223971   0.090229589          34393        663
+   6  5     -955.5792623610    -1.5199240346   0.100223971   0.090229589          34393        663
    7  6     -955.5884551236    -0.0091927626   0.070942717   0.081243214          34227        727
    8  7     -955.5905305786    -0.0020754549   0.032925178   0.065713892          34221        727
    9  8     -955.5979589462    -0.0074283677   0.004206814   0.003974278          34178        743
@@ -758,7 +773,7 @@ unset echo
           * * *   INITIATING DIIS PROCEDURE   * * *
   12 11     -955.6090338956    -0.0110188617   0.005699199   0.001743351          34395        659
   13 12     -955.6090374887    -0.0000035931   0.001162805   0.001259034          33136        853
-  14 13     -955.6090396270    -0.0000021383   0.000361905   0.000721153          32709        884
+  14 13     -955.6090396270    -0.0000021382   0.000361905   0.000721153          32709        884
   15 14     -955.6090406214    -0.0000009944   0.000029503   0.000019232          32003        940
   16 15     -955.6090406222    -0.0000000008   0.000008400   0.000008200          29087       1099
   17 16     -955.6090406225    -0.0000000003   0.000001185   0.000001337          27757       1155
@@ -766,13 +781,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       1.3 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.2
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -955.6090406225 AFTER  17 ITERATIONS
- DFT EXCHANGE + CORRELATION ENERGY =       -50.7140183775
+ DFT EXCHANGE + CORRELATION ENERGY =       -50.7140183772
  TOTAL ELECTRON NUMBER             =        44.0000387558
+
+ Alpha HOMO=    -1.836608 eV, LUMO=    3.692731 eV, gap=    5.529339 eV
+
+  Beta HOMO=    -1.836608 eV, LUMO=    3.692731 eV, gap=    5.529339 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -1188,8 +1207,8 @@ unset echo
    40  H  6  S   -0.156632
    41  H  6  S   -0.650701
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     1.27 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.74%
+ CPU     0: STEP CPU TIME=     0.18 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    84.67%
 
      ---------------------------------------------------------------------
      PROPERTIES FOR THE B3LYP    DFT FUNCTIONAL (ROHF TYPE) DENSITY MATRIX
@@ -1201,18 +1220,18 @@ unset echo
 
          WAVEFUNCTION NORMALIZATION =       1.0000000000
 
-                ONE ELECTRON ENERGY =   -1543.6644322672
-                TWO ELECTRON ENERGY =     480.3423011842
-           NUCLEAR REPULSION ENERGY =     107.7130904606
+                ONE ELECTRON ENERGY =   -1543.6644321627
+                TWO ELECTRON ENERGY =     480.3423011312
+           NUCLEAR REPULSION ENERGY =     107.7130904090
                                       ------------------
                        TOTAL ENERGY =    -955.6090406225
 
- ELECTRON-ELECTRON POTENTIAL ENERGY =     480.3423011842
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =   -2496.3208436583
-   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     107.7130904606
+ ELECTRON-ELECTRON POTENTIAL ENERGY =     480.3423011312
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =   -2496.3208435525
+   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     107.7130904090
                                       ------------------
-             TOTAL POTENTIAL ENERGY =   -1908.2654520135
-               TOTAL KINETIC ENERGY =     952.6564113911
+             TOTAL POTENTIAL ENERGY =   -1908.2654520122
+               TOTAL KINETIC ENERGY =     952.6564113897
                  VIRIAL RATIO (V/T) =       2.0030993643
 
           ---------------------------------------
@@ -1390,27 +1409,27 @@ unset echo
  POINT   1           X           Y           Z (BOHR)    CHARGE
                 -0.000000    0.000000   -0.000000       -1.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000    0.000000    0.000000    0.000000
+    -0.000000    0.000000   -0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    84.53%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    84.22%
 
           ----------------------
           GRADIENT OF THE ENERGY
           ----------------------
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    233325 WORDS.
- STEP CPU TIME =     0.24 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.74%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    86.04%
  THE COARSE/FINE SCHWARZ SCREENINGS SKIPPED          754/          98 BLOCKS.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS      1711
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    85.84%
 
           NSERCH=  0     ENERGY=    -955.6090406
 
@@ -1434,18 +1453,18 @@ unset echo
                  - - ATOMS - -         COORDINATE        GRADIENT
  NO.   TYPE    I  J  K  L  M  N         (ANG,DEG)     (H/B,H/RAD)
  ----------------------------------------------------------------
-   1 SYM.CRD.                          -0.0000000       0.0000000
-   2 SYM.CRD.                          -0.0000000      -0.0000000
+   1 SYM.CRD.                           0.0000000      -0.0000000
+   2 SYM.CRD.                           0.0000000       0.0000000
    3 SYM.CRD.                          -0.0000000       0.0000000
-   4 SYM.CRD.                           0.0000000      -0.0000000
-   5 SYM.CRD.                          -0.0000000       0.0000000
-   6 SYM.CRD.                          -0.0000000       0.0000000
-   7 SYM.CRD.                           0.0000000       0.0000000
-   8 SYM.CRD.                           3.3718960      -0.0000319
-   9 SYM.CRD.                          -1.8598355       0.0000419
-  10 SYM.CRD.                           0.0000000      -0.0000000
-  11 SYM.CRD.                           0.0000000      -0.0000000
-  12 SYM.CRD.                           0.0000000       0.0000000
+   4 SYM.CRD.                          -0.0000000       0.0000000
+   5 SYM.CRD.                           0.0000000       0.0000000
+   6 SYM.CRD.                          -0.0000000      -0.0000000
+   7 SYM.CRD.                           0.0000000      -0.0000000
+   8 SYM.CRD.                           2.1013956      -0.0000441
+   9 SYM.CRD.                           3.2268881      -0.0000288
+  10 SYM.CRD.                           0.0000000       0.0000000
+  11 SYM.CRD.                          -0.0000000      -0.0000000
+  12 SYM.CRD.                           0.0000000      -0.0000000
 
  NOTE: CARTESIAN GRADIENTS ARE ALWAYS TAKEN TO TEST CONVERGENCE,
        SO THE FOLLOWING GRADIENTS ARE CARTESIAN.
@@ -1459,18 +1478,18 @@ unset echo
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- CL         17.0   0.0000000000  -0.0000000000   2.3842905250
- C           6.0  -0.0000000000   0.0000000000   0.0000000000
- H           1.0   1.0737765083  -0.0000000000   0.0000000000
+ CL         17.0   0.0000000000  -0.0000000000   2.3842905263
+ C           6.0  -0.0000000000   0.0000000000  -0.0000000000
+ H           1.0   1.0737765083   0.0000000000  -0.0000000000
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- CL         17.0   0.0000000000   0.0000000000  -2.3842905250
- CL         17.0   0.0000000000  -0.0000000000   2.3842905250
- C           6.0  -0.0000000000   0.0000000000   0.0000000000
+ CL         17.0   0.0000000000   0.0000000000  -2.3842905263
+ CL         17.0   0.0000000000  -0.0000000000   2.3842905263
+ C           6.0  -0.0000000000   0.0000000000  -0.0000000000
  H           1.0  -0.5368882541   0.9299177342   0.0000000000
  H           1.0  -0.5368882542  -0.9299177342   0.0000000000
- H           1.0   1.0737765083  -0.0000000000   0.0000000000
+ H           1.0   1.0737765083   0.0000000000  -0.0000000000
 
 
                      --------------------
@@ -1519,43 +1538,47 @@ unset echo
   * ... LESS THAN  3.000
 
 
-          NUCLEAR ENERGY    =      107.7130904606
-          ELECTRONIC ENERGY =    -1063.3221310830
+          NUCLEAR ENERGY    =      107.7130904090
+          ELECTRONIC ENERGY =    -1063.3221310315
           TOTAL ENERGY      =     -955.6090406225
 
  THE INITIAL GEOMETRY IS ALREADY CONVERGED,
  SO ORBITALS/PROPERTY OUTPUT IS ALREADY PRINTED ABOVE
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -955.6090406225
-  1.170324366E-20 3.094843204E-18 2.259034347E-05 1.170324366E-20 3.094843204E-18
- -2.259034347E-05 7.314765507E-22 1.049803910E-18 1.501915866E-22 1.209113851E-05
- -2.094246621E-05-1.404184684E-22 1.209113851E-05 2.094246621E-05-1.404184684E-22
- -2.418227701E-05-4.915200145E-18-1.404184684E-22
- -2.257541709E-15 9.576691058E-15 3.746464202E-14
+ -3.155920122E-21 3.093084368E-18 2.259033097E-05-3.155920122E-21 3.093084368E-18
+ -2.259033097E-05 7.522618919E-21 1.069718522E-18 8.922613304E-22 1.209114261E-05
+ -2.094247333E-05-1.414893523E-22 1.209114261E-05 2.094247333E-05-1.414893523E-22
+ -2.418228523E-05-4.919192956E-18-1.414893523E-22
+ -3.386312564E-15 9.576691058E-15-1.223723663E-13
  ......END OF GEOMETRY SEARCH......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    85.86%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 18:29:30 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 14:23:38 07-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 1.523 + 0.13 = 1.536
+ 0: 0.216 + 0.14 = 0.231
+ 1: 0.208 + 0.10 = 0.219
+ 2: 0.208 + 0.11 = 0.220
+ 3: 0.207 + 0.08 = 0.215
  ----------------------------------------
 Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     5944 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F05
--rw-r--r--@ 1 blink  staff  2290400 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F10
--rw-r--r--@ 1 blink  staff  1795632 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F22
--rw-r--r--@ 1 blink  staff   130880 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F26R
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/SN2_D3h_321G_SADL.F27R
+-rw-r--r--@ 1 blink  staff     5944 Nov  7 14:23 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F05
+-rw-r--r--@ 1 blink  staff  2290400 Nov  7 14:23 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F10
+-rw-r--r--@ 1 blink  staff  1795632 Nov  7 14:23 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F22
+-rw-r--r--@ 1 blink  staff  1795632 Nov  7 14:23 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F22.001
+-rw-r--r--@ 1 blink  staff  1795632 Nov  7 14:23 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F22.002
+-rw-r--r--@ 1 blink  staff  1795632 Nov  7 14:23 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_D3h_321G_SADL.F22.003
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 18:29:31 AST 2026
-1.608u 0.101s 0:02.74 62.0%	0+0k 0+0io 65pf+0w
+Sat Nov  7 14:23:39 AST 2026
+0.898u 0.126s 0:01.44 70.1%	0+0k 0+0io 97pf+0w

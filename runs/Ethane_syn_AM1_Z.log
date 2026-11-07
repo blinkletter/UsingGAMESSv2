@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/inputs/Ethane_syn_AM1_Z.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 18:12:33 AST 2026
+under operating system Darwin at Sat Nov 7 14:20:24 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 487554948 453883944    52% 3635497 4538839440    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 494650148 447837968    53% 3684916 4478379680    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/inputs/Ethane_syn_AM1_Z.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/Ethane_syn_AM1_Z.inp /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F05
+cp /Users/blink/github/UsingGAMESSv2/inputs/Ethane_syn_AM1_Z.inp /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/Ethane_syn_AM1_Z.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/Ethane_syn_AM1_Z.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.trj
@@ -32,149 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F99
 unset echo
 /Users/blink/github/UsingGAMESSv2/runs/Ethane_syn_AM1_Z.dat
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x Ethane_syn_AM1_Z -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x Ethane_syn_AM1_Z -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x Ethane_syn_AM1_Z 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x Ethane_syn_AM1_Z 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -229,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -275,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 18:12:33 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 14:20:24 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0                    
@@ -400,10 +407,10 @@ unset echo
      ---------------
   REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
  DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
- MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ MEMDDI DISTRIBUTED OVER   4 PROCESSORS IS           0 WORDS/PROCESSOR.
  TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
  TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
- PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
  MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
 
           ----------------
@@ -418,6 +425,13 @@ unset echo
                                                        MORB  =       0
           EXTRAPOLATION IN EFFECT
  ORBITAL PRINTING OPTION: NPREO=     1    14     2     1
+
+     ----------------------
+     TARGET OFFLOAD OPTIONS
+     ----------------------
+     RHF    =       F
+     CPHF    =       F
+     MAKEFP =       F
 
      -------------------------------
      INTEGRAL TRANSFORMATION OPTIONS
@@ -463,8 +477,8 @@ unset echo
  E'  =    2
 
  ..... DONE SETTING UP THE RUN .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    97.70%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.41%
 
 
           -----------------------------
@@ -528,11 +542,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.02%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    52.47%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.05%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    52.65%
 
           -------------
           GUESS OPTIONS
@@ -549,8 +563,8 @@ unset echo
      1=A1'      2=A2"      3=E'       4=E'       5=A1'      6=E''      7=E'' 
      8=A2"      9=E'      10=E'      11=E''     12=E''     13=A1'     14=A2" 
  ...... END OF INITIAL ORBITAL SELECTION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.18%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.92%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -585,6 +599,8 @@ unset echo
  HEAT OF FORMATION IS        24.65998 KCAL/MOL
 
 
+ Alpha HOMO=   -12.280607 eV, LUMO=    4.488611 eV, gap=   16.769218 eV
+
           ------------
           EIGENVECTORS
           ------------
@@ -593,58 +609,58 @@ unset echo
                    -1.2992    -0.9273    -0.5726    -0.5726    -0.4898
                      A1'        A2"        E'         E'         A1' 
     1  C  1  S    0.580081  -0.496457  -0.000000  -0.000000  -0.055873
-    2  C  1  X    0.000000   0.000000   0.099660   0.520730   0.000000
-    3  C  1  Y    0.000000  -0.000000   0.520730  -0.099660   0.000000
+    2  C  1  X   -0.000000  -0.000000   0.052911   0.527534  -0.000000
+    3  C  1  Y    0.000000  -0.000000   0.527534  -0.052911   0.000000
     4  C  1  Z   -0.114820  -0.226514  -0.000000  -0.000000   0.648737
     5  C  2  S    0.580081   0.496457   0.000000   0.000000  -0.055873
-    6  C  2  X   -0.000000  -0.000000   0.099660   0.520730   0.000000
-    7  C  2  Y    0.000000   0.000000   0.520730  -0.099660  -0.000000
-    8  C  2  Z    0.114820  -0.226514   0.000000   0.000000  -0.648737
-    9  H  3  S    0.223847  -0.259629   0.289036  -0.249794   0.159184
-   10  H  4  S    0.223847  -0.259629  -0.360846  -0.125416   0.159184
-   11  H  5  S    0.223847   0.259629   0.071810   0.375209   0.159184
-   12  H  6  S    0.223847   0.259629   0.289036  -0.249794   0.159184
-   13  H  7  S    0.223847   0.259629  -0.360846  -0.125416   0.159184
-   14  H  8  S    0.223847  -0.259629   0.071810   0.375209   0.159184
+    6  C  2  X    0.000000  -0.000000   0.052911   0.527534   0.000000
+    7  C  2  Y    0.000000   0.000000   0.527534  -0.052911   0.000000
+    8  C  2  Z    0.114820  -0.226514   0.000000  -0.000000  -0.648737
+    9  H  3  S    0.223847  -0.259629   0.310124  -0.223073   0.159184
+   10  H  4  S    0.223847  -0.259629  -0.348249  -0.157039   0.159184
+   11  H  5  S    0.223847   0.259629   0.038125   0.380112   0.159184
+   12  H  6  S    0.223847   0.259629   0.310124  -0.223073   0.159184
+   13  H  7  S    0.223847   0.259629  -0.348249  -0.157039   0.159184
+   14  H  8  S    0.223847  -0.259629   0.038125   0.380112   0.159184
 
                       6          7          8          9         10
                    -0.4513    -0.4513     0.1650     0.1682     0.1682
                      E''        E''        A2"        E'         E'  
-    1  C  1  S   -0.000000   0.000000  -0.195089  -0.000000  -0.000000
-    2  C  1  X   -0.141603   0.461145   0.000000   0.073233   0.462109
-    3  C  1  Y   -0.461145  -0.141603  -0.000000   0.462109  -0.073233
-    4  C  1  Z    0.000000   0.000000   0.668720   0.000000  -0.000000
-    5  C  2  S    0.000000  -0.000000   0.195089   0.000000  -0.000000
-    6  C  2  X    0.141603  -0.461145   0.000000   0.073233   0.462109
-    7  C  2  Y    0.461145   0.141603  -0.000000   0.462109  -0.073233
-    8  C  2  Z   -0.000000  -0.000000   0.668720   0.000000  -0.000000
-    9  H  3  S   -0.287516  -0.309080  -0.070127  -0.336395   0.272457
-   10  H  4  S    0.411430  -0.094456  -0.070127   0.404152   0.155098
-   11  H  5  S    0.123913  -0.403536   0.070127  -0.067757  -0.427555
-   12  H  6  S    0.287516   0.309080   0.070127  -0.336395   0.272457
-   13  H  7  S   -0.411430   0.094456   0.070127   0.404152   0.155098
-   14  H  8  S   -0.123913   0.403536  -0.070127  -0.067757  -0.427555
+    1  C  1  S    0.000000   0.000000  -0.195089  -0.000000  -0.000000
+    2  C  1  X    0.311701   0.368169  -0.000000  -0.015922   0.467605
+    3  C  1  Y   -0.368169   0.311701  -0.000000   0.467605   0.015922
+    4  C  1  Z    0.000000  -0.000000   0.668720   0.000000   0.000000
+    5  C  2  S    0.000000   0.000000   0.195089   0.000000   0.000000
+    6  C  2  X   -0.311701  -0.368169  -0.000000  -0.015922   0.467605
+    7  C  2  Y    0.368169  -0.311701  -0.000000   0.467605   0.015922
+    8  C  2  Z   -0.000000  -0.000000   0.668720   0.000000   0.000000
+    9  H  3  S   -0.415393   0.075131  -0.070127  -0.382043   0.203562
+   10  H  4  S    0.142632  -0.397306  -0.070127   0.367312   0.229078
+   11  H  5  S   -0.272762  -0.322176   0.070127   0.014732  -0.432640
+   12  H  6  S    0.415393  -0.075131   0.070127  -0.382043   0.203562
+   13  H  7  S   -0.142632   0.397306   0.070127   0.367312   0.229078
+   14  H  8  S    0.272762   0.322176  -0.070127   0.014732  -0.432640
 
                      11         12         13         14
                     0.2003     0.2003     0.2113     0.2220
                      E''        E''        A2"        A1' 
     1  C  1  S    0.000000   0.000000   0.464188   0.400480
-    2  C  1  X   -0.043445   0.515177  -0.000000   0.000000
-    3  C  1  Y   -0.515177  -0.043445   0.000000   0.000000
+    2  C  1  X   -0.031989  -0.516015   0.000000  -0.000000
+    3  C  1  Y    0.516015  -0.031989  -0.000000  -0.000000
     4  C  1  Z   -0.000000  -0.000000   0.038790   0.256821
-    5  C  2  S   -0.000000   0.000000  -0.464188   0.400480
-    6  C  2  X    0.043445  -0.515177   0.000000  -0.000000
-    7  C  2  Y    0.515177   0.043445  -0.000000  -0.000000
-    8  C  2  Z   -0.000000  -0.000000   0.038790  -0.256821
-    9  H  3  S    0.323350   0.224904  -0.307151  -0.302026
-   10  H  4  S   -0.356448   0.167577  -0.307151  -0.302026
-   11  H  5  S   -0.033098   0.392481   0.307151  -0.302026
-   12  H  6  S   -0.323350  -0.224904   0.307151  -0.302026
-   13  H  7  S    0.356448  -0.167577   0.307151  -0.302026
-   14  H  8  S    0.033098  -0.392481  -0.307151  -0.302026
+    5  C  2  S   -0.000000  -0.000000  -0.464188   0.400480
+    6  C  2  X    0.031989   0.516015  -0.000000   0.000000
+    7  C  2  Y   -0.516015   0.031989   0.000000   0.000000
+    8  C  2  Z   -0.000000   0.000000   0.038790  -0.256821
+    9  H  3  S   -0.352637  -0.175455  -0.307151  -0.302026
+   10  H  4  S    0.328267  -0.217665  -0.307151  -0.302026
+   11  H  5  S   -0.024370  -0.393120   0.307151  -0.302026
+   12  H  6  S    0.352637   0.175455   0.307151  -0.302026
+   13  H  7  S   -0.328267   0.217665   0.307151  -0.302026
+   14  H  8  S    0.024370   0.393120  -0.307151  -0.302026
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.61%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    57.25%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -672,8 +688,8 @@ unset echo
          DX          DY          DZ         /D/  (DEBYE)
     -0.000000   -0.000000    0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.73%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    59.04%
 
           NSERCH=  0     ENERGY=     -12.3960639
 
@@ -761,11 +777,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.81%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    57.93%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.82%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    57.98%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -792,9 +808,11 @@ unset echo
 
  HEAT OF FORMATION IS        -9.03439 KCAL/MOL
 
+
+ Alpha HOMO=   -11.891135 eV, LUMO=    4.250253 eV, gap=   16.141387 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    59.28%
 
           NSERCH=  1     ENERGY=     -12.4497578
 
@@ -828,19 +846,19 @@ unset echo
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0   0.0000000000   0.0000000000  -0.7472842417
- H           1.0   1.0341579366   0.0000000000   1.1398950612
+ C           6.0   0.0000000000  -0.0000000000  -0.7472842418
+ H           1.0   1.0341579366  -0.0000000000   1.1398950611
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.0000000000  -0.0000000000   0.7472842417
- C           6.0   0.0000000000   0.0000000000  -0.7472842417
- H           1.0  -0.5170789683   0.8956070446   1.1398950612
- H           1.0  -0.5170789683  -0.8956070446   1.1398950612
- H           1.0   1.0341579366  -0.0000000000  -1.1398950612
- H           1.0  -0.5170789683   0.8956070446  -1.1398950612
- H           1.0  -0.5170789683  -0.8956070446  -1.1398950612
- H           1.0   1.0341579366   0.0000000000   1.1398950612
+ C           6.0  -0.0000000000  -0.0000000000   0.7472842418
+ C           6.0   0.0000000000  -0.0000000000  -0.7472842418
+ H           1.0  -0.5170789683   0.8956070446   1.1398950611
+ H           1.0  -0.5170789683  -0.8956070446   1.1398950611
+ H           1.0   1.0341579366   0.0000000000  -1.1398950611
+ H           1.0  -0.5170789683   0.8956070446  -1.1398950611
+ H           1.0  -0.5170789683  -0.8956070446  -1.1398950611
+ H           1.0   1.0341579366  -0.0000000000   1.1398950611
 
  THE CURRENT FULLY SUBSTITUTED Z-MATRIX IS
  C   
@@ -882,11 +900,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.04%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    59.86%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.03%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    59.98%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -914,9 +932,11 @@ unset echo
 
  HEAT OF FORMATION IS       -15.78319 KCAL/MOL
 
+
+ Alpha HOMO=   -11.764501 eV, LUMO=    4.116041 eV, gap=   15.880543 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.09%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    61.94%
 
           NSERCH=  2     ENERGY=     -12.4605123
 
@@ -951,18 +971,18 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0   0.0000000000  -0.0000000000  -0.7504758198
- H           1.0   1.0416041064   0.0000000000   1.1515512954
+ H           1.0   1.0416041063  -0.0000000000   1.1515512955
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -0.0000000000  -0.0000000000   0.7504758198
  C           6.0   0.0000000000  -0.0000000000  -0.7504758198
- H           1.0  -0.5208020532   0.9020556168   1.1515512954
- H           1.0  -0.5208020532  -0.9020556168   1.1515512954
- H           1.0   1.0416041064  -0.0000000000  -1.1515512954
- H           1.0  -0.5208020532   0.9020556168  -1.1515512954
- H           1.0  -0.5208020532  -0.9020556168  -1.1515512954
- H           1.0   1.0416041064   0.0000000000   1.1515512954
+ H           1.0  -0.5208020532   0.9020556168   1.1515512955
+ H           1.0  -0.5208020532  -0.9020556168   1.1515512955
+ H           1.0   1.0416041063   0.0000000000  -1.1515512955
+ H           1.0  -0.5208020532   0.9020556168  -1.1515512955
+ H           1.0  -0.5208020532  -0.9020556168  -1.1515512955
+ H           1.0   1.0416041063  -0.0000000000   1.1515512955
 
  THE CURRENT FULLY SUBSTITUTED Z-MATRIX IS
  C   
@@ -1004,11 +1024,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.14%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    63.28%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.13%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    63.32%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -1021,7 +1041,7 @@ unset echo
    2  1  0      -12.4611102406    -0.0000335003   0.000900741   0.000000000              0          0
    3  2  0      -12.4611125725    -0.0000023319   0.000219253   0.000000000              0          0
    4  3  0      -12.4611128239    -0.0000002514   0.000085625   0.000000000              0          0
-   5  0  0      -12.4611128621    -0.0000000382   0.000072990   0.000000000              0          0
+   5  0  0      -12.4611128620    -0.0000000382   0.000072990   0.000000000              0          0
    6  1  0      -12.4611128706    -0.0000000085   0.000000862   0.000000000              0          0
    7  2  0      -12.4611128706    -0.0000000000   0.000000293   0.000000000              0          0
 
@@ -1036,9 +1056,11 @@ unset echo
 
  HEAT OF FORMATION IS       -16.16005 KCAL/MOL
 
+
+ Alpha HOMO=   -11.727441 eV, LUMO=    4.072045 eV, gap=   15.799486 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.19%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    64.81%
 
           NSERCH=  3     ENERGY=     -12.4611129
 
@@ -1073,28 +1095,28 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0   0.0000000000  -0.0000000000  -0.7516161131
- H           1.0   1.0426430694   0.0000000000   1.1523703518
+ H           1.0   1.0426430694  -0.0000000000   1.1523703517
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -0.0000000000  -0.0000000000   0.7516161131
  C           6.0   0.0000000000  -0.0000000000  -0.7516161131
- H           1.0  -0.5213215347   0.9029553852   1.1523703518
- H           1.0  -0.5213215347  -0.9029553852   1.1523703518
- H           1.0   1.0426430694  -0.0000000000  -1.1523703518
- H           1.0  -0.5213215347   0.9029553852  -1.1523703518
- H           1.0  -0.5213215347  -0.9029553852  -1.1523703518
- H           1.0   1.0426430694   0.0000000000   1.1523703518
+ H           1.0  -0.5213215347   0.9029553852   1.1523703517
+ H           1.0  -0.5213215347  -0.9029553852   1.1523703517
+ H           1.0   1.0426430694   0.0000000000  -1.1523703517
+ H           1.0  -0.5213215347   0.9029553852  -1.1523703517
+ H           1.0  -0.5213215347  -0.9029553852  -1.1523703517
+ H           1.0   1.0426430694  -0.0000000000   1.1523703517
 
  THE CURRENT FULLY SUBSTITUTED Z-MATRIX IS
  C   
  C      1   1.5032322
- H      2   1.1170087  1   111.0249522
- H      2   1.1170087  1   111.0249522  3   120.0000000  0
- H      2   1.1170087  1   111.0249522  3  -120.0000000  0
- H      1   1.1170087  2   111.0249522  3     0.0000000  0
- H      1   1.1170087  2   111.0249522  6   120.0000000  0
- H      1   1.1170087  2   111.0249522  6  -120.0000000  0
+ H      2   1.1170087  1   111.0249521
+ H      2   1.1170087  1   111.0249521  3   120.0000000  0
+ H      2   1.1170087  1   111.0249521  3  -120.0000000  0
+ H      1   1.1170087  2   111.0249521  3     0.0000000  0
+ H      1   1.1170087  2   111.0249521  6   120.0000000  0
+ H      1   1.1170087  2   111.0249521  6  -120.0000000  0
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -1126,11 +1148,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.21%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    65.42%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.20%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    65.47%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -1156,9 +1178,11 @@ unset echo
 
  HEAT OF FORMATION IS       -16.16513 KCAL/MOL
 
+
+ Alpha HOMO=   -11.729233 eV, LUMO=    4.072360 eV, gap=   15.801593 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.25%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    65.44%
 
           NSERCH=  4     ENERGY=     -12.4611210
 
@@ -1193,18 +1217,18 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0   0.0000000000  -0.0000000000  -0.7516806741
- H           1.0   1.0424912260   0.0000000000   1.1528077998
+ H           1.0   1.0424912260  -0.0000000000   1.1528077999
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -0.0000000000  -0.0000000000   0.7516806741
  C           6.0   0.0000000000  -0.0000000000  -0.7516806741
- H           1.0  -0.5212456130   0.9028238849   1.1528077998
- H           1.0  -0.5212456130  -0.9028238849   1.1528077998
- H           1.0   1.0424912260  -0.0000000000  -1.1528077998
- H           1.0  -0.5212456130   0.9028238849  -1.1528077998
- H           1.0  -0.5212456130  -0.9028238849  -1.1528077998
- H           1.0   1.0424912260   0.0000000000   1.1528077998
+ H           1.0  -0.5212456130   0.9028238849   1.1528077999
+ H           1.0  -0.5212456130  -0.9028238849   1.1528077999
+ H           1.0   1.0424912260   0.0000000000  -1.1528077999
+ H           1.0  -0.5212456130   0.9028238849  -1.1528077999
+ H           1.0  -0.5212456130  -0.9028238849  -1.1528077999
+ H           1.0   1.0424912260  -0.0000000000   1.1528077999
 
  THE CURRENT FULLY SUBSTITUTED Z-MATRIX IS
  C   
@@ -1246,11 +1270,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.26%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    66.38%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.26%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    66.42%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -1275,9 +1299,11 @@ unset echo
 
  HEAT OF FORMATION IS       -16.16526 KCAL/MOL
 
+
+ Alpha HOMO=   -11.729245 eV, LUMO=    4.071962 eV, gap=   15.801206 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.29%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    67.22%
 
           NSERCH=  5     ENERGY=     -12.4611212
 
@@ -1312,7 +1338,7 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0   0.0000000000  -0.0000000000  -0.7517425284
- H           1.0   1.0424482146   0.0000000000   1.1528384766
+ H           1.0   1.0424482146  -0.0000000000   1.1528384766
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
@@ -1320,10 +1346,10 @@ unset echo
  C           6.0   0.0000000000  -0.0000000000  -0.7517425284
  H           1.0  -0.5212241073   0.9027866360   1.1528384766
  H           1.0  -0.5212241073  -0.9027866360   1.1528384766
- H           1.0   1.0424482146  -0.0000000000  -1.1528384766
+ H           1.0   1.0424482146   0.0000000000  -1.1528384766
  H           1.0  -0.5212241073   0.9027866360  -1.1528384766
  H           1.0  -0.5212241073  -0.9027866360  -1.1528384766
- H           1.0   1.0424482146   0.0000000000   1.1528384766
+ H           1.0   1.0424482146  -0.0000000000   1.1528384766
 
  THE CURRENT FULLY SUBSTITUTED Z-MATRIX IS
  C   
@@ -1365,11 +1391,11 @@ unset echo
 
  MOPAC ONE- AND TWO-ELECTRON INTEGRALS REQUIRE       445 WORDS.
  ...... END OF ONE- AND TWO-ELECTRON INTEGRALS......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.30%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.09%
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.31%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.12%
 
           --------------------------
                R-AM1 SCF CALCULATION
@@ -1393,9 +1419,11 @@ unset echo
 
  HEAT OF FORMATION IS       -16.16528 KCAL/MOL
 
+
+ Alpha HOMO=   -11.729798 eV, LUMO=    4.072366 eV, gap=   15.802163 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.33%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.68%
 
           NSERCH=  6     ENERGY=     -12.4611212
 
@@ -1423,7 +1451,7 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0   0.0000000000  -0.0000000000  -0.7517425284
- H           1.0   1.0424482146   0.0000000000   1.1528384766
+ H           1.0   1.0424482146  -0.0000000000   1.1528384766
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
@@ -1431,10 +1459,10 @@ unset echo
  C           6.0   0.0000000000  -0.0000000000  -0.7517425284
  H           1.0  -0.5212241073   0.9027866360   1.1528384766
  H           1.0  -0.5212241073  -0.9027866360   1.1528384766
- H           1.0   1.0424482146  -0.0000000000  -1.1528384766
+ H           1.0   1.0424482146   0.0000000000  -1.1528384766
  H           1.0  -0.5212241073   0.9027866360  -1.1528384766
  H           1.0  -0.5212241073  -0.9027866360  -1.1528384766
- H           1.0   1.0424482146   0.0000000000   1.1528384766
+ H           1.0   1.0424482146  -0.0000000000   1.1528384766
 
  THE CURRENT FULLY SUBSTITUTED Z-MATRIX IS
  C   
@@ -1474,8 +1502,8 @@ unset echo
   * ... LESS THAN  3.000
 
 
-          NUCLEAR ENERGY    =       21.7125582361
-          ELECTRONIC ENERGY =      -34.1736794423
+          NUCLEAR ENERGY    =       21.7125582360
+          ELECTRONIC ENERGY =      -34.1736794422
           TOTAL ENERGY      =      -12.4611212062
 
           ------------------
@@ -1485,56 +1513,56 @@ unset echo
                       1          2          3          4          5
                    -1.2185    -0.8685    -0.5469    -0.5469    -0.4843
                      A1'        A2"        E'         E'         A1' 
-    1  C  1  S   -0.595315   0.504577   0.000000  -0.000000   0.044111
-    2  C  1  X    0.000000   0.000000  -0.528111   0.046117   0.000000
-    3  C  1  Y   -0.000000   0.000000   0.046117   0.528111   0.000000
-    4  C  1  Z    0.128303   0.234115  -0.000000   0.000000  -0.638330
-    5  C  2  S   -0.595315  -0.504577   0.000000  -0.000000   0.044111
-    6  C  2  X   -0.000000  -0.000000  -0.528111   0.046117   0.000000
-    7  C  2  Y   -0.000000   0.000000   0.046117   0.528111   0.000000
-    8  C  2  Z   -0.128303   0.234115   0.000000  -0.000000   0.638330
-    9  H  3  S   -0.207475   0.252053   0.219098   0.313013  -0.173771
-   10  H  4  S   -0.207475   0.252053   0.161528  -0.346251  -0.173771
-   11  H  5  S   -0.207475  -0.252053  -0.380626   0.033238  -0.173771
-   12  H  6  S   -0.207475  -0.252053   0.219098   0.313013  -0.173771
-   13  H  7  S   -0.207475  -0.252053   0.161528  -0.346251  -0.173771
-   14  H  8  S   -0.207475   0.252053  -0.380626   0.033238  -0.173771
+    1  C  1  S   -0.595315   0.504577   0.000000  -0.000000  -0.044111
+    2  C  1  X   -0.000000   0.000000  -0.393428   0.355306  -0.000000
+    3  C  1  Y   -0.000000  -0.000000  -0.355306  -0.393428   0.000000
+    4  C  1  Z    0.128303   0.234115  -0.000000   0.000000   0.638330
+    5  C  2  S   -0.595315  -0.504577   0.000000  -0.000000  -0.044111
+    6  C  2  X   -0.000000  -0.000000  -0.393428   0.355306  -0.000000
+    7  C  2  Y   -0.000000  -0.000000  -0.355306  -0.393428  -0.000000
+    8  C  2  Z   -0.128303   0.234115   0.000000  -0.000000  -0.638330
+    9  H  3  S   -0.207475   0.252053  -0.079994  -0.373607   0.173771
+   10  H  4  S   -0.207475   0.252053   0.363550   0.117527   0.173771
+   11  H  5  S   -0.207475  -0.252053  -0.283556   0.256080   0.173771
+   12  H  6  S   -0.207475  -0.252053  -0.079994  -0.373607   0.173771
+   13  H  7  S   -0.207475  -0.252053   0.363550   0.117527   0.173771
+   14  H  8  S   -0.207475   0.252053  -0.283556   0.256080   0.173771
 
                       6          7          8          9         10
                    -0.4311    -0.4311     0.1497     0.1497     0.1723
                      E''        E''        E'         E'         A2" 
-    1  C  1  S   -0.000000   0.000000   0.000000  -0.000000   0.075504
-    2  C  1  X    0.475067   0.036198  -0.053777   0.464844   0.000000
-    3  C  1  Y    0.036198  -0.475067   0.464844   0.053777   0.000000
-    4  C  1  Z   -0.000000   0.000000   0.000000  -0.000000  -0.652223
-    5  C  2  S    0.000000  -0.000000   0.000000  -0.000000  -0.075504
-    6  C  2  X   -0.475067  -0.036198  -0.053777   0.464844  -0.000000
-    7  C  2  Y   -0.036198   0.475067   0.464844   0.053777  -0.000000
-    8  C  2  Z    0.000000   0.000000  -0.000000   0.000000  -0.652223
-    9  H  3  S   -0.184622  -0.384598  -0.397240   0.171909   0.151552
-   10  H  4  S   -0.240761   0.352186   0.347497   0.258066   0.151552
-   11  H  5  S   -0.425383  -0.032412   0.049743  -0.429974  -0.151552
-   12  H  6  S    0.184622   0.384598  -0.397240   0.171909  -0.151552
-   13  H  7  S    0.240761  -0.352186   0.347497   0.258066  -0.151552
-   14  H  8  S    0.425383   0.032412   0.049743  -0.429974   0.151552
+    1  C  1  S    0.000000   0.000000   0.000000  -0.000000   0.075504
+    2  C  1  X    0.318437   0.354396  -0.060121   0.464066  -0.000000
+    3  C  1  Y   -0.354396   0.318437  -0.464066  -0.060121   0.000000
+    4  C  1  Z    0.000000  -0.000000   0.000000  -0.000000  -0.652223
+    5  C  2  S    0.000000   0.000000  -0.000000   0.000000  -0.075504
+    6  C  2  X   -0.318437  -0.354396  -0.060121   0.464066   0.000000
+    7  C  2  Y    0.354396  -0.318437  -0.464066  -0.060121  -0.000000
+    8  C  2  Z   -0.000000   0.000000   0.000000  -0.000000  -0.652223
+    9  H  3  S   -0.417385   0.088267   0.343940   0.262788   0.151552
+   10  H  4  S    0.132251  -0.405599  -0.399551   0.166467   0.151552
+   11  H  5  S   -0.285134  -0.317332   0.055611  -0.429255  -0.151552
+   12  H  6  S    0.417385  -0.088267   0.343940   0.262788  -0.151552
+   13  H  7  S   -0.132251   0.405599  -0.399551   0.166467  -0.151552
+   14  H  8  S    0.285134   0.317332   0.055611  -0.429255   0.151552
 
                      11         12         13         14
                     0.1815     0.1862     0.1862     0.1928
                      A2"        E''        E''        A1' 
-    1  C  1  S    0.489593   0.000000  -0.000000   0.379017
-    2  C  1  X   -0.000000   0.055388  -0.519551  -0.000000
-    3  C  1  Y    0.000000  -0.519551  -0.055388   0.000000
+    1  C  1  S    0.489593   0.000000   0.000000   0.379017
+    2  C  1  X    0.000000   0.094973  -0.513791   0.000000
+    3  C  1  Y   -0.000000   0.513791   0.094973   0.000000
     4  C  1  Z   -0.140695  -0.000000  -0.000000   0.275813
-    5  C  2  S   -0.489593  -0.000000   0.000000   0.379017
-    6  C  2  X    0.000000  -0.055388   0.519551   0.000000
-    7  C  2  Y   -0.000000   0.519551   0.055388  -0.000000
-    8  C  2  Z   -0.140695  -0.000000  -0.000000  -0.275813
-    9  H  3  S   -0.283139   0.355617  -0.157698  -0.305654
-   10  H  4  S   -0.283139  -0.314379  -0.229125  -0.305654
-   11  H  5  S    0.283139   0.041238  -0.386823  -0.305654
-   12  H  6  S    0.283139  -0.355617   0.157698  -0.305654
-   13  H  7  S    0.283139   0.314379   0.229125  -0.305654
-   14  H  8  S   -0.283139  -0.041238   0.386823  -0.305654
+    5  C  2  S   -0.489593  -0.000000  -0.000000   0.379017
+    6  C  2  X   -0.000000  -0.094973   0.513791  -0.000000
+    7  C  2  Y    0.000000  -0.513791  -0.094973  -0.000000
+    8  C  2  Z   -0.140695   0.000000  -0.000000  -0.275813
+    9  H  3  S   -0.283139  -0.295929  -0.252504  -0.305654
+   10  H  4  S   -0.283139   0.366640  -0.130030  -0.305654
+   11  H  5  S    0.283139   0.070711  -0.382534  -0.305654
+   12  H  6  S    0.283139   0.295929   0.252504  -0.305654
+   13  H  7  S    0.283139  -0.366640   0.130030  -0.305654
+   14  H  8  S   -0.283139  -0.070711   0.382534  -0.305654
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1558,42 +1586,43 @@ unset echo
           ---------------------
 
  POINT   1           X           Y           Z (ANGS)      CHARGE
-                 0.000000    0.000000    0.000000       -0.00 (A.U.)
+                 0.000000    0.000000    0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000   -0.000000    0.000000    0.000000
+    -0.000000    0.000000    0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.36%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    69.30%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=      -12.4611212062
-  0.000000000E+00 0.000000000E+00-5.778781269E-06 0.000000000E+00 0.000000000E+00
-  5.778776433E-06-2.113273662E-06 3.659735780E-06 1.634135478E-06-2.113275043E-06
- -3.659737680E-06 1.634133923E-06 4.225573837E-06 0.000000000E+00-1.634130123E-06
- -2.113273489E-06 3.659734917E-06-1.634137205E-06-2.113273834E-06-3.659732844E-06
- -1.634134269E-06 4.225574528E-06 0.000000000E+00 1.634137032E-06
- -2.492119776E-15-5.027512297E-15 1.050663598E-14
+  0.000000000E+00 0.000000000E+00-5.778769524E-06 0.000000000E+00 0.000000000E+00
+  5.778812360E-06-2.113288343E-06 3.659744071E-06 1.634124769E-06-2.113289725E-06
+ -3.659742862E-06 1.634125632E-06 4.225583855E-06 0.000000000E+00-1.634137205E-06
+ -2.113288343E-06 3.659731117E-06-1.634146187E-06-2.113289725E-06-3.659732153E-06
+ -1.634146359E-06 4.225590764E-06 0.000000000E+00 1.634136514E-06
+ -4.598544331E-15 1.410821853E-15 5.379648234E-15
  ......END OF GEOMETRY SEARCH......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.37%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    69.23%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 18:12:33 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 14:20:24 07-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.10 + 0.10 = 0.21
+ 0: 0.16 + 0.15 = 0.31
+ 1: 0.08 + 0.06 = 0.15
+ 2: 0.08 + 0.08 = 0.17
+ 3: 0.09 + 0.07 = 0.16
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      410 Nov  6 18:12 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F05
--rw-r--r--@ 1 blink  staff  1766880 Nov  6 18:12 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F10
--rw-r--r--@ 1 blink  staff   130880 Nov  6 18:12 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F26R
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:12 /Users/blink/github/gamess2023R2claude/scr/Ethane_syn_AM1_Z.F27R
+-rw-r--r--@ 1 blink  staff      410 Nov  7 14:20 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F05
+-rw-r--r--@ 1 blink  staff  1766880 Nov  7 14:20 /Users/blink/github/gamess2024R2claude/gamess/scr/Ethane_syn_AM1_Z.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 18:12:34 AST 2026
-0.088u 0.112s 0:01.22 15.5%	0+0k 0+0io 75pf+0w
+Sat Nov  7 14:20:25 AST 2026
+0.129u 0.154s 0:01.30 20.7%	0+0k 0+0io 118pf+0w

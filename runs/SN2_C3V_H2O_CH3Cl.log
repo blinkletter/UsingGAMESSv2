@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/inputs/SN2_C3V_H2O_CH3Cl.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 18:36:35 AST 2026
+under operating system Darwin at Sat Nov 7 14:25:38 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 489124184 452314708    52% 3639976 4523147080    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 495133256 447354860    53% 3685059 4473548600    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/inputs/SN2_C3V_H2O_CH3Cl.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/SN2_C3V_H2O_CH3Cl.inp /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F05
+cp /Users/blink/github/UsingGAMESSv2/inputs/SN2_C3V_H2O_CH3Cl.inp /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/SN2_C3V_H2O_CH3Cl.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/SN2_C3V_H2O_CH3Cl.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.trj
@@ -32,149 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F99
 unset echo
 /Users/blink/github/UsingGAMESSv2/runs/SN2_C3V_H2O_CH3Cl.dat
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x SN2_C3V_H2O_CH3Cl -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x SN2_C3V_H2O_CH3Cl -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x SN2_C3V_H2O_CH3Cl 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x SN2_C3V_H2O_CH3Cl 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -229,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -275,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 18:36:35 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 14:25:38 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=ROHF RUNTYP=OPTIMIZE DFTTYP=B3LYP MAXIT=30                      
@@ -416,10 +423,10 @@ unset echo
      ---------------
   REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
  DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
- MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ MEMDDI DISTRIBUTED OVER   4 PROCESSORS IS           0 WORDS/PROCESSOR.
  TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
  TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
- PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
  MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
 
  ** LOOKING UP INTERNALLY STORED DATA FOR SOLVENT=WATER    **
@@ -517,6 +524,13 @@ unset echo
           DIIS IN EFFECT
  ORBITAL PRINTING OPTION: NPREO=     1    28     2     1
 
+     ----------------------
+     TARGET OFFLOAD OPTIONS
+     ----------------------
+     RHF    =       F
+     CPHF    =       F
+     MAKEFP =       F
+
      -------------------------------
      INTEGRAL TRANSFORMATION OPTIONS
      -------------------------------
@@ -602,8 +616,8 @@ unset echo
  A   =   28
 
  ..... DONE SETTING UP THE RUN .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.56%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.10%
 
 
           -----------------------------
@@ -665,8 +679,8 @@ unset echo
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.77%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.92%
 
           -------------
           GUESS OPTIONS
@@ -691,8 +705,8 @@ unset echo
     14=A       15=A       16=A       17=A       18=A       19=A       20=A   
     21=A       22=A       23=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.23%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -714,8 +728,8 @@ unset echo
  DIRECT SCF METHOD SKIPS INTEGRAL STORAGE ON DISK.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.40%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    83.90%
 
           -------------------------------------
           ---- POLARISABLE CONTINUUM MODEL ----
@@ -767,17 +781,17 @@ unset echo
 
  TOTAL NUMBER OF TESSERAE=     116
  SURFACE AREA=    73.46409301(A**2)    CAVITY VOLUME=     61.58189277 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.40%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.37%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.42%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.39%
 
  ..... DONE GENERATING CAVITY .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.42%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.40%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -794,7 +808,7 @@ unset echo
              C-C     O-O     V-V
      ALPHA -0.5000  0.5000  1.5000
      BETA   1.5000  0.5000 -0.5000
-     MEMORY REQUIRED FOR UHF/ROHF ITERS=    313042 WORDS.
+     MEMORY REQUIRED FOR UHF/ROHF ITERS=    304168 WORDS.
 
  DIRECT SCF CALCULATION, SCHWRZ=T   FDIFF=F
  SCHWARZ INEQUALITY OVERHEAD:       405 INTEGRALS, T=        0.00
@@ -817,29 +831,33 @@ unset echo
    2  1     -496.6410728195    -0.2465843064   0.100349822   0.065418138          50412        226
    3  2     -496.6544277052    -0.0133548857   0.027653291   0.023925137          50412        226
    4  3     -496.6571897256    -0.0027620204   0.019064040   0.011106582          50412        226
-   5  4     -496.6579246781    -0.0007349526   0.007667330   0.003128409          50412        226
-   6  5     -496.6580111393    -0.0000864611   0.001228292   0.000370489          50412        226
+   5  4     -496.6579246781    -0.0007349526   0.007667330   0.002646219          50412        226
+   6  5     -496.6580111393    -0.0000864611   0.001228292   0.000357698          50412        226
  CONVERGED TO SWOFF, SO DFT CALCULATION IS NOW SWITCHED ON.
           * * *   INITIATING DIIS PROCEDURE   * * *
    7  6     -497.5496906539    -0.8916795146   0.086418876   0.096579329          50412        226
-   8  7     -497.5558082113    -0.0061175574   0.041604377   0.043439193          50412        226
-   9  8     -497.5562799268    -0.0004717155   0.029270663   0.033112946          50412        226
-  10  9     -497.5584106612    -0.0021307344   0.004555550   0.003472162          50412        226
-  11 10     -497.5584503497    -0.0000396885   0.000267135   0.000332020          50412        226
+   8  7     -497.5558082113    -0.0061175574   0.041604377   0.036738765          50412        226
+   9  8     -497.5562799268    -0.0004717155   0.029270663   0.029084548          50412        226
+  10  9     -497.5584106612    -0.0021307344   0.004555550   0.003285862          50412        226
+  11 10     -497.5584503497    -0.0000396885   0.000267135   0.000280827          50412        226
   12 11     -497.5584506078    -0.0000002580   0.000019389   0.000009042          50412        226
-  13 12     -497.5584506081    -0.0000000003   0.000002397   0.000001437          50412        226
+  13 12     -497.5584506081    -0.0000000003   0.000002397   0.000001353          50412        226
   14 13     -497.5584506081    -0.0000000000   0.000000075   0.000000034          50412        226
 
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       1.0 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5584506081 AFTER  14 ITERATIONS
  DFT EXCHANGE + CORRELATION ENERGY =       -27.9379787523
  TOTAL ELECTRON NUMBER             =        25.9999828057
+
+ Alpha HOMO=    -8.040704 eV, LUMO=   -0.950590 eV, gap=    7.090113 eV
+
+  Beta HOMO=    -8.040704 eV, LUMO=   -0.950590 eV, gap=    7.090113 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -861,7 +879,7 @@ unset echo
     1  CL 1  S    0.985783  -0.000084  -0.305101  -0.002649  -0.000002
     2  CL 1  S    0.053494  -0.000021   0.976608   0.008999   0.000005
     3  CL 1  X   -0.000000  -0.000000  -0.000005   0.000096   0.971387
-    4  CL 1  Y    0.000000   0.000000  -0.000000  -0.000000   0.000080
+    4  CL 1  Y    0.000000  -0.000000  -0.000000  -0.000000   0.000080
     5  CL 1  Z   -0.000156   0.000399  -0.007282   0.970548  -0.000096
     6  CL 1  S   -0.018741  -0.000959   0.155290  -0.003275   0.000001
     7  CL 1  X    0.000000  -0.000000  -0.000001   0.000009   0.087416
@@ -903,7 +921,7 @@ unset echo
    11  CL 1  X    0.000002  -0.000051   0.000013   0.000012   0.077296
    12  CL 1  Y   -0.026714  -0.000000  -0.000000   0.077193  -0.000012
    13  CL 1  Z   -0.000000  -0.018666   0.003527  -0.000000  -0.000032
-   14  C  2  S   -0.000000  -0.136464  -0.172160   0.000000  -0.000120
+   14  C  2  S    0.000000  -0.136464  -0.172160   0.000000  -0.000120
    15  C  2  S   -0.000000   0.122443   0.178043   0.000001   0.000130
    16  C  2  X   -0.000000  -0.000071  -0.000142   0.000063   0.412057
    17  C  2  Y    0.000126  -0.000000  -0.000000   0.411964  -0.000063
@@ -940,7 +958,7 @@ unset echo
    16  C  2  X   -0.000051  -0.114113   0.000179   0.000060  -0.001198
    17  C  2  Y   -0.000000  -0.000179  -0.114013   0.000000   0.000002
    18  C  2  Z   -0.275083   0.000126  -0.000000   0.446736  -0.046635
-   19  C  2  S    0.022507   0.000045   0.000002   0.331610   2.517430
+   19  C  2  S    0.022507   0.000045   0.000001   0.331610   2.517430
    20  C  2  X    0.000095  -0.070388   0.000110  -0.000033  -0.005127
    21  C  2  Y    0.000001  -0.000110  -0.070414   0.000001   0.000006
    22  C  2  Z   -0.282598   0.000167  -0.000000   0.775258   0.063314
@@ -1047,8 +1065,8 @@ unset echo
    27  H  5  S    0.000863  -0.968377  -0.070998
    28  H  5  S   -0.001350   1.508727  -0.860779
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.97 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.27 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    68.32%
 
      ---------------------------------------------------------------------
      PROPERTIES FOR THE B3LYP    DFT FUNCTIONAL (ROHF TYPE) DENSITY MATRIX
@@ -1203,29 +1221,29 @@ unset echo
          DX          DY          DZ         /D/  (DEBYE)
     -0.005149   -0.000001   -0.100338    0.100470
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    68.29%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    68.26%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    68.13%
 
           ----------------------
           GRADIENT OF THE ENERGY
           ----------------------
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.15 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.50%
  THE COARSE/FINE SCHWARZ SCREENINGS SKIPPED          233/         249 BLOCKS.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS      3610
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.42%
 
           NSERCH=  0     ENERGY=    -497.5584506
 
@@ -1321,11 +1339,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.36%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.37%
 
      ----------------------------
      INPUT FOR TESSERA DEFINITION
@@ -1372,17 +1390,17 @@ unset echo
 
  TOTAL NUMBER OF TESSERAE=     119
  SURFACE AREA=    72.11114450(A**2)    CAVITY VOLUME=     60.94654651 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.39%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.39%
 
  ..... DONE SETTING UP PCM CALCULATION .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    70.39%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -1408,13 +1426,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.8 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.1, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5900465791 AFTER   7 ITERATIONS
  DFT EXCHANGE + CORRELATION ENERGY =       -27.8713343480
  TOTAL ELECTRON NUMBER             =        26.0000288994
+
+ Alpha HOMO=    -8.056989 eV, LUMO=   -0.921868 eV, gap=    7.135121 eV
+
+  Beta HOMO=    -8.056989 eV, LUMO=   -0.921868 eV, gap=    7.135121 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -1426,21 +1448,21 @@ unset echo
    GDISP  =      0.0000000000
    GREP   =      0.0000000000
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.85 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.22 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    71.14%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    71.14%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    71.08%
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.16 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.29%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.24%
 
           NSERCH=  1     ENERGY=    -497.5900466
 
@@ -1497,10 +1519,10 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  CL         17.0   0.0000324783   0.0000000166   2.0148606212
- C           6.0  -0.0003170854  -0.0000001201   0.0182795697
- H           1.0  -0.5217877651   0.9073477564  -0.2450372557
- H           1.0  -0.5217881242  -0.9073473938  -0.2450384588
- H           1.0   1.0462244601   0.0000004923  -0.2432000736
+ C           6.0  -0.0003170854  -0.0000001201   0.0182795698
+ H           1.0  -0.5217877651   0.9073477564  -0.2450372556
+ H           1.0  -0.5217881242  -0.9073473938  -0.2450384587
+ H           1.0   1.0462244601   0.0000004923  -0.2432000734
 
 
                      --------------------
@@ -1535,11 +1557,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.21%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.22%
 
      ----------------------------
      INPUT FOR TESSERA DEFINITION
@@ -1582,21 +1604,21 @@ unset echo
      2  -0.000317085  -0.000000120   0.018279570   2.040000000   9.434958550
      3  -0.521787765   0.907347756  -0.245037256   1.440000000   7.008515902
      4  -0.521788124  -0.907347394  -0.245038459   1.440000000   7.008511282
-     5   1.046224460   0.000000492  -0.243200074   1.440000000   7.798850773
+     5   1.046224460   0.000000492  -0.243200073   1.440000000   7.798850773
 
  TOTAL NUMBER OF TESSERAE=     121
  SURFACE AREA=    70.77277581(A**2)    CAVITY VOLUME=     60.02651328 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.22%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.22%
 
  ..... DONE SETTING UP PCM CALCULATION .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    99.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    72.22%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -1611,7 +1633,7 @@ unset echo
                                                                                 NONZERO     BLOCKS
  ITER EX      TOTAL ENERGY        E CHANGE  DENSITY CHANGE    DIIS ERROR      INTEGRALS    SKIPPED
           * * *   INITIATING DIIS PROCEDURE   * * *
-   1  0     -497.5939863573  -497.5939863573   0.028402611   0.031553256          62732        331
+   1  0     -497.5939863573  -497.5939863573   0.028402612   0.031553256          62732        331
    2  1     -497.5966635973    -0.0026772400   0.009714964   0.008307016          62732        331
    3  2     -497.5966306441     0.0000329533   0.006351322   0.009827700          62732        331
    4  3     -497.5967738181    -0.0001431740   0.000965386   0.000500584          62732        331
@@ -1622,13 +1644,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.9 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.1, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5967747473 AFTER   7 ITERATIONS
  DFT EXCHANGE + CORRELATION ENERGY =       -27.8562122990
  TOTAL ELECTRON NUMBER             =        25.9999859394
+
+ Alpha HOMO=    -8.159189 eV, LUMO=   -0.695023 eV, gap=    7.464166 eV
+
+  Beta HOMO=    -8.159189 eV, LUMO=   -0.695023 eV, gap=    7.464166 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -1640,21 +1666,21 @@ unset echo
    GDISP  =      0.0000000000
    GREP   =      0.0000000000
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.91 TOTAL CPU TIME =          3.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.22 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    72.35%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    72.35%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    72.31%
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.16 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.11%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.08%
 
           NSERCH=  2     ENERGY=    -497.5967747
 
@@ -1713,7 +1739,7 @@ unset echo
  CL         17.0   0.0000391438   0.0000000253   2.0025003669
  C           6.0  -0.0003490867  -0.0000001815   0.0523370370
  H           1.0  -0.5240644459   0.9108010811  -0.2374293027
- H           1.0  -0.5240649343  -0.9108005075  -0.2374311038
+ H           1.0  -0.5240649343  -0.9108005074  -0.2374311038
  H           1.0   1.0509277110   0.0000007097  -0.2350638345
 
 
@@ -1749,11 +1775,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.05%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.06%
 
      ----------------------------
      INPUT FOR TESSERA DEFINITION
@@ -1796,21 +1822,21 @@ unset echo
      2  -0.000349087  -0.000000181   0.052337037   2.040000000   9.320507529
      3  -0.524064446   0.910801081  -0.237429303   1.440000000   7.127541158
      4  -0.524064934  -0.910800507  -0.237431104   1.440000000   7.127538923
-     5   1.050927711   0.000000710  -0.235063835   1.440000000   7.798367275
+     5   1.050927711   0.000000710  -0.235063834   1.440000000   7.798367275
 
  TOTAL NUMBER OF TESSERAE=     123
  SURFACE AREA=    70.89589418(A**2)    CAVITY VOLUME=     59.98731807 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.06%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.06%
 
  ..... DONE SETTING UP PCM CALCULATION .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    73.06%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -1836,13 +1862,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.9 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.1, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5978374293 AFTER   7 ITERATIONS
  DFT EXCHANGE + CORRELATION ENERGY =       -27.8559299754
  TOTAL ELECTRON NUMBER             =        25.9999592147
+
+ Alpha HOMO=    -8.179024 eV, LUMO=   -0.342869 eV, gap=    7.836155 eV
+
+  Beta HOMO=    -8.179024 eV, LUMO=   -0.342869 eV, gap=    7.836155 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -1854,21 +1884,21 @@ unset echo
    GDISP  =      0.0000000000
    GREP   =      0.0000000000
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.91 TOTAL CPU TIME =          4.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.23 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.11%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.11%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.08%
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.16 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.66%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.63%
 
           NSERCH=  3     ENERGY=    -497.5978374
 
@@ -1909,7 +1939,7 @@ unset echo
  NSERCH:   3  E=     -497.5978374293  GRAD. MAX=  0.0073489  R.M.S.=  0.0025115
 
           HESSIAN UPDATED USING THE BFGS FORMULA
-             ACTUAL ENERGY CHANGE WAS  -0.0010626820
+             ACTUAL ENERGY CHANGE WAS  -0.0010626819
           PREDICTED ENERGY CHANGE WAS  -0.0008364705 RATIO=  1.270
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =   0.053371
@@ -1923,11 +1953,11 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- CL         17.0   0.0000156086   0.0000000266   1.9948617788
- C           6.0  -0.0001926585  -0.0000001946   0.0718558643
- H           1.0  -0.5231538908   0.9079305799  -0.2261600834
- H           1.0  -0.5231543916  -0.9079299397  -0.2261619831
- H           1.0   1.0480606584   0.0000007531  -0.2249708039
+ CL         17.0   0.0000156086   0.0000000266   1.9948617787
+ C           6.0  -0.0001926585  -0.0000001946   0.0718558646
+ H           1.0  -0.5231538908   0.9079305799  -0.2261600832
+ H           1.0  -0.5231543916  -0.9079299397  -0.2261619829
+ H           1.0   1.0480606584   0.0000007531  -0.2249708038
 
 
                      --------------------
@@ -1962,11 +1992,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.61%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.61%
 
      ----------------------------
      INPUT FOR TESSERA DEFINITION
@@ -2006,24 +2036,24 @@ unset echo
  TOTAL NUMBER OF SPHERES=     5
  SPHERE           CENTER  (X,Y,Z) (A)               RADIUS (A)      AREA(A*A)
      1   0.000015609   0.000000027   1.994861779   2.172000000  39.521939299
-     2  -0.000192658  -0.000000195   0.071855864   2.040000000   9.322638712
-     3  -0.523153891   0.907930580  -0.226160083   1.440000000   7.113681259
+     2  -0.000192658  -0.000000195   0.071855865   2.040000000   9.322638712
+     3  -0.523153891   0.907930580  -0.226160083   1.440000000   7.113681260
      4  -0.523154392  -0.907929940  -0.226161983   1.440000000   7.113679463
      5   1.048060658   0.000000753  -0.224970804   1.440000000   7.686881642
 
  TOTAL NUMBER OF TESSERAE=     123
  SURFACE AREA=    70.75882038(A**2)    CAVITY VOLUME=     59.79518936 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.62%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.62%
 
  ..... DONE SETTING UP PCM CALCULATION .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    73.62%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -2049,13 +2079,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.9 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.1, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5980475342 AFTER   7 ITERATIONS
- DFT EXCHANGE + CORRELATION ENERGY =       -27.8623503388
+ DFT EXCHANGE + CORRELATION ENERGY =       -27.8623503389
  TOTAL ELECTRON NUMBER             =        25.9999545724
+
+ Alpha HOMO=    -8.185069 eV, LUMO=   -0.118540 eV, gap=    8.066529 eV
+
+  Beta HOMO=    -8.185069 eV, LUMO=   -0.118540 eV, gap=    8.066529 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -2067,21 +2101,21 @@ unset echo
    GDISP  =      0.0000000000
    GREP   =      0.0000000000
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.90 TOTAL CPU TIME =          5.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.24 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    73.80%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    73.79%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    73.76%
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.15 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.22%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.21%
 
           NSERCH=  4     ENERGY=    -497.5980475
 
@@ -2137,10 +2171,10 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  CL         17.0   0.0000063142   0.0000000255   1.9938347628
- C           6.0  -0.0001291384  -0.0000001873   0.0739572632
- H           1.0  -0.5222887152   0.9060246147  -0.2224649214
- H           1.0  -0.5222891945  -0.9060239941  -0.2224667520
- H           1.0   1.0458964539   0.0000007245  -0.2217474657
+ C           6.0  -0.0001291384  -0.0000001873   0.0739572633
+ H           1.0  -0.5222887152   0.9060246147  -0.2224649213
+ H           1.0  -0.5222891945  -0.9060239941  -0.2224667519
+ H           1.0   1.0458964539   0.0000007245  -0.2217474656
 
 
                      --------------------
@@ -2175,11 +2209,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.21%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.22%
 
      ----------------------------
      INPUT FOR TESSERA DEFINITION
@@ -2219,24 +2253,24 @@ unset echo
  TOTAL NUMBER OF SPHERES=     5
  SPHERE           CENTER  (X,Y,Z) (A)               RADIUS (A)      AREA(A*A)
      1   0.000006314   0.000000026   1.993834763   2.172000000  39.521939299
-     2  -0.000129138  -0.000000187   0.073957263   2.040000000   9.342526171
+     2  -0.000129138  -0.000000187   0.073957263   2.040000000   9.342526170
      3  -0.522288715   0.906024615  -0.222464921   1.440000000   7.074024064
      4  -0.522289195  -0.906023994  -0.222466752   1.440000000   7.074022202
      5   1.045896454   0.000000725  -0.221747466   1.440000000   7.639398147
 
  TOTAL NUMBER OF TESSERAE=     123
- SURFACE AREA=    70.65190988(A**2)    CAVITY VOLUME=     59.70352142 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    99.92%
+ SURFACE AREA=    70.65190988(A**2)    CAVITY VOLUME=     59.70352141 (A**3)
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.22%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.22%
 
  ..... DONE SETTING UP PCM CALCULATION .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    74.22%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -2261,13 +2295,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.8 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.1, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5980693549 AFTER   6 ITERATIONS
- DFT EXCHANGE + CORRELATION ENERGY =       -27.8652322632
+ DFT EXCHANGE + CORRELATION ENERGY =       -27.8652322633
  TOTAL ELECTRON NUMBER             =        25.9999547752
+
+ Alpha HOMO=    -8.185159 eV, LUMO=   -0.089518 eV, gap=    8.095641 eV
+
+  Beta HOMO=    -8.185159 eV, LUMO=   -0.089518 eV, gap=    8.095641 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -2279,21 +2317,21 @@ unset echo
    GDISP  =      0.0000000000
    GREP   =      0.0000000000
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.77 TOTAL CPU TIME =          6.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.19 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    74.23%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    74.23%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    74.20%
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.16 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.62%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.60%
 
           NSERCH=  5     ENERGY=    -497.5980694
 
@@ -2387,11 +2425,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.59%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.59%
 
      ----------------------------
      INPUT FOR TESSERA DEFINITION
@@ -2434,21 +2472,21 @@ unset echo
      2  -0.000126153  -0.000000185   0.073606541   2.040000000   9.349721118
      3  -0.522013197   0.905540060  -0.222019449   1.440000000   7.061927801
      4  -0.522013671  -0.905539449  -0.222021266   1.440000000   7.061925942
-     5   1.045304953   0.000000715  -0.221283002   1.440000000   7.628766833
+     5   1.045304953   0.000000715  -0.221283002   1.440000000   7.628766832
 
  TOTAL NUMBER OF TESSERAE=     123
  SURFACE AREA=    70.62428099(A**2)    CAVITY VOLUME=     59.68388806 (A**3)
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.59%
 
           THE SOLUTE IS ENCLOSED IN ONE CAVITY
  DONE CHECKING SEPARATION.
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.59%
 
  ..... DONE SETTING UP PCM CALCULATION .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    74.59%
  NUCLEI-NUCLEAR CHARGE POLARIZATION ADJUSTMENT TO VNN=        0.0000000000
 
           ---------------------------
@@ -2473,13 +2511,17 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.8 SECONDS (       0.1 SEC/ITER)
-     FOCK TIME ON FIRST ITERATION=       0.1, LAST ITERATION=       0.1
+     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RO-B3LYP ENERGY IS     -497.5980705435 AFTER   6 ITERATIONS
  DFT EXCHANGE + CORRELATION ENERGY =       -27.8658163504
  TOTAL ELECTRON NUMBER             =        25.9999549280
+
+ Alpha HOMO=    -8.185071 eV, LUMO=   -0.092499 eV, gap=    8.092571 eV
+
+  Beta HOMO=    -8.185071 eV, LUMO=   -0.092499 eV, gap=    8.092571 eV
 
           --------------------
           SPIN SZ   =    0.000
@@ -2491,21 +2533,21 @@ unset echo
    GDISP  =      0.0000000000
    GREP   =      0.0000000000
  ...... END OF ROHF CALCULATION ......
- STEP CPU TIME =     0.77 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.20 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    74.92%
 
  .... DONE WITH PCM CONTRIBUTION TO GRADIENT ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    74.92%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.1 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    74.91%
  MEMORY FOR GRID POINT CONTRIBUTIONS TO THE DFT GRADIENT=    198230 WORDS.
- STEP CPU TIME =     0.16 TOTAL CPU TIME =          7.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    75.26%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    75.24%
 
           NSERCH=  6     ENERGY=    -497.5980705
 
@@ -2589,8 +2631,8 @@ unset echo
   * ... LESS THAN  3.000
 
 
-          NUCLEAR ENERGY    =       48.7703981494
-          ELECTRONIC ENERGY =     -546.4314353327
+          NUCLEAR ENERGY    =       48.7703981500
+          ELECTRONIC ENERGY =     -546.4314353333
           TOTAL ENERGY      =     -497.5980705435
 
           ------------------
@@ -2632,66 +2674,66 @@ unset echo
                       6          7          8          9         10
                    -7.1348    -0.8324    -0.6820    -0.4485    -0.4483
                      A          A          A          A          A   
-    1  CL 1  S   -0.000000   0.070252  -0.043958   0.000000  -0.000012
-    2  CL 1  S    0.000000  -0.405409   0.256735  -0.000000   0.000070
-    3  CL 1  X    0.000391   0.000022  -0.000005   0.000025  -0.070269
-    4  CL 1  Y   -0.971408   0.000000  -0.000000   0.070089   0.000025
-    5  CL 1  Z    0.000000   0.045973   0.034324  -0.000000   0.000129
-    6  CL 1  S   -0.000000   0.517704  -0.319530   0.000000  -0.000075
-    7  CL 1  X    0.000035  -0.000043   0.000013  -0.000053   0.146443
-    8  CL 1  Y   -0.087340  -0.000000   0.000000  -0.146066  -0.000053
-    9  CL 1  Z    0.000000  -0.094483  -0.065422   0.000001  -0.000277
-   10  CL 1  S    0.000000   0.363734  -0.328801   0.000000  -0.000143
-   11  CL 1  X   -0.000011  -0.000038   0.000019  -0.000037   0.102945
-   12  CL 1  Y    0.026720  -0.000000  -0.000000  -0.102629  -0.000037
-   13  CL 1  Z   -0.000000  -0.016131  -0.000076   0.000000  -0.000150
-   14  C  2  S   -0.000000  -0.111591  -0.184372  -0.000000  -0.000060
-   15  C  2  S   -0.000000   0.099929   0.184229  -0.000001   0.000062
-   16  C  2  X   -0.000000  -0.000005  -0.000042  -0.000141   0.392068
-   17  C  2  Y    0.000168  -0.000000  -0.000000  -0.392099  -0.000141
-   18  C  2  Z    0.000000   0.054769  -0.073205  -0.000001   0.000197
-   19  C  2  S    0.000000   0.334428   0.571192   0.000003   0.000453
-   20  C  2  X    0.000001  -0.000046  -0.000081  -0.000112   0.307477
-   21  C  2  Y   -0.002332   0.000001   0.000001  -0.306960  -0.000112
-   22  C  2  Z   -0.000000   0.044002  -0.021442  -0.000001  -0.000001
-   23  H  3  S    0.000780   0.049293   0.124306  -0.212756  -0.122800
-   24  H  3  S   -0.001362  -0.011999   0.025623  -0.156788  -0.090601
-   25  H  4  S   -0.000779   0.049293   0.124306   0.212843  -0.122647
-   26  H  4  S    0.001362  -0.011998   0.025625   0.156849  -0.090491
-   27  H  5  S   -0.000000   0.049268   0.124152  -0.000088   0.245592
-   28  H  5  S    0.000001  -0.012032   0.025473  -0.000065   0.180469
+    1  CL 1  S   -0.000000  -0.070252   0.043958   0.000000  -0.000012
+    2  CL 1  S    0.000000   0.405409  -0.256735  -0.000000   0.000070
+    3  CL 1  X    0.000391  -0.000022   0.000005   0.000025  -0.070269
+    4  CL 1  Y   -0.971408  -0.000000   0.000000   0.070089   0.000025
+    5  CL 1  Z    0.000000  -0.045973  -0.034324  -0.000000   0.000129
+    6  CL 1  S   -0.000000  -0.517704   0.319530   0.000000  -0.000075
+    7  CL 1  X    0.000035   0.000043  -0.000013  -0.000053   0.146443
+    8  CL 1  Y   -0.087340   0.000000  -0.000000  -0.146066  -0.000053
+    9  CL 1  Z    0.000000   0.094483   0.065422   0.000001  -0.000277
+   10  CL 1  S    0.000000  -0.363734   0.328801   0.000000  -0.000143
+   11  CL 1  X   -0.000011   0.000038  -0.000019  -0.000037   0.102945
+   12  CL 1  Y    0.026720   0.000000   0.000000  -0.102629  -0.000037
+   13  CL 1  Z   -0.000000   0.016131   0.000076   0.000000  -0.000150
+   14  C  2  S   -0.000000   0.111591   0.184372  -0.000000  -0.000060
+   15  C  2  S   -0.000000  -0.099929  -0.184229  -0.000001   0.000062
+   16  C  2  X   -0.000000   0.000005   0.000042  -0.000141   0.392068
+   17  C  2  Y    0.000168   0.000000   0.000000  -0.392099  -0.000141
+   18  C  2  Z    0.000000  -0.054769   0.073205  -0.000001   0.000197
+   19  C  2  S    0.000000  -0.334428  -0.571192   0.000003   0.000453
+   20  C  2  X    0.000001   0.000046   0.000081  -0.000112   0.307477
+   21  C  2  Y   -0.002332  -0.000001  -0.000001  -0.306960  -0.000112
+   22  C  2  Z   -0.000000  -0.044002   0.021442  -0.000001  -0.000001
+   23  H  3  S    0.000780  -0.049293  -0.124306  -0.212756  -0.122800
+   24  H  3  S   -0.001362   0.011999  -0.025623  -0.156788  -0.090601
+   25  H  4  S   -0.000779  -0.049293  -0.124306   0.212843  -0.122647
+   26  H  4  S    0.001362   0.011998  -0.025625   0.156849  -0.090491
+   27  H  5  S   -0.000000  -0.049268  -0.124152  -0.000088   0.245592
+   28  H  5  S    0.000001   0.012032  -0.025473  -0.000065   0.180469
 
                      11         12         13         14         15
                    -0.3923    -0.3008    -0.3008    -0.0034     0.1381
                      A          A          A          A          A   
-    1  CL 1  S   -0.014467  -0.000000  -0.000006  -0.020951   0.008999
-    2  CL 1  S    0.085864   0.000000   0.000033   0.129041  -0.053602
-    3  CL 1  X    0.000144   0.000258   0.278781  -0.000040  -0.000034
-    4  CL 1  Y    0.000000   0.278832  -0.000258  -0.000000   0.000000
-    5  CL 1  Z    0.229969  -0.000000  -0.000121  -0.184765   0.023319
-    6  CL 1  S   -0.097537  -0.000000  -0.000100  -0.167927   0.182071
-    7  CL 1  X   -0.000298  -0.000555  -0.598740   0.000091   0.000039
-    8  CL 1  Y   -0.000000  -0.598852   0.000555   0.000000  -0.000000
-    9  CL 1  Z   -0.489825   0.000001   0.000272   0.408858  -0.067650
-   10  CL 1  S   -0.191614   0.000000   0.000105  -0.437724  -0.111558
-   11  CL 1  X   -0.000257  -0.000477  -0.515275   0.000143   0.000432
-   12  CL 1  Y   -0.000000  -0.515298   0.000477   0.000000  -0.000001
-   13  CL 1  Z   -0.308826   0.000000   0.000114   0.741476   0.022588
-   14  C  2  S    0.001917   0.000000  -0.000017  -0.102156  -0.158253
-   15  C  2  S   -0.020371   0.000000   0.000022   0.072957   0.077108
-   16  C  2  X   -0.000215   0.000113   0.122298  -0.000213  -0.001241
-   17  C  2  Y   -0.000000   0.121975  -0.000113  -0.000000   0.000003
-   18  C  2  Z    0.293399  -0.000000  -0.000115   0.405472  -0.184424
-   19  C  2  S    0.053851  -0.000001   0.000086   0.808416   2.094276
-   20  C  2  X   -0.000272   0.000060   0.064343  -0.000670  -0.002995
-   21  C  2  Y   -0.000001   0.063900  -0.000060  -0.000001   0.000009
-   22  C  2  Z    0.269396   0.000000  -0.000175   0.778562  -0.505570
-   23  H  3  S   -0.066200   0.086210  -0.049908  -0.008363  -0.052543
-   24  H  3  S   -0.070847   0.100152  -0.057969  -0.104065  -1.042485
-   25  H  4  S   -0.066200  -0.086302  -0.049748  -0.008363  -0.052541
-   26  H  4  S   -0.070848  -0.100257  -0.057784  -0.104066  -1.042470
-   27  H  5  S   -0.066210   0.000092   0.099769  -0.008137  -0.052247
-   28  H  5  S   -0.070740   0.000107   0.115698  -0.103065  -1.035229
+    1  CL 1  S   -0.014467  -0.000000  -0.000006  -0.020951  -0.008999
+    2  CL 1  S    0.085864   0.000000   0.000033   0.129041   0.053602
+    3  CL 1  X    0.000144   0.000258   0.278781  -0.000040   0.000034
+    4  CL 1  Y    0.000000   0.278832  -0.000258  -0.000000  -0.000000
+    5  CL 1  Z    0.229969  -0.000000  -0.000121  -0.184765  -0.023319
+    6  CL 1  S   -0.097537  -0.000000  -0.000100  -0.167927  -0.182071
+    7  CL 1  X   -0.000298  -0.000555  -0.598740   0.000091  -0.000039
+    8  CL 1  Y   -0.000000  -0.598852   0.000555   0.000000   0.000000
+    9  CL 1  Z   -0.489825   0.000001   0.000272   0.408858   0.067650
+   10  CL 1  S   -0.191614   0.000000   0.000105  -0.437724   0.111558
+   11  CL 1  X   -0.000257  -0.000477  -0.515275   0.000143  -0.000432
+   12  CL 1  Y   -0.000000  -0.515298   0.000477   0.000000   0.000001
+   13  CL 1  Z   -0.308826   0.000000   0.000114   0.741476  -0.022588
+   14  C  2  S    0.001917   0.000000  -0.000017  -0.102156   0.158253
+   15  C  2  S   -0.020371   0.000000   0.000022   0.072957  -0.077108
+   16  C  2  X   -0.000215   0.000113   0.122298  -0.000213   0.001241
+   17  C  2  Y   -0.000000   0.121975  -0.000113  -0.000000  -0.000003
+   18  C  2  Z    0.293399  -0.000000  -0.000115   0.405472   0.184424
+   19  C  2  S    0.053851  -0.000001   0.000086   0.808416  -2.094276
+   20  C  2  X   -0.000272   0.000060   0.064343  -0.000670   0.002995
+   21  C  2  Y   -0.000001   0.063900  -0.000060  -0.000001  -0.000009
+   22  C  2  Z    0.269396   0.000000  -0.000175   0.778562   0.505570
+   23  H  3  S   -0.066200   0.086210  -0.049908  -0.008363   0.052543
+   24  H  3  S   -0.070847   0.100152  -0.057969  -0.104065   1.042485
+   25  H  4  S   -0.066200  -0.086302  -0.049748  -0.008363   0.052541
+   26  H  4  S   -0.070848  -0.100257  -0.057784  -0.104066   1.042470
+   27  H  5  S   -0.066210   0.000092   0.099769  -0.008137   0.052247
+   28  H  5  S   -0.070740   0.000107   0.115698  -0.103065   1.035229
 
                      16         17         18         19         20
                     0.1765     0.1766     0.5211     0.5862     0.5863
@@ -2894,7 +2936,7 @@ unset echo
           ----------------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000    2.643668        0.00 (A.U.)
+                -0.000000   -0.000000    2.643668        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
      0.005858   -0.000007   -3.136052    3.136057
 
@@ -2903,24 +2945,24 @@ unset echo
           ----------------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000    2.643668        0.00 (A.U.)
+                -0.000000   -0.000000    2.643668        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
      0.005858   -0.000007   -3.136052    3.136057
  INCLUDING PCM SURFACE CHARGES, TOTAL CHARGE=   -0.003785, AND TOTAL DIPOLE IS
          DX          DY          DZ         /D/  (DEBYE)
     -0.017133   -0.000001   -0.086845    0.088519
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    75.24%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -497.5980705435
- -2.302623858E-06 2.776514204E-11 9.714157692E-07 4.210281477E-06-1.218375029E-09
- -1.609171848E-06 1.214593161E-06-5.947253051E-06 1.444287857E-06 1.214666695E-06
-  5.948089939E-06 1.444628869E-06-4.336917474E-06 3.537216380E-10-2.251160648E-06
-  5.857539928E-03-6.995956982E-06-3.136051714E+00
+ -2.302623863E-06 2.778287650E-11 9.714048465E-07 4.210281355E-06-1.218607843E-09
+ -1.609168772E-06 1.214596002E-06-5.947257775E-06 1.444290474E-06 1.214669634E-06
+  5.948094864E-06 1.444631518E-06-4.336923127E-06 3.537365152E-10-2.251158067E-06
+  5.857539928E-03-6.995959121E-06-3.136051713E+00
  ......END OF GEOMETRY SEARCH......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    75.24%
 
              ----------------------------------------------
              -------   RESULTS OF PCM CALCULATION   -------
@@ -2954,31 +2996,35 @@ unset echo
     INCLUDES ES+DISP+REP+CAV, MEANING CAVITATION IS NOT IN THE SCF ENERGY.
 
  .... DONE PRINTING PCM SOLVENT SUMMARY ....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    99.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    75.24%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 18:36:42 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 14:25:40 07-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 7.199 + 0.24 = 7.223
+ 0: 1.736 + 0.124 = 1.861
+ 1: 1.702 + 0.94 = 1.797
+ 2: 1.702 + 0.105 = 1.807
+ 3: 1.690 + 0.67 = 1.758
  ----------------------------------------
 Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      481 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F05
--rw-r--r--@ 1 blink  staff  2486720 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F10
--rw-r--r--@ 1 blink  staff  1551840 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F22
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F26
--rw-r--r--@ 1 blink  staff   130880 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F26R
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F27
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:36 /Users/blink/github/gamess2023R2claude/scr/SN2_C3V_H2O_CH3Cl.F27R
+-rw-r--r--@ 1 blink  staff      481 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F05
+-rw-r--r--@ 1 blink  staff  2486720 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F10
+-rw-r--r--@ 1 blink  staff  1551840 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F22
+-rw-r--r--@ 1 blink  staff  1551840 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F22.001
+-rw-r--r--@ 1 blink  staff  1551840 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F22.002
+-rw-r--r--@ 1 blink  staff  1551840 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F22.003
+-rw-r--r--@ 1 blink  staff        8 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F26
+-rw-r--r--@ 1 blink  staff        0 Nov  7 14:25 /Users/blink/github/gamess2024R2claude/gamess/scr/SN2_C3V_H2O_CH3Cl.F27
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 18:36:43 AST 2026
-7.244u 0.081s 0:08.35 87.6%	0+0k 0+0io 67pf+0w
+Sat Nov  7 14:25:41 AST 2026
+6.885u 0.475s 0:03.65 201.3%	0+0k 0+0io 108pf+0w

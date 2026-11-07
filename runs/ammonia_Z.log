@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/inputs/ammonia_Z.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 20:59:49 AST 2026
+under operating system Darwin at Sat Nov 7 14:19:32 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 489407768 452031124    52% 3641033 4520311240    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 494634872 447853244    53% 3684857 4478532440    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/inputs/ammonia_Z.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/ammonia_Z.inp /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F05
+cp /Users/blink/github/UsingGAMESSv2/inputs/ammonia_Z.inp /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/ammonia_Z.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/ammonia_Z.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.trj
@@ -32,149 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F99
 unset echo
 /Users/blink/github/UsingGAMESSv2/runs/ammonia_Z.dat
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x ammonia_Z -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x ammonia_Z -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x ammonia_Z 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x ammonia_Z 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -229,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -275,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 20:59:49 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 14:19:32 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0 COORD=ZMT $END     
@@ -329,12 +336,15 @@ unset echo
  N           7.0   -0.0591633615    0.0000000000   -0.0000498809
  H           1.0    0.2741753170    0.0000000000   -0.9428570327
  H           1.0    0.2739304708    0.8163514779    0.4717750477
- EXECUTION OF GAMESS TERMINATED -ABNORMALLY- AT 20:59:49 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED -ABNORMALLY- AT 14:19:32 07-NOV-2026    
                580000  WORDS OF DYNAMIC MEMORY USED
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    52.63%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    43.96%
+ DDI Process 3: error code 911
+ DDI Process 2: error code 911
+ DDI Process 1: error code 911
  DDI Process 0: error code 911
- ddikick.x: application process 0 quit unexpectedly.
+ ddikick.x: application process 3 quit unexpectedly.
  ddikick.x: Fatal error detected.
  The error is most likely to be in the application, so check for
  input errors, disk space, memory needs, application bugs, etc.
@@ -344,10 +354,10 @@ unset echo
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     307 Nov  6 20:59 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F05
--rw-r--r--@ 1 blink  staff  785280 Nov  6 20:59 /Users/blink/github/gamess2023R2claude/scr/ammonia_Z.F10
+-rw-r--r--@ 1 blink  staff     307 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F05
+-rw-r--r--@ 1 blink  staff  785280 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_Z.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 20:59:51 AST 2026
-0.084u 0.101s 0:01.22 14.7%	0+0k 0+0io 65pf+0w
+Sat Nov  7 14:19:33 AST 2026
+0.095u 0.119s 0:01.22 16.3%	0+0k 0+0io 98pf+0w

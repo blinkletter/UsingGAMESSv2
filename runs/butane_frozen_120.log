@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 18:17:14 AST 2026
+under operating system Darwin at Sat Nov 7 16:10:36 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 488239376 453199516    52% 3637612 4531995160    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 495420824 447067292    53% 3686143 4470672920    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.inp /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F05
+cp /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.inp /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.trj
@@ -32,148 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F99
 unset echo
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x butane_frozen_120 -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+/Users/blink/github/UsingGAMESSv2/runs/butane_frozen_120.dat
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butane_frozen_120 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x butane_frozen_120 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butane_frozen_120 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -228,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -274,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 18:17:14 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 16:10:36 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD>!   File created by MacMolPlt 7.7.2                                             
@@ -564,10 +572,10 @@ unset echo
      ---------------
   REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
  DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
- MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ MEMDDI DISTRIBUTED OVER   4 PROCESSORS IS           0 WORDS/PROCESSOR.
  TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
  TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
- PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
  MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
 
           ----------------
@@ -583,6 +591,13 @@ unset echo
           EXTRAPOLATION IN EFFECT
           SOSCF IN EFFECT
  ORBITAL PRINTING OPTION: NPREO=     1    56     2     1
+
+     ----------------------
+     TARGET OFFLOAD OPTIONS
+     ----------------------
+     RHF    =       F
+     CPHF    =       F
+     MAKEFP =       F
 
      -------------------------------
      INTEGRAL TRANSFORMATION OPTIONS
@@ -690,8 +705,8 @@ unset echo
  A   =   56
 
  ..... DONE SETTING UP THE RUN .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    88.19%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    86.15%
 
 
           -----------------------------
@@ -794,8 +809,8 @@ unset echo
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    90.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    81.89%
 
           -------------
           GUESS OPTIONS
@@ -815,8 +830,8 @@ unset echo
     19=A       20=A       21=A       22=A       23=A       24=A       25=A   
     26=A       27=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    92.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.33%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -838,8 +853,8 @@ unset echo
  DIRECT SCF METHOD SKIPS INTEGRAL STORAGE ON DISK.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    95.16%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.75%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -871,11 +886,13 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.4 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.3870972766 AFTER   9 ITERATIONS
+
+ Alpha HOMO=   -11.742479 eV, LUMO=    6.633978 eV, gap=   18.376458 eV
 
           ------------
           EIGENVECTORS
@@ -1601,8 +1618,8 @@ unset echo
    55  H 14  S   -0.135311
    56  H 14  S   -0.057180
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.36 TOTAL CPU TIME =          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    98.66%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    90.79%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1841,7 +1858,7 @@ unset echo
       ATOM            VALENCE     VALENCE     VALENCE
     1 C                 3.574       3.574      -0.000
     2 C                 3.574       3.574      -0.000
-    3 C                 3.657       3.657       0.000
+    3 C                 3.657       3.657      -0.000
     4 C                 3.658       3.658       0.000
     5 H                 0.925       0.925       0.000
     6 H                 0.923       0.923       0.000
@@ -1863,13 +1880,13 @@ unset echo
          DX          DY          DZ         /D/  (DEBYE)
     -0.000469    0.020761    0.072165    0.075093
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    98.67%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    90.88%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    98.67%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    90.10%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -1877,8 +1894,8 @@ unset echo
  THE COARSE/FINE SCHWARZ SCREENINGS SKIPPED        24859/       18116 BLOCKS.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS     96537
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.07 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    98.59%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    90.52%
 
           NSERCH=  0     ENERGY=    -156.3870973
 
@@ -2087,11 +2104,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    98.60%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    90.45%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    98.60%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    90.52%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2113,20 +2130,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4106746807 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.158864 eV, LUMO=    6.972741 eV, gap=   19.131605 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.24 TOTAL CPU TIME =          0.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    98.50%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    91.41%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    98.51%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    91.13%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          0.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    98.48%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    91.57%
 
           NSERCH=  1     ENERGY=    -156.4106747
 
@@ -2335,11 +2354,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    98.48%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    91.53%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    98.48%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    91.59%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2362,20 +2381,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4118474140 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.045982 eV, LUMO=    7.367287 eV, gap=   19.413269 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.28 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    97.44%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    91.97%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    97.45%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    91.75%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    96.98%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    91.88%
 
           NSERCH=  2     ENERGY=    -156.4118474
 
@@ -2584,11 +2605,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    96.98%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    91.83%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    96.98%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    91.86%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2610,20 +2631,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4146779855 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.174133 eV, LUMO=    7.180089 eV, gap=   19.354222 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.24 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    97.17%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          0.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    92.00%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    97.18%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    91.82%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    97.21%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    91.92%
 
           NSERCH=  3     ENERGY=    -156.4146780
 
@@ -2723,7 +2746,7 @@ unset echo
  H           1.0  -0.8894831263   1.1229340378   1.0874363394
  H           1.0   0.3758696109  -1.3631010440   0.3302447518
  H           1.0   0.8897440168  -0.2374269645   1.5448072543
- H           1.0   2.7308039934   0.2573556800   0.2566125379
+ H           1.0   2.7308039934   0.2573556799   0.2566125379
  H           1.0   1.6896577218   0.8936279941  -0.9930774371
  H           1.0   2.1540621960  -0.7984209211  -1.0198192446
  H           1.0  -2.7312768987  -0.0503576717   0.3603210799
@@ -2832,11 +2855,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    97.21%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    91.87%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    97.21%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    91.89%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2858,20 +2881,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4147614651 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.153552 eV, LUMO=    7.174694 eV, gap=   19.328247 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.22 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    97.34%
+ CPU     0: STEP CPU TIME=     0.07 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    91.92%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    97.34%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    91.76%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    97.40%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    91.81%
 
           NSERCH=  4     ENERGY=    -156.4147615
 
@@ -3080,11 +3105,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    97.41%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    91.77%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    97.41%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    91.79%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3106,20 +3131,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4148564351 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.168271 eV, LUMO=    7.176114 eV, gap=   19.344385 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.23 TOTAL CPU TIME =          1.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    97.57%
+ CPU     0: STEP CPU TIME=     0.07 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    91.94%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    97.57%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    91.80%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    97.61%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    91.92%
 
           NSERCH=  5     ENERGY=    -156.4148564
 
@@ -3213,13 +3240,13 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6297000422   0.5542848750   0.1994850779
+ C           6.0  -0.6297000422   0.5542848751   0.1994850779
  C           6.0   0.6299165315  -0.3211301222   0.4937258065
  C           6.0   1.8772683188   0.0264446991  -0.3697706439
  C           6.0  -1.8775659239  -0.2444161392  -0.2781427611
  H           1.0  -0.3781705243   1.2948857965  -0.5488467630
  H           1.0  -0.8875843073   1.1147117266   1.0900991527
- H           1.0   0.3785071227  -1.3634618596   0.3449871392
+ H           1.0   0.3785071227  -1.3634618596   0.3449871391
  H           1.0   0.8879446080  -0.2295562121   1.5419741749
  H           1.0   2.7447681778   0.2262966533   0.2480512304
  H           1.0   1.7045377942   0.9080881348  -0.9751496503
@@ -3330,11 +3357,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    97.61%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    91.88%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    97.61%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    91.90%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3356,20 +3383,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4149674823 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.187711 eV, LUMO=    7.172420 eV, gap=   19.360131 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.23 TOTAL CPU TIME =          2.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    97.79%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          0.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    91.99%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    97.79%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    91.87%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          2.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    97.82%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    91.92%
 
           NSERCH=  6     ENERGY=    -156.4149675
 
@@ -3471,9 +3500,9 @@ unset echo
  H           1.0  -0.8881356580   1.1103989257   1.0912952067
  H           1.0   0.3792830254  -1.3631729942   0.3511794747
  H           1.0   0.8889326079  -0.2256378504   1.5401568347
- H           1.0   2.7583647499   0.1863232124   0.2413148361
- H           1.0   1.7228324345   0.9315280597  -0.9460730268
- H           1.0   2.1010553823  -0.7634670972  -1.0746287701
+ H           1.0   2.7583647499   0.1863232125   0.2413148361
+ H           1.0   1.7228324345   0.9315280596  -0.9460730269
+ H           1.0   2.1010553823  -0.7634670973  -1.0746287701
  H           1.0  -2.7572973242  -0.0015492062   0.3068979394
  H           1.0  -1.7218308577  -1.3134086409  -0.1890110440
  H           1.0  -2.1020523683  -0.0407164114  -1.3170298683
@@ -3580,11 +3609,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    97.82%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    91.89%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    97.82%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    91.90%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3607,20 +3636,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4151593985 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.182387 eV, LUMO=    7.170707 eV, gap=   19.353095 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.26 TOTAL CPU TIME =          2.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    91.93%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    91.84%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          2.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    91.90%
 
           NSERCH=  7     ENERGY=    -156.4151594
 
@@ -3702,7 +3733,7 @@ unset echo
  *** THIS MODE HAS AN INCORRECT CURVATURE ***
  THE COMPONENTS OF THIS MODE FOLLOWS:
        -0.002117       0.205959      -0.125404       0.172971      -0.121986
-       -0.000000      -0.046496       0.122866       0.363522      -0.011153
+        0.000000      -0.046496       0.122866       0.363522      -0.011153
        -0.022861       0.109800      -0.049895       0.155497       0.397365
        -0.009705      -0.032408       0.072692      -0.028236      -0.314719
         0.259747       0.011900       0.023638      -0.369960      -0.007317
@@ -3711,7 +3742,7 @@ unset echo
         0.054189
              ACTUAL ENERGY CHANGE WAS  -0.0001919162
           PREDICTED ENERGY CHANGE WAS  -0.0001332236 RATIO=  1.441
-          TRIM/QA LAMBDA FOR NON-TS MODES =  -1.76950711
+          TRIM/QA LAMBDA FOR NON-TS MODES =  -1.76950710
           TRIM/QA STEP HAS LENGTH         =   0.070711
           RADIUS OF STEP TAKEN=   0.07071  CURRENT TRUST RADIUS=   0.07071
           TRANSFORMING DISPLACEMENT FROM INTERNALS TO CARTESIANS
@@ -3725,20 +3756,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6286384224   0.5560972031   0.2002437942
- C           6.0   0.6286555632  -0.3220637148   0.4957954919
- C           6.0   1.8763643873   0.0287488528  -0.3726805626
- C           6.0  -1.8764500703  -0.2478719818  -0.2783369305
- H           1.0  -0.3866828343   1.2866059989  -0.5594322295
- H           1.0  -0.8746422351   1.1341291231   1.0829011354
- H           1.0   0.3893711976  -1.3635915260   0.3313836678
- H           1.0   0.8708366678  -0.2491383357   1.5493023473
- H           1.0   2.7536388000   0.1501778170   0.2502367290
- H           1.0   1.7294668194   0.9626358045  -0.9032257881
- H           1.0   2.1036328920  -0.7283114657  -1.1140878308
- H           1.0  -2.7540489928   0.0321581293   0.2909247845
- H           1.0  -1.7312388199  -1.3129167408  -0.1371373817
- H           1.0  -2.0995173732  -0.0892839036  -1.3269322284
+ C           6.0  -0.6286384225   0.5560972033   0.2002437942
+ C           6.0   0.6286555631  -0.3220637148   0.4957954918
+ C           6.0   1.8763643872   0.0287488527  -0.3726805625
+ C           6.0  -1.8764500701  -0.2478719819  -0.2783369305
+ H           1.0  -0.3866828343   1.2866059992  -0.5594322294
+ H           1.0  -0.8746422351   1.1341291232   1.0829011355
+ H           1.0   0.3893711974  -1.3635915259   0.3313836676
+ H           1.0   0.8708366678  -0.2491383357   1.5493023472
+ H           1.0   2.7536387999   0.1501778167   0.2502367291
+ H           1.0   1.7294668195   0.9626358044  -0.9032257880
+ H           1.0   2.1036328918  -0.7283114658  -1.1140878308
+ H           1.0  -2.7540489927   0.0321581289   0.2909247846
+ H           1.0  -1.7312388194  -1.3129167409  -0.1371373818
+ H           1.0  -2.0995173731  -0.0892839036  -1.3269322283
 
 
                      --------------------
@@ -3842,11 +3873,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    91.88%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    91.89%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3858,7 +3889,7 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4141368464  -156.4141368464   0.006913711   0.005980515        1131543      24849
+   1  0  0     -156.4141368465  -156.4141368465   0.006913711   0.005980515        1131543      24849
    2  1  0     -156.4150274093    -0.0008905629   0.003558590   0.001363429        1094969      35515
    3  2  0     -156.4151202807    -0.0000928714   0.000706712   0.000195263        1081107      38197
    4  3  0     -156.4151214733    -0.0000011926   0.000189430   0.000055774        1037610      44779
@@ -3869,20 +3900,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4151215780 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.126546 eV, LUMO=    7.193662 eV, gap=   19.320208 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.26 TOTAL CPU TIME =          2.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          2.9 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          0.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    91.97%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          2.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          3.0 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    91.88%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          3.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          3.0 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    91.92%
 
           NSERCH=  8     ENERGY=    -156.4151216
 
@@ -3960,7 +3993,7 @@ unset echo
 
           HESSIAN UPDATED USING THE BFGS FORMULA
              ACTUAL ENERGY CHANGE WAS   0.0000378205
-          PREDICTED ENERGY CHANGE WAS  -0.0046654156 RATIO= -0.008
+          PREDICTED ENERGY CHANGE WAS  -0.0046654155 RATIO= -0.008
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =  13.608590
           TRIM/QA LAMBDA FOR NON-TS MODES =  -0.10386428
@@ -3976,20 +4009,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6297254718   0.5537886927   0.2002183231
- C           6.0   0.6297345365  -0.3202587494   0.4940272260
- C           6.0   1.8765126912   0.0302023172  -0.3717515699
- C           6.0  -1.8766047903  -0.2485760109  -0.2772062256
- H           1.0  -0.3829378527   1.2880612138  -0.5561626829
+ C           6.0  -0.6297254718   0.5537886928   0.2002183231
+ C           6.0   0.6297345364  -0.3202587494   0.4940272259
+ C           6.0   1.8765126911   0.0302023172  -0.3717515699
+ C           6.0  -1.8766047902  -0.2485760109  -0.2772062256
+ H           1.0  -0.3829378527   1.2880612139  -0.5561626829
  H           1.0  -0.8846018064   1.1271888156   1.0838156076
- H           1.0   0.3835281810  -1.3624436561   0.3348646299
- H           1.0   0.8838576791  -0.2432224869   1.5447531513
- H           1.0   2.7643984512   0.1235772213   0.2419466673
+ H           1.0   0.3835281809  -1.3624436560   0.3348646299
+ H           1.0   0.8838576790  -0.2432224870   1.5447531513
+ H           1.0   2.7643984511   0.1235772212   0.2419466673
  H           1.0   1.7454760832   0.9770683124  -0.8832981200
- H           1.0   2.0718833328  -0.7216015292  -1.1277058752
- H           1.0  -2.7641174456   0.0480506510   0.2687565742
- H           1.0  -1.7457817907  -1.3121316769  -0.1123694497
- H           1.0  -2.0707161547  -0.1050097393  -1.3338340434
+ H           1.0   2.0718833327  -0.7216015292  -1.1277058752
+ H           1.0  -2.7641174455   0.0480506508   0.2687565742
+ H           1.0  -1.7457817905  -1.3121316770  -0.1123694497
+ H           1.0  -2.0707161547  -0.1050097393  -1.3338340433
 
 
                      --------------------
@@ -4093,11 +4126,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          3.0 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    91.90%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          3.0 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    91.91%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4119,20 +4152,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4157093253 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.174350 eV, LUMO=    7.189927 eV, gap=   19.364277 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.22 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.2 SECONDS, CPU UTILIZATION IS    97.98%
+ CPU     0: STEP CPU TIME=     0.07 TOTAL CPU TIME=          1.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    91.94%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.3 SECONDS, CPU UTILIZATION IS    97.98%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    91.88%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          3.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.3 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    91.93%
 
           NSERCH=  9     ENERGY=    -156.4157093
 
@@ -4212,7 +4247,7 @@ unset echo
              ACTUAL ENERGY CHANGE WAS  -0.0005877473
           PREDICTED ENERGY CHANGE WAS  -0.0004828076 RATIO=  1.217
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
-               NR STEP HAS LENGTH         =  39.532952
+               NR STEP HAS LENGTH         =  39.532951
           TRIM/QA LAMBDA FOR NON-TS MODES =  -0.10663612
           TRIM/QA STEP HAS LENGTH         =   0.070711
           RADIUS OF STEP TAKEN=   0.07071  CURRENT TRUST RADIUS=   0.07071
@@ -4230,15 +4265,15 @@ unset echo
  C           6.0  -0.6302511968   0.5519060365   0.2003515180
  C           6.0   0.6303718807  -0.3187623440   0.4929109211
  C           6.0   1.8757842808   0.0321746300  -0.3714294674
- C           6.0  -1.8759498560  -0.2499092458  -0.2760280936
+ C           6.0  -1.8759498560  -0.2499092457  -0.2760280936
  H           1.0  -0.3812443407   1.2863057229  -0.5564884769
  H           1.0  -0.8925562881   1.1253187804   1.0819161971
  H           1.0   0.3810339772  -1.3611703445   0.3336880607
  H           1.0   0.8932162825  -0.2429963686   1.5416860814
- H           1.0   2.7760161865   0.0761940477   0.2307361036
- H           1.0   1.7654964375   1.0028370216  -0.8416478390
+ H           1.0   2.7760161865   0.0761940478   0.2307361036
+ H           1.0   1.7654964374   1.0028370216  -0.8416478391
  H           1.0   2.0290416677  -0.6960628996  -1.1593021293
- H           1.0  -2.7755787898   0.0791008506   0.2312643198
+ H           1.0  -2.7755787897   0.0791008506   0.2312643198
  H           1.0  -1.7653204913  -1.3072736508  -0.0635124435
  H           1.0  -2.0295701278  -0.1457264036  -1.3437307274
 
@@ -4344,11 +4379,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.3 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    91.90%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.3 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    91.91%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4370,20 +4405,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4163206217 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.212116 eV, LUMO=    7.192900 eV, gap=   19.405017 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.23 TOTAL CPU TIME =          3.5 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.6 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          1.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    92.02%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.5 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.6 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    91.95%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          3.5 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.6 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    92.02%
 
           NSERCH= 10     ENERGY=    -156.4163206
 
@@ -4463,7 +4500,7 @@ unset echo
              ACTUAL ENERGY CHANGE WAS  -0.0006112964
           PREDICTED ENERGY CHANGE WAS  -0.0005779116 RATIO=  1.058
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
-               NR STEP HAS LENGTH         = 582.691223
+               NR STEP HAS LENGTH         = 582.691213
           TRIM/QA LAMBDA FOR NON-TS MODES =  -0.05994655
           TRIM/QA STEP HAS LENGTH         =   0.141421
           RADIUS OF STEP TAKEN=   0.14142  CURRENT TRUST RADIUS=   0.14142
@@ -4478,20 +4515,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6308142233   0.5489209759   0.2006416485
- C           6.0   0.6310735036  -0.3163017096   0.4911594411
- C           6.0   1.8735862505   0.0360492540  -0.3712670145
- C           6.0  -1.8738094780  -0.2528868845  -0.2739912292
- H           1.0  -0.3789181650   1.2820232467  -0.5587648311
- H           1.0  -0.9055638461   1.1242606343   1.0773753852
- H           1.0   0.3772100192  -1.3589580144   0.3295499228
- H           1.0   0.9087294492  -0.2450612376   1.5365829767
- H           1.0   2.7926251216  -0.0197380447   0.2025485238
- H           1.0   1.8085254390   1.0488443900  -0.7528248301
- H           1.0   1.9458468513  -0.6333542035  -1.2201176048
- H           1.0  -2.7919535771   0.1385040179   0.1510280176
- H           1.0  -1.8074460210  -1.2899784096   0.0350235150
- H           1.0  -1.9494845468  -0.2344516197  -1.3545787851
+ C           6.0  -0.6308142232   0.5489209757   0.2006416484
+ C           6.0   0.6310735037  -0.3163017096   0.4911594412
+ C           6.0   1.8735862505   0.0360492541  -0.3712670145
+ C           6.0  -1.8738094781  -0.2528868844  -0.2739912292
+ H           1.0  -0.3789181650   1.2820232465  -0.5587648312
+ H           1.0  -0.9055638462   1.1242606342   1.0773753851
+ H           1.0   0.3772100193  -1.3589580145   0.3295499230
+ H           1.0   0.9087294493  -0.2450612376   1.5365829768
+ H           1.0   2.7926251216  -0.0197380444   0.2025485238
+ H           1.0   1.8085254389   1.0488443901  -0.7528248302
+ H           1.0   1.9458468515  -0.6333542035  -1.2201176048
+ H           1.0  -2.7919535771   0.1385040182   0.1510280175
+ H           1.0  -1.8074460213  -1.2899784095   0.0350235150
+ H           1.0  -1.9494845470  -0.2344516197  -1.3545787851
 
 
                      --------------------
@@ -4595,11 +4632,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.6 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    92.01%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.6 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    92.02%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4622,20 +4659,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4175462437 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.185570 eV, LUMO=    7.197952 eV, gap=   19.383522 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.27 TOTAL CPU TIME =          3.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.9 SECONDS, CPU UTILIZATION IS    97.90%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    92.07%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          3.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          3.9 SECONDS, CPU UTILIZATION IS    97.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    92.00%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          3.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.0 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    92.08%
 
           NSERCH= 11     ENERGY=    -156.4175462
 
@@ -4715,7 +4754,7 @@ unset echo
              ACTUAL ENERGY CHANGE WAS  -0.0012256220
           PREDICTED ENERGY CHANGE WAS  -0.0012082357 RATIO=  1.014
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
-               NR STEP HAS LENGTH         = 486.583485
+               NR STEP HAS LENGTH         = 486.583473
           TRIM/QA LAMBDA FOR NON-TS MODES =  -0.03071612
           TRIM/QA STEP HAS LENGTH         =   0.282843
           RADIUS OF STEP TAKEN=   0.28284  CURRENT TRUST RADIUS=   0.28284
@@ -4731,20 +4770,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6295525057   0.5454795951   0.2015661482
- C           6.0   0.6300328268  -0.3130664104   0.4895488917
- C           6.0   1.8661047015   0.0438364172  -0.3726155875
- C           6.0  -1.8662704880  -0.2599108676  -0.2709663662
- H           1.0  -0.3743281010   1.2673569691  -0.5714333953
- H           1.0  -0.9316956187   1.1284114165   1.0639301850
- H           1.0   0.3698283047  -1.3546192182   0.3115261730
- H           1.0   0.9396852911  -0.2565770652   1.5265899168
- H           1.0   2.8012213095  -0.2061156078   0.1215915515
- H           1.0   1.8978678203   1.1108768737  -0.5601558721
- H           1.0   1.7787628815  -0.4728658621  -1.3191589223
- H           1.0  -2.8006886144   0.2376806922  -0.0261128354
- H           1.0  -1.8951725945  -1.2232648090   0.2246696672
- H           1.0  -1.7892257881  -0.4254259045  -1.3374148004
+ C           6.0  -0.6295525056   0.5454795947   0.2015661481
+ C           6.0   0.6300328270  -0.3130664105   0.4895488918
+ C           6.0   1.8661047017   0.0438364173  -0.3726155875
+ C           6.0  -1.8662704884  -0.2599108674  -0.2709663662
+ H           1.0  -0.3743281011   1.2673569686  -0.5714333955
+ H           1.0  -0.9316956188   1.1284114162   1.0639301848
+ H           1.0   0.3698283051  -1.3546192183   0.3115261733
+ H           1.0   0.9396852912  -0.2565770651   1.5265899170
+ H           1.0   2.8012213098  -0.2061156072   0.1215915516
+ H           1.0   1.8978678203   1.1108768739  -0.5601558724
+ H           1.0   1.7787628820  -0.4728658621  -1.3191589222
+ H           1.0  -2.8006886146   0.2376806928  -0.0261128355
+ H           1.0  -1.8951725954  -1.2232648087   0.2246696672
+ H           1.0  -1.7892257887  -0.4254259045  -1.3374148005
 
 
                      --------------------
@@ -4848,11 +4887,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.0 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    92.08%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          3.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.0 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    92.09%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4876,20 +4915,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4196388137 AFTER   8 ITERATIONS
+
+ Alpha HOMO=   -12.164977 eV, LUMO=    7.179841 eV, gap=   19.344818 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.31 TOTAL CPU TIME =          4.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.12 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    92.24%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    92.19%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.4 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    92.23%
 
           NSERCH= 12     ENERGY=    -156.4196388
 
@@ -4984,20 +5025,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6391598145   0.5288285676   0.1980156457
- C           6.0   0.6410043437  -0.3030148900   0.4770651398
- C           6.0   1.8681312546   0.0498529124  -0.3654536989
- C           6.0  -1.8694600412  -0.2604078996  -0.2638359648
- H           1.0  -0.3621469807   1.2928901960  -0.5330997206
- H           1.0  -0.9545622519   1.0866165815   1.0759540398
- H           1.0   0.3558174438  -1.3517156224   0.3581397669
- H           1.0   0.9660575975  -0.2177004235   1.5105889277
- H           1.0   2.8060291843  -0.3814404199  -0.0193481300
- H           1.0   2.0457639368   1.1206307846  -0.4082841987
- H           1.0   1.6512580051  -0.2810227283  -1.3766948600
- H           1.0  -2.8027564234   0.2990004642  -0.2421120103
- H           1.0  -2.0450279179  -1.1327816868   0.3584638996
- H           1.0  -1.6665734522  -0.6161597634  -1.2688347744
+ C           6.0  -0.6391598143   0.5288285671   0.1980156456
+ C           6.0   0.6410043440  -0.3030148903   0.4770651402
+ C           6.0   1.8681312547   0.0498529127  -0.3654536990
+ C           6.0  -1.8694600418  -0.2604078992  -0.2638359650
+ H           1.0  -0.3621469808   1.2928901950  -0.5330997212
+ H           1.0  -0.9545622518   1.0866165815   1.0759540393
+ H           1.0   0.3558174444  -1.3517156227   0.3581397672
+ H           1.0   0.9660575975  -0.2177004235   1.5105889282
+ H           1.0   2.8060291848  -0.3814404180  -0.0193481290
+ H           1.0   2.0457639354   1.1206307851  -0.4082841999
+ H           1.0   1.6512580063  -0.2810227297  -1.3766948597
+ H           1.0  -2.8027564236   0.2990004652  -0.2421120094
+ H           1.0  -2.0450279183  -1.1327816867   0.3584638990
+ H           1.0  -1.6665734540  -0.6161597626  -1.2688347750
 
 
                      --------------------
@@ -5026,8 +5067,8 @@ unset echo
   17 BEND      8  2  7                  1.8304743     104.8784514
   18 TORSION   8  2  7  1               2.0738320     118.8218213
   19 STRETCH   9  3                     2.0575077       1.0887863
-  20 BEND      9  3  2                  2.0092630     115.1222894
-  21 TORSION   9  3  2  8               0.7449303      42.6813646
+  20 BEND      9  3  2                  2.0092630     115.1222893
+  21 TORSION   9  3  2  8               0.7449303      42.6813645
   22 STRETCH  10  3                     2.0527270       1.0862564
   23 BEND     10  3  9                  1.8360430     105.1975139
   24 TORSION  10  3  9  2               2.1683253     124.2358862
@@ -5036,7 +5077,7 @@ unset echo
   27 TORSION  11  3  9 10               2.0131491     115.3449498
   28 STRETCH  12  4                     2.0566365       1.0883252
   29 BEND     12  4  1                  2.0016040     114.6834627
-  30 TORSION  12  4  1  6               0.7429217      42.5662784
+  30 TORSION  12  4  1  6               0.7429217      42.5662783
   31 STRETCH  13  4                     2.0519999       1.0858716
   32 BEND     13  4 12                  1.8367767     105.2395525
   33 TORSION  13  4 12  1               2.1508780     123.2362339
@@ -5062,7 +5103,7 @@ unset echo
   11 H       2.8950969 *  2.1112845 *  1.0858736 *  3.6924701    2.6912180 *
   12 H       2.2198386 *  3.5691913    4.6791537    1.0883252 *  2.6512384 *
   13 H       2.1824659 *  2.8137783 *  4.1515655    1.0858716 *  3.0839679  
-  14 H       2.1256122 *  2.9105225 *  3.7086126    1.0852396 *  2.4263772 *
+  14 H       2.1256122 *  2.9105226 *  3.7086126    1.0852396 *  2.4263772 *
 
                 6 H          7 H          8 H          9 H         10 H     
 
@@ -5084,7 +5125,7 @@ unset echo
                11 H         12 H         13 H         14 H     
 
    1 C       2.8950969 *  2.2198386 *  2.1824659 *  2.1256122 *
-   2 C       2.1112845 *  3.5691913    2.8137783 *  2.9105225 *
+   2 C       2.1112845 *  3.5691913    2.8137783 *  2.9105226 *
    3 C       1.0858736 *  4.6791537    4.1515655    3.7086126  
    4 C       3.6924701    1.0883252 *  1.0858716 *  1.0852396 *
    5 H       2.6912180 *  2.6512384 *  3.0839679    2.4263772 *
@@ -5101,11 +5142,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.4 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    92.21%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.4 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    92.22%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -5117,10 +5158,10 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.3990472883  -156.3990472883   0.031071874   0.025031631        1134586      24575
-   2  1  0     -156.4169584596    -0.0179111713   0.016046294   0.006042374        1116631      30708
+   1  0  0     -156.3990472886  -156.3990472886   0.031071874   0.025031631        1134586      24575
+   2  1  0     -156.4169584596    -0.0179111711   0.016046294   0.006042374        1116631      30708
    3  2  0     -156.4189684740    -0.0020100144   0.003474767   0.000974756        1105404      33090
-   4  3  0     -156.4190003381    -0.0000318641   0.001065222   0.000334754        1075768      38007
+   4  3  0     -156.4190003382    -0.0000318641   0.001065222   0.000334754        1075768      38007
    5  4  0     -156.4190033840    -0.0000030458   0.000091778   0.000038764        1053704      41795
    6  5  0     -156.4190034436    -0.0000000597   0.000019666   0.000007295        1002833      51322
    7  6  0     -156.4190034471    -0.0000000035   0.000005326   0.000002704         969891      56796
@@ -5128,20 +5169,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4190034471 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -11.959552 eV, LUMO=    7.131639 eV, gap=   19.091191 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.28 TOTAL CPU TIME =          4.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.6 SECONDS, CPU UTILIZATION IS    97.99%
+ CPU     0: STEP CPU TIME=     0.10 TOTAL CPU TIME=          1.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    92.32%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.6 SECONDS, CPU UTILIZATION IS    97.99%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    92.27%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          4.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.7 SECONDS, CPU UTILIZATION IS    98.01%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    92.32%
 
           NSERCH= 13     ENERGY=    -156.4190034
 
@@ -5192,8 +5235,8 @@ unset echo
   17 BEND      8  2  7                104.8784514       0.0035652
   18 TORSION   8  2  7  1             118.8218213       0.0189990
   19 STRETCH   9  3                     1.0887863       0.0042952
-  20 BEND      9  3  2                115.1222894       0.0212372
-  21 TORSION   9  3  2  8              42.6813646      -0.0055944
+  20 BEND      9  3  2                115.1222893       0.0212372
+  21 TORSION   9  3  2  8              42.6813645      -0.0055944
   22 STRETCH  10  3                     1.0862564      -0.0001015
   23 BEND     10  3  9                105.1975139      -0.0082905
   24 TORSION  10  3  9  2             124.2358862       0.0212181
@@ -5202,7 +5245,7 @@ unset echo
   27 TORSION  11  3  9 10             115.3449498       0.0133855
   28 STRETCH  12  4                     1.0883252       0.0039043
   29 BEND     12  4  1                114.6834627       0.0191834
-  30 TORSION  12  4  1  6              42.5662784      -0.0054053
+  30 TORSION  12  4  1  6              42.5662783      -0.0054053
   31 STRETCH  13  4                     1.0858716      -0.0005496
   32 BEND     13  4 12                105.2395525      -0.0072106
   33 TORSION  13  4 12  1             123.2362339       0.0164219
@@ -5219,7 +5262,7 @@ unset echo
 
           HESSIAN UPDATED USING THE BFGS FORMULA
              ACTUAL ENERGY CHANGE WAS   0.0006353666
-          PREDICTED ENERGY CHANGE WAS  -0.0022054699 RATIO= -0.288
+          PREDICTED ENERGY CHANGE WAS  -0.0022054698 RATIO= -0.288
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =   2.918220
           TRIM/QA LAMBDA FOR NON-TS MODES =  -0.03876925
@@ -5235,20 +5278,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6236096958   0.5459255570   0.1999088354
- C           6.0   0.6254744838  -0.3149327177   0.4895694233
- C           6.0   1.8379259057   0.0518380742  -0.3744854790
- C           6.0  -1.8390391647  -0.2669284256  -0.2686919988
- H           1.0  -0.3535659186   1.2760736459  -0.5663099979
- H           1.0  -0.9560889311   1.0988440245   1.0708130163
- H           1.0   0.3482750726  -1.3587796378   0.3234507595
- H           1.0   0.9675479653  -0.2300678983   1.5145253697
- H           1.0   2.7683432096  -0.4068289586  -0.0412139632
- H           1.0   1.9868231245   1.1239642557  -0.3463610948
- H           1.0   1.5773385292  -0.2437783112  -1.3817583724
- H           1.0  -2.7673276240   0.3025804135  -0.2756043099
- H           1.0  -1.9840531841  -1.1038343236   0.4025234394
- H           1.0  -1.5962405710  -0.6475214159  -1.2513603303
+ C           6.0  -0.6236096958   0.5459255563   0.1999088354
+ C           6.0   0.6254744844  -0.3149327177   0.4895694235
+ C           6.0   1.8379259064   0.0518380745  -0.3744854790
+ C           6.0  -1.8390391658  -0.2669284252  -0.2686919989
+ H           1.0  -0.3535659190   1.2760736451  -0.5663099982
+ H           1.0  -0.9560889312   1.0988440240   1.0708130160
+ H           1.0   0.3482750737  -1.3587796380   0.3234507601
+ H           1.0   0.9675479655  -0.2300678979   1.5145253701
+ H           1.0   2.7683432106  -0.4068289569  -0.0412139622
+ H           1.0   1.9868231242   1.1239642561  -0.3463610962
+ H           1.0   1.5773385309  -0.2437783126  -1.3817583722
+ H           1.0  -2.7673276247   0.3025804147  -0.2756043088
+ H           1.0  -1.9840531856  -1.1038343237   0.4025234386
+ H           1.0  -1.5962405735  -0.6475214150  -1.2513603310
 
 
                      --------------------
@@ -5262,7 +5305,7 @@ unset echo
    2 STRETCH   3  2                     2.8976039       1.5333461
    3 BEND      3  2  1                  1.9828614     113.6095888
    4 STRETCH   4  1                     2.9015677       1.5354436
-   5 BEND      4  1  2                  1.9848992     113.7263453
+   5 BEND      4  1  2                  1.9848992     113.7263454
    6 TORSION   4  1  2  3               2.0943951     120.0000000
    7 STRETCH   5  1                     2.0641580       1.0923054
    8 BEND      5  1  2                  1.8799046     107.7105992
@@ -5283,11 +5326,11 @@ unset echo
   23 BEND     10  3  9                  1.8665407     106.9449066
   24 TORSION  10  3  9  2               2.1079599     120.7772053
   25 STRETCH  11  3                     2.0439582       1.0816162
-  26 BEND     11  3  9                  1.9557720     112.0574798
+  26 BEND     11  3  9                  1.9557720     112.0574797
   27 TORSION  11  3  9 10               2.0867343     119.5610672
   28 STRETCH  12  4                     2.0580735       1.0890857
   29 BEND     12  4  1                  1.9821102     113.5665482
-  30 TORSION  12  4  1  6               0.7717380      44.2173312
+  30 TORSION  12  4  1  6               0.7717380      44.2173311
   31 STRETCH  13  4                     2.0457719       1.0825760
   32 BEND     13  4 12                  1.8692222     107.0985405
   33 TORSION  13  4 12  1               2.1017653     120.4222829
@@ -5352,11 +5395,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.7 SECONDS, CPU UTILIZATION IS    98.01%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    92.30%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          4.7 SECONDS, CPU UTILIZATION IS    98.01%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    92.31%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -5368,7 +5411,7 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4192417170  -156.4192417170   0.013135434   0.006863704        1143949      23379
+   1  0  0     -156.4192417170  -156.4192417170   0.013135433   0.006863704        1143949      23379
    2  1  0     -156.4206902369    -0.0014485199   0.003445305   0.001562274        1117866      31729
    3  2  0     -156.4208160319    -0.0001257950   0.000748692   0.000245766        1104597      34814
    4  3  0     -156.4208183759    -0.0000023440   0.000299784   0.000093392        1066556      40461
@@ -5378,20 +5421,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4208186295 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.110599 eV, LUMO=    7.107419 eV, gap=   19.218018 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.24 TOTAL CPU TIME =          4.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.0 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          1.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    92.36%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.0 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    92.31%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.07 TOTAL CPU TIME =          4.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.0 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    92.32%
 
           NSERCH= 14     ENERGY=    -156.4208186
 
@@ -5427,7 +5472,7 @@ unset echo
    2 STRETCH   3  2                     1.5333461      -0.0103267
    3 BEND      3  2  1                113.6095888       0.0116709
    4 STRETCH   4  1                     1.5354436      -0.0084080
-   5 BEND      4  1  2                113.7263453       0.0117070
+   5 BEND      4  1  2                113.7263454       0.0117070
    6 TORSION   4  1  2  3             120.0000000      -0.0009095
    7 STRETCH   5  1                     1.0923054       0.0047152
    8 BEND      5  1  2                107.7105992      -0.0094235
@@ -5448,11 +5493,11 @@ unset echo
   23 BEND     10  3  9                106.9449066      -0.0003373
   24 TORSION  10  3  9  2             120.7772053       0.0147011
   25 STRETCH  11  3                     1.0816162      -0.0025945
-  26 BEND     11  3  9                112.0574798       0.0185940
+  26 BEND     11  3  9                112.0574797       0.0185940
   27 TORSION  11  3  9 10             119.5610672       0.0188321
   28 STRETCH  12  4                     1.0890857       0.0049411
   29 BEND     12  4  1                113.5665482       0.0201254
-  30 TORSION  12  4  1  6              44.2173312      -0.0059915
+  30 TORSION  12  4  1  6              44.2173311      -0.0059915
   31 STRETCH  13  4                     1.0825760      -0.0022255
   32 BEND     13  4 12                107.0985405       0.0012527
   33 TORSION  13  4 12  1             120.4222829       0.0104371
@@ -5469,7 +5514,7 @@ unset echo
 
           HESSIAN UPDATED USING THE BFGS FORMULA
              ACTUAL ENERGY CHANGE WAS  -0.0018151824
-          PREDICTED ENERGY CHANGE WAS  -0.0027032617 RATIO=  0.671
+          PREDICTED ENERGY CHANGE WAS  -0.0027032616 RATIO=  0.671
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =   1.310957
           TRIM/QA LAMBDA FOR NON-TS MODES =  -0.01639656
@@ -5487,20 +5532,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6246623246   0.5521115905   0.2016402648
- C           6.0   0.6248206179  -0.3179044891   0.4930470325
- C           6.0   1.8468869462   0.0475565897  -0.3753869348
- C           6.0  -1.8467191248  -0.2651004175  -0.2714251119
- H           1.0  -0.3631290616   1.2810596904  -0.5639152184
- H           1.0  -0.9346410576   1.1073634699   1.0795811972
- H           1.0   0.3562747651  -1.3603593457   0.3253104881
- H           1.0   0.9465262238  -0.2307003204   1.5244930436
- H           1.0   2.7879749801  -0.3003168822   0.0467562839
- H           1.0   1.9150593194   1.1234560757  -0.4747871240
- H           1.0   1.6800574913  -0.3905577662  -1.3514953072
- H           1.0  -2.7865902613   0.2672581596  -0.1401822422
- H           1.0  -1.9087643941  -1.1830155831   0.2990331759
- H           1.0  -1.6966509975  -0.5125942486  -1.3148367220
+ C           6.0  -0.6246623245   0.5521115900   0.2016402647
+ C           6.0   0.6248206183  -0.3179044892   0.4930470328
+ C           6.0   1.8468869464   0.0475565900  -0.3753869349
+ C           6.0  -1.8467191254  -0.2651004173  -0.2714251120
+ H           1.0  -0.3631290618   1.2810596898  -0.5639152188
+ H           1.0  -0.9346410578   1.1073634694   1.0795811969
+ H           1.0   0.3562747659  -1.3603593459   0.3253104886
+ H           1.0   0.9465262238  -0.2307003203   1.5244930440
+ H           1.0   2.7879749803  -0.3003168815   0.0467562840
+ H           1.0   1.9150593192   1.1234560760  -0.4747871242
+ H           1.0   1.6800574919  -0.3905577662  -1.3514953072
+ H           1.0  -2.7865902615   0.2672581606  -0.1401822423
+ H           1.0  -1.9087643953  -1.1830155827   0.2990331759
+ H           1.0  -1.6966509983  -0.5125942485  -1.3148367221
 
 
                      --------------------
@@ -5604,11 +5649,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.0 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    92.31%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          4.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.0 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    92.31%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -5620,9 +5665,9 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4120125672  -156.4120125672   0.019803675   0.024156312        1140989      23851
-   2  1  0     -156.4202468251    -0.0082342579   0.011029035   0.005575031        1116652      31379
-   3  2  0     -156.4211681016    -0.0009212765   0.002146623   0.000683955        1105747      33509
+   1  0  0     -156.4120125674  -156.4120125674   0.019803675   0.024156312        1140989      23851
+   2  1  0     -156.4202468252    -0.0082342578   0.011029035   0.005575031        1116652      31379
+   3  2  0     -156.4211681017    -0.0009212765   0.002146623   0.000683955        1105747      33509
    4  3  0     -156.4211809280    -0.0000128264   0.000548909   0.000210158        1074050      38606
    5  4  0     -156.4211820989    -0.0000011709   0.000033044   0.000012131        1048498      43217
    6  5  0     -156.4211821076    -0.0000000087   0.000009674   0.000002873         985878      54472
@@ -5631,20 +5676,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4211821082 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.144663 eV, LUMO=    7.155776 eV, gap=   19.300440 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.28 TOTAL CPU TIME =          5.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.3 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    92.31%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.3 SECONDS, CPU UTILIZATION IS    97.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    92.27%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    92.28%
 
           NSERCH= 15     ENERGY=    -156.4211821
 
@@ -5736,20 +5783,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6279215649   0.5543566594   0.2053584029
- C           6.0   0.6271296233  -0.3174194712   0.4965690033
- C           6.0   1.8559867939   0.0559925080  -0.3812423204
- C           6.0  -1.8548830519  -0.2756996410  -0.2706285428
- H           1.0  -0.3557194096   1.2715640454  -0.5670890206
- H           1.0  -0.9509633522   1.1254135454   1.0712381645
- H           1.0   0.3474063445  -1.3543640979   0.3158968527
- H           1.0   0.9649739018  -0.2481061305   1.5264728303
- H           1.0   2.7752384879  -0.4008739397  -0.0190423758
- H           1.0   2.0103009072   1.1292254080  -0.3791498314
- H           1.0   1.6289639671  -0.2950508982  -1.3841897092
- H           1.0  -2.7741979236   0.3062160090  -0.2546370620
- H           1.0  -2.0043732902  -1.1311873239   0.3783743127
- H           1.0  -1.6453421870  -0.6079919393  -1.2838888625
+ C           6.0  -0.6279215645   0.5543566592   0.2053584028
+ C           6.0   0.6271296234  -0.3174194715   0.4965690037
+ C           6.0   1.8559867934   0.0559925082  -0.3812423206
+ C           6.0  -1.8548830517  -0.2756996408  -0.2706285429
+ H           1.0  -0.3557194096   1.2715640449  -0.5670890212
+ H           1.0  -0.9509633520   1.1254135451   1.0712381643
+ H           1.0   0.3474063448  -1.3543640983   0.3158968531
+ H           1.0   0.9649739014  -0.2481061305   1.5264728309
+ H           1.0   2.7752384874  -0.4008739396  -0.0190423761
+ H           1.0   2.0103009061   1.1292254083  -0.3791498309
+ H           1.0   1.6289639666  -0.2950508976  -1.3841897095
+ H           1.0  -2.7741979231   0.3062160098  -0.2546370625
+ H           1.0  -2.0043732897  -1.1311873233   0.3783743131
+ H           1.0  -1.6453421869  -0.6079919398  -1.2838888624
 
 
                      --------------------
@@ -5782,7 +5829,7 @@ unset echo
   21 TORSION   9  3  2  8               0.7436327      42.6070153
   22 STRETCH  10  3                     2.0489772       1.0842721
   23 BEND     10  3  9                  1.8698343     107.1336112
-  24 TORSION  10  3  9  2               2.1183313     121.3714417
+  24 TORSION  10  3  9  2               2.1183313     121.3714416
   25 STRETCH  11  3                     2.0533543       1.0865884
   26 BEND     11  3  9                  1.9261994     110.3630990
   27 TORSION  11  3  9 10               2.1019625     120.4335784
@@ -5790,8 +5837,8 @@ unset echo
   29 BEND     12  4  1                  1.9567393     112.1129030
   30 TORSION  12  4  1  6               0.7427923      42.5588660
   31 STRETCH  13  4                     2.0487726       1.0841638
-  32 BEND     13  4 12                  1.8720271     107.2592536
-  33 TORSION  13  4 12  1               2.1152426     121.1944738
+  32 BEND     13  4 12                  1.8720271     107.2592537
+  33 TORSION  13  4 12  1               2.1152426     121.1944737
   34 STRETCH  14  4                     2.0536566       1.0867484
   35 BEND     14  4 12                  1.9178451     109.8844273
   36 TORSION  14  4 12 13               2.0884238     119.6578710
@@ -5853,11 +5900,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    92.27%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.3 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.4 SECONDS, CPU UTILIZATION IS    97.97%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.8 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    92.28%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -5873,27 +5920,29 @@ unset echo
    2  1  0     -156.4214983302    -0.0051382892   0.008545666   0.003461231        1112087      32436
    3  2  0     -156.4220686697    -0.0005703395   0.001739803   0.000643874        1100518      34479
    4  3  0     -156.4220779932    -0.0000093235   0.000375895   0.000176964        1071122      39184
-   5  4  0     -156.4220788792    -0.0000008861   0.000034255   0.000014799        1040760      44584
-   6  5  0     -156.4220788874    -0.0000000082   0.000009488   0.000003494         987772      54001
+   5  4  0     -156.4220788793    -0.0000008861   0.000034255   0.000014799        1040760      44584
+   6  5  0     -156.4220788875    -0.0000000082   0.000009488   0.000003494         987772      54001
    7  6  0     -156.4220788877    -0.0000000002   0.000003351   0.000001085         946502      60827
 
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4220788877 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.161648 eV, LUMO=    7.142898 eV, gap=   19.304546 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.27 TOTAL CPU TIME =          5.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.7 SECONDS, CPU UTILIZATION IS    98.01%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    92.28%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          5.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.7 SECONDS, CPU UTILIZATION IS    98.01%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.0 SECONDS, CPU UTILIZATION IS    92.24%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          5.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.7 SECONDS, CPU UTILIZATION IS    98.02%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    92.25%
 
           NSERCH= 16     ENERGY=    -156.4220789
 
@@ -5948,7 +5997,7 @@ unset echo
   21 TORSION   9  3  2  8              42.6070153      -0.0064405
   22 STRETCH  10  3                     1.0842721       0.0003223
   23 BEND     10  3  9                107.1336112      -0.0043122
-  24 TORSION  10  3  9  2             121.3714417       0.0158916
+  24 TORSION  10  3  9  2             121.3714416       0.0158916
   25 STRETCH  11  3                     1.0865884       0.0014809
   26 BEND     11  3  9                110.3630990       0.0092042
   27 TORSION  11  3  9 10             120.4335784       0.0195022
@@ -5956,8 +6005,8 @@ unset echo
   29 BEND     12  4  1                112.1129030       0.0109797
   30 TORSION  12  4  1  6              42.5588660      -0.0063563
   31 STRETCH  13  4                     1.0841638       0.0000696
-  32 BEND     13  4 12                107.2592536      -0.0028985
-  33 TORSION  13  4 12  1             121.1944738       0.0117637
+  32 BEND     13  4 12                107.2592537      -0.0028985
+  33 TORSION  13  4 12  1             121.1944737       0.0117637
   34 STRETCH  14  4                     1.0867484       0.0016570
   35 BEND     14  4 12                109.8844273       0.0064312
   36 TORSION  14  4 12 13             119.6578710       0.0149612
@@ -5970,7 +6019,7 @@ unset echo
  NSERCH:  16  E=     -156.4220788877  GRAD. MAX=  0.0115584  R.M.S.=  0.0048880
 
           HESSIAN UPDATED USING THE BFGS FORMULA
-             ACTUAL ENERGY CHANGE WAS  -0.0008967794
+             ACTUAL ENERGY CHANGE WAS  -0.0008967795
           PREDICTED ENERGY CHANGE WAS  -0.0008397811 RATIO=  1.068
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =   0.135579
@@ -5985,20 +6034,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6295786727   0.5506419954   0.2037564933
- C           6.0   0.6310267198  -0.3166166247   0.4965740386
- C           6.0   1.8544834764   0.0588000357  -0.3811058545
- C           6.0  -1.8552971433  -0.2758078441  -0.2686103077
- H           1.0  -0.3612171784   1.2706573523  -0.5675410148
- H           1.0  -0.9545142224   1.1211599527   1.0682752465
- H           1.0   0.3574641411  -1.3555208826   0.3195006209
- H           1.0   0.9631353831  -0.2480266201   1.5277207848
- H           1.0   2.7584068811  -0.4671862974  -0.0786890318
- H           1.0   2.0498236576   1.1224179627  -0.3127622509
- H           1.0   1.5917026966  -0.1985014518  -1.4029405098
- H           1.0  -2.7583648013   0.3271624729  -0.3432594012
- H           1.0  -2.0497938261  -1.0832196300   0.4270363371
- H           1.0  -1.6041961866  -0.6915680645  -1.2399974291
+ C           6.0  -0.6295786725   0.5506419953   0.2037564933
+ C           6.0   0.6310267199  -0.3166166251   0.4965740391
+ C           6.0   1.8544834761   0.0588000363  -0.3811058548
+ C           6.0  -1.8552971434  -0.2758078443  -0.2686103078
+ H           1.0  -0.3612171785   1.2706573517  -0.5675410153
+ H           1.0  -0.9545142223   1.1211599530   1.0682752463
+ H           1.0   0.3574641415  -1.3555208829   0.3195006212
+ H           1.0   0.9631353830  -0.2480266202   1.5277207855
+ H           1.0   2.7584068794  -0.4671863015  -0.0786890361
+ H           1.0   2.0498236602   1.1224179625  -0.3127622463
+ H           1.0   1.5917026941  -0.1985014462  -1.4029405109
+ H           1.0  -2.7583647993   0.3271624750  -0.3432594077
+ H           1.0  -2.0497938299  -1.0832196262   0.4270363405
+ H           1.0  -1.6041961847  -0.6915680697  -1.2399974267
 
 
                      --------------------
@@ -6016,30 +6065,30 @@ unset echo
    6 TORSION   4  1  2  3               2.0943951     120.0000000
    7 STRETCH   5  1                     2.0574073       1.0887331
    8 BEND      5  1  2                  1.8774394     107.5693511
-   9 TORSION   5  1  2  4              -2.1143434    -121.1429512
+   9 TORSION   5  1  2  4              -2.1143434    -121.1429511
   10 STRETCH   6  1                     2.0514336       1.0855720
   11 BEND      6  1  5                  1.8654380     106.8817238
   12 TORSION   6  1  5  2               2.1155509     121.2121362
   13 STRETCH   7  2                     2.0575580       1.0888129
   14 BEND      7  2  1                  1.8726600     107.2955172
-  15 TORSION   7  2  1  3              -2.1166726    -121.2764065
+  15 TORSION   7  2  1  3              -2.1166726    -121.2764064
   16 STRETCH   8  2                     2.0512576       1.0854789
   17 BEND      8  2  7                  1.8667507     106.9569341
   18 TORSION   8  2  7  1               2.1211794     121.5346277
   19 STRETCH   9  3                     2.0572817       1.0886667
   20 BEND      9  3  2                  1.9612644     112.3721735
-  21 TORSION   9  3  2  8               0.8371807      47.9669209
+  21 TORSION   9  3  2  8               0.8371807      47.9669213
   22 STRETCH  10  3                     2.0476397       1.0835644
-  23 BEND     10  3  9                  1.8828873     107.8814932
+  23 BEND     10  3  9                  1.8828873     107.8814933
   24 TORSION  10  3  9  2               2.1218621     121.5737450
   25 STRETCH  11  3                     2.0522493       1.0860036
-  26 BEND     11  3  9                  1.9260326     110.3535410
+  26 BEND     11  3  9                  1.9260326     110.3535409
   27 TORSION  11  3  9 10               2.0894710     119.7178707
   28 STRETCH  12  4                     2.0568319       1.0884286
   29 BEND     12  4  1                  1.9618439     112.4053734
-  30 TORSION  12  4  1  6               0.8362036      47.9109381
+  30 TORSION  12  4  1  6               0.8362036      47.9109385
   31 STRETCH  13  4                     2.0472519       1.0833591
-  32 BEND     13  4 12                  1.8838419     107.9361922
+  32 BEND     13  4 12                  1.8838419     107.9361923
   33 TORSION  13  4 12  1               2.1219553     121.5790819
   34 STRETCH  14  4                     2.0523339       1.0860484
   35 BEND     14  4 12                  1.9204400     110.0331061
@@ -6072,11 +6121,11 @@ unset echo
    3 C       3.3346337    2.1753666 *  2.1289113 *  1.0886667 *  1.0835644 *
    4 C       2.1331179 *  2.5313963 *  3.3423254    4.6215756    4.1481265  
    5 H       1.7464953 *  2.8635918 *  2.9069628 *  3.6043212    2.4289926 *
-   6 H       0.0000000    2.9010168 *  2.4006545 *  4.1981131    3.3065559  
+   6 H       0.0000000    2.9010168 *  2.4006545 *  4.1981131    3.3065560  
    7 H       2.9010168 *  0.0000000    1.7473343 *  2.5907951 *  3.0665971  
    8 H       2.4006545 *  1.7473343 *  0.0000000    2.4190046 *  2.5389737 *
    9 H       4.1981131    2.5907951 *  2.4190046 *  0.0000000    1.7560530 *
-  10 H       3.3065559    3.0665971    2.5389737 *  1.7560530 *  0.0000000  
+  10 H       3.3065560    3.0665971    2.5389737 *  1.7560530 *  0.0000000  
   11 H       3.7857145    2.4142995 *  2.9977200 *  1.7852261 *  1.7729048 *
   12 H       2.4241986 *  3.6026468    4.2048749    5.5799424    4.8736062  
   13 H       2.5436419 *  2.4249954 *  3.3146336    4.8738126    4.7137037  
@@ -6102,11 +6151,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.7 SECONDS, CPU UTILIZATION IS    98.02%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    92.24%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          5.8 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          1.9 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.1 SECONDS, CPU UTILIZATION IS    92.24%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -6118,30 +6167,32 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4202409144  -156.4202409144   0.012377170   0.013355653        1139510      24100
-   2  1  0     -156.4230388742    -0.0027979597   0.006370265   0.003169199        1105253      33604
-   3  2  0     -156.4233486063    -0.0003097321   0.001214967   0.000281638        1091735      35701
-   4  3  0     -156.4233516459    -0.0000030395   0.000355037   0.000094463        1050402      42534
+   1  0  0     -156.4202409142  -156.4202409142   0.012377170   0.013355654        1139510      24100
+   2  1  0     -156.4230388743    -0.0027979601   0.006370265   0.003169199        1105253      33604
+   3  2  0     -156.4233486064    -0.0003097322   0.001214967   0.000281638        1091735      35701
+   4  3  0     -156.4233516460    -0.0000030395   0.000355037   0.000094463        1050402      42534
    5  4  0     -156.4233518292    -0.0000001833   0.000037883   0.000018410        1027803      46696
    6  5  0     -156.4233518348    -0.0000000056   0.000008261   0.000004607         969094      57657
 
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4233518348 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.192026 eV, LUMO=    7.143720 eV, gap=   19.335746 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.23 TOTAL CPU TIME =          5.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.0 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          2.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    92.25%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.0 SECONDS, CPU UTILIZATION IS    97.93%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    92.21%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          5.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.1 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    92.23%
 
           NSERCH= 17     ENERGY=    -156.4233518
 
@@ -6181,30 +6232,30 @@ unset echo
    6 TORSION   4  1  2  3             120.0000000      -0.0008316
    7 STRETCH   5  1                     1.0887331       0.0024164
    8 BEND      5  1  2                107.5693511      -0.0105556
-   9 TORSION   5  1  2  4            -121.1429512      -0.0104105
+   9 TORSION   5  1  2  4            -121.1429511      -0.0104105
   10 STRETCH   6  1                     1.0855720       0.0005464
   11 BEND      6  1  5                106.8817238       0.0037638
   12 TORSION   6  1  5  2             121.2121362       0.0140067
   13 STRETCH   7  2                     1.0888129       0.0025290
   14 BEND      7  2  1                107.2955172      -0.0127552
-  15 TORSION   7  2  1  3            -121.2764065      -0.0124216
+  15 TORSION   7  2  1  3            -121.2764064      -0.0124216
   16 STRETCH   8  2                     1.0854789       0.0004741
   17 BEND      8  2  7                106.9569341       0.0039912
   18 TORSION   8  2  7  1             121.5346277       0.0162357
   19 STRETCH   9  3                     1.0886667       0.0041839
   20 BEND      9  3  2                112.3721735       0.0135981
-  21 TORSION   9  3  2  8              47.9669209      -0.0042404
+  21 TORSION   9  3  2  8              47.9669213      -0.0042404
   22 STRETCH  10  3                     1.0835644      -0.0004284
-  23 BEND     10  3  9                107.8814932      -0.0011520
+  23 BEND     10  3  9                107.8814933      -0.0011520
   24 TORSION  10  3  9  2             121.5737450       0.0131339
   25 STRETCH  11  3                     1.0860036       0.0006933
-  26 BEND     11  3  9                110.3535410       0.0104576
+  26 BEND     11  3  9                110.3535409       0.0104576
   27 TORSION  11  3  9 10             119.7178707       0.0156778
   28 STRETCH  12  4                     1.0884286       0.0039687
   29 BEND     12  4  1                112.4053734       0.0129215
-  30 TORSION  12  4  1  6              47.9109381      -0.0042400
+  30 TORSION  12  4  1  6              47.9109385      -0.0042400
   31 STRETCH  13  4                     1.0833591      -0.0007181
-  32 BEND     13  4 12                107.9361922      -0.0003569
+  32 BEND     13  4 12                107.9361923      -0.0003569
   33 TORSION  13  4 12  1             121.5790819       0.0110882
   34 STRETCH  14  4                     1.0860484       0.0006824
   35 BEND     14  4 12                110.0331061       0.0089401
@@ -6222,7 +6273,7 @@ unset echo
           PREDICTED ENERGY CHANGE WAS  -0.0007875339 RATIO=  1.616
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =   0.286151
-          TRIM/QA LAMBDA FOR NON-TS MODES =  -0.02346432
+          TRIM/QA LAMBDA FOR NON-TS MODES =  -0.02346431
           TRIM/QA STEP HAS LENGTH         =   0.135579
           RADIUS OF STEP TAKEN=   0.13558  CURRENT TRUST RADIUS=   0.13558
           TRANSFORMING DISPLACEMENT FROM INTERNALS TO CARTESIANS
@@ -6235,20 +6286,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6309205011   0.5494217475   0.2024848036
- C           6.0   0.6325212116  -0.3166600672   0.4946290863
- C           6.0   1.8481439389   0.0600264266  -0.3802382663
- C           6.0  -1.8492593022  -0.2763076085  -0.2668894889
- H           1.0  -0.3823789734   1.2756821873  -0.5672186071
- H           1.0  -0.9330184194   1.1147296677   1.0761710327
- H           1.0   0.3836441053  -1.3603531702   0.3204264742
- H           1.0   0.9378655887  -0.2368893239   1.5309962546
- H           1.0   2.7303984426  -0.5149740991  -0.1150347349
- H           1.0   2.0771706705   1.1120865122  -0.2707534678
- H           1.0   1.5908141128  -0.1240818819  -1.4168172005
- H           1.0  -2.7294847810   0.3447683488  -0.4031698908
- H           1.0  -2.0803090587  -1.0482214209   0.4553004919
- H           1.0  -1.6004806336  -0.7589772971  -1.2050767135
+ C           6.0  -0.6309205013   0.5494217477   0.2024848038
+ C           6.0   0.6325212118  -0.3166600674   0.4946290867
+ C           6.0   1.8481439392   0.0600264273  -0.3802382667
+ C           6.0  -1.8492593026  -0.2763076093  -0.2668894889
+ H           1.0  -0.3823789739   1.2756821876  -0.5672186066
+ H           1.0  -0.9330184189   1.1147296677   1.0761710334
+ H           1.0   0.3836441060  -1.3603531703   0.3204264748
+ H           1.0   0.9378655886  -0.2368893229   1.5309962550
+ H           1.0   2.7303984394  -0.5149741069  -0.1150347428
+ H           1.0   2.0771706780   1.1120865107  -0.2707534605
+ H           1.0   1.5908141100  -0.1240818726  -1.4168172019
+ H           1.0  -2.7294847776   0.3447683508  -0.4031699019
+ H           1.0  -2.0803090666  -1.0482214150   0.4553004966
+ H           1.0  -1.6004806312  -0.7589773055  -1.2050767091
 
 
                      --------------------
@@ -6269,7 +6320,7 @@ unset echo
    9 TORSION   5  1  2  4              -2.1141351    -121.1310184
   10 STRETCH   6  1                     2.0476852       1.0835884
   11 BEND      6  1  5                  1.8609523     106.6247129
-  12 TORSION   6  1  5  2               2.0963495     120.1119769
+  12 TORSION   6  1  5  2               2.0963495     120.1119768
   13 STRETCH   7  2                     2.0541432       1.0870058
   14 BEND      7  2  1                  1.8941386     108.5261473
   15 TORSION   7  2  1  3              -2.1133325    -121.0850345
@@ -6277,22 +6328,22 @@ unset echo
   17 BEND      8  2  7                  1.8634972     106.7705240
   18 TORSION   8  2  7  1               2.1000464     120.3237927
   19 STRETCH   9  3                     2.0521863       1.0859703
-  20 BEND      9  3  2                  1.9519506     111.8385310
-  21 TORSION   9  3  2  8               0.9201093      52.7183793
+  20 BEND      9  3  2                  1.9519506     111.8385309
+  21 TORSION   9  3  2  8               0.9201093      52.7183801
   22 STRETCH  10  3                     2.0451608       1.0822526
   23 BEND     10  3  9                  1.8945017     108.5469498
-  24 TORSION  10  3  9  2               2.1270989     121.8737869
+  24 TORSION  10  3  9  2               2.1270989     121.8737870
   25 STRETCH  11  3                     2.0480745       1.0837944
-  26 BEND     11  3  9                  1.9140143     109.6649404
+  26 BEND     11  3  9                  1.9140143     109.6649403
   27 TORSION  11  3  9 10               2.0595495     118.0034960
   28 STRETCH  12  4                     2.0519889       1.0858658
   29 BEND     12  4  1                  1.9516496     111.8212826
-  30 TORSION  12  4  1  6               0.9194556      52.6809272
+  30 TORSION  12  4  1  6               0.9194556      52.6809279
   31 STRETCH  13  4                     2.0447440       1.0820320
-  32 BEND     13  4 12                  1.8951609     108.5847199
-  33 TORSION  13  4 12  1               2.1280976     121.9310137
+  32 BEND     13  4 12                  1.8951609     108.5847200
+  33 TORSION  13  4 12  1               2.1280977     121.9310138
   34 STRETCH  14  4                     2.0484631       1.0840001
-  35 BEND     14  4 12                  1.9093178     109.3958491
+  35 BEND     14  4 12                  1.9093178     109.3958490
   36 TORSION  14  4 12 13               2.0533157     117.6463241
 
           INTERNUCLEAR DISTANCES (ANGS.)
@@ -6329,7 +6380,7 @@ unset echo
   10 H       3.2977949    3.0545841    2.5227077 *  1.7601935 *  0.0000000  
   11 H       3.7575757    2.4502330 *  3.0213691    1.7737212 *  1.7544563 *
   12 H       2.4512408 *  3.6225133    4.1867390    5.5346638    4.8693170  
-  13 H       2.5258886 *  2.4873042 *  3.3052624    4.8736579    4.7411731  
+  13 H       2.5258886 *  2.4873043 *  3.3052624    4.8736579    4.7411731  
   14 H       3.0266111    2.5740171 *  3.7685372    4.4726103    4.2307161  
 
                11 H         12 H         13 H         14 H     
@@ -6340,7 +6391,7 @@ unset echo
    4 C       3.6303735    1.0858658 *  1.0820320 *  1.0840001 *
    5 H       2.5641077 *  2.5303000 *  3.0543477    2.4557023 *
    6 H       3.7575757    2.4512408 *  2.5258886 *  3.0266111  
-   7 H       2.4502330 *  3.6225133    2.4873042 *  2.5740171 *
+   7 H       2.4502330 *  3.6225133    2.4873043 *  2.5740171 *
    8 H       3.0213691    4.1867390    3.3052624    3.7685372  
    9 H       1.7737212 *  5.5346638    4.8736579    4.4726103  
   10 H       1.7544563 *  4.8693170    4.7411731    4.2307161  
@@ -6352,11 +6403,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.1 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    92.22%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          5.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.1 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.2 SECONDS, CPU UTILIZATION IS    92.23%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -6368,30 +6419,32 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4239900457  -156.4239900457   0.009346018   0.009736229        1140696      24064
-   2  1  0     -156.4255155845    -0.0015255388   0.004338271   0.002420271        1107888      33517
-   3  2  0     -156.4256779600    -0.0001623755   0.000872562   0.000278039        1094477      35625
-   4  3  0     -156.4256802386    -0.0000022786   0.000219919   0.000085641        1056749      41690
-   5  4  0     -156.4256804507    -0.0000002120   0.000009915   0.000005075        1026841      46776
-   6  5  0     -156.4256804517    -0.0000000010   0.000002708   0.000001582         944537      60844
+   1  0  0     -156.4239900456  -156.4239900456   0.009346019   0.009736230        1140696      24064
+   2  1  0     -156.4255155846    -0.0015255390   0.004338271   0.002420272        1107888      33517
+   3  2  0     -156.4256779602    -0.0001623756   0.000872562   0.000278039        1094477      35625
+   4  3  0     -156.4256802387    -0.0000022786   0.000219919   0.000085641        1056749      41690
+   5  4  0     -156.4256804508    -0.0000002120   0.000009915   0.000005075        1026841      46776
+   6  5  0     -156.4256804518    -0.0000000010   0.000002708   0.000001582         944537      60844
 
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
- FINAL RHF ENERGY IS     -156.4256804517 AFTER   6 ITERATIONS
+ FINAL RHF ENERGY IS     -156.4256804518 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.282969 eV, LUMO=    7.189883 eV, gap=   19.472852 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.23 TOTAL CPU TIME =          6.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    97.92%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          2.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    92.28%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.3 SECONDS, CPU UTILIZATION IS    97.92%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    92.23%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          6.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.4 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    92.26%
 
           NSERCH= 18     ENERGY=    -156.4256805
 
@@ -6434,7 +6487,7 @@ unset echo
    9 TORSION   5  1  2  4            -121.1310184      -0.0048613
   10 STRETCH   6  1                     1.0835884      -0.0007717
   11 BEND      6  1  5                106.6247129       0.0012791
-  12 TORSION   6  1  5  2             120.1119769       0.0081243
+  12 TORSION   6  1  5  2             120.1119768       0.0081243
   13 STRETCH   7  2                     1.0870058       0.0010877
   14 BEND      7  2  1                108.5261473      -0.0050948
   15 TORSION   7  2  1  3            -121.0850345      -0.0055831
@@ -6442,22 +6495,22 @@ unset echo
   17 BEND      8  2  7                106.7705240       0.0017825
   18 TORSION   8  2  7  1             120.3237927       0.0090523
   19 STRETCH   9  3                     1.0859703       0.0020045
-  20 BEND      9  3  2                111.8385310       0.0081921
-  21 TORSION   9  3  2  8              52.7183793      -0.0022751
+  20 BEND      9  3  2                111.8385309       0.0081921
+  21 TORSION   9  3  2  8              52.7183801      -0.0022751
   22 STRETCH  10  3                     1.0822526      -0.0017811
   23 BEND     10  3  9                108.5469498       0.0021912
-  24 TORSION  10  3  9  2             121.8737869       0.0068531
+  24 TORSION  10  3  9  2             121.8737870       0.0068531
   25 STRETCH  11  3                     1.0837944      -0.0011334
-  26 BEND     11  3  9                109.6649404       0.0076830
+  26 BEND     11  3  9                109.6649403       0.0076830
   27 TORSION  11  3  9 10             118.0034960       0.0068602
   28 STRETCH  12  4                     1.0858658       0.0018738
   29 BEND     12  4  1                111.8212826       0.0075099
-  30 TORSION  12  4  1  6              52.6809272      -0.0022644
+  30 TORSION  12  4  1  6              52.6809279      -0.0022644
   31 STRETCH  13  4                     1.0820320      -0.0019947
-  32 BEND     13  4 12                108.5847199       0.0025131
-  33 TORSION  13  4 12  1             121.9310137       0.0057616
+  32 BEND     13  4 12                108.5847200       0.0025131
+  33 TORSION  13  4 12  1             121.9310138       0.0057616
   34 STRETCH  14  4                     1.0840001      -0.0010441
-  35 BEND     14  4 12                109.3958491       0.0064829
+  35 BEND     14  4 12                109.3958490       0.0064829
   36 TORSION  14  4 12 13             117.6463241       0.0053217
 
  NOTE: CARTESIAN GRADIENTS ARE ALWAYS TAKEN TO TEST CONVERGENCE,
@@ -6465,7 +6518,7 @@ unset echo
 
           MAXIMUM GRADIENT = 0.0076832    RMS GRADIENT = 0.0027985
 
- NSERCH:  18  E=     -156.4256804517  GRAD. MAX=  0.0076832  R.M.S.=  0.0027985
+ NSERCH:  18  E=     -156.4256804518  GRAD. MAX=  0.0076832  R.M.S.=  0.0027985
 
           HESSIAN UPDATED USING THE BFGS FORMULA
              ACTUAL ENERGY CHANGE WAS  -0.0023286169
@@ -6483,20 +6536,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6273532354   0.5525009595   0.2015649589
- C           6.0   0.6290411870  -0.3191410783   0.4973761378
- C           6.0   1.8328389447   0.0648038511  -0.3838542173
- C           6.0  -1.8344463238  -0.2815273253  -0.2658221290
- H           1.0  -0.3899461713   1.2815501640  -0.5664816526
- H           1.0  -0.9111906571   1.1042009715   1.0898599962
- H           1.0   0.3914651399  -1.3638770995   0.3262132191
- H           1.0   0.9108624695  -0.2237548784   1.5393062637
- H           1.0   2.6817403013  -0.5788937369  -0.1830761849
- H           1.0   2.1287934323   1.0914865387  -0.2019235500
- H           1.0   1.5763346611  -0.0302880908  -1.4333913524
- H           1.0  -2.6846188085   0.3518077884  -0.4935907968
- H           1.0  -2.1287450961  -0.9929487441   0.4970053199
- H           1.0  -1.5756546337  -0.8373697687  -1.1605082238
+ C           6.0  -0.6273532354   0.5525009594   0.2015649589
+ C           6.0   0.6290411872  -0.3191410783   0.4973761381
+ C           6.0   1.8328389454   0.0648038513  -0.3838542175
+ C           6.0  -1.8344463247  -0.2815273252  -0.2658221291
+ H           1.0  -0.3899461711   1.2815501639  -0.5664816524
+ H           1.0  -0.9111906569   1.1042009716   1.0898599962
+ H           1.0   0.3914651401  -1.3638770994   0.3262132197
+ H           1.0   0.9108624687  -0.2237548785   1.5393062644
+ H           1.0   2.6817403026  -0.5788937352  -0.1830761824
+ H           1.0   2.1287934315   1.0914865397  -0.2019235527
+ H           1.0   1.5763346642  -0.0302880947  -1.4333913530
+ H           1.0  -2.6846188101   0.3518077888  -0.4935907934
+ H           1.0  -2.1287450956  -0.9929487466   0.4970053182
+ H           1.0  -1.5756546365  -0.8373697653  -1.1605082267
 
 
                      --------------------
@@ -6520,13 +6573,13 @@ unset echo
   12 TORSION   6  1  5  2               2.0802917     119.1919366
   13 STRETCH   7  2                     2.0503418       1.0849942
   14 BEND      7  2  1                  1.9095185     109.4073515
-  15 TORSION   7  2  1  3              -2.1104802    -120.9216089
+  15 TORSION   7  2  1  3              -2.1104802    -120.9216090
   16 STRETCH   8  2                     2.0476645       1.0835775
   17 BEND      8  2  7                  1.8685814     107.0618256
   18 TORSION   8  2  7  1               2.0814124     119.2561450
   19 STRETCH   9  3                     2.0486686       1.0841088
-  20 BEND      9  3  2                  1.9368883     110.9755222
-  21 TORSION   9  3  2  8               1.0416624      59.6828586
+  20 BEND      9  3  2                  1.9368883     110.9755221
+  21 TORSION   9  3  2  8               1.0416624      59.6828585
   22 STRETCH  10  3                     2.0482095       1.0838658
   23 BEND     10  3  9                  1.8939221     108.5137449
   24 TORSION  10  3  9  2               2.1265238     121.8408374
@@ -6535,7 +6588,7 @@ unset echo
   27 TORSION  11  3  9 10               2.0423749     117.0194642
   28 STRETCH  12  4                     2.0490985       1.0843363
   29 BEND     12  4  1                  1.9412336     111.2244903
-  30 TORSION  12  4  1  6               1.0413402      59.6643958
+  30 TORSION  12  4  1  6               1.0413401      59.6643956
   31 STRETCH  13  4                     2.0480985       1.0838071
   32 BEND     13  4 12                  1.8947696     108.5622993
   33 TORSION  13  4 12  1               2.1316076     122.1321179
@@ -6600,11 +6653,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.4 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    92.25%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.2 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.4 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.3 SECONDS, CPU UTILIZATION IS    92.25%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -6616,31 +6669,33 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4232572152  -156.4232572152   0.012835235   0.014367485        1144153      23843
-   2  1  0     -156.4263282888    -0.0030710736   0.006978298   0.003452599        1114885      32602
-   3  2  0     -156.4266624545    -0.0003341657   0.001307282   0.000334506        1101334      34854
+   1  0  0     -156.4232572162  -156.4232572162   0.012835233   0.014367483        1144153      23843
+   2  1  0     -156.4263282889    -0.0030710727   0.006978297   0.003452599        1114885      32602
+   3  2  0     -156.4266624545    -0.0003341656   0.001307281   0.000334506        1101334      34854
    4  3  0     -156.4266662996    -0.0000038451   0.000398136   0.000114326        1062759      40897
    5  4  0     -156.4266666089    -0.0000003093   0.000046607   0.000017772        1037412      45376
-   6  5  0     -156.4266666185    -0.0000000097   0.000002974   0.000001680         984918      54760
+   6  5  0     -156.4266666186    -0.0000000097   0.000002974   0.000001680         984918      54760
    7  6  0     -156.4266666189    -0.0000000003   0.000001271   0.000000548         907201      66393
 
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.3 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4266666189 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -12.204402 eV, LUMO=    7.229291 eV, gap=   19.433694 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.27 TOTAL CPU TIME =          6.5 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.6 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.09 TOTAL CPU TIME=          2.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    92.28%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.5 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.6 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    92.26%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          6.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.7 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    92.29%
 
           NSERCH= 19     ENERGY=    -156.4266666
 
@@ -6686,13 +6741,13 @@ unset echo
   12 TORSION   6  1  5  2             119.1919366       0.0017861
   13 STRETCH   7  2                     1.0849942      -0.0000055
   14 BEND      7  2  1                109.4073515      -0.0002915
-  15 TORSION   7  2  1  3            -120.9216089       0.0003436
+  15 TORSION   7  2  1  3            -120.9216090       0.0003436
   16 STRETCH   8  2                     1.0835775      -0.0004178
   17 BEND      8  2  7                107.0618256       0.0002129
   18 TORSION   8  2  7  1             119.2561450       0.0012207
   19 STRETCH   9  3                     1.0841088      -0.0003355
-  20 BEND      9  3  2                110.9755222      -0.0002300
-  21 TORSION   9  3  2  8              59.6828586       0.0006495
+  20 BEND      9  3  2                110.9755221      -0.0002300
+  21 TORSION   9  3  2  8              59.6828585       0.0006495
   22 STRETCH  10  3                     1.0838658      -0.0006097
   23 BEND     10  3  9                108.5137449       0.0007163
   24 TORSION  10  3  9  2             121.8408374       0.0005146
@@ -6701,7 +6756,7 @@ unset echo
   27 TORSION  11  3  9 10             117.0194642       0.0001610
   28 STRETCH  12  4                     1.0843363      -0.0000288
   29 BEND     12  4  1                111.2244903       0.0013902
-  30 TORSION  12  4  1  6              59.6643958       0.0005052
+  30 TORSION  12  4  1  6              59.6643956       0.0005052
   31 STRETCH  13  4                     1.0838071      -0.0006435
   32 BEND     13  4 12                108.5622993       0.0008828
   33 TORSION  13  4 12  1             122.1321179       0.0019524
@@ -6717,8 +6772,8 @@ unset echo
  NSERCH:  19  E=     -156.4266666189  GRAD. MAX=  0.0018667  R.M.S.=  0.0006728
 
           HESSIAN UPDATED USING THE BFGS FORMULA
-             ACTUAL ENERGY CHANGE WAS  -0.0009861672
-          PREDICTED ENERGY CHANGE WAS  -0.0009890774 RATIO=  0.997
+             ACTUAL ENERGY CHANGE WAS  -0.0009861671
+          PREDICTED ENERGY CHANGE WAS  -0.0009890773 RATIO=  0.997
           MIN SEARCH, CORRECT HESSIAN, TRYING PURE NR STEP
                NR STEP HAS LENGTH         =   0.040861
           RADIUS OF STEP TAKEN=   0.04086  CURRENT TRUST RADIUS=   0.36510
@@ -6732,20 +6787,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6282804735   0.5548044414   0.2032848625
- C           6.0   0.6277253780  -0.3194517264   0.4957397861
- C           6.0   1.8351592172   0.0634154119  -0.3835094201
- C           6.0  -1.8346101318  -0.2825101414  -0.2665958268
- H           1.0  -0.3888314120   1.2841972829  -0.5628754600
- H           1.0  -0.9046249164   1.1143206489   1.0900160600
- H           1.0   0.3898529750  -1.3637569843   0.3238644794
- H           1.0   0.9066796097  -0.2275014494   1.5392741924
- H           1.0   2.6930306725  -0.5645272069  -0.1669354205
- H           1.0   2.1163363380   1.0973700519  -0.2156262703
- H           1.0   1.5895287809  -0.0505636035  -1.4342012994
- H           1.0  -2.6914570349   0.3493927503  -0.4744799280
- H           1.0  -2.1176789816  -1.0045128860   0.4915945236
- H           1.0  -1.5927644700  -0.8279996582  -1.1731058306
+ C           6.0  -0.6282804737   0.5548044417   0.2032848627
+ C           6.0   0.6277253778  -0.3194517263   0.4957397858
+ C           6.0   1.8351592172   0.0634154119  -0.3835094200
+ C           6.0  -1.8346101315  -0.2825101418  -0.2665958269
+ H           1.0  -0.3888314121   1.2841972832  -0.5628754598
+ H           1.0  -0.9046249160   1.1143206495   1.0900160602
+ H           1.0   0.3898529745  -1.3637569843   0.3238644791
+ H           1.0   0.9066796104  -0.2275014490   1.5392741919
+ H           1.0   2.6930306717  -0.5645272087  -0.1669354224
+ H           1.0   2.1163363399   1.0973700511  -0.2156262681
+ H           1.0   1.5895287789  -0.0505636013  -1.4342012992
+ H           1.0  -2.6914570339   0.3493927503  -0.4744799301
+ H           1.0  -2.1176789826  -1.0045128846   0.4915945246
+ H           1.0  -1.5927644692  -0.8279996603  -1.1731058296
 
 
                      --------------------
@@ -6765,7 +6820,7 @@ unset echo
    8 BEND      5  1  2                  1.9092037     109.3893126
    9 TORSION   5  1  2  4              -2.1134027    -121.0890577
   10 STRETCH   6  1                     2.0490389       1.0843048
-  11 BEND      6  1  5                  1.8618187     106.6743554
+  11 BEND      6  1  5                  1.8618187     106.6743553
   12 TORSION   6  1  5  2               2.0752676     118.9040753
   13 STRETCH   7  2                     2.0498936       1.0847571
   14 BEND      7  2  1                  1.9110099     109.4928045
@@ -6775,7 +6830,7 @@ unset echo
   18 TORSION   8  2  7  1               2.0772024     119.0149320
   19 STRETCH   9  3                     2.0502958       1.0849699
   20 BEND      9  3  2                  1.9408068     111.2000393
-  21 TORSION   9  3  2  8               1.0156066      58.1899695
+  21 TORSION   9  3  2  8               1.0156066      58.1899697
   22 STRETCH  10  3                     2.0495536       1.0845771
   23 BEND     10  3  9                  1.8921666     108.4131590
   24 TORSION  10  3  9  2               2.1252021     121.7651111
@@ -6784,7 +6839,7 @@ unset echo
   27 TORSION  11  3  9 10               2.0393009     116.8433328
   28 STRETCH  12  4                     2.0498987       1.0847597
   29 BEND     12  4  1                  1.9391472     111.1049490
-  30 TORSION  12  4  1  6               1.0158197      58.2021829
+  30 TORSION  12  4  1  6               1.0158197      58.2021830
   31 STRETCH  13  4                     2.0495196       1.0845591
   32 BEND     13  4 12                  1.8918903     108.3973297
   33 TORSION  13  4 12  1               2.1256136     121.7886870
@@ -6849,11 +6904,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.7 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    92.29%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.7 SECONDS, CPU UTILIZATION IS    97.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.4 SECONDS, CPU UTILIZATION IS    92.29%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -6865,8 +6920,8 @@ unset echo
                                                                                    NONZERO     BLOCKS
  ITER EX DEM     TOTAL ENERGY        E CHANGE  DENSITY CHANGE     ORB. GRAD      INTEGRALS    SKIPPED
           ---------------START SECOND ORDER SCF---------------
-   1  0  0     -156.4265373857  -156.4265373857   0.002734310   0.003102120        1143494      23929
-   2  1  0     -156.4266953140    -0.0001579283   0.001501746   0.000739128        1090588      36905
+   1  0  0     -156.4265373858  -156.4265373858   0.002734310   0.003102120        1143494      23929
+   2  1  0     -156.4266953140    -0.0001579282   0.001501745   0.000739128        1090588      36905
    3  2  0     -156.4267122163    -0.0000169023   0.000297274   0.000091369        1073115      39794
    4  3  0     -156.4267124577    -0.0000002414   0.000071676   0.000026528        1029242      46526
    5  4  0     -156.4267124797    -0.0000000219   0.000002523   0.000001682        1001340      51941
@@ -6875,20 +6930,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4267124796 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.190228 eV, LUMO=    7.235592 eV, gap=   19.425820 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.23 TOTAL CPU TIME =          6.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.9 SECONDS, CPU UTILIZATION IS    97.93%
+ CPU     0: STEP CPU TIME=     0.08 TOTAL CPU TIME=          2.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    92.32%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          6.9 SECONDS, CPU UTILIZATION IS    97.93%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    92.28%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          6.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.0 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    92.31%
 
           NSERCH= 20     ENERGY=    -156.4267125
 
@@ -6930,7 +6987,7 @@ unset echo
    8 BEND      5  1  2                109.3893126      -0.0002291
    9 TORSION   5  1  2  4            -121.0890577       0.0008354
   10 STRETCH   6  1                     1.0843048       0.0000411
-  11 BEND      6  1  5                106.6743554      -0.0009012
+  11 BEND      6  1  5                106.6743553      -0.0009012
   12 TORSION   6  1  5  2             118.9040753      -0.0003777
   13 STRETCH   7  2                     1.0847571      -0.0001382
   14 BEND      7  2  1                109.4928045       0.0005665
@@ -6940,7 +6997,7 @@ unset echo
   18 TORSION   8  2  7  1             119.0149320       0.0001012
   19 STRETCH   9  3                     1.0849699       0.0003162
   20 BEND      9  3  2                111.2000393       0.0005946
-  21 TORSION   9  3  2  8              58.1899695      -0.0000688
+  21 TORSION   9  3  2  8              58.1899697      -0.0000688
   22 STRETCH  10  3                     1.0845771      -0.0001989
   23 BEND     10  3  9                108.4131590       0.0010005
   24 TORSION  10  3  9  2             121.7651111       0.0000574
@@ -6949,7 +7006,7 @@ unset echo
   27 TORSION  11  3  9 10             116.8433328      -0.0002979
   28 STRETCH  12  4                     1.0847597       0.0000560
   29 BEND     12  4  1                111.1049490      -0.0004843
-  30 TORSION  12  4  1  6              58.2021829      -0.0000122
+  30 TORSION  12  4  1  6              58.2021830      -0.0000122
   31 STRETCH  13  4                     1.0845591      -0.0002062
   32 BEND     13  4 12                108.3973297       0.0008716
   33 TORSION  13  4 12  1             121.7886870      -0.0005236
@@ -6980,19 +7037,19 @@ unset echo
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -0.6271844123   0.5547747534   0.2025590842
- C           6.0   0.6276330401  -0.3200488892   0.4971073016
- C           6.0   1.8336063361   0.0639129619  -0.3843033740
- C           6.0  -1.8340013910  -0.2822988801  -0.2668411608
- H           1.0  -0.3874523602   1.2843092700  -0.5638659286
- H           1.0  -0.9058239297   1.1117451098   1.0901451442
- H           1.0   0.3878994079  -1.3643240643   0.3268216127
- H           1.0   0.9060752789  -0.2281918412   1.5409741195
- H           1.0   2.6917675389  -0.5625245368  -0.1660840801
- H           1.0   2.1166241096   1.0974956267  -0.2159337083
- H           1.0   1.5886606066  -0.0521950385  -1.4350409020
- H           1.0  -2.6925444204   0.3484244849  -0.4711199850
- H           1.0  -2.1167937382  -1.0051465852   0.4909583317
- H           1.0  -1.5890503767  -0.8241493703  -1.1745959906
+ C           6.0   0.6276330401  -0.3200488891   0.4971073016
+ C           6.0   1.8336063362   0.0639129619  -0.3843033740
+ C           6.0  -1.8340013911  -0.2822988801  -0.2668411608
+ H           1.0  -0.3874523600   1.2843092700  -0.5638659284
+ H           1.0  -0.9058239297   1.1117451100   1.0901451440
+ H           1.0   0.3878994080  -1.3643240643   0.3268216127
+ H           1.0   0.9060752785  -0.2281918413   1.5409741196
+ H           1.0   2.6917675393  -0.5625245364  -0.1660840794
+ H           1.0   2.1166241090   1.0974956269  -0.2159337087
+ H           1.0   1.5886606074  -0.0521950391  -1.4350409021
+ H           1.0  -2.6925444208   0.3484244848  -0.4711199839
+ H           1.0  -2.1167937377  -1.0051465858   0.4909583314
+ H           1.0  -1.5890503773  -0.8241493695  -1.1745959912
 
 
                      --------------------
@@ -7013,25 +7070,25 @@ unset echo
    9 TORSION   5  1  2  4              -2.1146057    -121.1579821
   10 STRETCH   6  1                     2.0489937       1.0842809
   11 BEND      6  1  5                  1.8646564     106.8369446
-  12 TORSION   6  1  5  2               2.0765590     118.9780655
+  12 TORSION   6  1  5  2               2.0765590     118.9780654
   13 STRETCH   7  2                     2.0501394       1.0848871
   14 BEND      7  2  1                  1.9101582     109.4440048
   15 TORSION   7  2  1  3              -2.1132519    -121.0804141
   16 STRETCH   8  2                     2.0489595       1.0842628
-  17 BEND      8  2  7                  1.8644048     106.8225259
-  18 TORSION   8  2  7  1               2.0770264     119.0048481
+  17 BEND      8  2  7                  1.8644048     106.8225258
+  18 TORSION   8  2  7  1               2.0770264     119.0048480
   19 STRETCH   9  3                     2.0497075       1.0846586
-  20 BEND      9  3  2                  1.9389480     111.0935347
-  21 TORSION   9  3  2  8               1.0135103      58.0698637
+  20 BEND      9  3  2                  1.9389480     111.0935348
+  21 TORSION   9  3  2  8               1.0135103      58.0698636
   22 STRETCH  10  3                     2.0499308       1.0847767
   23 BEND     10  3  9                  1.8887696     108.2185276
   24 TORSION  10  3  9  2               2.1231919     121.6499327
   25 STRETCH  11  3                     2.0506173       1.0851400
-  26 BEND     11  3  9                  1.8876768     108.1559118
+  26 BEND     11  3  9                  1.8876768     108.1559117
   27 TORSION  11  3  9 10               2.0405307     116.9137987
   28 STRETCH  12  4                     2.0498414       1.0847294
   29 BEND     12  4  1                  1.9402933     111.1706194
-  30 TORSION  12  4  1  6               1.0136399      58.0772899
+  30 TORSION  12  4  1  6               1.0136399      58.0772898
   31 STRETCH  13  4                     2.0499306       1.0847767
   32 BEND     13  4 12                  1.8888120     108.2209557
   33 TORSION  13  4 12  1               2.1248809     121.7467101
@@ -7096,11 +7153,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.0 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    92.29%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          6.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.0 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.5 SECONDS, CPU UTILIZATION IS    92.30%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -7121,20 +7178,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4267241954 AFTER   5 ITERATIONS
+
+ Alpha HOMO=   -12.186921 eV, LUMO=    7.233794 eV, gap=   19.420715 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.19 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.06 TOTAL CPU TIME=          2.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    92.29%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.2 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    92.25%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.3 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    92.28%
 
           NSERCH= 21     ENERGY=    -156.4267242
 
@@ -7177,25 +7236,25 @@ unset echo
    9 TORSION   5  1  2  4            -121.1579821       0.0000690
   10 STRETCH   6  1                     1.0842809      -0.0000216
   11 BEND      6  1  5                106.8369446       0.0001818
-  12 TORSION   6  1  5  2             118.9780655       0.0000012
+  12 TORSION   6  1  5  2             118.9780654       0.0000012
   13 STRETCH   7  2                     1.0848871      -0.0000443
   14 BEND      7  2  1                109.4440048      -0.0000046
   15 TORSION   7  2  1  3            -121.0804141       0.0004041
   16 STRETCH   8  2                     1.0842628       0.0000178
-  17 BEND      8  2  7                106.8225259      -0.0001432
-  18 TORSION   8  2  7  1             119.0048481      -0.0001521
+  17 BEND      8  2  7                106.8225258      -0.0001432
+  18 TORSION   8  2  7  1             119.0048480      -0.0001521
   19 STRETCH   9  3                     1.0846586      -0.0000303
-  20 BEND      9  3  2                111.0935347      -0.0002666
-  21 TORSION   9  3  2  8              58.0698637      -0.0000839
+  20 BEND      9  3  2                111.0935348      -0.0002666
+  21 TORSION   9  3  2  8              58.0698636      -0.0000839
   22 STRETCH  10  3                     1.0847767      -0.0000348
   23 BEND     10  3  9                108.2185276       0.0000714
   24 TORSION  10  3  9  2             121.6499327       0.0000117
   25 STRETCH  11  3                     1.0851400       0.0000333
-  26 BEND     11  3  9                108.1559118      -0.0002483
+  26 BEND     11  3  9                108.1559117      -0.0002483
   27 TORSION  11  3  9 10             116.9137987      -0.0002473
   28 STRETCH  12  4                     1.0847294       0.0000471
   29 BEND     12  4  1                111.1706194       0.0001202
-  30 TORSION  12  4  1  6              58.0772899      -0.0001131
+  30 TORSION  12  4  1  6              58.0772898      -0.0001131
   31 STRETCH  13  4                     1.0847767      -0.0000406
   32 BEND     13  4 12                108.2209557       0.0000915
   33 TORSION  13  4 12  1             121.7467101       0.0003682
@@ -7225,20 +7284,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6271907548   0.5552822473   0.2027873760
- C           6.0   0.6271736599  -0.3201108231   0.4966455078
- C           6.0   1.8329868513   0.0638585836  -0.3842654301
- C           6.0  -1.8329726168  -0.2827864466  -0.2669292829
- H           1.0  -0.3869629706   1.2853691762  -0.5630277848
- H           1.0  -0.9061773376   1.1116001605   1.0907095129
- H           1.0   0.3866884867  -1.3644495294   0.3269998388
- H           1.0   0.9074825485  -0.2270870093   1.5399089162
- H           1.0   2.6901247596  -0.5651842039  -0.1696104911
- H           1.0   2.1189849771   1.0959550319  -0.2113807741
- H           1.0   1.5848390344  -0.0475454523  -1.4347210107
- H           1.0  -2.6903034135   0.3479838508  -0.4756339733
- H           1.0  -2.1187376961  -1.0012982790   0.4940002155
- H           1.0  -1.5859043309  -0.8287530519  -1.1716081036
+ C           6.0  -0.6271907548   0.5552822471   0.2027873759
+ C           6.0   0.6271736600  -0.3201108231   0.4966455079
+ C           6.0   1.8329868513   0.0638585837  -0.3842654301
+ C           6.0  -1.8329726168  -0.2827864465  -0.2669292829
+ H           1.0  -0.3869629707   1.2853691761  -0.5630277849
+ H           1.0  -0.9061773376   1.1116001602   1.0907095129
+ H           1.0   0.3866884867  -1.3644495294   0.3269998391
+ H           1.0   0.9074825485  -0.2270870092   1.5399089163
+ H           1.0   2.6901247594  -0.5651842040  -0.1696104911
+ H           1.0   2.1189849773   1.0959550319  -0.2113807741
+ H           1.0   1.5848390344  -0.0475454522  -1.4347210107
+ H           1.0  -2.6903034137   0.3479838509  -0.4756339728
+ H           1.0  -2.1187376958  -1.0012982793   0.4940002153
+ H           1.0  -1.5859043310  -0.8287530514  -1.1716081039
 
 
                      --------------------
@@ -7265,7 +7324,7 @@ unset echo
   15 TORSION   7  2  1  3              -2.1146476    -121.1603803
   16 STRETCH   8  2                     2.0489589       1.0842624
   17 BEND      8  2  7                  1.8653571     106.8770882
-  18 TORSION   8  2  7  1               2.0778434     119.0516576
+  18 TORSION   8  2  7  1               2.0778434     119.0516575
   19 STRETCH   9  3                     2.0496838       1.0846460
   20 BEND      9  3  2                  1.9396140     111.1316967
   21 TORSION   9  3  2  8               1.0185637      58.3594027
@@ -7342,11 +7401,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.3 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    92.27%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.1 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.3 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.6 SECONDS, CPU UTILIZATION IS    92.27%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -7368,20 +7427,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4267255115 AFTER   6 ITERATIONS
+
+ Alpha HOMO=   -12.187695 eV, LUMO=    7.232977 eV, gap=   19.420671 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.22 TOTAL CPU TIME =          7.4 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.5 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.07 TOTAL CPU TIME=          2.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    92.29%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.4 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.5 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    92.26%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.07 TOTAL CPU TIME =          7.4 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.6 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    92.29%
 
           NSERCH= 22     ENERGY=    -156.4267255
 
@@ -7417,7 +7478,7 @@ unset echo
    2 STRETCH   3  2                     1.5418891      -0.0000822
    3 BEND      3  2  1                112.4606523      -0.0000062
    4 STRETCH   4  1                     1.5417207      -0.0000746
-   5 BEND      4  1  2                112.4461547      -0.0002054
+   5 BEND      4  1  2                112.4461547      -0.0002053
    6 TORSION   4  1  2  3             120.0000000       0.0000891
    7 STRETCH   5  1                     1.0849927       0.0000618
    8 BEND      5  1  2                109.4530696      -0.0000492
@@ -7430,7 +7491,7 @@ unset echo
   15 TORSION   7  2  1  3            -121.1603803      -0.0000713
   16 STRETCH   8  2                     1.0842624      -0.0000198
   17 BEND      8  2  7                106.8770882       0.0001775
-  18 TORSION   8  2  7  1             119.0516576       0.0002979
+  18 TORSION   8  2  7  1             119.0516575       0.0002979
   19 STRETCH   9  3                     1.0846460      -0.0000226
   20 BEND      9  3  2                111.1316967       0.0000812
   21 TORSION   9  3  2  8              58.3594027       0.0000497
@@ -7474,18 +7535,18 @@ unset echo
  ------------------------------------------------------------
  C           6.0  -0.6272423506   0.5551021313   0.2027044525
  C           6.0   0.6273576573  -0.3200830129   0.4966105696
- C           6.0   1.8332416037   0.0637793520  -0.3842507485
+ C           6.0   1.8332416037   0.0637793520  -0.3842507484
  C           6.0  -1.8333415311  -0.2826146269  -0.2669421659
- H           1.0  -0.3869748690   1.2854175805  -0.5627740954
+ H           1.0  -0.3869748691   1.2854175805  -0.5627740954
  H           1.0  -0.9062446971   1.1114045265   1.0906316187
  H           1.0   0.3870977967  -1.3644549117   0.3274464886
- H           1.0   0.9068582648  -0.2271543587   1.5401310364
- H           1.0   2.6910053951  -0.5639524313  -0.1680858642
- H           1.0   2.1176049690   1.0965431461  -0.2125919594
- H           1.0   1.5867349349  -0.0490293349  -1.4349348532
- H           1.0  -2.6911666157   0.3481656673  -0.4737676200
- H           1.0  -2.1177956119  -1.0021781551   0.4935020341
- H           1.0  -1.5873026853  -0.8274599883  -1.1725384964
+ H           1.0   0.9068582648  -0.2271543586   1.5401310364
+ H           1.0   2.6910053951  -0.5639524314  -0.1680858643
+ H           1.0   2.1176049691   1.0965431460  -0.2125919593
+ H           1.0   1.5867349348  -0.0490293347  -1.4349348531
+ H           1.0  -2.6911666158   0.3481656673  -0.4737676198
+ H           1.0  -2.1177956118  -1.0021781553   0.4935020339
+ H           1.0  -1.5873026854  -0.8274599882  -1.1725384965
 
 
                      --------------------
@@ -7567,7 +7628,7 @@ unset echo
   11 H       3.7336363    2.5050872 *  3.0569557    1.7576875 *  1.7573507 *
   12 H       2.4931556 *  3.6125787    4.1632396    5.4674653    4.8736604  
   13 H       2.5083164 *  2.5363970 *  3.2931179    4.8738391    4.7793114  
-  14 H       3.0569551    2.5370407 *  3.7336017    4.4025312    4.2836464  
+  14 H       3.0569551    2.5370408 *  3.7336017    4.4025312    4.2836464  
 
                11 H         12 H         13 H         14 H     
 
@@ -7577,7 +7638,7 @@ unset echo
    4 C       3.6215593    1.0846771 *  1.0848784 *  1.0851250 *
    5 H       2.5371132 *  2.4891089 *  3.0568863    2.5053645 *
    6 H       3.7336363    2.4931556 *  2.5083164 *  3.0569551  
-   7 H       2.5050872 *  3.6125787    2.5363970 *  2.5370407 *
+   7 H       2.5050872 *  3.6125787    2.5363970 *  2.5370408 *
    8 H       3.0569557    4.1632396    3.2931179    3.7336017  
    9 H       1.7576875 *  5.4674653    4.8738391    4.4025312  
   10 H       1.7573507 *  4.8736604    4.7793114    4.2836464  
@@ -7589,11 +7650,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.4 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.6 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    92.28%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.4 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.6 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.5 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.7 SECONDS, CPU UTILIZATION IS    92.28%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -7614,20 +7675,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.2 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4267262073 AFTER   5 ITERATIONS
+
+ Alpha HOMO=   -12.187664 eV, LUMO=    7.233314 eV, gap=   19.420978 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.18 TOTAL CPU TIME =          7.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.8 SECONDS, CPU UTILIZATION IS    97.95%
+ CPU     0: STEP CPU TIME=     0.06 TOTAL CPU TIME=          2.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.8 SECONDS, CPU UTILIZATION IS    92.29%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          7.6 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.8 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.8 SECONDS, CPU UTILIZATION IS    92.26%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.07 TOTAL CPU TIME =          7.7 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.8 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.8 SECONDS, CPU UTILIZATION IS    92.27%
 
           NSERCH= 23     ENERGY=    -156.4267262
 
@@ -7718,20 +7781,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6273024148   0.5550069695   0.2026643285
+ C           6.0  -0.6273024149   0.5550069695   0.2026643284
  C           6.0   0.6274753001  -0.3200546936   0.4965580010
- C           6.0   1.8334194818   0.0637726637  -0.3842276852
+ C           6.0   1.8334194818   0.0637726637  -0.3842276851
  C           6.0  -1.8335732547  -0.2825765897  -0.2669898886
  H           1.0  -0.3873332543   1.2855545187  -0.5626752917
- H           1.0  -0.9060028500   1.1111811936   1.0907668590
- H           1.0   0.3871916458  -1.3644881890   0.3278928470
+ H           1.0  -0.9060028500   1.1111811936   1.0907668589
+ H           1.0   0.3871916459  -1.3644881890   0.3278928470
  H           1.0   0.9067365626  -0.2270432038   1.5401486035
- H           1.0   2.6912680861  -0.5636582986  -0.1675244593
- H           1.0   2.1175236170   1.0966503926  -0.2128648001
- H           1.0   1.5872066847  -0.0494589840  -1.4349214896
- H           1.0  -2.6914483906   0.3484039268  -0.4730630508
- H           1.0  -2.1174902714  -1.0022948300   0.4934775816
- H           1.0  -1.5878793969  -0.8271221690  -1.1728212197
+ H           1.0   2.6912680860  -0.5636582987  -0.1675244594
+ H           1.0   2.1175236171   1.0966503926  -0.2128648000
+ H           1.0   1.5872066848  -0.0494589839  -1.4349214896
+ H           1.0  -2.6914483907   0.3484039268  -0.4730630506
+ H           1.0  -2.1174902712  -1.0022948301   0.4934775815
+ H           1.0  -1.5878793970  -0.8271221689  -1.1728212198
 
 
                      --------------------
@@ -7835,11 +7898,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.7 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.8 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.8 SECONDS, CPU UTILIZATION IS    92.27%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.7 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          7.8 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.6 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.8 SECONDS, CPU UTILIZATION IS    92.27%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -7859,20 +7922,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -156.4267263463 AFTER   4 ITERATIONS
+
+ Alpha HOMO=   -12.187314 eV, LUMO=    7.233137 eV, gap=   19.420451 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.15 TOTAL CPU TIME =          7.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          8.0 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.05 TOTAL CPU TIME=          2.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.9 SECONDS, CPU UTILIZATION IS    92.26%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.01 TOTAL CPU TIME =          7.8 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          8.0 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.9 SECONDS, CPU UTILIZATION IS    92.24%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          7.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          8.1 SECONDS, CPU UTILIZATION IS    97.94%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          2.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.9 SECONDS, CPU UTILIZATION IS    92.25%
 
           NSERCH= 24     ENERGY=    -156.4267263
 
@@ -7954,20 +8019,20 @@ unset echo
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -0.6273024148   0.5550069695   0.2026643285
+ C           6.0  -0.6273024149   0.5550069695   0.2026643284
  C           6.0   0.6274753001  -0.3200546936   0.4965580010
- C           6.0   1.8334194818   0.0637726637  -0.3842276852
+ C           6.0   1.8334194818   0.0637726637  -0.3842276851
  C           6.0  -1.8335732547  -0.2825765897  -0.2669898886
  H           1.0  -0.3873332543   1.2855545187  -0.5626752917
- H           1.0  -0.9060028500   1.1111811936   1.0907668590
- H           1.0   0.3871916458  -1.3644881890   0.3278928470
+ H           1.0  -0.9060028500   1.1111811936   1.0907668589
+ H           1.0   0.3871916459  -1.3644881890   0.3278928470
  H           1.0   0.9067365626  -0.2270432038   1.5401486035
- H           1.0   2.6912680861  -0.5636582986  -0.1675244593
- H           1.0   2.1175236170   1.0966503926  -0.2128648001
- H           1.0   1.5872066847  -0.0494589840  -1.4349214896
- H           1.0  -2.6914483906   0.3484039268  -0.4730630508
- H           1.0  -2.1174902714  -1.0022948300   0.4934775816
- H           1.0  -1.5878793969  -0.8271221690  -1.1728212197
+ H           1.0   2.6912680860  -0.5636582987  -0.1675244594
+ H           1.0   2.1175236171   1.0966503926  -0.2128648000
+ H           1.0   1.5872066848  -0.0494589839  -1.4349214896
+ H           1.0  -2.6914483907   0.3484039268  -0.4730630506
+ H           1.0  -2.1174902712  -1.0022948301   0.4934775815
+ H           1.0  -1.5878793970  -0.8271221689  -1.1728212198
 
 
                      --------------------
@@ -8071,8 +8136,8 @@ unset echo
   * ... LESS THAN  3.000
 
 
-          NUCLEAR ENERGY    =      130.6860670599
-          ELECTRONIC ENERGY =     -287.1127934063
+          NUCLEAR ENERGY    =      130.6860670594
+          ELECTRONIC ENERGY =     -287.1127934057
           TOTAL ENERGY      =     -156.4267263463
 
           ------------------
@@ -8262,62 +8327,62 @@ unset echo
                      16         17         18         19         20
                    -0.4544    -0.4479     0.2658     0.3045     0.3124
                      A          A          A          A          A   
-    1  C  1  S   -0.004278   0.014495   0.070381   0.030602  -0.012989
-    2  C  1  S    0.001771  -0.010859  -0.019474  -0.003286   0.001149
-    3  C  1  X    0.001940  -0.269504   0.015641  -0.046649  -0.032428
-    4  C  1  Y   -0.063176   0.082571  -0.087426  -0.039622   0.023225
-    5  C  1  Z   -0.220299  -0.009598  -0.020683  -0.020646   0.174369
-    6  C  1  S    0.019497  -0.057585  -1.003798  -0.496734   0.187521
-    7  C  1  X    0.015652  -0.240152   0.114732  -0.459178  -0.177503
-    8  C  1  Y   -0.073464   0.074329  -0.420829  -0.202148   0.068072
-    9  C  1  Z   -0.230239   0.001439  -0.100989  -0.122082   0.701855
-   10  C  2  S    0.004381   0.014454   0.070403  -0.030596  -0.012960
-   11  C  2  S   -0.001844  -0.010842  -0.019485   0.003284   0.001160
-   12  C  2  X    0.004013   0.269511  -0.015654  -0.046580   0.032528
-   13  C  2  Y    0.082192  -0.072238   0.057183  -0.018943   0.086884
-   14  C  2  Z    0.214048   0.040510  -0.069270   0.040655   0.152910
-   15  C  2  S   -0.019900  -0.057382  -1.003995   0.496661   0.186868
-   16  C  2  X    0.017496   0.240056  -0.114788  -0.458902   0.178493
-   17  C  2  Y    0.080091  -0.058964   0.274425  -0.086638   0.369908
-   18  C  2  Z    0.228202   0.044232  -0.334576   0.220582   0.600000
-   19  C  3  S    0.012149  -0.015541   0.068624  -0.113385   0.027401
-   20  C  3  S   -0.011702   0.012126  -0.017926   0.025440  -0.001639
-   21  C  3  X    0.046373  -0.201812  -0.052625   0.047111  -0.013634
-   22  C  3  Y   -0.060871   0.035293  -0.008184   0.023578  -0.002335
-   23  C  3  Z   -0.142648   0.006392   0.059958   0.026075   0.096763
-   24  C  3  S   -0.038586   0.055948  -0.954526   1.604693  -0.450747
-   25  C  3  X    0.025982  -0.191553  -0.284235   0.197500  -0.091415
-   26  C  3  Y   -0.056604   0.039651  -0.088197   0.157141  -0.025807
-   27  C  3  Z   -0.132027  -0.003104   0.340533   0.093933   0.326198
-   28  C  4  S   -0.012264  -0.015451   0.068622   0.113406   0.027219
-   29  C  4  S    0.011794   0.012042  -0.017926  -0.025441  -0.001594
-   30  C  4  X    0.047929   0.201438   0.052638   0.047158   0.013586
-   31  C  4  Y    0.037414  -0.024588   0.042720   0.003139   0.060316
-   32  C  4  Z    0.150648   0.025231   0.042810  -0.034937   0.075784
-   33  C  4  S    0.038986   0.055652  -0.954472  -1.605136  -0.448176
-   34  C  4  X    0.027446   0.191327   0.284387   0.197784   0.091251
-   35  C  4  Y    0.034333  -0.033788   0.275947   0.068942   0.217567
-   36  C  4  Z    0.139575   0.020381   0.217991  -0.169490   0.244711
-   37  H  5  S    0.100241  -0.008416  -0.021913   0.030946   0.019644
-   38  H  5  S    0.105915  -0.003572   0.500628   0.399956   0.592477
-   39  H  6  S   -0.173300   0.071844   0.007387  -0.005290  -0.054904
-   40  H  6  S   -0.177141   0.082974   0.745631   0.274230  -1.042542
-   41  H  7  S   -0.100310  -0.007682  -0.021910  -0.030902   0.019696
-   42  H  7  S   -0.105952  -0.002773   0.500722  -0.398794   0.593216
-   43  H  8  S    0.173830   0.070563   0.007378   0.005198  -0.054894
-   44  H  8  S    0.177744   0.081633   0.745671  -0.275794  -1.042023
-   45  H  9  S    0.023286  -0.135993   0.019733   0.014618   0.000322
-   46  H  9  S    0.033310  -0.152281   0.535753  -0.691791   0.117416
-   47  H 10  S   -0.071155   0.000966  -0.008823  -0.005676  -0.020986
-   48  H 10  S   -0.074151  -0.005025   0.419755  -0.867584   0.041934
-   49  H 11  S    0.102935   0.048049  -0.017789  -0.004325   0.023880
-   50  H 11  S    0.121058   0.051467   0.583924  -0.411383   0.656440
-   51  H 12  S   -0.024316  -0.135809   0.019741  -0.014609   0.000327
-   52  H 12  S   -0.034440  -0.152011   0.535779   0.691992   0.116251
-   53  H 13  S    0.071191   0.000450  -0.008826   0.005639  -0.020998
-   54  H 13  S    0.074152  -0.005577   0.419764   0.867672   0.040533
-   55  H 14  S   -0.102578   0.048807  -0.017812   0.004351   0.023883
-   56  H 14  S   -0.120689   0.052376   0.583810   0.412196   0.655931
+    1  C  1  S   -0.004278   0.014495  -0.070381   0.030602  -0.012989
+    2  C  1  S    0.001771  -0.010859   0.019474  -0.003286   0.001149
+    3  C  1  X    0.001940  -0.269504  -0.015641  -0.046649  -0.032428
+    4  C  1  Y   -0.063176   0.082571   0.087426  -0.039622   0.023225
+    5  C  1  Z   -0.220299  -0.009598   0.020683  -0.020646   0.174369
+    6  C  1  S    0.019497  -0.057585   1.003798  -0.496734   0.187521
+    7  C  1  X    0.015652  -0.240152  -0.114732  -0.459178  -0.177503
+    8  C  1  Y   -0.073464   0.074329   0.420829  -0.202148   0.068072
+    9  C  1  Z   -0.230239   0.001439   0.100989  -0.122082   0.701855
+   10  C  2  S    0.004381   0.014454  -0.070403  -0.030596  -0.012960
+   11  C  2  S   -0.001844  -0.010842   0.019485   0.003284   0.001160
+   12  C  2  X    0.004013   0.269511   0.015654  -0.046580   0.032528
+   13  C  2  Y    0.082192  -0.072238  -0.057183  -0.018943   0.086884
+   14  C  2  Z    0.214048   0.040510   0.069270   0.040655   0.152910
+   15  C  2  S   -0.019900  -0.057382   1.003995   0.496661   0.186868
+   16  C  2  X    0.017496   0.240056   0.114788  -0.458902   0.178493
+   17  C  2  Y    0.080091  -0.058964  -0.274425  -0.086638   0.369908
+   18  C  2  Z    0.228202   0.044232   0.334576   0.220582   0.600000
+   19  C  3  S    0.012149  -0.015541  -0.068624  -0.113385   0.027401
+   20  C  3  S   -0.011702   0.012126   0.017926   0.025440  -0.001639
+   21  C  3  X    0.046373  -0.201812   0.052625   0.047111  -0.013634
+   22  C  3  Y   -0.060871   0.035293   0.008184   0.023578  -0.002335
+   23  C  3  Z   -0.142648   0.006392  -0.059958   0.026075   0.096763
+   24  C  3  S   -0.038586   0.055948   0.954526   1.604693  -0.450747
+   25  C  3  X    0.025982  -0.191553   0.284235   0.197500  -0.091415
+   26  C  3  Y   -0.056604   0.039651   0.088197   0.157141  -0.025807
+   27  C  3  Z   -0.132027  -0.003104  -0.340533   0.093933   0.326198
+   28  C  4  S   -0.012264  -0.015451  -0.068622   0.113406   0.027219
+   29  C  4  S    0.011794   0.012042   0.017926  -0.025441  -0.001594
+   30  C  4  X    0.047929   0.201438  -0.052638   0.047158   0.013586
+   31  C  4  Y    0.037414  -0.024588  -0.042720   0.003139   0.060316
+   32  C  4  Z    0.150648   0.025231  -0.042810  -0.034937   0.075784
+   33  C  4  S    0.038986   0.055652   0.954472  -1.605136  -0.448176
+   34  C  4  X    0.027446   0.191327  -0.284387   0.197784   0.091251
+   35  C  4  Y    0.034333  -0.033788  -0.275947   0.068942   0.217567
+   36  C  4  Z    0.139575   0.020381  -0.217991  -0.169490   0.244711
+   37  H  5  S    0.100241  -0.008416   0.021913   0.030946   0.019644
+   38  H  5  S    0.105915  -0.003572  -0.500628   0.399956   0.592477
+   39  H  6  S   -0.173300   0.071844  -0.007387  -0.005290  -0.054904
+   40  H  6  S   -0.177141   0.082974  -0.745631   0.274230  -1.042542
+   41  H  7  S   -0.100310  -0.007682   0.021910  -0.030902   0.019696
+   42  H  7  S   -0.105952  -0.002773  -0.500722  -0.398794   0.593216
+   43  H  8  S    0.173830   0.070563  -0.007378   0.005198  -0.054894
+   44  H  8  S    0.177744   0.081633  -0.745671  -0.275794  -1.042023
+   45  H  9  S    0.023286  -0.135993  -0.019733   0.014618   0.000322
+   46  H  9  S    0.033310  -0.152281  -0.535753  -0.691791   0.117416
+   47  H 10  S   -0.071155   0.000966   0.008823  -0.005676  -0.020986
+   48  H 10  S   -0.074151  -0.005025  -0.419755  -0.867584   0.041934
+   49  H 11  S    0.102935   0.048049   0.017789  -0.004325   0.023880
+   50  H 11  S    0.121058   0.051467  -0.583924  -0.411383   0.656440
+   51  H 12  S   -0.024316  -0.135809  -0.019741  -0.014609   0.000327
+   52  H 12  S   -0.034440  -0.152011  -0.535779   0.691992   0.116251
+   53  H 13  S    0.071191   0.000450   0.008826   0.005639  -0.020998
+   54  H 13  S    0.074152  -0.005577  -0.419764   0.867672   0.040533
+   55  H 14  S   -0.102578   0.048807   0.017812   0.004351   0.023883
+   56  H 14  S   -0.120689   0.052376  -0.583810   0.412196   0.655931
 
                      21         22         23         24         25
                     0.3222     0.3441     0.3505     0.3553     0.3617
@@ -8449,17 +8514,17 @@ unset echo
 
          WAVEFUNCTION NORMALIZATION =       1.0000000000
 
-                ONE ELECTRON ENERGY =    -468.0982615974
-                TWO ELECTRON ENERGY =     180.9854681911
-           NUCLEAR REPULSION ENERGY =     130.6860670599
+                ONE ELECTRON ENERGY =    -468.0982615963
+                TWO ELECTRON ENERGY =     180.9854681906
+           NUCLEAR REPULSION ENERGY =     130.6860670594
                                       ------------------
                        TOTAL ENERGY =    -156.4267263463
 
- ELECTRON-ELECTRON POTENTIAL ENERGY =     180.9854681911
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -624.2699195777
-   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     130.6860670599
+ ELECTRON-ELECTRON POTENTIAL ENERGY =     180.9854681906
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -624.2699195766
+   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     130.6860670594
                                       ------------------
-             TOTAL POTENTIAL ENERGY =    -312.5983843267
+             TOTAL POTENTIAL ENERGY =    -312.5983843266
                TOTAL KINETIC ENERGY =     156.1716579803
                  VIRIAL RATIO (V/T) =       2.0016332564
 
@@ -8680,7 +8745,7 @@ unset echo
     4 C                 3.677       3.677       0.000
     5 H                 0.908       0.908      -0.000
     6 H                 0.909       0.909       0.000
-    7 H                 0.908       0.908      -0.000
+    7 H                 0.908       0.908       0.000
     8 H                 0.909       0.909       0.000
     9 H                 0.917       0.917       0.000
    10 H                 0.916       0.916       0.000
@@ -8694,47 +8759,48 @@ unset echo
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000    0.000000        0.00 (A.U.)
+                -0.000000    0.000000   -0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
      0.000022    0.013184    0.039433    0.041579
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          8.1 SECONDS, CPU UTILIZATION IS    97.93%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          2.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.9 SECONDS, CPU UTILIZATION IS    92.26%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -156.4267263463
-  2.260718464E-05-4.994713756E-06-1.032051275E-05-2.386502725E-05-9.415496612E-06
-  5.266787286E-05-3.575961881E-05-1.526436805E-05 1.098419934E-05 5.760892794E-05
-  8.842403164E-05 2.185896890E-05-2.252726643E-05-1.255874322E-05-8.328168210E-06
-  7.324906679E-06-1.921854190E-07 3.209540941E-06 7.474096642E-07 1.163743084E-05
- -9.800017944E-06 1.192699649E-05-1.282226493E-05-3.498997439E-07 1.265672333E-05
-  9.828740773E-06-6.670221973E-06 1.440212661E-05 7.279961697E-06-1.199426609E-05
-  7.635707873E-06 5.078423231E-06-5.467814319E-06-2.625616993E-05-2.227809500E-05
- -1.909230123E-05-3.477593736E-06-2.419460552E-05-1.940540340E-05-2.302430705E-05
- -2.052811568E-05 2.708023612E-06
-  2.186513430E-05 1.318412531E-02 3.943335152E-02
+  2.260718128E-05-4.994718802E-06-1.032050458E-05-2.386502464E-05-9.415496670E-06
+  5.266787457E-05-3.575961239E-05-1.526436687E-05 1.098420190E-05 5.760892511E-05
+  8.842403332E-05 2.185896415E-05-2.252726621E-05-1.255874419E-05-8.328164726E-06
+  7.324906841E-06-1.921794643E-07 3.209537846E-06 7.474105795E-07 1.163743296E-05
+ -9.800018292E-06 1.192699558E-05-1.282226351E-05-3.498999589E-07 1.265672362E-05
+  9.828735671E-06-6.670225312E-06 1.440212184E-05 7.279961870E-06-1.199426778E-05
+  7.635710558E-06 5.078424601E-06-5.467814384E-06-2.625617082E-05-2.227809372E-05
+ -1.909230197E-05-3.477589317E-06-2.419460695E-05-1.940540522E-05-2.302431205E-05
+ -2.052811826E-05 2.708023756E-06
+  2.186512454E-05 1.318412531E-02 3.943335149E-02
  ......END OF GEOMETRY SEARCH......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          7.9 (      0.1 MIN)
- TOTAL WALL CLOCK TIME=          8.1 SECONDS, CPU UTILIZATION IS    97.93%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          2.7 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          2.9 SECONDS, CPU UTILIZATION IS    92.25%
  AN INPUT FILE FOR -MOLPLT- HAS BEEN PUNCHED.
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 18:17:22 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 16:10:39 07-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 7.819 + 0.101 = 7.920
+ 0: 2.544 + 0.150 = 2.695
+ 1: 2.499 + 0.96 = 2.595
+ 2: 2.496 + 0.110 = 2.606
+ 3: 2.491 + 0.82 = 2.573
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     1207 Nov  6 18:17 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F05
--rw-r--r--@ 1 blink  staff  1963200 Nov  6 18:17 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F10
--rw-r--r--@ 1 blink  staff   130880 Nov  6 18:17 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F26R
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:17 /Users/blink/github/gamess2023R2claude/scr/butane_frozen_120.F27R
+-rw-r--r--@ 1 blink  staff     1207 Nov  7 16:10 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F05
+-rw-r--r--@ 1 blink  staff  1963200 Nov  7 16:10 /Users/blink/github/gamess2024R2claude/gamess/scr/butane_frozen_120.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 18:17:23 AST 2026
-7.907u 0.216s 0:09.38 86.4%	0+0k 0+0io 85pf+0w
+Sat Nov  7 16:10:40 AST 2026
+10.117u 0.546s 0:04.14 257.2%	0+0k 0+0io 98pf+0w

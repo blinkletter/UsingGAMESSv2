@@ -1,28 +1,28 @@
 1 : /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.inp
 2 : 00
-3 : 1
+3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Fri Nov 6 18:29:44 AST 2026
+under operating system Darwin at Sat Nov 7 14:22:14 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 488858968 452579924    52% 3639493 4525799240    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2023R2claude/scr
+/dev/disk3s5   971298980 495038604 447449512    53% 3684981 4474495120    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.inp /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F05
+cp /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.inp /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2023R2claude/auxdata
+setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
 setenv NUCBAS /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.nucbas
-setenv EXTCAB /Users/blink/github/gamess2023R2claude/auxdata/AUXBAS/auxdef21
+setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
 setenv POSBAS /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.posbas
-setenv DFTBPAR /Users/blink/github/gamess2023R2claude/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2023R2claude/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2023R2claude/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2023R2claude/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2023R2claude/auxdata/QUANPOL
+setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
 setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.efp
 setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.gamma
 setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.trj
@@ -32,149 +32,152 @@ setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.dip
 setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.hs1
 setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.hs2
 setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.xyz
-setenv IRCDATA /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F04
-setenv INPUT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F05
+setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.xyz
+setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F04
+setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F05
 setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.dat
 setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.namdrst
-setenv AOINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F08
-setenv MOINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F09
-setenv DICTNRY /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F10
-setenv DRTFILE /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F11
-setenv CIVECTR /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F12
-setenv CASINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F13
-setenv CIINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F14
-setenv WORK15 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F15
-setenv WORK16 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F16
-setenv CSFSAVE /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F17
-setenv FOCKDER /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F18
-setenv WORK19 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F19
-setenv DASORT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F20
-setenv DIABDAT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F21
-setenv DFTINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F21
-setenv DFTGRID /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F22
-setenv JKFILE /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F23
-setenv ORDINT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F24
-setenv EFPIND /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F25
-setenv PCMDATA /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F26
-setenv PCMINTS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F27
-setenv SVPWRK1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F26
-setenv SVPWRK2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F27
-setenv COSCAV /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F26
+setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F08
+setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F09
+setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F10
+setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F11
+setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F12
+setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F13
+setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F14
+setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F15
+setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F16
+setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F17
+setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F18
+setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F19
+setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F20
+setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F21
+setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F21
+setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F22
+setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F23
+setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F24
+setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F25
+setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F26
+setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F27
+setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F26
+setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F27
+setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F26
 setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.cosmo
 setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.pot
-setenv MLTPL /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F28
-setenv MLTPLT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F29
-setenv DAFL30 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F30
-setenv SOINTX /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F31
-setenv SOINTY /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F32
-setenv SOINTZ /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F33
-setenv SORESC /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F34
-setenv RISM01 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F26R
-setenv RISM02 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F27R
-setenv QOPWRF /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.wrf
-setenv GCILIST /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F37
-setenv HESSIAN /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F38
-setenv QMMMTEI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F39
-setenv SOCCDAT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F40
-setenv AABB41 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F41
-setenv BBAA42 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F42
-setenv BBBB43 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F43
-setenv REMD /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F44
-setenv UNV /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F45
-setenv UNPV /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F46
-setenv MCQD50 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F50
-setenv MCQD51 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F51
-setenv MCQD52 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F52
-setenv MCQD53 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F53
-setenv MCQD54 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F54
-setenv MCQD55 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F55
-setenv MCQD56 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F56
-setenv MCQD57 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F57
-setenv MCQD58 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F58
-setenv MCQD59 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F59
-setenv MCQD60 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F60
-setenv MCQD61 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F61
-setenv MCQD62 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F62
-setenv MCQD63 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F63
-setenv MCQD64 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F64
-setenv NMRINT1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F61
-setenv NMRINT2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F62
-setenv NMRINT3 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F63
-setenv NMRINT4 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F64
-setenv NMRINT5 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F65
-setenv NMRINT6 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F66
-setenv DCPHFH2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F67
-setenv DCPHF21 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F68
-setenv ELNUINT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F67
-setenv NUNUINT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F68
-setenv GVVPT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F69
-setenv NUMOIN /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F69
-setenv NUMOCAS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F70
-setenv NUELMO /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F71
-setenv NUELCAS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F72
-setenv EPOVRLP /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F73
-setenv RIVMAT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F51
-setenv RIT2A /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F52
-setenv RIT3A /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F53
-setenv RIT2B /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F54
-setenv RIT3B /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F55
-setenv KI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F47
-setenv BI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F48
-setenv PRMERI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F49
-setenv TRSERI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F50
-setenv PVP /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F51
-setenv TPVPI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F52
-setenv TPVPJ /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F53
-setenv PPVPP /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F54
-setenv TPPVPP /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F55
-setenv DEN2P1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F70
-setenv DEN2P2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F71
-setenv DEN2P3 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F72
-setenv DEN2P4 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F73
-setenv DEN2NM /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F74
-setenv DEN2OPT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F75
-setenv GMCREF /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F70
-setenv GMCO2R /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F71
-setenv GMCROC /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F72
-setenv GMCOOC /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F73
-setenv GMCCC0 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F74
-setenv GMCHMA /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F75
-setenv GMCEI1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F76
-setenv GMCEI2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F77
-setenv GMCEOB /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F78
-setenv GMCEDT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F79
-setenv GMCERF /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F80
-setenv GMCHCR /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F81
-setenv GMCGJK /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F82
-setenv GMCGAI /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F83
-setenv GMCGEO /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F84
-setenv GMCTE1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F85
-setenv GMCTE2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F86
-setenv GMCHEF /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F87
-setenv GMCMOL /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F88
-setenv GMCMOS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F89
-setenv GMCWGT /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F90
-setenv GMCRM2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F91
-setenv GMCRM1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F92
-setenv GMCR00 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F93
-setenv GMCRP1 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F94
-setenv GMCRP2 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F95
-setenv GMCVEF /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F96
-setenv GMCDIN /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F97
-setenv GMC2SZ /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F98
-setenv GMCCCS /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F99
+setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F28
+setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F29
+setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F30
+setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F31
+setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F32
+setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F33
+setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F34
+setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F26R
+setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F27R
+setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.wrf
+setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F37
+setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F38
+setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F39
+setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F40
+setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F41
+setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F42
+setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F43
+setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F44
+setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F45
+setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F46
+setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F50
+setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F51
+setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F52
+setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F53
+setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F54
+setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F55
+setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F56
+setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F57
+setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F58
+setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F59
+setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F60
+setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F61
+setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F62
+setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F63
+setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F64
+setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F61
+setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F62
+setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F63
+setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F64
+setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F65
+setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F66
+setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F67
+setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F68
+setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F67
+setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F68
+setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F69
+setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F69
+setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F70
+setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F71
+setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F72
+setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F73
+setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F51
+setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F52
+setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F53
+setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F54
+setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F55
+setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F47
+setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F48
+setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F49
+setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F50
+setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F51
+setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F52
+setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F53
+setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F54
+setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F55
+setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F70
+setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F71
+setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F72
+setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F73
+setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F74
+setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F75
+setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F70
+setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F71
+setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F72
+setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F73
+setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F74
+setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F75
+setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F76
+setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F77
+setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F78
+setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F79
+setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F80
+setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F81
+setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F82
+setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F83
+setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F84
+setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F85
+setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F86
+setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F87
+setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F88
+setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F89
+setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F90
+setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F91
+setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F92
+setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F93
+setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F94
+setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F95
+setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F96
+setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F97
+setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F98
+setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F99
 unset echo
 /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_080.dat
-/Users/blink/github/gamess2023R2claude/ddikick.x /Users/blink/github/gamess2023R2claude/gamess.00.x butadiene_scan_080 -ddi 1 1 MonkeyBook.local -scr /Users/blink/github/gamess2023R2claude/scr
+ 
+Assuming a single but multicore node.
+ 
+/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_scan_080 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
- Initiating 1 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2023R2claude/gamess.00.x butadiene_scan_080 
+ Initiating 4 compute processes on 1 nodes to run the following command:
+ /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_scan_080 
 
           *******************************************************
           *                                                     *
-          *          GAMESS VERSION = 30 SEP 2023 (R2)          *
+          *      GAMESS VERSION = 15 JUL 2024 (R2 Patch 1)          *
           *                                                     *
           *              doi.org/10.1063/5.0005188              *
           *                                                     *
@@ -229,8 +232,9 @@ unset echo
      LYUDMILA SLIPCHENKO, TONY SMITH, JIE SONG, MARK SPACKMAN,
      CASPER STEINMANN, WALT STEVENS, PEIFENG SU, SHUJUN SU,
      CHET SWALINA, CHINAMI TAKASHIMA, TETSUYA TAKETSUGU,
-     ZHEN TAO, NANDUN THELLAMUREGE, SEIKEN TOKURA,
-     JACOPO TOMASI, TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
+     ZHEN TAO, NANDUN THELLAMUREGE, ANANTA TIWARI,
+     SEIKEN TOKURA, JACOPO TOMASI,
+     TSUGUKI TOUMA, TAKAO TSUNEDA, HIROAKI UMEDA,
      JORGE LUIS GALVEZ VALLEJO, YALI WANG, SIMON WEBB,
      AARON WEST, THERESA L. WINDUS, MARTA WLOCH,
      PENG XU, KIYOSHI YAGI, SUSUMU YANAGISAWA, YANG YANG,
@@ -275,7 +279,10 @@ unset echo
      JACKSON HAYES (WEBSITE ADMINISTRATOR),
      PENG XU
 
- EXECUTION OF GAMESS BEGUN 18:29:45 06-NOV-2026    
+
+ PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN 14:22:14 07-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD>!   Torsion scan template: Python replaces  80.0000 with a number               
@@ -502,10 +509,10 @@ unset echo
      ---------------
   REPLICATED MEMORY=     1000000 WORDS (ON EVERY NODE).
  DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
- MEMDDI DISTRIBUTED OVER   1 PROCESSORS IS           0 WORDS/PROCESSOR.
+ MEMDDI DISTRIBUTED OVER   4 PROCESSORS IS           0 WORDS/PROCESSOR.
  TOTAL MEMORY REQUESTED ON EACH PROCESSOR=     1000000 WORDS.
  TIMLIM=      525600.00 MINUTES, OR     365.0 DAYS.
- PARALL= F  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
  MXSEQ2=     300 MXSEQ3=     150  mem10=         0  mem22=         0
 
           ----------------
@@ -521,6 +528,13 @@ unset echo
           EXTRAPOLATION IN EFFECT
           SOSCF IN EFFECT
  ORBITAL PRINTING OPTION: NPREO=     1    48     2     1
+
+     ----------------------
+     TARGET OFFLOAD OPTIONS
+     ----------------------
+     RHF    =       F
+     CPHF    =       F
+     MAKEFP =       F
 
      -------------------------------
      INTEGRAL TRANSFORMATION OPTIONS
@@ -604,8 +618,8 @@ unset echo
  A   =   48
 
  ..... DONE SETTING UP THE RUN .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.66%
 
 
           -----------------------------
@@ -689,8 +703,8 @@ unset echo
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    98.98%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    69.52%
 
           -------------
           GUESS OPTIONS
@@ -709,8 +723,8 @@ unset echo
     12=A       13=A       14=A       15=A       16=A       17=A       18=A   
     19=A       20=A       21=A       22=A       23=A       24=A       25=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.18%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    73.72%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -732,8 +746,8 @@ unset echo
  DIRECT SCF METHOD SKIPS INTEGRAL STORAGE ON DISK.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    99.35%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.58%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -767,11 +781,13 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -153.9203492024 AFTER  11 ITERATIONS
+
+ Alpha HOMO=    -8.494452 eV, LUMO=    2.867389 eV, gap=   11.361841 eV
 
           ------------
           EIGENVECTORS
@@ -1297,8 +1313,8 @@ unset echo
    47  H 10  S    0.010564   0.055221  -0.008084
    48  H 10  S    0.450023   0.105511   0.009382
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.15 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.65%
+ CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.28%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1475,15 +1491,15 @@ unset echo
 
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
-    1 C                 3.759       3.759       0.000
+    1 C                 3.759       3.759      -0.000
     2 C                 3.736       3.736      -0.000
-    3 C                 3.737       3.737      -0.000
+    3 C                 3.737       3.737       0.000
     4 C                 3.759       3.759      -0.000
     5 H                 0.929       0.929       0.000
     6 H                 0.929       0.929      -0.000
-    7 H                 0.921       0.921       0.000
-    8 H                 0.918       0.918      -0.000
-    9 H                 0.927       0.927      -0.000
+    7 H                 0.921       0.921      -0.000
+    8 H                 0.918       0.918       0.000
+    9 H                 0.927       0.927       0.000
    10 H                 0.926       0.926      -0.000
 
           ---------------------
@@ -1491,17 +1507,17 @@ unset echo
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000   -0.000000    0.000000        0.00 (A.U.)
+                -0.000000   -0.000000    0.000000       -0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
     -0.025230    0.237475    0.033130    0.241098
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.66%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.74%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.66%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.85%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -1509,8 +1525,8 @@ unset echo
  THE COARSE/FINE SCHWARZ SCREENINGS SKIPPED        10195/        5340 BLOCKS.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS     29495
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.02 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.68%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.32%
 
           NSERCH=  0     ENERGY=    -153.9203492
 
@@ -1663,11 +1679,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.68%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.99%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    99.68%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.14%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1690,20 +1706,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -153.9925485517 AFTER   7 ITERATIONS
+
+ Alpha HOMO=    -9.078643 eV, LUMO=    3.671117 eV, gap=   12.749760 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.11 TOTAL CPU TIME =          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    99.72%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.12%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    99.72%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.68%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.15%
 
           NSERCH=  1     ENERGY=    -153.9925486
 
@@ -1789,7 +1807,7 @@ unset echo
  H           1.0  -1.3341282714   1.1544624629  -0.8310752668
  H           1.0  -2.5548053013   0.4452072972   0.3715857846
  H           1.0  -0.9476018297  -1.1720843657   1.0258327816
- H           1.0   0.8672566270  -1.0022037188  -1.2046484821
+ H           1.0   0.8672566271  -1.0022037188  -1.2046484821
  H           1.0   1.4710380204   0.8294691675   1.1142033462
  H           1.0   2.4677082326   0.6320199475  -0.4384921614
 
@@ -1858,11 +1876,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.06%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.15%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1886,20 +1904,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0418536954 AFTER   8 ITERATIONS
+
+ Alpha HOMO=   -10.136899 eV, LUMO=    4.978004 eV, gap=   15.114903 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.13 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.39%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.00%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.47%
 
           NSERCH=  2     ENERGY=    -154.0418537
 
@@ -1981,7 +2001,7 @@ unset echo
  C           6.0   0.6873997946  -0.4270454386  -0.3187174931
  C           6.0   1.6128633697   0.4109255319   0.1338479971
  H           1.0  -1.3718977126   1.1824520094  -0.7996924543
- H           1.0  -2.5815667609   0.4332946781   0.3376560128
+ H           1.0  -2.5815667609   0.4332946782   0.3376560128
  H           1.0  -0.9702041829  -1.1891492451   1.0100434651
  H           1.0   0.8289452763  -0.9775514712  -1.2275597694
  H           1.0   1.4582879550   0.9609778679   1.0377930341
@@ -2052,11 +2072,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.34%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.41%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2079,20 +2099,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0477144077 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -10.058022 eV, LUMO=    4.840040 eV, gap=   14.898062 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.11 TOTAL CPU TIME =          0.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.41%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.99%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    99.72%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    79.25%
 
           NSERCH=  3     ENERGY=    -154.0477144
 
@@ -2244,11 +2266,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    99.72%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    79.10%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.6 SECONDS, CPU UTILIZATION IS    99.72%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    79.15%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2271,20 +2293,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0494778168 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -10.043625 eV, LUMO=    4.931883 eV, gap=   14.975508 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.11 TOTAL CPU TIME =          0.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.90%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.7 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.69%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.84%
 
           NSERCH=  4     ENERGY=    -154.0494778
 
@@ -2366,7 +2390,7 @@ unset echo
  C           6.0   1.6286986861   0.3950531158   0.1317225739
  H           1.0  -1.4473161978   1.2011673606  -0.7838382172
  H           1.0  -2.6146828273   0.3628212454   0.3446335223
- H           1.0  -0.9021081023  -1.2374482715   0.9557292844
+ H           1.0  -0.9021081024  -1.2374482715   0.9557292844
  H           1.0   0.8662115581  -1.0305618556  -1.1714297271
  H           1.0   1.4905144621   0.9966139568   1.0114922956
  H           1.0   2.6117674843   0.4150118642  -0.3056796299
@@ -2436,11 +2460,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.72%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.8 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.76%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2463,20 +2487,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0504189007 AFTER   7 ITERATIONS
+
+ Alpha HOMO=   -10.034486 eV, LUMO=    4.937533 eV, gap=   14.972018 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.11 TOTAL CPU TIME =          0.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.71%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.38%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          0.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.63%
 
           NSERCH=  5     ENERGY=    -154.0504189
 
@@ -2559,7 +2585,7 @@ unset echo
  H           1.0  -1.4503604778   1.2153619495  -0.7665251011
  H           1.0  -2.6240093646   0.3459822561   0.3323165108
  H           1.0  -0.9154734725  -1.2626368294   0.9215156336
- H           1.0   0.8887121906  -1.0650966465  -1.1372829472
+ H           1.0   0.8887121906  -1.0650966465  -1.1372829473
  H           1.0   1.4867856669   1.0353420323   0.9815810815
  H           1.0   2.6197419555   0.3790212345  -0.2946526073
 
@@ -2628,11 +2654,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.52%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          0.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.9 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.56%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2655,20 +2681,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0511805104 AFTER   7 ITERATIONS
+
+ Alpha HOMO=    -9.940875 eV, LUMO=    4.876945 eV, gap=   14.817819 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.11 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.39%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.0 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.13%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.23%
 
           NSERCH=  6     ENERGY=    -154.0511805
 
@@ -2749,7 +2777,7 @@ unset echo
  C           6.0  -1.6335966900   0.4132857760  -0.0705876021
  C           6.0  -0.6916828921  -0.4498038074   0.2421564723
  C           6.0   0.6867496229  -0.4080152032  -0.3063957323
- C           6.0   1.6380444841   0.3935977211   0.1309575197
+ C           6.0   1.6380444840   0.3935977211   0.1309575197
  H           1.0  -1.4536895082   1.2271671311  -0.7473744321
  H           1.0  -2.6279248985   0.3285416028   0.3252163181
  H           1.0  -0.9195657304  -1.2796896354   0.8891637629
@@ -2822,11 +2850,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.14%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.1 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.17%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2850,20 +2878,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0516645518 AFTER   8 ITERATIONS
+
+ Alpha HOMO=    -9.818042 eV, LUMO=    4.771195 eV, gap=   14.589238 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.12 TOTAL CPU TIME =          1.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.06%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    77.82%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.03%
 
           NSERCH=  7     ENERGY=    -154.0516646
 
@@ -3015,11 +3045,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.02%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.2 SECONDS, CPU UTILIZATION IS    99.71%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.05%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3042,20 +3072,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0517862465 AFTER   7 ITERATIONS
+
+ Alpha HOMO=    -9.781482 eV, LUMO=    4.752462 eV, gap=   14.533944 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.10 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.15%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    77.96%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.08%
 
           NSERCH=  8     ENERGY=    -154.0517862
 
@@ -3207,11 +3239,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.00%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.3 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.03%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3226,27 +3258,29 @@ unset echo
    1  0  0     -154.0518153599  -154.0518153599   0.000717995   0.000570827         636448       7600
    2  1  0     -154.0518233301    -0.0000079703   0.000370251   0.000134341         609333      12297
    3  2  0     -154.0518240648    -0.0000007347   0.000064217   0.000030120         598834      13481
-   4  3  0     -154.0518240874    -0.0000000226   0.000032201   0.000012757         577387      15714
+   4  3  0     -154.0518240874    -0.0000000226   0.000032201   0.000012756         577387      15714
    5  4  0     -154.0518240934    -0.0000000060   0.000007305   0.000003498         565239      16754
    6  5  0     -154.0518240940    -0.0000000006   0.000003278   0.000000840         542762      18910
 
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0518240940 AFTER   6 ITERATIONS
+
+ Alpha HOMO=    -9.785732 eV, LUMO=    4.752732 eV, gap=   14.538464 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.09 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.06%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.4 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    77.85%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.02%
 
           NSERCH=  9     ENERGY=    -154.0518241
 
@@ -3326,8 +3360,8 @@ unset echo
  C           6.0  -0.6907983540  -0.4512606938   0.2406678463
  C           6.0   0.6895707865  -0.4100837669  -0.3116325046
  C           6.0   1.6332540800   0.3923453201   0.1346821151
- H           1.0  -1.4419121277   1.2355122891  -0.7345643355
- H           1.0  -2.6245015243   0.3403664335   0.3340019473
+ H           1.0  -1.4419121276   1.2355122891  -0.7345643355
+ H           1.0  -2.6245015243   0.3403664336   0.3340019473
  H           1.0  -0.9138753677  -1.2842519834   0.8860217539
  H           1.0   0.9110234823  -1.1287409691  -1.0824120586
  H           1.0   1.4445290512   1.0930413155   0.9258289998
@@ -3398,11 +3432,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    77.95%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    77.98%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3424,20 +3458,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0518563688 AFTER   6 ITERATIONS
+
+ Alpha HOMO=    -9.804858 eV, LUMO=    4.758791 eV, gap=   14.563648 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.09 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.02%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.5 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.5 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.92%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.97%
 
           NSERCH= 10     ENERGY=    -154.0518564
 
@@ -3516,7 +3552,7 @@ unset echo
  C           6.0  -0.6907838629  -0.4517633876   0.2406425019
  C           6.0   0.6890870429  -0.4098658096  -0.3113240078
  C           6.0   1.6329262719   0.3922872263   0.1348904627
- H           1.0  -1.4423499322   1.2366235410  -0.7339292487
+ H           1.0  -1.4423499321   1.2366235410  -0.7339292487
  H           1.0  -2.6226727863   0.3389644619   0.3355953959
  H           1.0  -0.9151768503  -1.2823206085   0.8883361581
  H           1.0   0.9102134093  -1.1253414894  -1.0850772103
@@ -3588,11 +3624,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.90%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.92%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3613,20 +3649,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0518619258 AFTER   5 ITERATIONS
+
+ Alpha HOMO=    -9.810721 eV, LUMO=    4.766039 eV, gap=   14.576760 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.07 TOTAL CPU TIME =          1.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.98%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.6 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.6 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.80%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.94%
 
           NSERCH= 11     ENERGY=    -154.0518619
 
@@ -3709,7 +3747,7 @@ unset echo
  H           1.0  -2.6235123559   0.3391627750   0.3348013173
  H           1.0  -0.9153816991  -1.2822614432   0.8881997950
  H           1.0   0.9101315699  -1.1244419228  -1.0849401199
- H           1.0   1.4475170663   1.0952462425   0.9241880845
+ H           1.0   1.4475170662   1.0952462425   0.9241880845
  H           1.0   2.6249738752   0.3788604529  -0.2760696087
 
 
@@ -3777,11 +3815,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.88%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.90%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3802,20 +3840,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0518628562 AFTER   5 ITERATIONS
+
+ Alpha HOMO=    -9.810178 eV, LUMO=    4.764283 eV, gap=   14.574462 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.07 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.7 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.87%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.7 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.75%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.80%
 
           NSERCH= 12     ENERGY=    -154.0518629
 
@@ -3892,7 +3932,7 @@ unset echo
  ------------------------------------------------------------
  C           6.0  -1.6318837895   0.4151681350  -0.0687542116
  C           6.0  -0.6906260719  -0.4517679424   0.2403613549
- C           6.0   0.6888690190  -0.4094359633  -0.3107905309
+ C           6.0   0.6888690190  -0.4094359634  -0.3107905309
  C           6.0   1.6335213624   0.3920299877   0.1347808536
  H           1.0  -1.4432929386   1.2369490572  -0.7332799970
  H           1.0  -2.6236663358   0.3390329672   0.3347416326
@@ -3966,11 +4006,11 @@ unset echo
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.74%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    99.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.76%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3990,20 +4030,22 @@ unset echo
           -----------------
           DENSITY CONVERGED
           -----------------
-     TIME TO FORM FOCK OPERATORS=       0.1 SECONDS (       0.0 SEC/ITER)
+     TIME TO FORM FOCK OPERATORS=       0.0 SECONDS (       0.0 SEC/ITER)
      FOCK TIME ON FIRST ITERATION=       0.0, LAST ITERATION=       0.0
      TIME TO SOLVE SCF EQUATIONS=       0.0 SECONDS (       0.0 SEC/ITER)
 
  FINAL RHF ENERGY IS     -154.0518630097 AFTER   4 ITERATIONS
+
+ Alpha HOMO=    -9.809479 eV, LUMO=    4.763325 eV, gap=   14.572804 eV
  ...... END OF RHF CALCULATION ......
- STEP CPU TIME =     0.06 TOTAL CPU TIME =          1.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.78%
  ..... END OF 1-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.8 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.8 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.68%
  ...... END OF 2-ELECTRON GRADIENT ......
- STEP CPU TIME =     0.03 TOTAL CPU TIME =          1.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.71%
 
           NSERCH= 13     ENERGY=    -154.0518630
 
@@ -4071,7 +4113,7 @@ unset echo
  ------------------------------------------------------------
  C           6.0  -1.6318837895   0.4151681350  -0.0687542116
  C           6.0  -0.6906260719  -0.4517679424   0.2403613549
- C           6.0   0.6888690190  -0.4094359633  -0.3107905309
+ C           6.0   0.6888690190  -0.4094359634  -0.3107905309
  C           6.0   1.6335213624   0.3920299877   0.1347808536
  H           1.0  -1.4432929386   1.2369490572  -0.7332799970
  H           1.0  -2.6236663358   0.3390329672   0.3347416326
@@ -4430,7 +4472,7 @@ unset echo
                        TOTAL ENERGY =    -154.0518630097
 
  ELECTRON-ELECTRON POTENTIAL ENERGY =     155.0916141238
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -567.8761378744
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -567.8761378743
    NUCLEUS-NUCLEUS POTENTIAL ENERGY =     104.9925851239
                                       ------------------
              TOTAL POTENTIAL ENERGY =    -307.7919386267
@@ -4608,20 +4650,20 @@ unset echo
          DX          DY          DZ         /D/  (DEBYE)
     -0.000208   -0.106943   -0.008740    0.107300
  ...... END OF PROPERTY EVALUATION ......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.79%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -154.0518630097
-  2.292064115E-05-2.490129021E-05 2.258855956E-05 9.886756840E-06 1.177208311E-05
- -2.111686230E-05-5.096955054E-05-2.968006369E-05-1.533551007E-05 3.152732220E-05
-  4.015737191E-05 2.352135624E-05-3.622285355E-06-2.040107264E-06-3.259963604E-07
- -1.111270060E-05 1.049608158E-05-7.142790574E-06-5.136045249E-06 2.529037332E-06
-  3.658308823E-06 1.116578409E-05-6.313377343E-06-1.016081461E-05 2.527106628E-06
-  1.324591609E-05 1.362620477E-05-7.187029163E-06-1.526565151E-05-9.312455471E-06
- -2.081592177E-04-1.069432246E-01-8.740417237E-03
+  2.292063907E-05-2.490128907E-05 2.258855933E-05 9.886757774E-06 1.177208232E-05
+ -2.111686172E-05-5.096954783E-05-2.968006365E-05-1.533551063E-05 3.152732074E-05
+  4.015737163E-05 2.352135652E-05-3.622285316E-06-2.040107266E-06-3.259963752E-07
+ -1.111270048E-05 1.049608174E-05-7.142790609E-06-5.136045200E-06 2.529037266E-06
+  3.658308852E-06 1.116578378E-05-6.313377417E-06-1.016081453E-05 2.527106707E-06
+  1.324591607E-05 1.362620478E-05-7.187029238E-06-1.526565163E-05-9.312455623E-06
+ -2.081592164E-04-1.069432246E-01-8.740417237E-03
  ......END OF GEOMETRY SEARCH......
- STEP CPU TIME =     0.00 TOTAL CPU TIME =          1.9 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          1.9 SECONDS, CPU UTILIZATION IS    99.69%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    77.74%
  AN INPUT FILE FOR -MOLPLT- HAS BEEN PUNCHED.
 
    1 warning(s) detected.
@@ -4629,24 +4671,25 @@ unset echo
  There may be a problem in your input file.
 
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 18:29:46 06-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 14:22:15 07-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 1.830 + 0.37 = 1.868
+ 0: 0.305 + 0.39 = 0.345
+ 1: 0.292 + 0.23 = 0.315
+ 2: 0.293 + 0.27 = 0.320
+ 3: 0.288 + 0.19 = 0.308
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     1204 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F05
--rw-r--r--@ 1 blink  staff  1963200 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F10
--rw-r--r--@ 1 blink  staff   130880 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F26R
--rw-r--r--@ 1 blink  staff        0 Nov  6 18:29 /Users/blink/github/gamess2023R2claude/scr/butadiene_scan_080.F27R
+-rw-r--r--@ 1 blink  staff     1204 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F05
+-rw-r--r--@ 1 blink  staff  1963200 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_080.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Fri Nov  6 18:29:47 AST 2026
-1.904u 0.128s 0:03.06 66.0%	0+0k 0+0io 64pf+0w
+Sat Nov  7 14:22:16 AST 2026
+1.229u 0.191s 0:01.61 87.5%	0+0k 0+0io 107pf+0w
