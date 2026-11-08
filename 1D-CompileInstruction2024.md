@@ -208,7 +208,10 @@ These warnings near the end are expected and harmless:
 - `ld: warning: ignoring duplicate libraries: ...libopenblas.a`. `lked` puts OpenBLAS on the link line twice.
 - Many lines like `object file ... was built for newer 'macOS' version (27.2) than being linked (27.0)`.
 
+(shared-memory-limits)=
 ## 9. Raise shared-memory limits (resets at reboot)
+
+GAMESS uses SystemV shared memory to pass data between its compute processes. Even the smallest job asks for about 160 MB, but macOS allows only a few MB by default. Raise the limits (the values below are for a 16 GB Mac; use about half your RAM):
 
 ```zsh
 sudo sysctl -w kern.sysv.shmmax=8589934592
@@ -216,7 +219,93 @@ sudo sysctl -w kern.sysv.shmall=2097152
 sysctl kern.sysv.shmmax kern.sysv.shmall
 ```
 
-**After every reboot, run these two `sudo` lines again before your first GAMESS job.**
+`shmmax` is in bytes and `shmall` is in 4 KB pages. These are ceilings, not reservations: memory is only used while a job runs.
+
+:::{note} The limits reset every time you restart your Mac
+If you forget, every job stops right away with a fatal error, and the `.log` file shows lines like:
+
+```text
+DDI Process 0: shmget returned an error.
+Error EINVAL: Attempting to create 160525768 bytes of shared memory.
+...
+ddikick.x: Fatal error detected.
+```
+
+**Option 1: set them by hand.** After every reboot, run the two `sudo sysctl -w` lines above before your first GAMESS job.
+
+**Option 2: set them automatically at startup.** A *LaunchDaemon* is a small settings file that macOS runs as root every time it starts. The file for GAMESS is called `local.gamess.shm.plist` and lives in the system-wide folder `/Library/LaunchDaemons` (the `Library` folder at the top of the drive, not the one in your home folder). This is the whole file:
+
+```{code-block} xml
+:caption: /Library/LaunchDaemons/local.gamess.shm.plist
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.gamess.shm</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/sbin/sysctl</string>
+        <string>-w</string>
+        <string>kern.sysv.shmmax=8589934592</string>
+        <string>kern.sysv.shmall=2097152</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+```
+
+- `Label` is the job's unique name.
+- `ProgramArguments` is the command to run, one word per `<string>`. It is the same as typing `sysctl -w kern.sysv.shmmax=8589934592 kern.sysv.shmall=2097152`.
+- `RunAtLoad` runs the command once, as soon as macOS loads the file at startup.
+
+The two numbers are for a 16 GB Mac. Change them to match your RAM (see the table in [](1C-CompilingGAMESS-USonM5MacBookAir.md)).
+
+*Install it* (one copy-and-paste, everything from `sudo tee` to `sysctl`). The file must be owned by `root:wheel` with permissions `644`, or macOS ignores it:
+
+```zsh
+sudo tee /Library/LaunchDaemons/local.gamess.shm.plist > /dev/null <<'PLIST'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.gamess.shm</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/sbin/sysctl</string>
+        <string>-w</string>
+        <string>kern.sysv.shmmax=8589934592</string>
+        <string>kern.sysv.shmall=2097152</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+PLIST
+sudo chown root:wheel /Library/LaunchDaemons/local.gamess.shm.plist
+sudo chmod 644 /Library/LaunchDaemons/local.gamess.shm.plist
+sudo launchctl bootstrap system /Library/LaunchDaemons/local.gamess.shm.plist
+sysctl kern.sysv.shmmax kern.sysv.shmall     # confirm
+```
+
+After your next restart, run the last line again to check that the values were set.
+
+*Remove it.* Deleting the file is all that is needed, because macOS only reads it at startup:
+
+```zsh
+sudo rm /Library/LaunchDaemons/local.gamess.shm.plist
+```
+
+The raised limits stay in effect until the next restart, then return to the macOS defaults. To also remove the job from the running system straight away, run this *before* deleting the file (optional):
+
+```zsh
+sudo launchctl bootout system /Library/LaunchDaemons/local.gamess.shm.plist
+```
+
+If a value is refused, or a crashed job left memory behind, list leftover segments with `ipcs -m` and remove one with `ipcrm -m <id>`.
+:::
 
 ## 10. Run and check the tests (about 1-2 min)
 
@@ -343,7 +432,7 @@ gms                       # show help
 - A step fails with `gfortran: Command not found`, `missing separator` or a `sed` error: your PATH from step 1 is not active. Open a new terminal and repeat the checks in step 1.
 - `ld: library 'System' not found`: `SDKROOT` is not set (step 1).
 - `undefined symbol` at the link step: check the `install.info` path (step 5) with `ls -l` on the file it names.
-- Jobs fail with shared-memory (`shmget`) errors: you rebooted and need step 9 again.
+- Jobs fail with shared-memory (`shmget`) errors: you rebooted and need step 9 again (or set up the LaunchDaemon in step 9 so it happens automatically).
 - A job fails after an interrupted run: `gms` clears old scratch files automatically. If you use `rungms` directly, delete `~/gamess/scr/jobname.*` first.
 - You ran `./config` again by mistake: repeat step 5 (`lked` and `rungms` are not affected).
 - To undo an edit, copy the `.orig` file back, for example `cp lked.orig lked && chmod 755 lked`.

@@ -3,10 +3,10 @@
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sat Nov 7 14:19:27 AST 2026
+under operating system Darwin at Sun Nov 8 17:05:45 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 494634476 447853640    53% 3684849 4478536400    0%   /System/Volumes/Data
+/dev/disk3s5   971298980 492392888 453240296    53% 3674322 4532402960    0%   /System/Volumes/Data
 GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/runs/water_321G.inp to your run's scratch directory...
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 14:19:27 07-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 17:05:45 08-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0 COORD=UNIQUE $END  
@@ -431,7 +431,7 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    65.28%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    57.65%
 
 
           -----------------------------
@@ -475,7 +475,7 @@ Assuming a single but multicore node.
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    62.58%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    58.64%
 
           -------------
           GUESS OPTIONS
@@ -494,7 +494,7 @@ Assuming a single but multicore node.
      9=A1      10=A1      11=B1      12=B1      13=B2  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    59.72%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    58.89%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -517,7 +517,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.52%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.45%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -566,12 +566,12 @@ Assuming a single but multicore node.
                      A1         A1         B1         A1         B2  
     1  O  1  S    0.983234  -0.229141   0.000000  -0.088956   0.000000
     2  O  1  S    0.095849   0.217512   0.000000   0.082807   0.000000
-    3  O  1  X    0.000000   0.000000   0.398351   0.000000   0.000000
-    4  O  1  Y    0.000000   0.000000   0.000000   0.000000   0.521574
+    3  O  1  X   -0.000000   0.000000   0.398351   0.000000   0.000000
+    4  O  1  Y   -0.000000   0.000000   0.000000   0.000000   0.521574
     5  O  1  Z   -0.003557  -0.083465   0.000000   0.440580   0.000000
     6  O  1  S   -0.037920   0.706861   0.000000   0.407086   0.000000
-    7  O  1  X    0.000000   0.000000   0.371137   0.000000   0.000000
-    8  O  1  Y    0.000000   0.000000   0.000000   0.000000   0.631840
+    7  O  1  X   -0.000000   0.000000   0.371137   0.000000   0.000000
+    8  O  1  Y   -0.000000   0.000000   0.000000   0.000000   0.631840
     9  O  1  Z    0.006853  -0.094058   0.000000   0.505546   0.000000
    10  H  2  S    0.002657   0.116449   0.232925  -0.131991   0.000000
    11  H  2  S    0.006846   0.019388   0.185563  -0.106803   0.000000
@@ -613,7 +613,7 @@ Assuming a single but multicore node.
    13  H  3  S    0.088304   0.503579  -0.355534
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.81%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    61.02%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -722,15 +722,15 @@ Assuming a single but multicore node.
  POINT   1           X           Y           Z (BOHR)    CHARGE
                  0.000000   -0.000000   -0.110138        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-     0.000000   -0.000000   -2.450493    2.450493
+    -0.000000   -0.000000   -2.450493    2.450493
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    57.21%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    61.63%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.73%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    59.42%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -739,7 +739,7 @@ Assuming a single but multicore node.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS       199
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.97%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    58.23%
 
           NSERCH=  0     ENERGY=     -75.5853052
 
@@ -767,13 +767,13 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0465647555
- H           1.0  -0.8156243835   0.0000000000  -0.5592069785
+ H           1.0  -0.8156243835  -0.0000000000  -0.5592069785
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0465647555
  H           1.0   0.8156243835  -0.0000000000  -0.5592069785
- H           1.0  -0.8156243835   0.0000000000  -0.5592069785
+ H           1.0  -0.8156243835  -0.0000000000  -0.5592069785
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -788,10 +788,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.98%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    58.15%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    54.26%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    58.39%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -808,7 +808,7 @@ Assuming a single but multicore node.
    3  2  0      -75.5841728362    -0.0001433295   0.002104220   0.001651372           1282          0
    4  3  0      -75.5841795900    -0.0000067538   0.000561370   0.000510754           1282          0
    5  4  0      -75.5841810016    -0.0000014116   0.000162200   0.000123465           1282          0
-   6  5  0      -75.5841810819    -0.0000000803   0.000012102   0.000012043           1282          0
+   6  5  0      -75.5841810819    -0.0000000804   0.000012102   0.000012043           1282          0
    7  6  0      -75.5841810825    -0.0000000006   0.000004990   0.000003671           1282          0
 
           -----------------
@@ -823,13 +823,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -12.847213 eV, LUMO=    7.120819 eV, gap=   19.968033 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.84%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    56.25%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.43%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.75%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.08%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.38%
 
           NSERCH=  1     ENERGY=     -75.5841811
 
@@ -861,13 +861,13 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0146488111
- H           1.0  -0.7888251193   0.0000000000  -0.5751649507
+ H           1.0  -0.7888251193  -0.0000000000  -0.5751649507
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0146488111
  H           1.0   0.7888251193  -0.0000000000  -0.5751649507
- H           1.0  -0.7888251193   0.0000000000  -0.5751649507
+ H           1.0  -0.7888251193  -0.0000000000  -0.5751649507
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -882,10 +882,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.05%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.33%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.18%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.51%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -917,13 +917,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -12.958432 eV, LUMO=    7.095558 eV, gap=   20.053990 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.84%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.83%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.60%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.52%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.37%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    53.22%
 
           NSERCH=  2     ENERGY=     -75.5858841
 
@@ -953,13 +953,13 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0078240504
- H           1.0  -0.7797587455   0.0000000000  -0.5785773310
+ H           1.0  -0.7797587455  -0.0000000000  -0.5785773310
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0078240504
  H           1.0   0.7797587455  -0.0000000000  -0.5785773310
- H           1.0  -0.7797587455   0.0000000000  -0.5785773310
+ H           1.0  -0.7797587455  -0.0000000000  -0.5785773310
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -974,10 +974,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.33%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    53.19%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.48%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    53.42%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1008,13 +1008,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -12.988141 eV, LUMO=    7.107066 eV, gap=   20.095207 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.07%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.45%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.03%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.20%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    47.99%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.02%
 
           NSERCH=  3     ENERGY=     -75.5859592
 
@@ -1044,13 +1044,13 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0080318251
- H           1.0  -0.7804875316   0.0000000000  -0.5784734437
+ H           1.0  -0.7804875316  -0.0000000000  -0.5784734437
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0080318251
  H           1.0   0.7804875316  -0.0000000000  -0.5784734437
- H           1.0  -0.7804875316   0.0000000000  -0.5784734437
+ H           1.0  -0.7804875316  -0.0000000000  -0.5784734437
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -1065,10 +1065,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.05%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.06%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.18%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.19%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1097,13 +1097,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -12.986174 eV, LUMO=    7.103572 eV, gap=   20.089746 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.40%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.66%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.23%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.44%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.23%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.28%
 
           NSERCH=  4     ENERGY=     -75.5859597
 
@@ -1133,13 +1133,13 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0081020518
- H           1.0  -0.7804697613   0.0000000000  -0.5784383303
+ H           1.0  -0.7804697613  -0.0000000000  -0.5784383303
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0081020518
  H           1.0   0.7804697613  -0.0000000000  -0.5784383303
- H           1.0  -0.7804697613   0.0000000000  -0.5784383303
+ H           1.0  -0.7804697613  -0.0000000000  -0.5784383303
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -1154,10 +1154,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.31%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.28%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.44%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.41%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1185,13 +1185,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -12.986192 eV, LUMO=    7.104270 eV, gap=   20.090462 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.66%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.40%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.54%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    51.17%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    48.51%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    50.97%
 
           NSERCH=  5     ENERGY=     -75.5859598
 
@@ -1214,13 +1214,13 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0081020518
- H           1.0  -0.7804697613   0.0000000000  -0.5784383303
+ H           1.0  -0.7804697613  -0.0000000000  -0.5784383303
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  O           8.0   0.0000000000   0.0000000000  -0.0081020518
  H           1.0   0.7804697613  -0.0000000000  -0.5784383303
- H           1.0  -0.7804697613   0.0000000000  -0.5784383303
+ H           1.0  -0.7804697613  -0.0000000000  -0.5784383303
 
           INTERNUCLEAR DISTANCES (ANGS.)
           ------------------------------
@@ -1398,40 +1398,40 @@ Assuming a single but multicore node.
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                 0.000000   -0.000000   -0.135930        0.00 (A.U.)
+                -0.000000   -0.000000   -0.135930       -0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000   -0.000000   -2.387349    2.387349
+     0.000000   -0.000000   -2.387349    2.387349
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    49.71%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.05%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=      -75.5859597578
-  0.000000000E+00 0.000000000E+00-1.428193257E-05-2.773653925E-06 0.000000000E+00
-  7.140966276E-06 2.773653925E-06 0.000000000E+00 7.140966276E-06
- -1.128770855E-15-1.099117212E-16-2.387348877E+00
+  0.000000000E+00 0.000000000E+00-1.428193255E-05-2.773653924E-06 0.000000000E+00
+  7.140966279E-06 2.773653924E-06 0.000000000E+00 7.140966279E-06
+  1.128770855E-15-1.099117212E-16-2.387348877E+00
  ......END OF GEOMETRY SEARCH......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    49.78%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    52.13%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 14:19:27 07-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 17:05:45 08-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.17 + 0.23 = 0.41
- 1: 0.08 + 0.15 = 0.23
- 2: 0.08 + 0.16 = 0.25
- 3: 0.07 + 0.11 = 0.19
+ 0: 0.18 + 0.25 = 0.44
+ 1: 0.09 + 0.15 = 0.25
+ 2: 0.09 + 0.17 = 0.27
+ 3: 0.08 + 0.12 = 0.21
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      374 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/water_321G.F05
--rw-r--r--@ 1 blink  staff  1701440 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/water_321G.F10
+-rw-r--r--@ 1 blink  staff      374 Nov  8 17:05 /Users/blink/github/gamess2024R2claude/gamess/scr/water_321G.F05
+-rw-r--r--@ 1 blink  staff  1701440 Nov  8 17:05 /Users/blink/github/gamess2024R2claude/gamess/scr/water_321G.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sat Nov  7 14:19:28 AST 2026
-0.130u 0.165s 0:01.28 22.6%	0+0k 0+0io 146pf+0w
+Sun Nov  8 17:05:47 AST 2026
+0.136u 0.195s 0:01.32 24.2%	0+0k 0+0io 146pf+0w

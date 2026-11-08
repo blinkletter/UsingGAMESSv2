@@ -3,10 +3,10 @@
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sat Nov 7 14:19:54 AST 2026
+under operating system Darwin at Sun Nov 8 17:06:13 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 494642740 447845376    53% 3684888 4478453760    0%   /System/Volumes/Data
+/dev/disk3s5   971298980 492396316 453236868    53% 3674353 4532368680    0%   /System/Volumes/Data
 GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/inputs/water_6311_Z_E.inp to your run's scratch directory...
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 14:19:55 07-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 17:06:13 08-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=ENERGY MAXIT=30 MULT=1 ICHARG=0 COORD=ZMT $END       
@@ -464,14 +464,14 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.73%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.80%
 
           ********************
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.54%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.36%
 
           -------------
           GUESS OPTIONS
@@ -490,7 +490,7 @@ Assuming a single but multicore node.
      9=A1      10=A1      11=A1      12=A1      13=A1      14=A1      15=A1  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.96%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.90%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -512,8 +512,8 @@ Assuming a single but multicore node.
  DIRECT SCF METHOD SKIPS INTEGRAL STORAGE ON DISK.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.72%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.30%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -887,7 +887,7 @@ Assuming a single but multicore node.
    37  H  3  Z   -0.258902   0.043186
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.27%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.04%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1009,9 +1009,9 @@ Assuming a single but multicore node.
 
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
-    1 O                 1.930       1.930      -0.000
-    2 H                 0.974       0.974       0.000
-    3 H                 0.974       0.974       0.000
+    1 O                 1.930       1.930       0.000
+    2 H                 0.974       0.974      -0.000
+    3 H                 0.974       0.974      -0.000
 
           ---------------------
           ELECTROSTATIC MOMENTS
@@ -1020,30 +1020,30 @@ Assuming a single but multicore node.
  POINT   1           X           Y           Z (BOHR)    CHARGE
                  0.000000    0.000000   -0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-     0.000000    0.000000    2.240468    2.240468
+    -0.000000    0.000000    2.240468    2.240468
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    69.54%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    73.23%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 14:19:55 07-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 17:06:13 08-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
  0: 0.21 + 0.10 = 0.32
- 1: 0.14 + 0.06 = 0.21
+ 1: 0.15 + 0.06 = 0.22
  2: 0.14 + 0.07 = 0.21
- 3: 0.13 + 0.06 = 0.19
+ 3: 0.14 + 0.06 = 0.20
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      307 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
--rw-r--r--@ 1 blink  staff  1799600 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F10
+-rw-r--r--@ 1 blink  staff      307 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
+-rw-r--r--@ 1 blink  staff  1799600 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sat Nov  7 14:19:56 AST 2026
-0.148u 0.142s 0:01.27 22.0%	0+0k 0+0io 93pf+0w
+Sun Nov  8 17:06:15 AST 2026
+0.149u 0.135s 0:01.26 21.4%	0+0k 0+0io 93pf+0w

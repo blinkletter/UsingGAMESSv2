@@ -3,10 +3,10 @@
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sat Nov 7 14:19:44 AST 2026
+under operating system Darwin at Sun Nov 8 17:06:03 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 494639180 447848936    53% 3684876 4478489360    0%   /System/Volumes/Data
+/dev/disk3s5   971298980 492395088 453238096    53% 3674343 4532380960    0%   /System/Volumes/Data
 GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
 GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
 Copying input file /Users/blink/github/UsingGAMESSv2/runs/methane_6311_U_E_6311G.inp to your run's scratch directory...
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 14:19:44 07-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 17:06:03 08-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=ENERGY MAXIT=30 MULT=1 NZVAR=9 $END                  
@@ -489,14 +489,14 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    82.83%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.94%
 
           ********************
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.65%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    83.07%
 
           -------------
           GUESS OPTIONS
@@ -515,7 +515,7 @@ Assuming a single but multicore node.
      9=A1      10=A1      11=A1      12=A1      13=A1      14=A1      15=A1  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    82.14%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.07%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -538,7 +538,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    88.26%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    90.29%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1186,7 +1186,7 @@ Assuming a single but multicore node.
    51  H  5  Z    0.032976
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.94%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    81.64%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1313,8 +1313,8 @@ Assuming a single but multicore node.
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
     1 C                 3.894       3.894       0.000
-    2 H                 0.923       0.923      -0.000
-    3 H                 0.923       0.923      -0.000
+    2 H                 0.923       0.923       0.000
+    3 H                 0.923       0.923       0.000
     4 H                 0.923       0.923       0.000
     5 H                 0.923       0.923       0.000
 
@@ -1328,27 +1328,27 @@ Assuming a single but multicore node.
      0.000000    0.000000    0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.99%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    82.44%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 14:19:44 07-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 17:06:03 08-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.25 + 0.10 = 0.36
- 1: 0.18 + 0.06 = 0.25
- 2: 0.18 + 0.07 = 0.26
- 3: 0.18 + 0.05 = 0.24
+ 0: 0.27 + 0.09 = 0.36
+ 1: 0.19 + 0.06 = 0.26
+ 2: 0.19 + 0.07 = 0.26
+ 3: 0.18 + 0.06 = 0.25
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      566 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E_6311G.F05
--rw-r--r--@ 1 blink  staff  1799600 Nov  7 14:19 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E_6311G.F10
+-rw-r--r--@ 1 blink  staff      566 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E_6311G.F05
+-rw-r--r--@ 1 blink  staff  1799600 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E_6311G.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sat Nov  7 14:19:45 AST 2026
-0.163u 0.128s 0:01.25 22.4%	0+0k 0+0io 93pf+0w
+Sun Nov  8 17:06:04 AST 2026
+0.165u 0.134s 0:01.25 23.2%	0+0k 0+0io 93pf+0w
