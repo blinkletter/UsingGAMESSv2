@@ -100,7 +100,7 @@ The optional arguments `ncpus`, `version` and `log_file` override the values fro
 
 ### Reading text files
 
-The original version of this book used the *Unix* tools `grep` and `sed` on log and input files. These two functions do the same in *Python*.
+These two functions search and edit text files. Their names come from the *Unix* tools `grep` and `sed`, which do the same jobs in a terminal.
 
 **`grep(text, file)`** returns a list of every line in the file that contains `text`, just like `grep "text" file` in the terminal. Many of the functions below start with it.
 
