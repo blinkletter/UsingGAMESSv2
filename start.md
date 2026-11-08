@@ -20,7 +20,7 @@ Below is a list of the chapters in this book and some notes on what you will fin
 
 [**2. Water: Getting Started**](2_SmallMolecules.ipynb). This chapter will introduce how to **run a job** in *GAMESS*. We will explore the ways that molecules are described to *GAMESS* in **input files**. We will see examples of using *xyz* **Cartessian coordinates** to describe the locations of atoms, using symmetry point groups so that we need only describe the symmetry unique atoms and using internal coordinates via the ***Z-matrix***. We will optimize the structures of **water and ammonia** using *GAMESS*. We will use semi-empirical and *ab initio* methods and introduce the idea of **levels of theory** in calculations. *GAMESS* will be run using the command line in the terminal. Results will be interpretted using the **log files** generated as output from *GAMESS*.
 
-[**3. Methane: Visual Input and Output**](3_Visual_Input.ipynb). Here we will see how to use the helper application ***MacMolPlt*** to build molecules and generate input files. We will run the *GAMESS* jobs using the batch controller application ***GamessQ***. We will also use *MacMolPlt* to **analyze** the results and **visualize** structure, localize *bonding orbitals* and *molecular orbitals*. 
+[**3. Methane: Visual Input and Output**](3_Visual_Input.ipynb). Here we will see how to use the helper application ***MacMolPlt*** to build molecules and generate input files. We will run the *GAMESS* jobs from *Python* in the notebook. We will also use *MacMolPlt* to **analyze** the results and **visualize** structure, localize *bonding orbitals* and *molecular orbitals*. 
 
 [**4. Ethane: Symmetry in Calculations**](4_Ethane.ipynb). Sometimes you want to explore the structure and energies of unstable systems, like transition states. We need to **constrain the optimization** to find a best structure in a high-energy situation. In this chapter we will explore the rotational **energy profile** of ethane using **symmetry point groups** to enforce the *anti* and the *eclipsed* conformations. We will calculate the energy for these two cases.
 
@@ -49,4 +49,4 @@ Below is a list of the chapters in this book and some notes on what you will fin
 
 ## AI Statement
 
-This page is copied from the [original book](https://blinkletter.github.io/UsingGAMESS) with the help of Claude (Anthropic). The author's text is unchanged except that the chapter titles in the table of contents now link to the converted notebooks (for example `1_Setup.ipynb`) instead of markdown files.
+This page is copied from the [original book](https://blinkletter.github.io/UsingGAMESS) with the help of Claude (Anthropic). The author's text is unchanged except that the chapter titles in the table of contents now link to the converted notebooks (for example `1_Setup.ipynb`) instead of markdown files, and the chapter 3 summary now says that jobs are run from *Python* rather than with *GamessQ*.
