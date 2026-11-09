@@ -14,7 +14,7 @@ environment variable of the same name before starting Jupyter, e.g.
 
 # Folder that holds rungms, gamess.00.x, auxdata/ and scr/.
 # "~" means your home folder.
-GAMESS_DIR = "~/github/compChem/gamess2024R2claude/gamess"
+GAMESS_DIR = "~/github/compChem/gamess2024R2claude/gamess-gf14"
 
 # Name of the run script inside GAMESS_DIR.
 RUN_SCRIPT = "rungms"
