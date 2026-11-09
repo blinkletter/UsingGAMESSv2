@@ -1,179 +1,179 @@
-1 : /Users/blink/github/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.inp
+1 : /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Mon Nov 9 11:54:08 AST 2026
+under operating system Darwin at Mon Nov 9 15:51:06 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 486639140 458994092    52% 3672540 4589940920    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs/ch3
-Copying input file /Users/blink/github/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.inp /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F05
+/dev/disk3s5   971298980 484477352 461155860    52% 3669718 4611558600    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3
+Copying input file /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F99
+setenv NUCBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch3/methane_6311_U_E.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/ch3/methane_6311_U_E.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch3/methane_6311_U_E.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x methane_6311_U_E -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x methane_6311_U_E -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x methane_6311_U_E 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x methane_6311_U_E 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 11:54:08 09-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:51:06 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=ENERGY MAXIT=30 MULT=1 ICHARG=0                      
@@ -507,14 +507,14 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    82.29%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.58%
 
           ********************
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.98%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    69.81%
 
           -------------
           GUESS OPTIONS
@@ -533,7 +533,7 @@ Assuming a single but multicore node.
      9=A1      10=A1      11=A1      12=A1      13=A1      14=A1      15=A1  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.12%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.58%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -556,7 +556,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    83.56%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.13%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1204,7 +1204,7 @@ Assuming a single but multicore node.
    51  H  5  Z    0.032976
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    71.84%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.88%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1223,7 +1223,7 @@ Assuming a single but multicore node.
                        TOTAL ENERGY =     -40.2091691920
 
  ELECTRON-ELECTRON POTENTIAL ENERGY =      26.1380544112
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -120.0351838002
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -120.0351838001
    NUCLEUS-NUCLEUS POTENTIAL ENERGY =      13.5063535999
                                       ------------------
              TOTAL POTENTIAL ENERGY =     -80.3907757891
@@ -1331,22 +1331,22 @@ Assuming a single but multicore node.
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
     1 C                 3.894       3.894       0.000
-    2 H                 0.923       0.923      -0.000
-    3 H                 0.923       0.923      -0.000
-    4 H                 0.923       0.923      -0.000
-    5 H                 0.923       0.923      -0.000
+    2 H                 0.923       0.923       0.000
+    3 H                 0.923       0.923       0.000
+    4 H                 0.923       0.923       0.000
+    5 H                 0.923       0.923       0.000
 
           ---------------------
           ELECTROSTATIC MOMENTS
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000   -0.000000   -0.000000       -0.00 (A.U.)
+                -0.000000   -0.000000   -0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000    0.000000    0.000000    0.000000
+     0.000000   -0.000000    0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.88%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    70.03%
 
           ---------------------------------------
           EDMISTON-RUEDENBERG ENERGY LOCALIZATION
@@ -1377,7 +1377,7 @@ Assuming a single but multicore node.
       SCHWARZ INEQUALITY TEST SKIPPED          0 INTEGRAL BLOCKS
  ... END OF INTEGRAL TRANSFORMATION ...
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.87%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.96%
 
           ---------------------------------------
           EDMISTON-RUEDENBERG ENERGY LOCALIZATION
@@ -1414,91 +1414,91 @@ Assuming a single but multicore node.
 
     1   -0.6458831
     2    0.0997478  -0.6458828
-    3    0.0997477  -0.0997476  -0.6458827
-    4   -0.0997478   0.0997477   0.0997476  -0.6458829
+    3   -0.0997477   0.0997476  -0.6458827
+    4    0.0997478  -0.0997477   0.0997476  -0.6458829
 
  EDMISTON-RUEDENBERG ENERGY LOCALIZED ORBITALS
 
                       1          2          3          4          5
 
-    1  C  1  S    0.563404   0.051482  -0.051482  -0.051482   0.051482
-    2  C  1  S    0.465974   0.085053  -0.085052  -0.085052   0.085052
-    3  C  1  X    0.000000  -0.094871  -0.094871   0.094871   0.094871
-    4  C  1  Y    0.000000  -0.094871   0.094871  -0.094871   0.094871
-    5  C  1  Z    0.000000  -0.094871  -0.094871  -0.094871  -0.094871
-    6  C  1  S    0.004956  -0.210167   0.210166   0.210166  -0.210166
-    7  C  1  X    0.000000  -0.148474  -0.148474   0.148474   0.148474
-    8  C  1  Y    0.000000  -0.148474   0.148474  -0.148475   0.148474
-    9  C  1  Z    0.000000  -0.148474  -0.148475  -0.148474  -0.148474
-   10  C  1  S    0.000820  -0.143112   0.143112   0.143112  -0.143112
-   11  C  1  X    0.000000  -0.099869  -0.099869   0.099869   0.099869
-   12  C  1  Y    0.000000  -0.099869   0.099869  -0.099869   0.099869
-   13  C  1  Z    0.000000  -0.099869  -0.099869  -0.099869  -0.099869
-   14  C  1  S    0.001226  -0.036995   0.036995   0.036995  -0.036995
-   15  C  1  X    0.000000   0.005295   0.005295  -0.005295  -0.005295
-   16  C  1  Y    0.000000   0.005295  -0.005295   0.005295  -0.005295
-   17  C  1  Z    0.000000   0.005295   0.005295   0.005295   0.005295
-   18  C  1 XX   -0.001314   0.001094  -0.001094  -0.001094   0.001094
-   19  C  1 YY   -0.001314   0.001094  -0.001094  -0.001094   0.001094
-   20  C  1 ZZ   -0.001314   0.001094  -0.001094  -0.001094   0.001094
-   21  C  1 XY    0.000000  -0.016346  -0.016346  -0.016346  -0.016346
-   22  C  1 XZ    0.000000  -0.016346   0.016346  -0.016346   0.016346
-   23  C  1 YZ    0.000000  -0.016346  -0.016346   0.016346   0.016346
-   24  H  2  S    0.000391   0.008274  -0.008274   0.191648   0.008274
-   25  H  2  S    0.000727   0.020466  -0.020466   0.295638   0.020466
-   26  H  2  S   -0.000486   0.037714  -0.037714   0.086246   0.037714
-   27  H  2  S   -0.000135   0.013612  -0.013612   0.024341   0.013612
-   28  H  2  X   -0.000236  -0.004798  -0.006390  -0.015086   0.006390
-   29  H  2  Y    0.000236  -0.006390   0.006390   0.015086   0.004798
-   30  H  2  Z    0.000236  -0.006390  -0.004798   0.015086  -0.006390
-   31  H  3  S    0.000391   0.008274   0.191648  -0.008274   0.008274
-   32  H  3  S    0.000727   0.020466   0.295638  -0.020466   0.020466
-   33  H  3  S   -0.000486   0.037714   0.086246  -0.037714   0.037714
-   34  H  3  S   -0.000135   0.013612   0.024341  -0.013612   0.013612
-   35  H  3  X    0.000236  -0.006390   0.015086   0.006390   0.004798
-   36  H  3  Y   -0.000236  -0.004798  -0.015086  -0.006390   0.006390
-   37  H  3  Z    0.000236  -0.006390   0.015086  -0.004798  -0.006390
-   38  H  4  S    0.000391   0.008274  -0.008274  -0.008274  -0.191648
-   39  H  4  S    0.000727   0.020466  -0.020466  -0.020466  -0.295638
-   40  H  4  S   -0.000486   0.037715  -0.037714  -0.037714  -0.086246
-   41  H  4  S   -0.000135   0.013612  -0.013612  -0.013612  -0.024341
-   42  H  4  X    0.000236  -0.006390  -0.004798   0.006390  -0.015086
-   43  H  4  Y    0.000236  -0.006390   0.006390  -0.004798  -0.015086
-   44  H  4  Z   -0.000236  -0.004798  -0.006390  -0.006390   0.015086
-   45  H  5  S    0.000391  -0.191648  -0.008274  -0.008274   0.008274
-   46  H  5  S    0.000727  -0.295638  -0.020467  -0.020466   0.020466
-   47  H  5  S   -0.000486  -0.086246  -0.037715  -0.037714   0.037714
-   48  H  5  S   -0.000135  -0.024341  -0.013612  -0.013612   0.013612
-   49  H  5  X   -0.000236   0.015086  -0.006390   0.004798   0.006390
-   50  H  5  Y   -0.000236   0.015086   0.004798  -0.006390   0.006390
-   51  H  5  Z   -0.000236   0.015086  -0.006390  -0.006390  -0.004798
+    1  C  1  S    0.563404   0.051482  -0.051482   0.051482  -0.051482
+    2  C  1  S    0.465974   0.085053  -0.085052   0.085052  -0.085052
+    3  C  1  X    0.000000  -0.094871  -0.094871  -0.094871  -0.094871
+    4  C  1  Y    0.000000   0.094871  -0.094871  -0.094871   0.094871
+    5  C  1  Z    0.000000   0.094871   0.094871  -0.094871  -0.094871
+    6  C  1  S    0.004956  -0.210167   0.210166  -0.210166   0.210166
+    7  C  1  X    0.000000  -0.148474  -0.148474  -0.148474  -0.148474
+    8  C  1  Y    0.000000   0.148474  -0.148474  -0.148475   0.148474
+    9  C  1  Z    0.000000   0.148474   0.148475  -0.148474  -0.148474
+   10  C  1  S    0.000820  -0.143112   0.143112  -0.143112   0.143112
+   11  C  1  X    0.000000  -0.099869  -0.099869  -0.099869  -0.099869
+   12  C  1  Y    0.000000   0.099869  -0.099869  -0.099869   0.099869
+   13  C  1  Z    0.000000   0.099869   0.099869  -0.099869  -0.099869
+   14  C  1  S    0.001226  -0.036995   0.036995  -0.036995   0.036995
+   15  C  1  X    0.000000   0.005295   0.005295   0.005295   0.005295
+   16  C  1  Y    0.000000  -0.005295   0.005295   0.005295  -0.005295
+   17  C  1  Z    0.000000  -0.005295  -0.005295   0.005295   0.005295
+   18  C  1 XX   -0.001314   0.001094  -0.001094   0.001094  -0.001094
+   19  C  1 YY   -0.001314   0.001094  -0.001094   0.001094  -0.001094
+   20  C  1 ZZ   -0.001314   0.001094  -0.001094   0.001094  -0.001094
+   21  C  1 XY    0.000000   0.016346   0.016346  -0.016346  -0.016346
+   22  C  1 XZ    0.000000   0.016346  -0.016346  -0.016346   0.016346
+   23  C  1 YZ    0.000000  -0.016346  -0.016346  -0.016346  -0.016346
+   24  H  2  S    0.000391  -0.191648  -0.008274   0.008274  -0.008274
+   25  H  2  S    0.000727  -0.295638  -0.020467   0.020466  -0.020466
+   26  H  2  S   -0.000486  -0.086246  -0.037715   0.037714  -0.037714
+   27  H  2  S   -0.000135  -0.024341  -0.013612   0.013612  -0.013612
+   28  H  2  X   -0.000236   0.015086  -0.006390  -0.004798  -0.006390
+   29  H  2  Y    0.000236  -0.015086  -0.004798  -0.006390   0.006390
+   30  H  2  Z    0.000236  -0.015086   0.006390  -0.006390  -0.004798
+   31  H  3  S    0.000391   0.008274  -0.008274   0.008274   0.191648
+   32  H  3  S    0.000727   0.020466  -0.020466   0.020466   0.295638
+   33  H  3  S   -0.000486   0.037715  -0.037714   0.037714   0.086246
+   34  H  3  S   -0.000135   0.013612  -0.013612   0.013612   0.024341
+   35  H  3  X    0.000236  -0.006390  -0.004798  -0.006390   0.015086
+   36  H  3  Y   -0.000236   0.006390  -0.006390  -0.004798  -0.015086
+   37  H  3  Z    0.000236   0.004798   0.006390  -0.006390   0.015086
+   38  H  4  S    0.000391   0.008274   0.191648   0.008274  -0.008274
+   39  H  4  S    0.000727   0.020466   0.295638   0.020466  -0.020466
+   40  H  4  S   -0.000486   0.037714   0.086246   0.037714  -0.037714
+   41  H  4  S   -0.000135   0.013612   0.024341   0.013612  -0.013612
+   42  H  4  X    0.000236  -0.006390   0.015086  -0.006390  -0.004798
+   43  H  4  Y    0.000236   0.004798   0.015086  -0.006390   0.006390
+   44  H  4  Z   -0.000236   0.006390  -0.015086  -0.004798  -0.006390
+   45  H  5  S    0.000391   0.008274  -0.008274  -0.191648  -0.008274
+   46  H  5  S    0.000727   0.020466  -0.020466  -0.295638  -0.020466
+   47  H  5  S   -0.000486   0.037714  -0.037714  -0.086246  -0.037714
+   48  H  5  S   -0.000135   0.013612  -0.013612  -0.024341  -0.013612
+   49  H  5  X   -0.000236  -0.004798  -0.006390   0.015086  -0.006390
+   50  H  5  Y   -0.000236   0.006390  -0.006390   0.015086   0.004798
+   51  H  5  Z   -0.000236   0.006390   0.004798   0.015086  -0.006390
  ... DONE WITH ENERGY LOCALIZATION ...
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.31%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.44%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 11:54:08 09-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:51:06 09-NOV-2026    
  DDI: 295704 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.26 + 0.06 = 0.32
- 1: 0.21 + 0.04 = 0.26
- 2: 0.22 + 0.05 = 0.27
- 3: 0.21 + 0.03 = 0.25
+ 0: 0.26 + 0.09 = 0.36
+ 1: 0.22 + 0.05 = 0.27
+ 2: 0.22 + 0.05 = 0.28
+ 3: 0.21 + 0.04 = 0.26
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      610 Nov  9 11:54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F05
--rw-r--r--@ 1 blink  staff    10616 Nov  9 11:54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09
--rw-r--r--@ 1 blink  staff        0 Nov  9 11:54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09.001
--rw-r--r--@ 1 blink  staff        0 Nov  9 11:54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09.002
--rw-r--r--@ 1 blink  staff        0 Nov  9 11:54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09.003
--rw-r--r--@ 1 blink  staff  1930480 Nov  9 11:54 /Users/blink/github/gamess2024R2claude/gamess/scr/methane_6311_U_E.F10
+-rw-r--r--@ 1 blink  staff      610 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F05
+-rw-r--r--@ 1 blink  staff    10616 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09
+-rw-r--r--@ 1 blink  staff        0 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09.001
+-rw-r--r--@ 1 blink  staff        0 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09.002
+-rw-r--r--@ 1 blink  staff        0 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F09.003
+-rw-r--r--@ 1 blink  staff  1930480 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/methane_6311_U_E.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Mon Nov  9 11:54:10 AST 2026
-0.144u 0.090s 0:01.20 19.1%	0+0k 0+0io 107pf+0w
+Mon Nov  9 15:51:07 AST 2026
+0.163u 0.117s 0:01.24 21.7%	0+0k 0+0io 97pf+0w

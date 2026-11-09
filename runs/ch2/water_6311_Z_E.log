@@ -1,179 +1,179 @@
-1 : /Users/blink/github/UsingGAMESSv2/inputs/water_6311_Z_E.inp
+1 : /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch2/water_6311_Z_E.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sun Nov 8 17:06:13 AST 2026
+under operating system Darwin at Mon Nov 9 15:50:51 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 492396316 453236868    53% 3674353 4532368680    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
-Copying input file /Users/blink/github/UsingGAMESSv2/inputs/water_6311_Z_E.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/water_6311_Z_E.inp /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
+/dev/disk3s5   971298980 484475480 461157732    52% 3669680 4611577320    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2
+Copying input file /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch2/water_6311_Z_E.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch2/water_6311_Z_E.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/water_6311_Z_E.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/water_6311_Z_E.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F99
+setenv NUCBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch2/water_6311_Z_E.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch2/water_6311_Z_E.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/water_6311_Z_E.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/water_6311_Z_E.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x water_6311_Z_E -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x water_6311_Z_E -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x water_6311_Z_E 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x water_6311_Z_E 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 17:06:13 08-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:50:51 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=ENERGY MAXIT=30 MULT=1 ICHARG=0 COORD=ZMT $END       
@@ -464,14 +464,14 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.80%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    70.84%
 
           ********************
           1 ELECTRON INTEGRALS
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.36%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    61.93%
 
           -------------
           GUESS OPTIONS
@@ -490,7 +490,7 @@ Assuming a single but multicore node.
      9=A1      10=A1      11=A1      12=A1      13=A1      14=A1      15=A1  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.90%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    64.79%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -513,7 +513,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.30%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    75.13%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -887,7 +887,7 @@ Assuming a single but multicore node.
    37  H  3  Z   -0.258902   0.043186
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.04%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    58.62%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1010,8 +1010,8 @@ Assuming a single but multicore node.
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
     1 O                 1.930       1.930       0.000
-    2 H                 0.974       0.974      -0.000
-    3 H                 0.974       0.974      -0.000
+    2 H                 0.974       0.974       0.000
+    3 H                 0.974       0.974       0.000
 
           ---------------------
           ELECTROSTATIC MOMENTS
@@ -1020,30 +1020,30 @@ Assuming a single but multicore node.
  POINT   1           X           Y           Z (BOHR)    CHARGE
                  0.000000    0.000000   -0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000    0.000000    2.240468    2.240468
+     0.000000    0.000000    2.240468    2.240468
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    73.23%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    60.02%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 17:06:13 08-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:50:51 09-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.21 + 0.10 = 0.32
- 1: 0.15 + 0.06 = 0.22
- 2: 0.14 + 0.07 = 0.21
- 3: 0.14 + 0.06 = 0.20
+ 0: 0.12 + 0.06 = 0.18
+ 1: 0.08 + 0.04 = 0.13
+ 2: 0.08 + 0.04 = 0.13
+ 3: 0.08 + 0.03 = 0.11
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      307 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
--rw-r--r--@ 1 blink  staff  1799600 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/water_6311_Z_E.F10
+-rw-r--r--@ 1 blink  staff      307 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F05
+-rw-r--r--@ 1 blink  staff  1799600 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/water_6311_Z_E.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sun Nov  8 17:06:15 AST 2026
-0.149u 0.135s 0:01.26 21.4%	0+0k 0+0io 93pf+0w
+Mon Nov  9 15:50:52 AST 2026
+0.088u 0.082s 0:01.17 13.6%	0+0k 0+0io 93pf+0w

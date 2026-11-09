@@ -1,179 +1,179 @@
-1 : /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.inp
+1 : /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sat Nov 7 14:22:11 AST 2026
+under operating system Darwin at Mon Nov 9 15:52:30 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 494863964 447624152    53% 3684976 4476241520    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
-Copying input file /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.inp /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F05
+/dev/disk3s5   971298980 484540992 461092220    52% 3669811 4610922200    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7
+Copying input file /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F99
+setenv NUCBAS /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/butadiene_scan_060.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_scan_060.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_scan_060 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x butadiene_scan_060 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_scan_060 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x butadiene_scan_060 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 14:22:11 07-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:52:31 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD>!   Torsion scan template: Python replaces  60.0000 with a number               
@@ -619,7 +619,7 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    71.78%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.74%
 
 
           -----------------------------
@@ -704,7 +704,7 @@ Assuming a single but multicore node.
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    67.26%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.27%
 
           -------------
           GUESS OPTIONS
@@ -724,7 +724,7 @@ Assuming a single but multicore node.
     19=A       20=A       21=A       22=A       23=A       24=A       25=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    71.70%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.68%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -747,7 +747,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.74%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.62%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1314,7 +1314,7 @@ Assuming a single but multicore node.
    48  H 10  S   -0.476067   0.108587  -0.064602
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.83%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.35%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1513,12 +1513,12 @@ Assuming a single but multicore node.
     -0.119536   -0.273539   -0.020773    0.299239
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.25%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.70%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.30%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.25%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -1527,7 +1527,7 @@ Assuming a single but multicore node.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS     29956
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.87%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.79%
 
           NSERCH=  0     ENERGY=    -153.9245251
 
@@ -1681,10 +1681,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.43%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.39%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.59%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.54%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1716,13 +1716,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.855937 eV, LUMO=    3.291202 eV, gap=   12.147139 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.44%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.86%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.64%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.51%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.99%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.86%
 
           NSERCH=  1     ENERGY=    -153.9959759
 
@@ -1878,10 +1878,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.77%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.63%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.86%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.73%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1914,13 +1914,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.754755 eV, LUMO=    4.483061 eV, gap=   14.237815 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.56%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.94%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.95%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.71%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.32%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.28%
 
           NSERCH=  2     ENERGY=    -154.0440961
 
@@ -2074,10 +2074,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.17%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.12%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.24%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.19%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2109,13 +2109,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.535413 eV, LUMO=    4.373564 eV, gap=   13.908976 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.22%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.36%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.79%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.08%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.98%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.29%
 
           NSERCH=  3     ENERGY=    -154.0502065
 
@@ -2268,10 +2268,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.96%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.14%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.01%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.20%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2288,7 +2288,7 @@ Assuming a single but multicore node.
    3  2  0     -154.0520658353    -0.0001562778   0.001134783   0.000583070         625686      10443
    4  3  0     -154.0520737395    -0.0000079042   0.000298621   0.000282832         617338      11600
    5  4  0     -154.0520754946    -0.0000017551   0.000118270   0.000064656         607364      12826
-   6  5  0     -154.0520755977    -0.0000001030   0.000034984   0.000016154         593523      14407
+   6  5  0     -154.0520755977    -0.0000001031   0.000034984   0.000016154         593523      14407
    7  6  0     -154.0520756060    -0.0000000083   0.000010614   0.000004179         576672      16012
 
           -----------------
@@ -2303,13 +2303,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.515723 eV, LUMO=    4.348218 eV, gap=   13.863941 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.16%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.23%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.79%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.88%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.99%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.04%
 
           NSERCH=  4     ENERGY=    -154.0520756
 
@@ -2393,7 +2393,7 @@ Assuming a single but multicore node.
  H           1.0  -2.5938762501  -0.4172726184  -0.2280040621
  H           1.0  -1.0419138690   1.3660274449  -0.7433912067
  H           1.0   0.9853372679   1.2645796978   0.9127132951
- H           1.0   1.3327438933  -1.2002207332  -0.8403667246
+ H           1.0   1.3327438934  -1.2002207332  -0.8403667246
  H           1.0   2.5857678552  -0.4426687400   0.2506851164
 
 
@@ -2497,13 +2497,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.533603 eV, LUMO=    4.360620 eV, gap=   13.894223 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.79%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.93%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.66%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.62%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.93%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.79%
 
           NSERCH=  5     ENERGY=    -154.0529009
 
@@ -2586,7 +2586,7 @@ Assuming a single but multicore node.
  H           1.0  -1.2776582494  -1.3333303103   0.6444428307
  H           1.0  -2.5985576554  -0.4136905323  -0.2219110044
  H           1.0  -1.0484183189   1.3754046450  -0.7225633582
- H           1.0   1.0101073616   1.2796739103   0.8852446882
+ H           1.0   1.0101073616   1.2796739103   0.8852446883
  H           1.0   1.3233502302  -1.2276196748  -0.8074935327
  H           1.0   2.5917870030  -0.4161250409   0.2298202755
 
@@ -2656,10 +2656,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.91%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.70%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.95%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.74%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2691,13 +2691,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.482112 eV, LUMO=    4.325897 eV, gap=   13.808009 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.21%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.74%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.98%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.51%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    78.06%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.68%
 
           NSERCH=  6     ENERGY=    -154.0534336
 
@@ -2780,7 +2780,7 @@ Assuming a single but multicore node.
  C           6.0   0.7049631514   0.4813089818   0.2288033835
  C           6.0   1.5767258929  -0.4498502373  -0.1103012120
  H           1.0  -1.2825543430  -1.3386864847   0.6343860640
- H           1.0  -2.5974890121  -0.4051569790  -0.2260556582
+ H           1.0  -2.5974890121  -0.4051569789  -0.2260556582
  H           1.0  -1.0498905229   1.3810297789  -0.7042542840
  H           1.0   1.0175828156   1.3037142793   0.8502971242
  H           1.0   1.3187004508  -1.2455483740  -0.7832013989
@@ -2852,10 +2852,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.95%
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.60%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    77.99%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.63%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2887,13 +2887,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.400477 eV, LUMO=    4.248082 eV, gap=   13.648559 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.22%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.58%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.05%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.35%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.18%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.47%
 
           NSERCH=  7     ENERGY=    -154.0538169
 
@@ -2969,7 +2969,7 @@ Assuming a single but multicore node.
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -1.5702798338  -0.4669135677   0.0770171444
+ C           6.0  -1.5702798339  -0.4669135677   0.0770171444
  C           6.0  -0.7093233645   0.4945397492  -0.1959854562
  C           6.0   0.7058100545   0.4818664869   0.2328137808
  C           6.0   1.5735207314  -0.4490687287  -0.1119455218
@@ -3046,10 +3046,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.12%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.39%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.15%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.42%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3081,13 +3081,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.369869 eV, LUMO=    4.224141 eV, gap=   13.594010 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.18%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.44%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.06%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.24%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.19%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.34%
 
           NSERCH=  8     ENERGY=    -154.0539618
 
@@ -3163,16 +3163,16 @@ Assuming a single but multicore node.
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -1.5692024447  -0.4675235242   0.0768139027
+ C           6.0  -1.5692024447  -0.4675235243   0.0768139027
  C           6.0  -0.7098617339   0.4943899440  -0.1949108394
  C           6.0   0.7064818452   0.4821413807   0.2340592361
  C           6.0   1.5726314914  -0.4485108449  -0.1133214930
- H           1.0  -1.2787352008  -1.3435310934   0.6254628475
+ H           1.0  -1.2787352007  -1.3435310934   0.6254628475
  H           1.0  -2.5936939403  -0.4073128255  -0.2366947348
  H           1.0  -1.0465091283   1.3845267398  -0.6975768987
  H           1.0   1.0299649831   1.3262434387   0.8186101615
  H           1.0   1.2915852371  -1.2686083451  -0.7464252509
- H           1.0   2.5968027335  -0.4116448229   0.2051802446
+ H           1.0   2.5968027334  -0.4116448229   0.2051802446
 
 
                      --------------------
@@ -3240,10 +3240,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.17%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.27%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.20%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.29%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3274,13 +3274,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.375499 eV, LUMO=    4.230863 eV, gap=   13.606361 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.44%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.26%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.34%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.07%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.44%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.22%
 
           NSERCH=  9     ENERGY=    -154.0540006
 
@@ -3356,12 +3356,12 @@ Assuming a single but multicore node.
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- C           6.0  -1.5703277548  -0.4672426189   0.0766863438
+ C           6.0  -1.5703277547  -0.4672426189   0.0766863438
  C           6.0  -0.7103562428   0.4941117626  -0.1935644185
  C           6.0   0.7076687276   0.4826953118   0.2347325858
  C           6.0   1.5729992323  -0.4476592926  -0.1149730501
  H           1.0  -1.2784611254  -1.3415733335   0.6270026762
- H           1.0  -2.5937595511  -0.4154396564  -0.2424158303
+ H           1.0  -2.5937595511  -0.4154396565  -0.2424158303
  H           1.0  -1.0410543895   1.3816110046  -0.7055061900
  H           1.0   1.0303235967   1.3262575039   0.8205223670
  H           1.0   1.2872189645  -1.2704687107  -0.7424121640
@@ -3433,10 +3433,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.43%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.16%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    78.45%
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.19%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3467,13 +3467,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.390899 eV, LUMO=    4.238843 eV, gap=   13.629742 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.49%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.16%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.36%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.02%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.50%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.12%
 
           NSERCH= 10     ENERGY=    -154.0540331
 
@@ -3625,10 +3625,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.45%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.07%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.47%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.09%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3659,13 +3659,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.400778 eV, LUMO=    4.247301 eV, gap=   13.648079 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.50%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.05%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.36%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    75.90%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.41%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    75.98%
 
           NSERCH= 11     ENERGY=    -154.0540422
 
@@ -3749,7 +3749,7 @@ Assuming a single but multicore node.
  H           1.0  -1.0392560341   1.3785247745  -0.7120700199
  H           1.0   1.0285496728   1.3200399785   0.8281340107
  H           1.0   1.2912568964  -1.2707078581  -0.7431500498
- H           1.0   2.5960585727  -0.4170851565   0.2108011269
+ H           1.0   2.5960585726  -0.4170851565   0.2108011269
 
 
                      --------------------
@@ -3817,10 +3817,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.36%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    75.92%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.38%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    75.95%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3850,13 +3850,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.402697 eV, LUMO=    4.248228 eV, gap=   13.650925 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.30%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.12%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.15%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.05%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.24%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.19%
 
           NSERCH= 12     ENERGY=    -154.0540438
 
@@ -3936,8 +3936,8 @@ Assuming a single but multicore node.
  C           6.0   0.7067895386   0.4815201930   0.2336114210
  C           6.0   1.5744457011  -0.4470154235  -0.1155273660
  H           1.0  -1.2815796600  -1.3400679529   0.6301260955
- H           1.0  -2.5934148491  -0.4155019545  -0.2448748384
- H           1.0  -1.0392679765   1.3785041601  -0.7120370960
+ H           1.0  -2.5934148491  -0.4155019546  -0.2448748384
+ H           1.0  -1.0392679765   1.3785041600  -0.7120370960
  H           1.0   1.0280951912   1.3197135016   0.8280021663
  H           1.0   1.2931166279  -1.2712959283  -0.7430990275
  H           1.0   2.5961420847  -0.4151718146   0.2114992197
@@ -4008,10 +4008,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.18%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.18%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.20%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.20%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4040,13 +4040,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.402045 eV, LUMO=    4.247340 eV, gap=   13.649385 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.21%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.30%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.08%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.17%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.14%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.23%
 
           NSERCH= 13     ENERGY=    -154.0540442
 
@@ -4125,7 +4125,7 @@ Assuming a single but multicore node.
  C           6.0  -0.7105085733   0.4944787094  -0.1928069149
  C           6.0   0.7068061751   0.4815275496   0.2337107404
  C           6.0   1.5744098584  -0.4469586856  -0.1155341135
- H           1.0  -1.2818409368  -1.3398453694   0.6305890090
+ H           1.0  -1.2818409367  -1.3398453694   0.6305890090
  H           1.0  -2.5934207761  -0.4152740394  -0.2449224620
  H           1.0  -1.0391376466   1.3784175284  -0.7120811414
  H           1.0   1.0283867431   1.3199448741   0.8275976583
@@ -4198,10 +4198,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.10%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.18%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.12%
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    76.20%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4229,14 +4229,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -9.401611 eV, LUMO=    4.247124 eV, gap=   13.648736 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    78.22%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.17%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.05%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.04%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.11%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.11%
 
           NSERCH= 14     ENERGY=    -154.0540445
 
@@ -4388,10 +4388,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.07%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.06%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.08%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.08%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4420,13 +4420,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.401675 eV, LUMO=    4.247717 eV, gap=   13.649392 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.19%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.08%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.06%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    75.95%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.16%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.03%
 
           NSERCH= 15     ENERGY=    -154.0540449
 
@@ -4506,10 +4506,10 @@ Assuming a single but multicore node.
  C           6.0   0.7068976257   0.4816338904   0.2340435402
  C           6.0   1.5741791368  -0.4469476871  -0.1156659791
  H           1.0  -1.2822218510  -1.3387988664   0.6325682403
- H           1.0  -2.5932493489  -0.4154206208  -0.2452486222
+ H           1.0  -2.5932493489  -0.4154206209  -0.2452486222
  H           1.0  -1.0386953080   1.3779479937  -0.7131157180
  H           1.0   1.0286938197   1.3202991370   0.8274379633
- H           1.0   1.2918549936  -1.2709531960  -0.7430766328
+ H           1.0   1.2918549935  -1.2709531960  -0.7430766328
  H           1.0   2.5963237488  -0.4156975182   0.2100702248
 
 
@@ -4578,10 +4578,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.16%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    75.99%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.17%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.01%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -4610,13 +4610,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.402213 eV, LUMO=    4.248151 eV, gap=   13.650364 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.27%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    75.98%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.13%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    75.86%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.15%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    75.92%
 
           NSERCH= 16     ENERGY=    -154.0540449
 
@@ -4687,10 +4687,10 @@ Assuming a single but multicore node.
  C           6.0   0.7068976257   0.4816338904   0.2340435402
  C           6.0   1.5741791368  -0.4469476871  -0.1156659791
  H           1.0  -1.2822218510  -1.3387988664   0.6325682403
- H           1.0  -2.5932493489  -0.4154206208  -0.2452486222
+ H           1.0  -2.5932493489  -0.4154206209  -0.2452486222
  H           1.0  -1.0386953080   1.3779479937  -0.7131157180
  H           1.0   1.0286938197   1.3202991370   0.8274379633
- H           1.0   1.2918549936  -1.2709531960  -0.7430766328
+ H           1.0   1.2918549935  -1.2709531960  -0.7430766328
  H           1.0   2.5963237488  -0.4156975182   0.2100702248
 
 
@@ -4758,8 +4758,8 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
 
-          NUCLEAR ENERGY    =      105.3940798286
-          ELECTRONIC ENERGY =     -259.4481247744
+          NUCLEAR ENERGY    =      105.3940798289
+          ELECTRONIC ENERGY =     -259.4481247748
           TOTAL ENERGY      =     -154.0540449458
 
           ------------------
@@ -5036,15 +5036,15 @@ Assuming a single but multicore node.
 
          WAVEFUNCTION NORMALIZATION =       1.0000000000
 
-                ONE ELECTRON ENERGY =    -414.9277780263
-                TWO ELECTRON ENERGY =     155.4796532518
-           NUCLEAR REPULSION ENERGY =     105.3940798286
+                ONE ELECTRON ENERGY =    -414.9277780269
+                TWO ELECTRON ENERGY =     155.4796532522
+           NUCLEAR REPULSION ENERGY =     105.3940798289
                                       ------------------
                        TOTAL ENERGY =    -154.0540449458
 
- ELECTRON-ELECTRON POTENTIAL ENERGY =     155.4796532518
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -568.6662136792
-   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     105.3940798286
+ ELECTRON-ELECTRON POTENTIAL ENERGY =     155.4796532522
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -568.6662136798
+   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     105.3940798289
                                       ------------------
              TOTAL POTENTIAL ENERGY =    -307.7924805987
                TOTAL KINETIC ENERGY =     153.7384356529
@@ -5222,19 +5222,19 @@ Assuming a single but multicore node.
     -0.000401    0.099104    0.004328    0.099199
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.23%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    76.00%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -154.0540449458
- -5.492250395E-05-5.503536529E-05 7.730076130E-06 5.233457570E-05 4.155991128E-05
- -1.907036678E-05 2.422357339E-06-4.081552738E-05-6.212525790E-06-1.640135398E-05
-  4.823331883E-05 1.255165520E-05 6.473322396E-06 7.347414309E-07 5.328020473E-06
-  5.460424429E-06 9.592426160E-06 1.187603515E-06-3.914168910E-06 5.717477952E-06
-  2.619941455E-06 1.271121425E-06-1.951343825E-06-7.137664221E-06 1.754282803E-06
-  6.540958661E-06 7.657688548E-06 5.521942744E-06-1.457659781E-05-4.654428527E-06
- -4.008568153E-04 9.910382821E-02 4.328412222E-03
+ -5.492250026E-05-5.503536382E-05 7.730076678E-06 5.233457606E-05 4.155991008E-05
+ -1.907036781E-05 2.422355041E-06-4.081552745E-05-6.212523944E-06-1.640135480E-05
+  4.823331829E-05 1.255165434E-05 6.473322423E-06 7.347412701E-07 5.328020376E-06
+  5.460424296E-06 9.592426240E-06 1.187603516E-06-3.914169283E-06 5.717478369E-06
+  2.619941070E-06 1.271121259E-06-1.951343730E-06-7.137664141E-06 1.754282597E-06
+  6.540958468E-06 7.657688599E-06 5.521942676E-06-1.457659772E-05-4.654428683E-06
+ -4.008568159E-04 9.910382821E-02 4.328412221E-03
  ......END OF GEOMETRY SEARCH......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    78.23%
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    75.96%
  AN INPUT FILE FOR -MOLPLT- HAS BEEN PUNCHED.
 
    1 warning(s) detected.
@@ -5242,25 +5242,25 @@ Assuming a single but multicore node.
  There may be a problem in your input file.
 
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 14:22:12 07-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:52:31 09-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.352 + 0.43 = 0.395
- 1: 0.338 + 0.25 = 0.364
- 2: 0.337 + 0.29 = 0.367
- 3: 0.334 + 0.21 = 0.355
+ 0: 0.350 + 0.39 = 0.390
+ 1: 0.334 + 0.24 = 0.359
+ 2: 0.333 + 0.29 = 0.362
+ 3: 0.329 + 0.20 = 0.350
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     1204 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F05
--rw-r--r--@ 1 blink  staff  1963200 Nov  7 14:22 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_scan_060.F10
+-rw-r--r--@ 1 blink  staff     1204 Nov  9 15:52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F05
+-rw-r--r--@ 1 blink  staff  1963200 Nov  9 15:52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_scan_060.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sat Nov  7 14:22:13 AST 2026
-1.410u 0.197s 0:01.67 95.8%	0+0k 0+0io 93pf+0w
+Mon Nov  9 15:52:32 AST 2026
+1.398u 0.188s 0:01.68 93.4%	0+0k 0+0io 93pf+0w

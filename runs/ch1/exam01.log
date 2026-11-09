@@ -1,179 +1,179 @@
-1 : /Users/blink/github/gamess2024R2claude/gamess/tests/standard/exam01.inp
+1 : /Users/blink/github/compChem/gamess2024R2claude/gamess/tests/standard/exam01.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Mon Nov 9 11:53:34 AST 2026
+under operating system Darwin at Mon Nov 9 15:50:47 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 486631948 459001284    52% 3672467 4590012840    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs/ch1
-Copying input file /Users/blink/github/gamess2024R2claude/gamess/tests/standard/exam01.inp to your run's scratch directory...
-cp /Users/blink/github/gamess2024R2claude/gamess/tests/standard/exam01.inp /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F05
+/dev/disk3s5   971298980 484474964 461158248    52% 3669668 4611582480    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1
+Copying input file /Users/blink/github/compChem/gamess2024R2claude/gamess/tests/standard/exam01.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/gamess2024R2claude/gamess/tests/standard/exam01.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/gamess2024R2claude/gamess/tests/standard/exam01.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/gamess2024R2claude/gamess/tests/standard/exam01.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F99
+setenv NUCBAS /Users/blink/github/compChem/gamess2024R2claude/gamess/tests/standard/exam01.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/gamess2024R2claude/gamess/tests/standard/exam01.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/ch1/exam01.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch1/exam01.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x exam01 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x exam01 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x exam01 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x exam01 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 11:53:34 09-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:50:47 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD>! EXAM01.                                                                       
@@ -467,7 +467,7 @@ Assuming a single but multicore node.
 
  ..... DONE SETTING UP THE RUN .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    70.95%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.75%
 
 
           -----------------------------
@@ -516,7 +516,7 @@ Assuming a single but multicore node.
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.97%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    75.20%
 
           -------------
           GUESS OPTIONS
@@ -534,7 +534,7 @@ Assuming a single but multicore node.
      2=A1       3=B1       4=A1       5=B2       6=B1       7=A1  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    70.43%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.70%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -564,7 +564,7 @@ Assuming a single but multicore node.
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    76.56%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.45%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -623,7 +623,7 @@ Assuming a single but multicore node.
     7  H  3  S   -0.904459  -0.836937
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    65.20%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    68.17%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -662,7 +662,7 @@ Assuming a single but multicore node.
                (K,V1,2)=     37.1782306264    -99.4193946754     18.8867584884
            PI PART(1+2)=      0.0000000000
                (K,V1,2)=      0.0000000000      0.0000000000      0.0000000000
-  SIGMA SKELETON, ERROR=    -37.2322678905      0.0000000000
+  SIGMA SKELETON, ERROR=    -37.2322678905     -0.0000000000
              MIXED PART= 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
  ...... END OF PI ENERGY ANALYSIS ......
 
@@ -717,7 +717,7 @@ Assuming a single but multicore node.
       ATOM            VALENCE     VALENCE     VALENCE
     1 C                 1.986       1.986      -0.000
     2 H                 1.000       1.000       0.000
-    3 H                 1.000       1.000       0.000
+    3 H                 1.000       1.000      -0.000
 
           ---------------------
           ELECTROSTATIC MOMENTS
@@ -726,15 +726,15 @@ Assuming a single but multicore node.
  POINT   1           X           Y           Z (BOHR)    CHARGE
                 -0.000000    0.000000   -0.000000       -0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000   -0.000000    1.515763    1.515763
+     0.000000   -0.000000    1.515763    1.515763
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    67.06%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    69.65%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    64.37%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    66.75%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -743,7 +743,7 @@ Assuming a single but multicore node.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS        27
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    62.34%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    64.68%
 
           NSERCH=  0     ENERGY=     -37.2322678
 
@@ -799,12 +799,12 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    61.81%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    63.55%
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 141
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    60.98%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    61.43%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -831,13 +831,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.370106 eV, LUMO=    6.554514 eV, gap=   14.924620 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    56.54%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.60%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    55.20%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    51.98%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    54.10%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    51.24%
 
           NSERCH=  1     ENERGY=     -37.2351919
 
@@ -893,12 +893,12 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.87%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    51.23%
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 141
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    53.47%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    51.00%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -925,13 +925,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.059604 eV, LUMO=    6.598576 eV, gap=   14.658180 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    50.83%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    47.88%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    49.99%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    46.89%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    49.25%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    46.04%
 
           NSERCH=  2     ENERGY=     -37.2380037
 
@@ -987,12 +987,12 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    49.19%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    45.87%
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 141
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    48.91%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    45.47%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1020,13 +1020,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.110698 eV, LUMO=    6.583835 eV, gap=   14.694533 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    46.82%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    43.12%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    46.19%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.59%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    45.66%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.10%
 
           NSERCH=  3     ENERGY=     -37.2380353
 
@@ -1082,12 +1082,12 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    45.63%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.08%
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 141
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    45.45%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    41.94%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1112,13 +1112,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.104650 eV, LUMO=    6.587196 eV, gap=   14.691846 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    44.57%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    41.22%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    44.09%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    40.83%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    43.67%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    40.56%
 
           NSERCH=  4     ENERGY=     -37.2380396
 
@@ -1174,12 +1174,12 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    43.66%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    40.62%
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 141
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    43.53%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    40.59%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1204,13 +1204,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.103665 eV, LUMO=    6.587140 eV, gap=   14.690805 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.84%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    40.05%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.45%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.71%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.10%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.42%
 
           NSERCH=  5     ENERGY=     -37.2380398
 
@@ -1266,12 +1266,12 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.07%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.45%
  TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =                 141
           4 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.03%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.40%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1294,13 +1294,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -8.103838 eV, LUMO=    6.587107 eV, gap=   14.690945 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    41.70%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.14%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    41.41%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    38.85%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    41.15%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    38.61%
 
           NSERCH=  6     ENERGY=     -37.2380398
 
@@ -1415,7 +1415,7 @@ Assuming a single but multicore node.
                (K,V1,2)=     37.1830977070    -99.1163682737     18.7391946807
            PI PART(1+2)=      0.0000000000
                (K,V1,2)=      0.0000000000      0.0000000000      0.0000000000
-  SIGMA SKELETON, ERROR=    -37.2380397668      0.0000000000
+  SIGMA SKELETON, ERROR=    -37.2380397668     -0.0000000000
              MIXED PART= 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
  ...... END OF PI ENERGY ANALYSIS ......
 
@@ -1469,52 +1469,52 @@ Assuming a single but multicore node.
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
     1 C                 1.991       1.991       0.000
-    2 H                 1.000       1.000       0.000
-    3 H                 1.000       1.000       0.000
+    2 H                 1.000       1.000      -0.000
+    3 H                 1.000       1.000      -0.000
 
           ---------------------
           ELECTROSTATIC MOMENTS
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000   -0.101622        0.00 (A.U.)
+                 0.000000    0.000000   -0.101622        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
     -0.000000   -0.000000    1.414184    1.414184
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.11%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.54%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=      -37.2380397698
-  0.000000000E+00 0.000000000E+00-6.599371726E-07 4.995186528E-07 0.000000000E+00
-  3.299685868E-07-4.995186528E-07 0.000000000E+00 3.299685868E-07
- -1.693156282E-15-1.106145535E-17 1.414184492E+00
+  0.000000000E+00 0.000000000E+00-6.599370647E-07 4.995186526E-07 0.000000000E+00
+  3.299685728E-07-4.995186526E-07 0.000000000E+00 3.299685728E-07
+ -5.643854273E-16-1.106145535E-17 1.414184492E+00
  ......END OF GEOMETRY SEARCH......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    42.14%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    39.53%
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 11:53:34 09-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:50:47 09-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.09 + 0.11 = 0.20
- 1: 0.04 + 0.07 = 0.11
- 2: 0.04 + 0.09 = 0.13
- 3: 0.03 + 0.06 = 0.09
+ 0: 0.09 + 0.12 = 0.22
+ 1: 0.04 + 0.08 = 0.12
+ 2: 0.04 + 0.10 = 0.14
+ 3: 0.03 + 0.06 = 0.10
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff     1163 Nov  9 11:53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F05
--rw-r--r--@ 1 blink  staff   180016 Nov  9 11:53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F08
--rw-r--r--@ 1 blink  staff   180016 Nov  9 11:53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F08.001
--rw-r--r--@ 1 blink  staff   180016 Nov  9 11:53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F08.002
--rw-r--r--@ 1 blink  staff   180016 Nov  9 11:53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F08.003
--rw-r--r--@ 1 blink  staff  1930480 Nov  9 11:53 /Users/blink/github/gamess2024R2claude/gamess/scr/exam01.F10
+-rw-r--r--@ 1 blink  staff     1163 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F05
+-rw-r--r--@ 1 blink  staff   180016 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F08
+-rw-r--r--@ 1 blink  staff   180016 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F08.001
+-rw-r--r--@ 1 blink  staff   180016 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F08.002
+-rw-r--r--@ 1 blink  staff   180016 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F08.003
+-rw-r--r--@ 1 blink  staff  1930480 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/exam01.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Mon Nov  9 11:53:35 AST 2026
-0.071u 0.102s 0:01.19 14.2%	0+0k 0+0io 103pf+0w
+Mon Nov  9 15:50:48 AST 2026
+0.070u 0.113s 0:01.20 15.0%	0+0k 0+0io 97pf+0w

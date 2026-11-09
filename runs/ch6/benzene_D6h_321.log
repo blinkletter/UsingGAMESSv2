@@ -1,179 +1,179 @@
-1 : /Users/blink/github/UsingGAMESSv2/inputs/benzene_D6h_321.inp
+1 : /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch6/benzene_D6h_321.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sat Nov 7 14:21:32 AST 2026
+under operating system Darwin at Mon Nov 9 15:51:57 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 494664076 447824040    53% 3684947 4478240400    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
-Copying input file /Users/blink/github/UsingGAMESSv2/inputs/benzene_D6h_321.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/benzene_D6h_321.inp /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F05
+/dev/disk3s5   971298980 484492724 461140488    52% 3669766 4611404880    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6
+Copying input file /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch6/benzene_D6h_321.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch6/benzene_D6h_321.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/benzene_D6h_321.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/benzene_D6h_321.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F99
+setenv NUCBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch6/benzene_D6h_321.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch6/benzene_D6h_321.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/benzene_D6h_321.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch6/benzene_D6h_321.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x benzene_D6h_321 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x benzene_D6h_321 -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x benzene_D6h_321 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x benzene_D6h_321 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 14:21:33 07-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:51:57 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD>!   Benzene, D6h symmetry. Unique atoms on the x-axis, ring in the xy-plane     
@@ -481,8 +481,8 @@ Assuming a single but multicore node.
  E2U =    2     E2G =    9
 
  ..... DONE SETTING UP THE RUN .....
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.22%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    70.18%
 
 
           -----------------------------
@@ -535,7 +535,7 @@ Assuming a single but multicore node.
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.06%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    64.26%
 
           -------------
           GUESS OPTIONS
@@ -556,7 +556,7 @@ Assuming a single but multicore node.
     28=A1G     29=A1G     30=A1G     31=B1U 
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.61%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.01%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -579,7 +579,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    89.84%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.31%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1601,8 +1601,8 @@ Assuming a single but multicore node.
    65  H 12  S   -0.289716
    66  H 12  S   -0.853658
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.19%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.37%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1890,12 +1890,12 @@ Assuming a single but multicore node.
     -0.000000    0.000000    0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.33%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    73.76%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    79.64%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.24%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -1904,7 +1904,7 @@ Assuming a single but multicore node.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS      6917
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.97%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.23%
 
           NSERCH=  0     ENERGY=    -229.4189928
 
@@ -2010,10 +2010,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.69%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    71.82%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.97%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.17%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2043,14 +2043,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -9.212996 eV, LUMO=    4.097007 eV, gap=   13.310002 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.27%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    70.43%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.81%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.60%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.77%
 
           NSERCH=  1     ENERGY=    -229.4194003
 
@@ -2157,11 +2157,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.60%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.52%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.80%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.77%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2190,14 +2190,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -9.223164 eV, LUMO=    4.114057 eV, gap=   13.337221 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.11%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.42%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.81%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.91%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.78%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.71%
 
           NSERCH=  2     ENERGY=    -229.4194449
 
@@ -2304,11 +2304,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.67%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.55%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.83%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.76%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2337,13 +2337,13 @@ Assuming a single but multicore node.
  Alpha HOMO=    -9.224555 eV, LUMO=    4.115586 eV, gap=   13.340141 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.60%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.45%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.46%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.16%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.30%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.00%
 
           NSERCH=  3     ENERGY=    -229.4194455
 
@@ -2443,8 +2443,8 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
 
-          NUCLEAR ENERGY    =      205.1133786440
-          ELECTRONIC ENERGY =     -434.5328241189
+          NUCLEAR ENERGY    =      205.1133786441
+          ELECTRONIC ENERGY =     -434.5328241190
           TOTAL ENERGY      =     -229.4194454748
 
           ------------------
@@ -2524,140 +2524,140 @@ Assuming a single but multicore node.
                       6          7          8          9         10
                   -11.1745    -1.1574    -1.0165    -1.0165    -0.8256
                      A1G        A1G        E1U        E1U        E2G 
-    1  C  1  S    0.402755  -0.097678   0.068674   0.118947   0.053788
-    2  C  1  S    0.036799   0.109675  -0.073732  -0.127708  -0.055625
-    3  C  1  X    0.000597  -0.030182  -0.070615   0.057362   0.126056
-    4  C  1  Y    0.001033  -0.052276   0.057362  -0.004380  -0.103454
+    1  C  1  S   -0.402755  -0.097678   0.068674   0.118947  -0.053788
+    2  C  1  S   -0.036799   0.109675  -0.073732  -0.127708   0.055625
+    3  C  1  X   -0.000597  -0.030182  -0.070615   0.057362  -0.126056
+    4  C  1  Y   -0.001033  -0.052276   0.057362  -0.004380   0.103454
     5  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-    6  C  1  S   -0.013873   0.180922  -0.160522  -0.278032  -0.172226
-    7  C  1  X   -0.001557  -0.005950  -0.004158   0.009997   0.047393
-    8  C  1  Y   -0.002697  -0.010306   0.009997   0.007385  -0.031658
+    6  C  1  S    0.013873   0.180922  -0.160522  -0.278032   0.172226
+    7  C  1  X    0.001557  -0.005950  -0.004158   0.009997  -0.047393
+    8  C  1  Y    0.002697  -0.010306   0.009997   0.007385   0.031658
     9  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   10  C  2  S    0.402755  -0.097678  -0.068674   0.118947   0.053788
-   11  C  2  S    0.036799   0.109675   0.073732  -0.127708  -0.055625
-   12  C  2  X   -0.000597   0.030182  -0.070615  -0.057362  -0.126056
-   13  C  2  Y    0.001033  -0.052276  -0.057362  -0.004380  -0.103454
+   10  C  2  S   -0.402755  -0.097678  -0.068674   0.118947  -0.053788
+   11  C  2  S   -0.036799   0.109675   0.073732  -0.127708   0.055625
+   12  C  2  X    0.000597   0.030182  -0.070615  -0.057362   0.126056
+   13  C  2  Y   -0.001033  -0.052276  -0.057362  -0.004380   0.103454
    14  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   15  C  2  S   -0.013873   0.180922   0.160522  -0.278032  -0.172226
-   16  C  2  X    0.001557   0.005950  -0.004158  -0.009997  -0.047393
-   17  C  2  Y   -0.002697  -0.010306  -0.009997   0.007385  -0.031658
+   15  C  2  S    0.013873   0.180922   0.160522  -0.278032   0.172226
+   16  C  2  X   -0.001557   0.005950  -0.004158  -0.009997   0.047393
+   17  C  2  Y    0.002697  -0.010306  -0.009997   0.007385   0.031658
    18  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   19  C  3  S    0.402755  -0.097678  -0.137348   0.000000  -0.107577
-   20  C  3  S    0.036799   0.109675   0.147464   0.000000   0.111249
-   21  C  3  X   -0.001193   0.060363   0.028738   0.000000  -0.053133
+   19  C  3  S   -0.402755  -0.097678  -0.137348   0.000000   0.107577
+   20  C  3  S   -0.036799   0.109675   0.147464   0.000000  -0.111249
+   21  C  3  X    0.001193   0.060363   0.028738   0.000000   0.053133
    22  C  3  Y    0.000000   0.000000   0.000000  -0.103733   0.000000
    23  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   24  C  3  S   -0.013873   0.180922   0.321044   0.000000   0.344453
-   25  C  3  X    0.003114   0.011900   0.013156   0.000000  -0.007440
+   24  C  3  S    0.013873   0.180922   0.321044   0.000000  -0.344453
+   25  C  3  X   -0.003114   0.011900   0.013156   0.000000   0.007440
    26  C  3  Y    0.000000   0.000000   0.000000  -0.009930   0.000000
    27  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   28  C  4  S    0.402755  -0.097678  -0.068674  -0.118947   0.053788
-   29  C  4  S    0.036799   0.109675   0.073732   0.127708  -0.055625
-   30  C  4  X   -0.000597   0.030182  -0.070615   0.057362  -0.126056
-   31  C  4  Y   -0.001033   0.052276   0.057362  -0.004380   0.103454
+   28  C  4  S   -0.402755  -0.097678  -0.068674  -0.118947  -0.053788
+   29  C  4  S   -0.036799   0.109675   0.073732   0.127708   0.055625
+   30  C  4  X    0.000597   0.030182  -0.070615   0.057362   0.126056
+   31  C  4  Y    0.001033   0.052276   0.057362  -0.004380  -0.103454
    32  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   33  C  4  S   -0.013873   0.180922   0.160522   0.278032  -0.172226
-   34  C  4  X    0.001557   0.005950  -0.004158   0.009997  -0.047393
-   35  C  4  Y    0.002697   0.010306   0.009997   0.007385   0.031658
+   33  C  4  S    0.013873   0.180922   0.160522   0.278032   0.172226
+   34  C  4  X   -0.001557   0.005950  -0.004158   0.009997   0.047393
+   35  C  4  Y   -0.002697   0.010306   0.009997   0.007385  -0.031658
    36  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   37  C  5  S    0.402755  -0.097678   0.068674  -0.118947   0.053788
-   38  C  5  S    0.036799   0.109675  -0.073732   0.127708  -0.055625
-   39  C  5  X    0.000597  -0.030182  -0.070615  -0.057362   0.126056
-   40  C  5  Y   -0.001033   0.052276  -0.057362  -0.004380   0.103454
+   37  C  5  S   -0.402755  -0.097678   0.068674  -0.118947  -0.053788
+   38  C  5  S   -0.036799   0.109675  -0.073732   0.127708   0.055625
+   39  C  5  X   -0.000597  -0.030182  -0.070615  -0.057362  -0.126056
+   40  C  5  Y    0.001033   0.052276  -0.057362  -0.004380  -0.103454
    41  C  5  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   42  C  5  S   -0.013873   0.180922  -0.160522   0.278032  -0.172226
-   43  C  5  X   -0.001557  -0.005950  -0.004158  -0.009997   0.047393
-   44  C  5  Y    0.002697   0.010306  -0.009997   0.007385   0.031658
+   42  C  5  S    0.013873   0.180922  -0.160522   0.278032   0.172226
+   43  C  5  X    0.001557  -0.005950  -0.004158  -0.009997  -0.047393
+   44  C  5  Y   -0.002697   0.010306  -0.009997   0.007385  -0.031658
    45  C  5  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   46  C  6  S    0.402755  -0.097678   0.137348   0.000000  -0.107577
-   47  C  6  S    0.036799   0.109675  -0.147464   0.000000   0.111249
-   48  C  6  X    0.001193  -0.060363   0.028738   0.000000   0.053133
+   46  C  6  S   -0.402755  -0.097678   0.137348   0.000000   0.107577
+   47  C  6  S   -0.036799   0.109675  -0.147464   0.000000  -0.111249
+   48  C  6  X   -0.001193  -0.060363   0.028738   0.000000  -0.053133
    49  C  6  Y    0.000000   0.000000   0.000000  -0.103733   0.000000
    50  C  6  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   51  C  6  S   -0.013873   0.180922  -0.321044   0.000000   0.344453
-   52  C  6  X   -0.003114  -0.011900   0.013156   0.000000   0.007440
+   51  C  6  S    0.013873   0.180922  -0.321044   0.000000  -0.344453
+   52  C  6  X    0.003114  -0.011900   0.013156   0.000000  -0.007440
    53  C  6  Y    0.000000   0.000000   0.000000  -0.009930   0.000000
    54  C  6  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   55  H  7  S   -0.001250   0.033683  -0.036495  -0.063212  -0.053519
-   56  H  7  S    0.006650  -0.005296  -0.007234  -0.012529  -0.025808
-   57  H  8  S   -0.001250   0.033683   0.036495  -0.063212  -0.053519
-   58  H  8  S    0.006650  -0.005296   0.007234  -0.012529  -0.025808
-   59  H  9  S   -0.001250   0.033683   0.072991   0.000000   0.107038
-   60  H  9  S    0.006650  -0.005296   0.014467   0.000000   0.051616
-   61  H 10  S   -0.001250   0.033683   0.036495   0.063212  -0.053519
-   62  H 10  S    0.006650  -0.005296   0.007234   0.012529  -0.025808
-   63  H 11  S   -0.001250   0.033683  -0.036495   0.063212  -0.053519
-   64  H 11  S    0.006650  -0.005296  -0.007234   0.012529  -0.025808
-   65  H 12  S   -0.001250   0.033683  -0.072991   0.000000   0.107038
-   66  H 12  S    0.006650  -0.005296  -0.014467   0.000000   0.051616
+   55  H  7  S    0.001250   0.033683  -0.036495  -0.063212   0.053519
+   56  H  7  S   -0.006650  -0.005296  -0.007234  -0.012529   0.025808
+   57  H  8  S    0.001250   0.033683   0.036495  -0.063212   0.053519
+   58  H  8  S   -0.006650  -0.005296   0.007234  -0.012529   0.025808
+   59  H  9  S    0.001250   0.033683   0.072991   0.000000  -0.107038
+   60  H  9  S   -0.006650  -0.005296   0.014467   0.000000  -0.051616
+   61  H 10  S    0.001250   0.033683   0.036495   0.063212   0.053519
+   62  H 10  S   -0.006650  -0.005296   0.007234   0.012529   0.025808
+   63  H 11  S    0.001250   0.033683  -0.036495   0.063212   0.053519
+   64  H 11  S   -0.006650  -0.005296  -0.007234   0.012529   0.025808
+   65  H 12  S    0.001250   0.033683  -0.072991   0.000000  -0.107038
+   66  H 12  S   -0.006650  -0.005296  -0.014467   0.000000  -0.051616
 
                      11         12         13         14         15
                    -0.8256    -0.7199    -0.6395    -0.6249    -0.5928
                      E2G        A1G        B1U        B2U        E1U 
-    1  C  1  S   -0.093164  -0.011537  -0.060701   0.000000  -0.010545
-    2  C  1  S    0.096345   0.007388   0.063488   0.000000   0.013125
-    3  C  1  X    0.103454   0.084408   0.055671   0.212992  -0.009495
-    4  C  1  Y   -0.006597   0.146199   0.096424  -0.122971  -0.144068
+    1  C  1  S    0.093164  -0.011537  -0.060701   0.000000  -0.010545
+    2  C  1  S   -0.096345   0.007388   0.063488   0.000000   0.013125
+    3  C  1  X   -0.103454   0.084408   0.055671   0.212992  -0.009495
+    4  C  1  Y    0.006597   0.146199   0.096424  -0.122971  -0.144068
     5  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-    6  C  1  S    0.298305   0.057903   0.194987   0.000000   0.018004
-    7  C  1  X    0.031658   0.053616   0.061255   0.121902  -0.022358
-    8  C  1  Y   -0.010838   0.092866   0.106097  -0.070380  -0.104040
+    6  C  1  S   -0.298305   0.057903   0.194987   0.000000   0.018004
+    7  C  1  X   -0.031658   0.053616   0.061255   0.121902  -0.022358
+    8  C  1  Y    0.010838   0.092866   0.106097  -0.070380  -0.104040
     9  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   10  C  2  S    0.093164  -0.011537   0.060701   0.000000   0.010545
-   11  C  2  S   -0.096345   0.007388  -0.063488   0.000000  -0.013125
-   12  C  2  X    0.103454  -0.084408   0.055671  -0.212992  -0.009495
-   13  C  2  Y    0.006597   0.146199  -0.096424  -0.122971   0.144068
+   10  C  2  S   -0.093164  -0.011537   0.060701   0.000000   0.010545
+   11  C  2  S    0.096345   0.007388  -0.063488   0.000000  -0.013125
+   12  C  2  X   -0.103454  -0.084408   0.055671  -0.212992  -0.009495
+   13  C  2  Y   -0.006597   0.146199  -0.096424  -0.122971   0.144068
    14  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   15  C  2  S   -0.298305   0.057903  -0.194987   0.000000  -0.018004
-   16  C  2  X    0.031658  -0.053616   0.061255  -0.121902  -0.022358
-   17  C  2  Y    0.010838   0.092866  -0.106097  -0.070380   0.104040
+   15  C  2  S    0.298305   0.057903  -0.194987   0.000000  -0.018004
+   16  C  2  X   -0.031658  -0.053616   0.061255  -0.121902  -0.022358
+   17  C  2  Y   -0.010838   0.092866  -0.106097  -0.070380   0.104040
    18  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
    19  C  3  S    0.000000  -0.011537  -0.060701   0.000000   0.021090
    20  C  3  S    0.000000   0.007388   0.063488   0.000000  -0.026249
    21  C  3  X    0.000000  -0.168816  -0.111341   0.000000  -0.259028
-   22  C  3  Y   -0.185785   0.000000   0.000000   0.245942   0.000000
+   22  C  3  Y    0.185785   0.000000   0.000000   0.245942   0.000000
    23  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
    24  C  3  S    0.000000   0.057903   0.194987   0.000000  -0.036009
    25  C  3  X    0.000000  -0.107232  -0.122511   0.000000  -0.202561
-   26  C  3  Y   -0.065671   0.000000   0.000000   0.140760   0.000000
+   26  C  3  Y    0.065671   0.000000   0.000000   0.140760   0.000000
    27  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   28  C  4  S   -0.093164  -0.011537   0.060701   0.000000   0.010545
-   29  C  4  S    0.096345   0.007388  -0.063488   0.000000  -0.013125
-   30  C  4  X   -0.103454  -0.084408   0.055671   0.212992  -0.009495
-   31  C  4  Y    0.006597  -0.146199   0.096424  -0.122971  -0.144068
+   28  C  4  S    0.093164  -0.011537   0.060701   0.000000   0.010545
+   29  C  4  S   -0.096345   0.007388  -0.063488   0.000000  -0.013125
+   30  C  4  X    0.103454  -0.084408   0.055671   0.212992  -0.009495
+   31  C  4  Y   -0.006597  -0.146199   0.096424  -0.122971  -0.144068
    32  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   33  C  4  S    0.298305   0.057903  -0.194987   0.000000  -0.018004
-   34  C  4  X   -0.031658  -0.053616   0.061255   0.121902  -0.022358
-   35  C  4  Y    0.010838  -0.092866   0.106097  -0.070380  -0.104040
+   33  C  4  S   -0.298305   0.057903  -0.194987   0.000000  -0.018004
+   34  C  4  X    0.031658  -0.053616   0.061255   0.121902  -0.022358
+   35  C  4  Y   -0.010838  -0.092866   0.106097  -0.070380  -0.104040
    36  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   37  C  5  S    0.093164  -0.011537  -0.060701   0.000000  -0.010545
-   38  C  5  S   -0.096345   0.007388   0.063488   0.000000   0.013125
-   39  C  5  X   -0.103454   0.084408   0.055671  -0.212992  -0.009495
-   40  C  5  Y   -0.006597  -0.146199  -0.096424  -0.122971   0.144068
+   37  C  5  S   -0.093164  -0.011537  -0.060701   0.000000  -0.010545
+   38  C  5  S    0.096345   0.007388   0.063488   0.000000   0.013125
+   39  C  5  X    0.103454   0.084408   0.055671  -0.212992  -0.009495
+   40  C  5  Y    0.006597  -0.146199  -0.096424  -0.122971   0.144068
    41  C  5  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   42  C  5  S   -0.298305   0.057903   0.194987   0.000000   0.018004
-   43  C  5  X   -0.031658   0.053616   0.061255  -0.121902  -0.022358
-   44  C  5  Y   -0.010838  -0.092866  -0.106097  -0.070380   0.104040
+   42  C  5  S    0.298305   0.057903   0.194987   0.000000   0.018004
+   43  C  5  X    0.031658   0.053616   0.061255  -0.121902  -0.022358
+   44  C  5  Y    0.010838  -0.092866  -0.106097  -0.070380   0.104040
    45  C  5  Z    0.000000   0.000000   0.000000   0.000000   0.000000
    46  C  6  S    0.000000  -0.011537   0.060701   0.000000  -0.021090
    47  C  6  S    0.000000   0.007388  -0.063488   0.000000   0.026249
    48  C  6  X    0.000000   0.168816  -0.111341   0.000000  -0.259028
-   49  C  6  Y    0.185785   0.000000   0.000000   0.245942   0.000000
+   49  C  6  Y   -0.185785   0.000000   0.000000   0.245942   0.000000
    50  C  6  Z    0.000000   0.000000   0.000000   0.000000   0.000000
    51  C  6  S    0.000000   0.057903  -0.194987   0.000000   0.036009
    52  C  6  X    0.000000   0.107232  -0.122511   0.000000  -0.202561
-   53  C  6  Y    0.065671   0.000000   0.000000   0.140760   0.000000
+   53  C  6  Y   -0.065671   0.000000   0.000000   0.140760   0.000000
    54  C  6  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   55  H  7  S    0.092697   0.103843   0.129979   0.000000  -0.076839
-   56  H  7  S    0.044701   0.063750   0.073720   0.000000  -0.059843
-   57  H  8  S   -0.092697   0.103843  -0.129979   0.000000   0.076839
-   58  H  8  S   -0.044701   0.063750  -0.073720   0.000000   0.059843
+   55  H  7  S   -0.092697   0.103843   0.129979   0.000000  -0.076839
+   56  H  7  S   -0.044701   0.063750   0.073720   0.000000  -0.059843
+   57  H  8  S    0.092697   0.103843  -0.129979   0.000000   0.076839
+   58  H  8  S    0.044701   0.063750  -0.073720   0.000000   0.059843
    59  H  9  S    0.000000   0.103843   0.129979   0.000000   0.153679
    60  H  9  S    0.000000   0.063750   0.073720   0.000000   0.119686
-   61  H 10  S    0.092697   0.103843  -0.129979   0.000000   0.076839
-   62  H 10  S    0.044701   0.063750  -0.073720   0.000000   0.059843
-   63  H 11  S   -0.092697   0.103843   0.129979   0.000000  -0.076839
-   64  H 11  S   -0.044701   0.063750   0.073720   0.000000  -0.059843
+   61  H 10  S   -0.092697   0.103843  -0.129979   0.000000   0.076839
+   62  H 10  S   -0.044701   0.063750  -0.073720   0.000000   0.059843
+   63  H 11  S    0.092697   0.103843   0.129979   0.000000  -0.076839
+   64  H 11  S    0.044701   0.063750   0.073720   0.000000  -0.059843
    65  H 12  S    0.000000   0.103843  -0.129979   0.000000  -0.153679
    66  H 12  S    0.000000   0.063750  -0.073720   0.000000  -0.119686
 
@@ -2951,33 +2951,33 @@ Assuming a single but multicore node.
 
          WAVEFUNCTION NORMALIZATION =       1.0000000000
 
-                ONE ELECTRON ENERGY =    -714.6026691406
-                TWO ELECTRON ENERGY =     280.0698450217
-           NUCLEAR REPULSION ENERGY =     205.1133786440
+                ONE ELECTRON ENERGY =    -714.6026691408
+                TWO ELECTRON ENERGY =     280.0698450218
+           NUCLEAR REPULSION ENERGY =     205.1133786441
                                       ------------------
                        TOTAL ENERGY =    -229.4194454748
 
- ELECTRON-ELECTRON POTENTIAL ENERGY =     280.0698450217
-  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -943.6289522115
-   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     205.1133786440
+ ELECTRON-ELECTRON POTENTIAL ENERGY =     280.0698450218
+  NUCLEUS-ELECTRON POTENTIAL ENERGY =    -943.6289522117
+   NUCLEUS-NUCLEUS POTENTIAL ENERGY =     205.1133786441
                                       ------------------
              TOTAL POTENTIAL ENERGY =    -458.4457285458
-               TOTAL KINETIC ENERGY =     229.0262830709
+               TOTAL KINETIC ENERGY =     229.0262830710
                  VIRIAL RATIO (V/T) =       2.0017166694
 
   ...... PI ENERGY ANALYSIS ......
 
  ENERGY ANALYSIS:
             FOCK ENERGY=   -154.4629335547
-          BARE H ENERGY=   -714.6026691406
-     ELECTRONIC ENERGY =   -434.5328013476
-         KINETIC ENERGY=    229.0262830709
-          N-N REPULSION=    205.1133786440
+          BARE H ENERGY=   -714.6026691408
+     ELECTRONIC ENERGY =   -434.5328013477
+         KINETIC ENERGY=    229.0262830710
+          N-N REPULSION=    205.1133786441
            TOTAL ENERGY=   -229.4194227036
-        SIGMA PART(1+2)=   -395.8910765056
-               (K,V1,2)=    223.1400357447   -862.8321904632    243.8010782129
+        SIGMA PART(1+2)=   -395.8910765057
+               (K,V1,2)=    223.1400357447   -862.8321904634    243.8010782130
            PI PART(1+2)=    -38.6417248421
-               (K,V1,2)=      5.8862473263    -80.7967617484     36.2687895800
+               (K,V1,2)=      5.8862473263    -80.7967617484     36.2687895801
   SIGMA SKELETON, ERROR=   -190.7776978615      0.0000000000
              MIXED PART= 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
  ...... END OF PI ENERGY ANALYSIS ......
@@ -3204,7 +3204,7 @@ Assuming a single but multicore node.
 
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
-    1 C                 3.744       3.744      -0.000
+    1 C                 3.744       3.744       0.000
     2 C                 3.744       3.744      -0.000
     3 C                 3.744       3.744       0.000
     4 C                 3.744       3.744       0.000
@@ -3212,7 +3212,7 @@ Assuming a single but multicore node.
     6 C                 3.744       3.744      -0.000
     7 H                 0.917       0.917      -0.000
     8 H                 0.917       0.917      -0.000
-    9 H                 0.917       0.917      -0.000
+    9 H                 0.917       0.917       0.000
    10 H                 0.917       0.917      -0.000
    11 H                 0.917       0.917      -0.000
    12 H                 0.917       0.917      -0.000
@@ -3222,47 +3222,47 @@ Assuming a single but multicore node.
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000    0.000000       -0.00 (A.U.)
+                -0.000000    0.000000    0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
-    -0.000000   -0.000000   -0.000000    0.000000
+    -0.000000   -0.000000    0.000000    0.000000
  ...... END OF PROPERTY EVALUATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.17%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.03%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -229.4194454748
-  1.906245524E-05 3.301714099E-05 0.000000000E+00-1.906245524E-05 3.301714099E-05
-  0.000000000E+00-3.812491047E-05 0.000000000E+00 0.000000000E+00-1.906245524E-05
- -3.301714099E-05 0.000000000E+00 1.906245524E-05-3.301714099E-05 0.000000000E+00
-  3.812491047E-05 0.000000000E+00 0.000000000E+00-1.189870593E-05-2.060916322E-05
-  0.000000000E+00 1.189870593E-05-2.060916322E-05 0.000000000E+00 2.379741186E-05
-  0.000000000E+00 0.000000000E+00 1.189870593E-05 2.060916322E-05 0.000000000E+00
- -1.189870593E-05 2.060916322E-05 0.000000000E+00-2.379741186E-05 0.000000000E+00
+  1.906245440E-05 3.301713953E-05 0.000000000E+00-1.906245440E-05 3.301713953E-05
+  0.000000000E+00-3.812490879E-05 0.000000000E+00 0.000000000E+00-1.906245440E-05
+ -3.301713953E-05 0.000000000E+00 1.906245440E-05-3.301713953E-05 0.000000000E+00
+  3.812490879E-05 0.000000000E+00 0.000000000E+00-1.189870595E-05-2.060916326E-05
+  0.000000000E+00 1.189870595E-05-2.060916326E-05 0.000000000E+00 2.379741191E-05
+  0.000000000E+00 0.000000000E+00 1.189870595E-05 2.060916326E-05 0.000000000E+00
+ -1.189870595E-05 2.060916326E-05 0.000000000E+00-2.379741191E-05 0.000000000E+00
   0.000000000E+00
- -1.151346272E-13-6.809916336E-15-1.372629826E-30
+ -1.151346272E-13-6.854515736E-15 9.150865506E-31
  ......END OF GEOMETRY SEARCH......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.05%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    67.98%
  AN INPUT FILE FOR -MOLPLT- HAS BEEN PUNCHED.
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 14:21:33 07-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:51:57 09-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.87 + 0.21 = 0.108
- 1: 0.72 + 0.12 = 0.85
- 2: 0.72 + 0.14 = 0.86
- 3: 0.70 + 0.10 = 0.81
+ 0: 0.50 + 0.11 = 0.62
+ 1: 0.41 + 0.07 = 0.49
+ 2: 0.42 + 0.08 = 0.50
+ 3: 0.40 + 0.06 = 0.46
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      434 Nov  7 14:21 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F05
--rw-r--r--@ 1 blink  staff  1799600 Nov  7 14:21 /Users/blink/github/gamess2024R2claude/gamess/scr/benzene_D6h_321.F10
+-rw-r--r--@ 1 blink  staff      434 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F05
+-rw-r--r--@ 1 blink  staff  1799600 Nov  9 15:51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/benzene_D6h_321.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sat Nov  7 14:21:34 AST 2026
-0.409u 0.163s 0:01.38 40.5%	0+0k 0+0io 93pf+0w
+Mon Nov  9 15:51:58 AST 2026
+0.242u 0.094s 0:01.25 26.4%	0+0k 0+0io 93pf+0w

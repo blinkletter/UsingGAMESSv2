@@ -1,179 +1,179 @@
-1 : /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.inp
+1 : /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sun Nov 8 17:06:17 AST 2026
+under operating system Darwin at Mon Nov 9 15:50:55 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 492396812 453236372    53% 3674358 4532363720    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
-Copying input file /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.inp /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F05
+/dev/disk3s5   971298980 484473384 461159828    52% 3669684 4611598280    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2
+Copying input file /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F99
+setenv NUCBAS /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/ammonia_6311_U.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch2/ammonia_6311_U.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x ammonia_6311_U -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x ammonia_6311_U -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x ammonia_6311_U 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x ammonia_6311_U 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 17:06:17 08-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:50:55 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD> $CONTRL SCFTYP=RHF RUNTYP=OPTIMIZE MAXIT=30 MULT=1 ICHARG=0                    
@@ -295,7 +295,7 @@ Assuming a single but multicore node.
  INPUT CARD>Ammonia AM1                                                                     
  INPUT CARD>CNV 3                                                                           
  INPUT CARD>                                                                                
- INPUT CARD> N        7.0    0.0000000000   -0.0000000000   -0.0501412961                   
+ INPUT CARD> N        7.0    0.0000000000    0.0000000000   -0.0501412961                   
  INPUT CARD> H        1.0    0.9619980493    0.0000000000    0.2322268511                   
  INPUT CARD> $END                                                                           
  INPUT CARD>! NOTE: Pretend dummy atom does not exist in the IZMAT matrix                   
@@ -320,7 +320,7 @@ Assuming a single but multicore node.
 
  ATOM      ATOMIC                      COORDINATES (BOHR)
            CHARGE         X                   Y                   Z
- N           7.0     0.0000000000       -0.0000000000       -0.0947533103
+ N           7.0     0.0000000000        0.0000000000       -0.0947533103
  H           1.0    -0.9089563569        1.5743585921        0.4388451156
  H           1.0    -0.9089563569       -1.5743585921        0.4388451156
  H           1.0     1.8179127139        0.0000000000        0.4388451156
@@ -480,8 +480,8 @@ Assuming a single but multicore node.
  A1  =   17     A2  =    1     E   =   13
 
  ..... DONE SETTING UP THE RUN .....
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.19%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.80%
 
 
           -----------------------------
@@ -513,12 +513,12 @@ Assuming a single but multicore node.
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0   0.0000000000  -0.0000000000  -0.0501412961
+ N           7.0   0.0000000000   0.0000000000  -0.0501412961
  H           1.0   0.9619980493   0.0000000000   0.2322268511
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0   0.0000000000  -0.0000000000  -0.0501412961
+ N           7.0   0.0000000000   0.0000000000  -0.0501412961
  H           1.0  -0.4809990247   0.8331147491   0.2322268511
  H           1.0  -0.4809990247  -0.8331147491   0.2322268511
  H           1.0   0.9619980493   0.0000000000   0.2322268511
@@ -543,7 +543,7 @@ Assuming a single but multicore node.
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.92%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    75.73%
 
           -------------
           GUESS OPTIONS
@@ -562,7 +562,7 @@ Assuming a single but multicore node.
      9=A1      10=A1      11=A1      12=A1      13=A1      14=A1      15=A1  
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.35%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.13%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -585,7 +585,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    87.38%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.71%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1061,8 +1061,8 @@ Assuming a single but multicore node.
    43  H  4  Y    0.000000   0.000000  -0.129923   0.000000
    44  H  4  Z    0.140893   0.334729   0.000000   0.026298
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.47%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    75.04%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1192,12 +1192,12 @@ Assuming a single but multicore node.
     -0.000000    0.000000    1.427189    1.427189
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    80.20%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    75.73%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.14%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.36%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -1209,7 +1209,7 @@ Assuming a single but multicore node.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS      5510
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.04%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.06%
 
           NSERCH=  0     ENERGY=     -56.2137245
 
@@ -1259,12 +1259,12 @@ Assuming a single but multicore node.
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0518811905
+ N           7.0  -0.0000000000   0.0000000000  -0.0518811905
  H           1.0   0.9491807831  -0.0000000000   0.2402850830
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0518811905
+ N           7.0  -0.0000000000   0.0000000000  -0.0518811905
  H           1.0  -0.4745903915   0.8220146709   0.2402850830
  H           1.0  -0.4745903915  -0.8220146709   0.2402850830
  H           1.0   0.9491807831  -0.0000000000   0.2402850830
@@ -1298,10 +1298,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.60%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    73.88%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.79%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.08%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1332,13 +1332,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -11.273390 eV, LUMO=    1.212757 eV, gap=   12.486147 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    75.45%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    73.42%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    74.41%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.73%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    73.96%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.60%
 
           NSERCH=  1     ENERGY=     -56.2140891
 
@@ -1429,10 +1429,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    73.76%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.53%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    73.91%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    72.66%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1463,14 +1463,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=   -11.348204 eV, LUMO=    1.205623 eV, gap=   12.553827 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    71.22%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    71.68%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.58%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    71.21%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.55%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    71.29%
 
           NSERCH=  2     ENERGY=     -56.2143993
 
@@ -1562,11 +1562,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.54%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    71.24%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.66%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    71.34%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1597,14 +1597,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=   -11.420674 eV, LUMO=    1.197276 eV, gap=   12.617950 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.46%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.84%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.90%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.49%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.02%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.58%
 
           NSERCH=  3     ENERGY=     -56.2146535
 
@@ -1694,11 +1694,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.56%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.01%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.66%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1730,13 +1730,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -11.564376 eV, LUMO=    1.183078 eV, gap=   12.747453 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.35%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.09%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.02%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.79%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.09%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.95%
 
           NSERCH=  4     ENERGY=     -56.2147653
 
@@ -1788,12 +1788,12 @@ Assuming a single but multicore node.
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0622826079
+ N           7.0  -0.0000000000   0.0000000000  -0.0622826079
  H           1.0   0.9368024715  -0.0000000000   0.2884587163
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0622826079
+ N           7.0  -0.0000000000   0.0000000000  -0.0622826079
  H           1.0  -0.4684012357   0.8112947386   0.2884587163
  H           1.0  -0.4684012357  -0.8112947386   0.2884587163
  H           1.0   0.9368024715  -0.0000000000   0.2884587163
@@ -1827,10 +1827,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.01%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.93%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    68.10%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.00%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1862,13 +1862,13 @@ Assuming a single but multicore node.
  Alpha HOMO=   -11.529466 eV, LUMO=    1.186335 eV, gap=   12.715801 eV
  ...... END OF RHF CALCULATION ......
  CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.64%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.04%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.35%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.78%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.40%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.90%
 
           NSERCH=  5     ENERGY=     -56.2147745
 
@@ -1919,12 +1919,12 @@ Assuming a single but multicore node.
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0624017744
+ N           7.0  -0.0000000000   0.0000000000  -0.0624017744
  H           1.0   0.9365848197  -0.0000000000   0.2890106302
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0624017744
+ N           7.0  -0.0000000000   0.0000000000  -0.0624017744
  H           1.0  -0.4682924098   0.8111062467   0.2890106302
  H           1.0  -0.4682924098  -0.8111062467   0.2890106302
  H           1.0   0.9365848197  -0.0000000000   0.2890106302
@@ -1958,10 +1958,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.30%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.86%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.38%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.93%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1989,14 +1989,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=   -11.532800 eV, LUMO=    1.186012 eV, gap=   12.718812 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.03%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.84%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    66.78%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.64%
  ...... END OF 2-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    66.85%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.61%
 
           NSERCH=  6     ENERGY=     -56.2147746
 
@@ -2037,12 +2037,12 @@ Assuming a single but multicore node.
  COORDINATES OF SYMMETRY UNIQUE ATOMS (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0624017744
+ N           7.0  -0.0000000000   0.0000000000  -0.0624017744
  H           1.0   0.9365848197  -0.0000000000   0.2890106302
  COORDINATES OF ALL ATOMS ARE (ANGS)
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
- N           7.0  -0.0000000000  -0.0000000000  -0.0624017744
+ N           7.0  -0.0000000000   0.0000000000  -0.0624017744
  H           1.0  -0.4682924098   0.8111062467   0.2890106302
  H           1.0  -0.4682924098  -0.8111062467   0.2890106302
  H           1.0   0.9365848197  -0.0000000000   0.2890106302
@@ -2350,41 +2350,41 @@ Assuming a single but multicore node.
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000   -0.000000       -0.00 (A.U.)
+                -0.000000    0.000000   -0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
     -0.000000    0.000000    1.718716    1.718716
  ...... END OF PROPERTY EVALUATION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.31%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    70.04%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=      -56.2147746437
- -4.059485468E-23 1.387718086E-17 2.908800708E-06-6.129828131E-07 1.061717376E-06
- -9.696002358E-07-6.129828131E-07-1.061717376E-06-9.696002358E-07 1.225965626E-06
- -1.155306457E-17-9.696002358E-07
- -3.386312564E-15 1.117838216E-14 1.718716086E+00
+  3.156922369E-22 1.520932330E-18 2.908800708E-06-6.129828125E-07 1.061717375E-06
+ -9.696002359E-07-6.129828125E-07-1.061717375E-06-9.696002359E-07 1.225965625E-06
+ -1.266284428E-18-9.696002359E-07
+ -4.515083418E-15 1.006183558E-14 1.718716086E+00
  ......END OF GEOMETRY SEARCH......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    67.29%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    69.97%
                993050  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 17:06:17 08-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:50:55 09-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.95 + 0.30 = 0.126
- 1: 0.82 + 0.18 = 0.101
- 2: 0.83 + 0.21 = 0.105
- 3: 0.80 + 0.15 = 0.95
+ 0: 0.59 + 0.19 = 0.79
+ 1: 0.52 + 0.12 = 0.65
+ 2: 0.52 + 0.13 = 0.66
+ 3: 0.52 + 0.10 = 0.63
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      607 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F05
--rw-r--r--@ 1 blink  staff  1963200 Nov  8 17:06 /Users/blink/github/gamess2024R2claude/gamess/scr/ammonia_6311_U.F10
+-rw-r--r--@ 1 blink  staff      607 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F05
+-rw-r--r--@ 1 blink  staff  1963200 Nov  9 15:50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/ammonia_6311_U.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sun Nov  8 17:06:19 AST 2026
-0.428u 0.188s 0:01.40 42.8%	0+0k 0+0io 93pf+0w
+Mon Nov  9 15:50:56 AST 2026
+0.269u 0.124s 0:01.25 30.4%	0+0k 0+0io 93pf+0w

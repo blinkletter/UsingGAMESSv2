@@ -1,7 +1,7 @@
 # UsingGAMESSv2
 
 A MystMD book teaching GAMESS quantum chemistry to students. It is a rewrite of
-the book in `~/github/UsingGAMESS`: every page that ran GAMESS or processed log
+the book in `~/github/compChem/UsingGAMESS`: every page that ran GAMESS or processed log
 files with terminal commands is converted to a Jupyter notebook that does the
 same work in Python. Students should be able to run the notebooks on their own
 computer after installing GAMESS.
@@ -10,10 +10,10 @@ computer after installing GAMESS.
 
 | Folder | Role | May I change it? |
 |---|---|---|
-| `~/github/UsingGAMESSv2` | This book. All new and edited files go here. | Yes |
-| `~/github/UsingGAMESS` | Original book (`.md` pages + a few `.ipynb`). Source material to convert. | **No. Read only.** |
-| `~/github/GAMESS-docs` | GAMESS manual (`02-docs-input.txt` is the input reference). | **No. Read only.** |
-| `~/github/gamess2024R2claude/gamess` | GAMESS 2024 R2 build (note the `gamess/` subfolder): `gamess.00.x`, `rungms`, `gms`, `auxdata/`, `scr/`, `restart/`. | **Only** run scripts such as `rungms` and `gms` may be edited, when needed. Change nothing else there. |
+| `~/github/compChem/UsingGAMESSv2` | This book. All new and edited files go here. | Yes |
+| `~/github/compChem/UsingGAMESS` | Original book (`.md` pages + a few `.ipynb`). Source material to convert. | **No. Read only.** |
+| `~/github/docsAndSource/GAMESS-docs` | GAMESS manual (`02-docs-input.txt` is the input reference). | **No. Read only.** |
+| `~/github/compChem/gamess2024R2claude/gamess` | GAMESS 2024 R2 build (note the `gamess/` subfolder): `gamess.00.x`, `rungms`, `gms`, `auxdata/`, `scr/`, `restart/`. | **Only** run scripts such as `rungms` and `gms` may be edited, when needed. Change nothing else there. |
 
 - Never write build output, scratch files or test runs into the read-only folders.
 - Before editing `rungms` or `gms`, make a dated backup copy beside it and tell
@@ -52,7 +52,7 @@ computer after installing GAMESS.
 - Build HTML: `myst build --html`
 - Execute notebooks: `myst build --html --execute`
 - The `toc` lives in `myst.yml`. Mirror the structure of
-  `~/github/UsingGAMESS/myst.yml`, swapping converted pages for their notebooks.
+  `~/github/compChem/UsingGAMESS/myst.yml`, swapping converted pages for their notebooks.
 
 ## Conventions
 
@@ -68,4 +68,4 @@ computer after installing GAMESS.
 
 - Don't commit notebook outputs larger than a few MB.
 - Don't rename chapter files, because that breaks cross-references.
-- Don't modify anything in `~/github/UsingGAMESS` or `~/github/GAMESS-docs`.
+- Don't modify anything in `~/github/compChem/UsingGAMESS` or `~/github/docsAndSource/GAMESS-docs`.

@@ -1,179 +1,179 @@
-1 : /Users/blink/github/UsingGAMESSv2/inputs/butadiene_cis_flat.inp
+1 : /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch7/butadiene_cis_flat.inp
 2 : 00
 3 : 4
 ----- GAMESS execution script 'rungms' -----
 This job is running on host MonkeyBook.local
-under operating system Darwin at Sat Nov 7 14:21:42 AST 2026
+under operating system Darwin at Mon Nov 9 15:52:03 AST 2026
 Available scratch disk space (Kbyte units) at beginning of the job is
 Filesystem   1024-blocks      Used Available Capacity iused      ifree %iused  Mounted on
-/dev/disk3s5   971298980 494665572 447822544    53% 3684953 4478225440    0%   /System/Volumes/Data
-GAMESS temporary binary files will be written to /Users/blink/github/gamess2024R2claude/gamess/scr
-GAMESS supplementary output files will be written to /Users/blink/github/UsingGAMESSv2/runs
-Copying input file /Users/blink/github/UsingGAMESSv2/inputs/butadiene_cis_flat.inp to your run's scratch directory...
-cp /Users/blink/github/UsingGAMESSv2/inputs/butadiene_cis_flat.inp /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F05
+/dev/disk3s5   971298980 484529192 461104020    52% 3669776 4611040200    0%   /System/Volumes/Data
+GAMESS temporary binary files will be written to /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
+GAMESS supplementary output files will be written to /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7
+Copying input file /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch7/butadiene_cis_flat.inp to your run's scratch directory...
+cp /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch7/butadiene_cis_flat.inp /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F05
 unset echo
 setenv NO_STOP_MESSAGE 1
-setenv AUXDATA /Users/blink/github/gamess2024R2claude/gamess/auxdata
+setenv AUXDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata
 setenv EXTBAS /dev/null
-setenv NUCBAS /Users/blink/github/UsingGAMESSv2/inputs/butadiene_cis_flat.nucbas
-setenv EXTCAB /Users/blink/github/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
-setenv POSBAS /Users/blink/github/UsingGAMESSv2/inputs/butadiene_cis_flat.posbas
-setenv DFTBPAR /Users/blink/github/gamess2024R2claude/gamess/auxdata/DFTB
-setenv ERICFMT /Users/blink/github/gamess2024R2claude/gamess/auxdata/ericfmt.dat
-setenv MCPPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/MCP
-setenv BASPATH /Users/blink/github/gamess2024R2claude/gamess/auxdata/BASES
-setenv QUANPOL /Users/blink/github/gamess2024R2claude/gamess/auxdata/QUANPOL
-setenv MAKEFP /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.efp
-setenv GAMMA /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.gamma
-setenv TRAJECT /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.trj
-setenv RESTART /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.rst
-setenv QMWAVE /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.qmw
-setenv MDDIP /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.dip
-setenv OPTHES1 /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.hs1
-setenv OPTHES2 /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.hs2
-setenv FCIDUMP /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.FCIDUMP
-setenv XYZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.xyz
-setenv IRCDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F04
-setenv INPUT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F05
-setenv PUNCH /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.dat
-setenv NAMDRST /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.namdrst
-setenv AOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F08
-setenv MOINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F09
-setenv DICTNRY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F10
-setenv DRTFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F11
-setenv CIVECTR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F12
-setenv CASINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F13
-setenv CIINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F14
-setenv WORK15 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F15
-setenv WORK16 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F16
-setenv CSFSAVE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F17
-setenv FOCKDER /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F18
-setenv WORK19 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F19
-setenv DASORT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F20
-setenv DIABDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F21
-setenv DFTINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F21
-setenv DFTGRID /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F22
-setenv JKFILE /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F23
-setenv ORDINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F24
-setenv EFPIND /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F25
-setenv PCMDATA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26
-setenv PCMINTS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F27
-setenv SVPWRK1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26
-setenv SVPWRK2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F27
-setenv COSCAV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26
-setenv COSDATA /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.cosmo
-setenv COSPOT /Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.pot
-setenv MLTPL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F28
-setenv MLTPLT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F29
-setenv DAFL30 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F30
-setenv SOINTX /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F31
-setenv SOINTY /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F32
-setenv SOINTZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F33
-setenv SORESC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F34
-setenv RISM01 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26R
-setenv RISM02 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F27R
-setenv QOPWRF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.wrf
-setenv GCILIST /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F37
-setenv HESSIAN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F38
-setenv QMMMTEI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F39
-setenv SOCCDAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F40
-setenv AABB41 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F41
-setenv BBAA42 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F42
-setenv BBBB43 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F43
-setenv REMD /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F44
-setenv UNV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F45
-setenv UNPV /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F46
-setenv MCQD50 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F50
-setenv MCQD51 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F51
-setenv MCQD52 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F52
-setenv MCQD53 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F53
-setenv MCQD54 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F54
-setenv MCQD55 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F55
-setenv MCQD56 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F56
-setenv MCQD57 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F57
-setenv MCQD58 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F58
-setenv MCQD59 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F59
-setenv MCQD60 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F60
-setenv MCQD61 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F61
-setenv MCQD62 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F62
-setenv MCQD63 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F63
-setenv MCQD64 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F64
-setenv NMRINT1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F61
-setenv NMRINT2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F62
-setenv NMRINT3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F63
-setenv NMRINT4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F64
-setenv NMRINT5 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F65
-setenv NMRINT6 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F66
-setenv DCPHFH2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F67
-setenv DCPHF21 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F68
-setenv ELNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F67
-setenv NUNUINT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F68
-setenv GVVPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F69
-setenv NUMOIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F69
-setenv NUMOCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F70
-setenv NUELMO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F71
-setenv NUELCAS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F72
-setenv EPOVRLP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F73
-setenv RIVMAT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F51
-setenv RIT2A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F52
-setenv RIT3A /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F53
-setenv RIT2B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F54
-setenv RIT3B /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F55
-setenv KI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F47
-setenv BI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F48
-setenv PRMERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F49
-setenv TRSERI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F50
-setenv PVP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F51
-setenv TPVPI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F52
-setenv TPVPJ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F53
-setenv PPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F54
-setenv TPPVPP /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F55
-setenv DEN2P1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F70
-setenv DEN2P2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F71
-setenv DEN2P3 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F72
-setenv DEN2P4 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F73
-setenv DEN2NM /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F74
-setenv DEN2OPT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F75
-setenv GMCREF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F70
-setenv GMCO2R /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F71
-setenv GMCROC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F72
-setenv GMCOOC /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F73
-setenv GMCCC0 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F74
-setenv GMCHMA /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F75
-setenv GMCEI1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F76
-setenv GMCEI2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F77
-setenv GMCEOB /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F78
-setenv GMCEDT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F79
-setenv GMCERF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F80
-setenv GMCHCR /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F81
-setenv GMCGJK /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F82
-setenv GMCGAI /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F83
-setenv GMCGEO /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F84
-setenv GMCTE1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F85
-setenv GMCTE2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F86
-setenv GMCHEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F87
-setenv GMCMOL /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F88
-setenv GMCMOS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F89
-setenv GMCWGT /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F90
-setenv GMCRM2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F91
-setenv GMCRM1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F92
-setenv GMCR00 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F93
-setenv GMCRP1 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F94
-setenv GMCRP2 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F95
-setenv GMCVEF /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F96
-setenv GMCDIN /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F97
-setenv GMC2SZ /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F98
-setenv GMCCCS /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F99
+setenv NUCBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch7/butadiene_cis_flat.nucbas
+setenv EXTCAB /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/AUXBAS/auxdef21
+setenv POSBAS /Users/blink/github/compChem/UsingGAMESSv2/inputs/ch7/butadiene_cis_flat.posbas
+setenv DFTBPAR /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/DFTB
+setenv ERICFMT /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/ericfmt.dat
+setenv MCPPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/MCP
+setenv BASPATH /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/BASES
+setenv QUANPOL /Users/blink/github/compChem/gamess2024R2claude/gamess/auxdata/QUANPOL
+setenv MAKEFP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.efp
+setenv GAMMA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.gamma
+setenv TRAJECT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.trj
+setenv RESTART /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.rst
+setenv QMWAVE /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.qmw
+setenv MDDIP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.dip
+setenv OPTHES1 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.hs1
+setenv OPTHES2 /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.hs2
+setenv FCIDUMP /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.FCIDUMP
+setenv XYZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.xyz
+setenv IRCDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F04
+setenv INPUT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F05
+setenv PUNCH /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.dat
+setenv NAMDRST /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.namdrst
+setenv AOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F08
+setenv MOINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F09
+setenv DICTNRY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F10
+setenv DRTFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F11
+setenv CIVECTR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F12
+setenv CASINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F13
+setenv CIINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F14
+setenv WORK15 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F15
+setenv WORK16 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F16
+setenv CSFSAVE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F17
+setenv FOCKDER /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F18
+setenv WORK19 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F19
+setenv DASORT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F20
+setenv DIABDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F21
+setenv DFTINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F21
+setenv DFTGRID /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F22
+setenv JKFILE /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F23
+setenv ORDINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F24
+setenv EFPIND /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F25
+setenv PCMDATA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26
+setenv PCMINTS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F27
+setenv SVPWRK1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26
+setenv SVPWRK2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F27
+setenv COSCAV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26
+setenv COSDATA /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.cosmo
+setenv COSPOT /Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.pot
+setenv MLTPL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F28
+setenv MLTPLT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F29
+setenv DAFL30 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F30
+setenv SOINTX /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F31
+setenv SOINTY /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F32
+setenv SOINTZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F33
+setenv SORESC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F34
+setenv RISM01 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F26R
+setenv RISM02 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F27R
+setenv QOPWRF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.wrf
+setenv GCILIST /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F37
+setenv HESSIAN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F38
+setenv QMMMTEI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F39
+setenv SOCCDAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F40
+setenv AABB41 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F41
+setenv BBAA42 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F42
+setenv BBBB43 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F43
+setenv REMD /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F44
+setenv UNV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F45
+setenv UNPV /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F46
+setenv MCQD50 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F50
+setenv MCQD51 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F51
+setenv MCQD52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F52
+setenv MCQD53 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F53
+setenv MCQD54 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F54
+setenv MCQD55 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F55
+setenv MCQD56 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F56
+setenv MCQD57 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F57
+setenv MCQD58 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F58
+setenv MCQD59 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F59
+setenv MCQD60 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F60
+setenv MCQD61 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F61
+setenv MCQD62 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F62
+setenv MCQD63 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F63
+setenv MCQD64 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F64
+setenv NMRINT1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F61
+setenv NMRINT2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F62
+setenv NMRINT3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F63
+setenv NMRINT4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F64
+setenv NMRINT5 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F65
+setenv NMRINT6 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F66
+setenv DCPHFH2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F67
+setenv DCPHF21 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F68
+setenv ELNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F67
+setenv NUNUINT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F68
+setenv GVVPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F69
+setenv NUMOIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F69
+setenv NUMOCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F70
+setenv NUELMO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F71
+setenv NUELCAS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F72
+setenv EPOVRLP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F73
+setenv RIVMAT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F51
+setenv RIT2A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F52
+setenv RIT3A /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F53
+setenv RIT2B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F54
+setenv RIT3B /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F55
+setenv KI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F47
+setenv BI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F48
+setenv PRMERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F49
+setenv TRSERI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F50
+setenv PVP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F51
+setenv TPVPI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F52
+setenv TPVPJ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F53
+setenv PPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F54
+setenv TPPVPP /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F55
+setenv DEN2P1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F70
+setenv DEN2P2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F71
+setenv DEN2P3 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F72
+setenv DEN2P4 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F73
+setenv DEN2NM /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F74
+setenv DEN2OPT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F75
+setenv GMCREF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F70
+setenv GMCO2R /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F71
+setenv GMCROC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F72
+setenv GMCOOC /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F73
+setenv GMCCC0 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F74
+setenv GMCHMA /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F75
+setenv GMCEI1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F76
+setenv GMCEI2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F77
+setenv GMCEOB /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F78
+setenv GMCEDT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F79
+setenv GMCERF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F80
+setenv GMCHCR /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F81
+setenv GMCGJK /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F82
+setenv GMCGAI /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F83
+setenv GMCGEO /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F84
+setenv GMCTE1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F85
+setenv GMCTE2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F86
+setenv GMCHEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F87
+setenv GMCMOL /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F88
+setenv GMCMOS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F89
+setenv GMCWGT /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F90
+setenv GMCRM2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F91
+setenv GMCRM1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F92
+setenv GMCR00 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F93
+setenv GMCRP1 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F94
+setenv GMCRP2 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F95
+setenv GMCVEF /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F96
+setenv GMCDIN /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F97
+setenv GMC2SZ /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F98
+setenv GMCCCS /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F99
 unset echo
-/Users/blink/github/UsingGAMESSv2/runs/butadiene_cis_flat.dat
+/Users/blink/github/compChem/UsingGAMESSv2/runs/ch7/butadiene_cis_flat.dat
  
 Assuming a single but multicore node.
  
-/Users/blink/github/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_cis_flat -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/gamess2024R2claude/gamess/scr
+/Users/blink/github/compChem/gamess2024R2claude/gamess/ddikick.x /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x butadiene_cis_flat -ddi 1 4 MonkeyBook.local:cpus=4 -scr /Users/blink/github/compChem/gamess2024R2claude/gamess/scr
 
  Distributed Data Interface kickoff program.
  Initiating 4 compute processes on 1 nodes to run the following command:
- /Users/blink/github/gamess2024R2claude/gamess/gamess.00.x butadiene_cis_flat 
+ /Users/blink/github/compChem/gamess2024R2claude/gamess/gamess.00.x butadiene_cis_flat 
 
           *******************************************************
           *                                                     *
@@ -282,7 +282,7 @@ Assuming a single but multicore node.
 
  PARALLEL VERSION RUNNING ON        4 PROCESSORS IN        1 NODES.
 
- EXECUTION OF GAMESS BEGUN 14:21:42 07-NOV-2026    
+ EXECUTION OF GAMESS BEGUN 15:52:03 09-NOV-2026    
 
             ECHO OF THE FIRST FEW INPUT CARDS -
  INPUT CARD>!   File created by MacMolPlt 7.7.2                                             
@@ -615,8 +615,8 @@ Assuming a single but multicore node.
  A   =   48
 
  ..... DONE SETTING UP THE RUN .....
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.85%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.88%
 
 
           -----------------------------
@@ -700,7 +700,7 @@ Assuming a single but multicore node.
           ********************
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.98%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    74.61%
 
           -------------
           GUESS OPTIONS
@@ -720,7 +720,7 @@ Assuming a single but multicore node.
     19=A       20=A       21=A       22=A       23=A       24=A       25=A   
  ...... END OF INITIAL ORBITAL SELECTION ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.68%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.39%
 
                     ----------------------
                     AO INTEGRAL TECHNOLOGY
@@ -743,7 +743,7 @@ Assuming a single but multicore node.
  DIRECT TRANSFORMATION SKIPS AO INTEGRAL STORAGE ON DISK.
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    85.18%
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    84.31%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -791,54 +791,54 @@ Assuming a single but multicore node.
                       1          2          3          4          5
                   -11.2278   -11.2273   -11.2131   -11.2130    -1.0266
                      A          A          A          A          A   
-    1  C  1  S    0.003044  -0.012312  -0.697962   0.697758  -0.087044
-    2  C  1  S    0.001811  -0.003057  -0.067354   0.066430   0.093881
-    3  C  1  X   -0.000132  -0.000627  -0.000299  -0.000313   0.033435
-    4  C  1  Y    0.000505   0.000397  -0.000195  -0.000034  -0.038615
-    5  C  1  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-    6  C  1  S   -0.014716   0.011681   0.043798  -0.039757   0.202143
-    7  C  1  X   -0.007635   0.004786   0.003403  -0.000415   0.003127
-    8  C  1  Y    0.004917  -0.005694  -0.002337   0.002824  -0.007489
-    9  C  1  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   10  C  2  S   -0.698356   0.697764  -0.002588   0.011934  -0.136522
-   11  C  2  S   -0.070054   0.066199   0.000986  -0.000634   0.146842
-   12  C  2  X   -0.000646   0.000128  -0.000555  -0.000278   0.040452
-   13  C  2  Y   -0.000894   0.000064   0.000204  -0.000593   0.028511
-   14  C  2  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   15  C  2  S    0.060853  -0.034009  -0.011095   0.009770   0.316867
-   16  C  2  X    0.013072   0.004605   0.004140  -0.002819   0.010193
-   17  C  2  Y    0.010236  -0.002931  -0.008138   0.005618   0.007187
-   18  C  2  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   19  C  3  S    0.698356   0.697764   0.002588   0.011934  -0.136522
-   20  C  3  S    0.070054   0.066199  -0.000986  -0.000634   0.146842
-   21  C  3  X   -0.000646  -0.000128  -0.000555   0.000278  -0.040452
-   22  C  3  Y    0.000894   0.000064  -0.000204  -0.000593   0.028511
-   23  C  3  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   24  C  3  S   -0.060853  -0.034009   0.011095   0.009770   0.316867
-   25  C  3  X    0.013072  -0.004605   0.004140   0.002819  -0.010193
-   26  C  3  Y   -0.010236  -0.002931   0.008138   0.005618   0.007187
-   27  C  3  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   28  C  4  S   -0.003044  -0.012312   0.697962   0.697758  -0.087044
-   29  C  4  S   -0.001811  -0.003057   0.067354   0.066430   0.093881
-   30  C  4  X   -0.000132   0.000627  -0.000299   0.000313  -0.033435
-   31  C  4  Y   -0.000505   0.000397   0.000195  -0.000034  -0.038615
-   32  C  4  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   33  C  4  S    0.014716   0.011681  -0.043798  -0.039757   0.202143
-   34  C  4  X   -0.007635  -0.004786   0.003403   0.000415  -0.003127
-   35  C  4  Y   -0.004917  -0.005694   0.002337   0.002824  -0.007489
-   36  C  4  Z   -0.000000   0.000000  -0.000000   0.000000   0.000000
-   37  H  5  S    0.001215  -0.000726   0.000743  -0.000960   0.045371
-   38  H  5  S    0.001035  -0.000173  -0.010554   0.006951   0.011915
-   39  H  6  S    0.000098  -0.000521   0.000722  -0.000781   0.037390
-   40  H  6  S   -0.001323   0.001385  -0.007303   0.008549   0.000988
-   41  H  7  S    0.000818  -0.001224   0.000279  -0.000743   0.061659
-   42  H  7  S   -0.003949   0.008017  -0.000777   0.001374   0.007372
-   43  H  8  S   -0.000818  -0.001224  -0.000279  -0.000743   0.061659
-   44  H  8  S    0.003949   0.008017   0.000777   0.001374   0.007372
-   45  H  9  S   -0.001215  -0.000726  -0.000743  -0.000960   0.045371
-   46  H  9  S   -0.001035  -0.000173   0.010554   0.006951   0.011915
-   47  H 10  S   -0.000098  -0.000521  -0.000722  -0.000781   0.037390
-   48  H 10  S    0.001323   0.001385   0.007303   0.008549   0.000988
+    1  C  1  S   -0.003044  -0.012312  -0.697962   0.697758  -0.087044
+    2  C  1  S   -0.001811  -0.003057  -0.067354   0.066430   0.093881
+    3  C  1  X    0.000132  -0.000627  -0.000299  -0.000313   0.033435
+    4  C  1  Y   -0.000505   0.000397  -0.000195  -0.000034  -0.038615
+    5  C  1  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+    6  C  1  S    0.014716   0.011681   0.043798  -0.039757   0.202143
+    7  C  1  X    0.007635   0.004786   0.003403  -0.000415   0.003127
+    8  C  1  Y   -0.004917  -0.005694  -0.002337   0.002824  -0.007489
+    9  C  1  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   10  C  2  S    0.698356   0.697764  -0.002588   0.011934  -0.136522
+   11  C  2  S    0.070054   0.066199   0.000986  -0.000634   0.146842
+   12  C  2  X    0.000646   0.000128  -0.000555  -0.000278   0.040452
+   13  C  2  Y    0.000894   0.000064   0.000204  -0.000593   0.028511
+   14  C  2  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   15  C  2  S   -0.060853  -0.034009  -0.011095   0.009770   0.316867
+   16  C  2  X   -0.013072   0.004605   0.004140  -0.002819   0.010193
+   17  C  2  Y   -0.010236  -0.002931  -0.008138   0.005618   0.007187
+   18  C  2  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   19  C  3  S   -0.698356   0.697764   0.002588   0.011934  -0.136522
+   20  C  3  S   -0.070054   0.066199  -0.000986  -0.000634   0.146842
+   21  C  3  X    0.000646  -0.000128  -0.000555   0.000278  -0.040452
+   22  C  3  Y   -0.000894   0.000064  -0.000204  -0.000593   0.028511
+   23  C  3  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   24  C  3  S    0.060853  -0.034009   0.011095   0.009770   0.316867
+   25  C  3  X   -0.013072  -0.004605   0.004140   0.002819  -0.010193
+   26  C  3  Y    0.010236  -0.002931   0.008138   0.005618   0.007187
+   27  C  3  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   28  C  4  S    0.003044  -0.012312   0.697962   0.697758  -0.087044
+   29  C  4  S    0.001811  -0.003057   0.067354   0.066430   0.093881
+   30  C  4  X    0.000132   0.000627  -0.000299   0.000313  -0.033435
+   31  C  4  Y    0.000505   0.000397   0.000195  -0.000034  -0.038615
+   32  C  4  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   33  C  4  S   -0.014716   0.011681  -0.043798  -0.039757   0.202143
+   34  C  4  X    0.007635  -0.004786   0.003403   0.000415  -0.003127
+   35  C  4  Y    0.004917  -0.005694   0.002337   0.002824  -0.007489
+   36  C  4  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   37  H  5  S   -0.001215  -0.000726   0.000743  -0.000960   0.045371
+   38  H  5  S   -0.001035  -0.000173  -0.010554   0.006951   0.011915
+   39  H  6  S   -0.000098  -0.000521   0.000722  -0.000781   0.037390
+   40  H  6  S    0.001323   0.001385  -0.007303   0.008549   0.000988
+   41  H  7  S   -0.000818  -0.001224   0.000279  -0.000743   0.061659
+   42  H  7  S    0.003949   0.008017  -0.000777   0.001374   0.007372
+   43  H  8  S    0.000818  -0.001224  -0.000279  -0.000743   0.061659
+   44  H  8  S   -0.003949   0.008017   0.000777   0.001374   0.007372
+   45  H  9  S    0.001215  -0.000726  -0.000743  -0.000960   0.045371
+   46  H  9  S    0.001035  -0.000173   0.010554   0.006951   0.011915
+   47  H 10  S    0.000098  -0.000521  -0.000722  -0.000781   0.037390
+   48  H 10  S   -0.001323   0.001385   0.007303   0.008549   0.000988
 
                       6          7          8          9         10
                    -0.9260    -0.8300    -0.7162    -0.6372    -0.5694
@@ -847,38 +847,38 @@ Assuming a single but multicore node.
     2  C  1  S   -0.138876   0.118026  -0.066813   0.012906  -0.006993
     3  C  1  X   -0.006400  -0.025475   0.045512  -0.184160  -0.005141
     4  C  1  Y    0.032872   0.053393  -0.126888  -0.053708   0.234814
-    5  C  1  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+    5  C  1  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
     6  C  1  S   -0.347993   0.338623  -0.220103   0.058101   0.002735
     7  C  1  X    0.005791  -0.006366   0.030365  -0.126085   0.015063
     8  C  1  Y    0.007195   0.024888  -0.076853  -0.041352   0.170702
-    9  C  1  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+    9  C  1  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    10  C  2  S    0.084785   0.078523  -0.100788   0.004719   0.011015
    11  C  2  S   -0.085388  -0.082860   0.102333  -0.006733  -0.011705
    12  C  2  X    0.077952  -0.090897  -0.091909  -0.160737   0.078971
    13  C  2  Y   -0.043295   0.096321  -0.072059  -0.135895  -0.209129
-   14  C  2  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+   14  C  2  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    15  C  2  S   -0.242017  -0.230952   0.344515  -0.004727  -0.026569
    16  C  2  X    0.010724  -0.037902  -0.046329  -0.102788   0.047595
    17  C  2  Y   -0.022375   0.044770  -0.056570  -0.098099  -0.158392
-   18  C  2  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+   18  C  2  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    19  C  3  S   -0.084785   0.078523   0.100788   0.004719   0.011015
    20  C  3  S    0.085388  -0.082860  -0.102333  -0.006733  -0.011705
    21  C  3  X    0.077952   0.090897  -0.091909   0.160737  -0.078971
    22  C  3  Y    0.043295   0.096321   0.072059  -0.135895  -0.209129
-   23  C  3  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+   23  C  3  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    24  C  3  S    0.242017  -0.230952  -0.344515  -0.004727  -0.026569
    25  C  3  X    0.010724   0.037902  -0.046329   0.102788  -0.047595
    26  C  3  Y    0.022375   0.044770   0.056570  -0.098099  -0.158392
-   27  C  3  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+   27  C  3  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    28  C  4  S   -0.132316  -0.113339  -0.065111  -0.014801   0.004975
    29  C  4  S    0.138876   0.118026   0.066813   0.012906  -0.006993
    30  C  4  X   -0.006400   0.025475   0.045512   0.184160   0.005141
    31  C  4  Y   -0.032872   0.053393   0.126888  -0.053708   0.234814
-   32  C  4  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+   32  C  4  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    33  C  4  S    0.347993   0.338623   0.220103   0.058101   0.002735
    34  C  4  X    0.005791   0.006366   0.030365   0.126085  -0.015063
    35  C  4  Y   -0.007195   0.024888   0.076853  -0.041352   0.170702
-   36  C  4  Z   -0.000000   0.000000  -0.000000   0.000000  -0.000000
+   36  C  4  Z    0.000000   0.000000  -0.000000   0.000000  -0.000000
    37  H  5  S   -0.070476   0.100439  -0.095819  -0.080303   0.142783
    38  H  5  S   -0.014523   0.053145  -0.060535  -0.072042   0.141551
    39  H  6  S   -0.079321   0.090862  -0.077831   0.124394  -0.002663
@@ -895,106 +895,106 @@ Assuming a single but multicore node.
                      11         12         13         14         15
                    -0.5468    -0.5028    -0.4983    -0.4002    -0.2826
                      A          A          A          A          A   
-    1  C  1  S   -0.011439  -0.003401  -0.012663  -0.000000   0.000000
-    2  C  1  S    0.011859   0.002882   0.015497  -0.000000   0.000000
-    3  C  1  X    0.264556   0.174376   0.012817  -0.000000   0.000000
-    4  C  1  Y    0.041746  -0.037836  -0.230587  -0.000000   0.000000
-    5  C  1  Z   -0.000000   0.000000   0.000000   0.174193   0.260273
-    6  C  1  S    0.026884   0.005306   0.007799  -0.000000   0.000000
-    7  C  1  X    0.216132   0.175238  -0.023852  -0.000000   0.000000
-    8  C  1  Y    0.051658  -0.018358  -0.185567  -0.000000   0.000000
-    9  C  1  Z   -0.000000   0.000000   0.000000   0.215406   0.351811
-   10  C  2  S   -0.020393   0.010303  -0.003257  -0.000000   0.000000
-   11  C  2  S    0.020068  -0.011758   0.000428  -0.000000   0.000000
-   12  C  2  X    0.002382  -0.284484  -0.012752  -0.000000   0.000000
-   13  C  2  Y    0.096290  -0.009227   0.223215  -0.000000   0.000000
-   14  C  2  Z   -0.000000   0.000000   0.000000   0.251253   0.185926
-   15  C  2  S    0.066455  -0.021285   0.015850  -0.000000   0.000000
-   16  C  2  X   -0.010638  -0.228747   0.029501  -0.000000   0.000000
-   17  C  2  Y    0.075687  -0.030092   0.238726  -0.000000   0.000000
-   18  C  2  Z   -0.000000   0.000000   0.000000   0.289964   0.267015
-   19  C  3  S    0.020393   0.010303   0.003257  -0.000000   0.000000
-   20  C  3  S   -0.020068  -0.011758  -0.000428  -0.000000   0.000000
-   21  C  3  X    0.002382   0.284484  -0.012752  -0.000000   0.000000
-   22  C  3  Y   -0.096290  -0.009227  -0.223215  -0.000000   0.000000
-   23  C  3  Z   -0.000000   0.000000   0.000000   0.251253  -0.185926
-   24  C  3  S   -0.066455  -0.021285  -0.015850  -0.000000   0.000000
-   25  C  3  X   -0.010638   0.228747   0.029501  -0.000000   0.000000
-   26  C  3  Y   -0.075687  -0.030092  -0.238726  -0.000000   0.000000
-   27  C  3  Z   -0.000000   0.000000   0.000000   0.289964  -0.267015
-   28  C  4  S    0.011439  -0.003401   0.012663  -0.000000   0.000000
-   29  C  4  S   -0.011859   0.002882  -0.015497  -0.000000   0.000000
-   30  C  4  X    0.264556  -0.174376   0.012817  -0.000000   0.000000
-   31  C  4  Y   -0.041746  -0.037836   0.230587  -0.000000   0.000000
-   32  C  4  Z   -0.000000   0.000000   0.000000   0.174193  -0.260273
-   33  C  4  S   -0.026884   0.005306  -0.007799  -0.000000   0.000000
-   34  C  4  X    0.216132  -0.175238  -0.023852  -0.000000   0.000000
-   35  C  4  Y   -0.051658  -0.018358   0.185567  -0.000000   0.000000
-   36  C  4  Z   -0.000000   0.000000   0.000000   0.215406  -0.351811
-   37  H  5  S    0.117583   0.057474  -0.126310  -0.000000   0.000000
-   38  H  5  S    0.096347   0.055981  -0.123977  -0.000000   0.000000
-   39  H  6  S   -0.175572  -0.130934   0.005111  -0.000000   0.000000
-   40  H  6  S   -0.166754  -0.123894  -0.009090  -0.000000   0.000000
-   41  H  7  S   -0.038387   0.105028  -0.143589  -0.000000   0.000000
-   42  H  7  S   -0.041784   0.103057  -0.124485  -0.000000   0.000000
-   43  H  8  S    0.038387   0.105028   0.143589  -0.000000   0.000000
-   44  H  8  S    0.041784   0.103057   0.124485  -0.000000   0.000000
-   45  H  9  S   -0.117583   0.057474   0.126310  -0.000000   0.000000
-   46  H  9  S   -0.096347   0.055981   0.123977  -0.000000   0.000000
-   47  H 10  S    0.175572  -0.130934  -0.005111  -0.000000   0.000000
-   48  H 10  S    0.166754  -0.123894   0.009090  -0.000000   0.000000
+    1  C  1  S   -0.011439  -0.003401  -0.012663   0.000000  -0.000000
+    2  C  1  S    0.011859   0.002882   0.015497   0.000000  -0.000000
+    3  C  1  X    0.264556   0.174376   0.012817   0.000000  -0.000000
+    4  C  1  Y    0.041746  -0.037836  -0.230587   0.000000  -0.000000
+    5  C  1  Z    0.000000   0.000000   0.000000   0.174193   0.260273
+    6  C  1  S    0.026884   0.005306   0.007799   0.000000  -0.000000
+    7  C  1  X    0.216132   0.175238  -0.023852   0.000000  -0.000000
+    8  C  1  Y    0.051658  -0.018358  -0.185567   0.000000  -0.000000
+    9  C  1  Z    0.000000   0.000000   0.000000   0.215406   0.351811
+   10  C  2  S   -0.020393   0.010303  -0.003257   0.000000  -0.000000
+   11  C  2  S    0.020068  -0.011758   0.000428   0.000000  -0.000000
+   12  C  2  X    0.002382  -0.284484  -0.012752   0.000000  -0.000000
+   13  C  2  Y    0.096290  -0.009227   0.223215   0.000000  -0.000000
+   14  C  2  Z    0.000000   0.000000   0.000000   0.251253   0.185926
+   15  C  2  S    0.066455  -0.021285   0.015850   0.000000  -0.000000
+   16  C  2  X   -0.010638  -0.228747   0.029501   0.000000  -0.000000
+   17  C  2  Y    0.075687  -0.030092   0.238726   0.000000  -0.000000
+   18  C  2  Z    0.000000   0.000000   0.000000   0.289964   0.267015
+   19  C  3  S    0.020393   0.010303   0.003257   0.000000  -0.000000
+   20  C  3  S   -0.020068  -0.011758  -0.000428   0.000000  -0.000000
+   21  C  3  X    0.002382   0.284484  -0.012752   0.000000  -0.000000
+   22  C  3  Y   -0.096290  -0.009227  -0.223215   0.000000  -0.000000
+   23  C  3  Z    0.000000   0.000000   0.000000   0.251253  -0.185926
+   24  C  3  S   -0.066455  -0.021285  -0.015850   0.000000  -0.000000
+   25  C  3  X   -0.010638   0.228747   0.029501   0.000000  -0.000000
+   26  C  3  Y   -0.075687  -0.030092  -0.238726   0.000000  -0.000000
+   27  C  3  Z    0.000000   0.000000   0.000000   0.289964  -0.267015
+   28  C  4  S    0.011439  -0.003401   0.012663   0.000000  -0.000000
+   29  C  4  S   -0.011859   0.002882  -0.015497   0.000000  -0.000000
+   30  C  4  X    0.264556  -0.174376   0.012817   0.000000  -0.000000
+   31  C  4  Y   -0.041746  -0.037836   0.230587   0.000000  -0.000000
+   32  C  4  Z    0.000000   0.000000   0.000000   0.174193  -0.260273
+   33  C  4  S   -0.026884   0.005306  -0.007799   0.000000  -0.000000
+   34  C  4  X    0.216132  -0.175238  -0.023852   0.000000  -0.000000
+   35  C  4  Y   -0.051658  -0.018358   0.185567   0.000000  -0.000000
+   36  C  4  Z    0.000000   0.000000   0.000000   0.215406  -0.351811
+   37  H  5  S    0.117583   0.057474  -0.126310   0.000000  -0.000000
+   38  H  5  S    0.096347   0.055981  -0.123977   0.000000  -0.000000
+   39  H  6  S   -0.175572  -0.130934   0.005111   0.000000  -0.000000
+   40  H  6  S   -0.166754  -0.123894  -0.009090   0.000000  -0.000000
+   41  H  7  S   -0.038387   0.105028  -0.143589   0.000000  -0.000000
+   42  H  7  S   -0.041784   0.103057  -0.124485   0.000000  -0.000000
+   43  H  8  S    0.038387   0.105028   0.143589   0.000000  -0.000000
+   44  H  8  S    0.041784   0.103057   0.124485   0.000000  -0.000000
+   45  H  9  S   -0.117583   0.057474   0.126310   0.000000  -0.000000
+   46  H  9  S   -0.096347   0.055981   0.123977   0.000000  -0.000000
+   47  H 10  S    0.175572  -0.130934  -0.005111   0.000000  -0.000000
+   48  H 10  S    0.166754  -0.123894   0.009090   0.000000  -0.000000
 
                      16         17         18         19         20
                     0.0765     0.2193     0.2467     0.2608     0.3154
                      A          A          A          A          A   
-    1  C  1  S    0.000000  -0.000000  -0.111284   0.007838   0.070227
-    2  C  1  S    0.000000  -0.000000   0.054481  -0.009113  -0.046099
-    3  C  1  X    0.000000  -0.000000   0.015017   0.095556   0.010801
-    4  C  1  Y    0.000000  -0.000000   0.107444   0.044681   0.050232
-    5  C  1  Z    0.252645   0.187002  -0.000000   0.000000  -0.000000
-    6  C  1  S    0.000000  -0.000000   1.192576  -0.088870  -0.627564
-    7  C  1  X    0.000000  -0.000000   0.010127   0.414573   0.183284
-    8  C  1  Y    0.000000  -0.000000   0.397866   0.108671   0.203757
-    9  C  1  Z    0.491048   0.428635  -0.000000   0.000000  -0.000000
-   10  C  2  S    0.000000  -0.000000   0.014710   0.061236  -0.128929
-   11  C  2  S    0.000000  -0.000000  -0.012830  -0.025377   0.074796
-   12  C  2  X    0.000000  -0.000000   0.013010   0.076891   0.010187
-   13  C  2  Y    0.000000  -0.000000  -0.045786   0.118843  -0.057842
-   14  C  2  Z   -0.187122  -0.291091  -0.000000   0.000000  -0.000000
-   15  C  2  S    0.000000  -0.000000  -0.063147  -0.753829   1.314552
-   16  C  2  X    0.000000  -0.000000   0.036148   0.271167  -0.106294
-   17  C  2  Y    0.000000  -0.000000  -0.135889   0.366653  -0.423301
-   18  C  2  Z   -0.334410  -0.649106  -0.000000   0.000000  -0.000000
-   19  C  3  S    0.000000  -0.000000   0.014710   0.061236   0.128929
-   20  C  3  S    0.000000  -0.000000  -0.012830  -0.025377  -0.074796
-   21  C  3  X    0.000000  -0.000000  -0.013010  -0.076891   0.010187
-   22  C  3  Y    0.000000  -0.000000  -0.045786   0.118843   0.057842
-   23  C  3  Z   -0.187122   0.291091  -0.000000   0.000000  -0.000000
-   24  C  3  S    0.000000  -0.000000  -0.063147  -0.753829  -1.314552
-   25  C  3  X    0.000000  -0.000000  -0.036148  -0.271167  -0.106294
-   26  C  3  Y    0.000000  -0.000000  -0.135889   0.366653   0.423301
-   27  C  3  Z   -0.334410   0.649106  -0.000000   0.000000  -0.000000
-   28  C  4  S    0.000000  -0.000000  -0.111284   0.007838  -0.070227
-   29  C  4  S    0.000000  -0.000000   0.054481  -0.009113   0.046099
-   30  C  4  X    0.000000  -0.000000  -0.015017  -0.095556   0.010801
-   31  C  4  Y    0.000000  -0.000000   0.107444   0.044681  -0.050232
-   32  C  4  Z    0.252645  -0.187002  -0.000000   0.000000  -0.000000
-   33  C  4  S    0.000000  -0.000000   1.192576  -0.088870   0.627564
-   34  C  4  X    0.000000  -0.000000  -0.010127  -0.414573   0.183284
-   35  C  4  Y    0.000000  -0.000000   0.397866   0.108671  -0.203757
-   36  C  4  Z    0.491048  -0.428635  -0.000000   0.000000  -0.000000
-   37  H  5  S    0.000000  -0.000000  -0.040330  -0.034738   0.013980
-   38  H  5  S    0.000000  -0.000000  -0.900016  -0.372579   0.116398
-   39  H  6  S    0.000000  -0.000000  -0.049663   0.036767   0.031649
-   40  H  6  S    0.000000  -0.000000  -0.606887   0.569371   0.538536
-   41  H  7  S    0.000000  -0.000000   0.008645   0.060872  -0.045426
-   42  H  7  S    0.000000  -0.000000  -0.040173   0.998896  -1.101571
-   43  H  8  S    0.000000  -0.000000   0.008645   0.060872   0.045426
-   44  H  8  S    0.000000  -0.000000  -0.040173   0.998896   1.101571
-   45  H  9  S    0.000000  -0.000000  -0.040330  -0.034738  -0.013980
-   46  H  9  S    0.000000  -0.000000  -0.900016  -0.372579  -0.116398
-   47  H 10  S    0.000000  -0.000000  -0.049663   0.036767  -0.031649
-   48  H 10  S    0.000000  -0.000000  -0.606887   0.569371  -0.538536
+    1  C  1  S   -0.000000   0.000000  -0.111284   0.007838   0.070227
+    2  C  1  S   -0.000000   0.000000   0.054481  -0.009113  -0.046099
+    3  C  1  X   -0.000000   0.000000   0.015017   0.095556   0.010801
+    4  C  1  Y   -0.000000   0.000000   0.107444   0.044681   0.050232
+    5  C  1  Z    0.252645   0.187002  -0.000000   0.000000   0.000000
+    6  C  1  S   -0.000000   0.000000   1.192576  -0.088870  -0.627564
+    7  C  1  X   -0.000000   0.000000   0.010127   0.414573   0.183284
+    8  C  1  Y   -0.000000   0.000000   0.397866   0.108671   0.203757
+    9  C  1  Z    0.491048   0.428635  -0.000000   0.000000   0.000000
+   10  C  2  S   -0.000000   0.000000   0.014710   0.061236  -0.128929
+   11  C  2  S   -0.000000   0.000000  -0.012830  -0.025377   0.074796
+   12  C  2  X   -0.000000   0.000000   0.013010   0.076891   0.010187
+   13  C  2  Y   -0.000000   0.000000  -0.045786   0.118843  -0.057842
+   14  C  2  Z   -0.187122  -0.291091  -0.000000   0.000000   0.000000
+   15  C  2  S   -0.000000   0.000000  -0.063147  -0.753829   1.314552
+   16  C  2  X   -0.000000   0.000000   0.036148   0.271167  -0.106294
+   17  C  2  Y   -0.000000   0.000000  -0.135889   0.366653  -0.423301
+   18  C  2  Z   -0.334410  -0.649106  -0.000000   0.000000   0.000000
+   19  C  3  S   -0.000000   0.000000   0.014710   0.061236   0.128929
+   20  C  3  S   -0.000000   0.000000  -0.012830  -0.025377  -0.074796
+   21  C  3  X   -0.000000   0.000000  -0.013010  -0.076891   0.010187
+   22  C  3  Y   -0.000000   0.000000  -0.045786   0.118843   0.057842
+   23  C  3  Z   -0.187122   0.291091  -0.000000   0.000000   0.000000
+   24  C  3  S   -0.000000   0.000000  -0.063147  -0.753829  -1.314552
+   25  C  3  X   -0.000000   0.000000  -0.036148  -0.271167  -0.106294
+   26  C  3  Y   -0.000000   0.000000  -0.135889   0.366653   0.423301
+   27  C  3  Z   -0.334410   0.649106  -0.000000   0.000000   0.000000
+   28  C  4  S   -0.000000   0.000000  -0.111284   0.007838  -0.070227
+   29  C  4  S   -0.000000   0.000000   0.054481  -0.009113   0.046099
+   30  C  4  X   -0.000000   0.000000  -0.015017  -0.095556   0.010801
+   31  C  4  Y   -0.000000   0.000000   0.107444   0.044681  -0.050232
+   32  C  4  Z    0.252645  -0.187002  -0.000000   0.000000   0.000000
+   33  C  4  S   -0.000000   0.000000   1.192576  -0.088870   0.627564
+   34  C  4  X   -0.000000   0.000000  -0.010127  -0.414573   0.183284
+   35  C  4  Y   -0.000000   0.000000   0.397866   0.108671  -0.203757
+   36  C  4  Z    0.491048  -0.428635  -0.000000   0.000000   0.000000
+   37  H  5  S   -0.000000   0.000000  -0.040330  -0.034738   0.013980
+   38  H  5  S   -0.000000   0.000000  -0.900016  -0.372579   0.116398
+   39  H  6  S   -0.000000   0.000000  -0.049663   0.036767   0.031649
+   40  H  6  S   -0.000000   0.000000  -0.606887   0.569371   0.538536
+   41  H  7  S   -0.000000   0.000000   0.008645   0.060872  -0.045426
+   42  H  7  S   -0.000000   0.000000  -0.040173   0.998896  -1.101571
+   43  H  8  S   -0.000000   0.000000   0.008645   0.060872   0.045426
+   44  H  8  S   -0.000000   0.000000  -0.040173   0.998896   1.101571
+   45  H  9  S   -0.000000   0.000000  -0.040330  -0.034738  -0.013980
+   46  H  9  S   -0.000000   0.000000  -0.900016  -0.372579  -0.116398
+   47  H 10  S   -0.000000   0.000000  -0.049663   0.036767  -0.031649
+   48  H 10  S   -0.000000   0.000000  -0.606887   0.569371  -0.538536
 
                      21         22         23         24         25
                     0.3233     0.3651     0.3782     0.4005     0.5164
@@ -1003,38 +1003,38 @@ Assuming a single but multicore node.
     2  C  1  S   -0.013287  -0.017094   0.024972  -0.012536   0.014688
     3  C  1  X    0.199964   0.149481   0.046583  -0.118370   0.127910
     4  C  1  Y   -0.016392   0.128933   0.114227   0.144658   0.014723
-    5  C  1  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+    5  C  1  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
     6  C  1  S   -0.818427  -0.509800   1.043579  -0.751976   0.892420
     7  C  1  X    0.648885   0.674563   0.348324  -0.794998   1.050064
     8  C  1  Y   -0.016998   0.652711   0.392723   0.848180  -0.413621
-    9  C  1  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+    9  C  1  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    10  C  2  S    0.022120  -0.056158  -0.044820  -0.062050   0.101416
    11  C  2  S    0.002442   0.008064   0.012511   0.020413  -0.020643
    12  C  2  X    0.061111  -0.127684   0.161106  -0.040535  -0.132299
    13  C  2  Y    0.104799  -0.062218  -0.038146   0.177128  -0.216958
-   14  C  2  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   14  C  2  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    15  C  2  S   -0.403200   0.888957   0.642503   0.902587  -1.448043
    16  C  2  X    0.109261  -0.506784   0.812585  -0.376345  -0.983639
    17  C  2  Y    0.342090  -0.164528  -0.216120   0.907635  -1.401095
-   18  C  2  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   18  C  2  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    19  C  3  S   -0.022120  -0.056158   0.044820  -0.062050  -0.101416
    20  C  3  S   -0.002442   0.008064  -0.012511   0.020413   0.020643
    21  C  3  X    0.061111   0.127684   0.161106   0.040535  -0.132299
    22  C  3  Y   -0.104799  -0.062218   0.038146   0.177128   0.216958
-   23  C  3  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   23  C  3  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    24  C  3  S    0.403200   0.888957  -0.642503   0.902587   1.448043
    25  C  3  X    0.109261   0.506784   0.812585   0.376345  -0.983639
    26  C  3  Y   -0.342090  -0.164528   0.216120   0.907635   1.401095
-   27  C  3  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   27  C  3  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    28  C  4  S   -0.058705   0.041502   0.072412   0.059277   0.060231
    29  C  4  S    0.013287  -0.017094  -0.024972  -0.012536  -0.014688
    30  C  4  X    0.199964  -0.149481   0.046583   0.118370   0.127910
    31  C  4  Y    0.016392   0.128933  -0.114227   0.144658  -0.014723
-   32  C  4  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   32  C  4  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    33  C  4  S    0.818427  -0.509800  -1.043579  -0.751976  -0.892420
    34  C  4  X    0.648885  -0.674563   0.348324   0.794998   1.050064
    35  C  4  Y    0.016998   0.652711  -0.392723   0.848180   0.413621
-   36  C  4  Z   -0.000000   0.000000   0.000000   0.000000   0.000000
+   36  C  4  Z   -0.000000   0.000000  -0.000000  -0.000000  -0.000000
    37  H  5  S    0.022104   0.007824  -0.093839  -0.005860   0.072408
    38  H  5  S    0.009302  -0.661066  -1.272376   0.000260  -0.579031
    39  H  6  S    0.029399   0.000849   0.046417  -0.024858  -0.026271
@@ -1103,54 +1103,54 @@ Assuming a single but multicore node.
                      31         32         33         34         35
                     0.9964     1.0198     1.0420     1.0546     1.1026
                      A          A          A          A          A   
-    1  C  1  S   -0.003575   0.030821   0.000000   0.000000  -0.000000
-    2  C  1  S   -0.023626   0.075780   0.000000   0.000000  -0.000000
-    3  C  1  X    0.162921  -0.160649   0.000000   0.000000  -0.000000
-    4  C  1  Y   -0.560451   0.057578   0.000000   0.000000  -0.000000
-    5  C  1  Z    0.000000   0.000000   0.725872  -0.483965   0.285546
-    6  C  1  S    0.225135   0.209242   0.000000   0.000000  -0.000000
-    7  C  1  X   -0.211325   0.356943   0.000000   0.000000  -0.000000
-    8  C  1  Y    0.820984  -0.364951   0.000000   0.000000  -0.000000
-    9  C  1  Z    0.000000   0.000000  -0.633495   0.559599  -0.489601
-   10  C  2  S    0.002835   0.008239   0.000000   0.000000  -0.000000
-   11  C  2  S   -0.014218   0.066603   0.000000   0.000000  -0.000000
-   12  C  2  X   -0.321974  -0.454939   0.000000   0.000000  -0.000000
-   13  C  2  Y    0.235316   0.299510   0.000000   0.000000  -0.000000
-   14  C  2  Z    0.000000   0.000000   0.283021   0.617139  -0.729631
-   15  C  2  S    0.206437   0.031881   0.000000   0.000000  -0.000000
-   16  C  2  X    0.281229   0.754434   0.000000   0.000000  -0.000000
-   17  C  2  Y   -0.181619  -0.477208   0.000000   0.000000  -0.000000
-   18  C  2  Z    0.000000   0.000000  -0.187366  -0.581391   1.046929
-   19  C  3  S    0.002835  -0.008239   0.000000   0.000000  -0.000000
-   20  C  3  S   -0.014218  -0.066603   0.000000   0.000000  -0.000000
-   21  C  3  X    0.321974  -0.454939   0.000000   0.000000  -0.000000
-   22  C  3  Y    0.235316  -0.299510   0.000000   0.000000  -0.000000
-   23  C  3  Z    0.000000   0.000000  -0.283021   0.617139   0.729631
-   24  C  3  S    0.206437  -0.031881   0.000000   0.000000  -0.000000
-   25  C  3  X   -0.281229   0.754434   0.000000   0.000000  -0.000000
-   26  C  3  Y   -0.181619   0.477208   0.000000   0.000000  -0.000000
-   27  C  3  Z    0.000000   0.000000   0.187366  -0.581391  -1.046929
-   28  C  4  S   -0.003575  -0.030821   0.000000   0.000000  -0.000000
-   29  C  4  S   -0.023626  -0.075780   0.000000   0.000000  -0.000000
-   30  C  4  X   -0.162921  -0.160649   0.000000   0.000000  -0.000000
-   31  C  4  Y   -0.560451  -0.057578   0.000000   0.000000  -0.000000
-   32  C  4  Z    0.000000   0.000000  -0.725872  -0.483965  -0.285546
-   33  C  4  S    0.225135  -0.209242   0.000000   0.000000  -0.000000
-   34  C  4  X    0.211325   0.356943   0.000000   0.000000  -0.000000
-   35  C  4  Y    0.820984   0.364951   0.000000   0.000000  -0.000000
-   36  C  4  Z    0.000000   0.000000   0.633495   0.559599   0.489601
-   37  H  5  S   -0.290197   0.283308   0.000000   0.000000  -0.000000
-   38  H  5  S   -0.072747  -0.106885   0.000000   0.000000  -0.000000
-   39  H  6  S   -0.061164   0.501352   0.000000   0.000000  -0.000000
-   40  H  6  S   -0.066981  -0.169106   0.000000   0.000000  -0.000000
-   41  H  7  S   -0.018795   0.236770   0.000000   0.000000  -0.000000
-   42  H  7  S   -0.006830  -0.150748   0.000000   0.000000  -0.000000
-   43  H  8  S   -0.018795  -0.236770   0.000000   0.000000  -0.000000
-   44  H  8  S   -0.006830   0.150748   0.000000   0.000000  -0.000000
-   45  H  9  S   -0.290197  -0.283308   0.000000   0.000000  -0.000000
-   46  H  9  S   -0.072747   0.106885   0.000000   0.000000  -0.000000
-   47  H 10  S   -0.061164  -0.501352   0.000000   0.000000  -0.000000
-   48  H 10  S   -0.066981   0.169106   0.000000   0.000000  -0.000000
+    1  C  1  S   -0.003575   0.030821   0.000000  -0.000000   0.000000
+    2  C  1  S   -0.023626   0.075780   0.000000  -0.000000   0.000000
+    3  C  1  X    0.162921  -0.160649   0.000000  -0.000000   0.000000
+    4  C  1  Y   -0.560451   0.057578   0.000000  -0.000000   0.000000
+    5  C  1  Z    0.000000   0.000000  -0.725872  -0.483965   0.285546
+    6  C  1  S    0.225135   0.209242   0.000000  -0.000000   0.000000
+    7  C  1  X   -0.211325   0.356943   0.000000  -0.000000   0.000000
+    8  C  1  Y    0.820984  -0.364951   0.000000  -0.000000   0.000000
+    9  C  1  Z    0.000000   0.000000   0.633495   0.559599  -0.489601
+   10  C  2  S    0.002835   0.008239   0.000000  -0.000000   0.000000
+   11  C  2  S   -0.014218   0.066603   0.000000  -0.000000   0.000000
+   12  C  2  X   -0.321974  -0.454939   0.000000  -0.000000   0.000000
+   13  C  2  Y    0.235316   0.299510   0.000000  -0.000000   0.000000
+   14  C  2  Z    0.000000   0.000000  -0.283021   0.617139  -0.729631
+   15  C  2  S    0.206437   0.031881   0.000000  -0.000000   0.000000
+   16  C  2  X    0.281229   0.754434   0.000000  -0.000000   0.000000
+   17  C  2  Y   -0.181619  -0.477208   0.000000  -0.000000   0.000000
+   18  C  2  Z    0.000000   0.000000   0.187366  -0.581391   1.046929
+   19  C  3  S    0.002835  -0.008239   0.000000  -0.000000   0.000000
+   20  C  3  S   -0.014218  -0.066603   0.000000  -0.000000   0.000000
+   21  C  3  X    0.321974  -0.454939   0.000000  -0.000000   0.000000
+   22  C  3  Y    0.235316  -0.299510   0.000000  -0.000000   0.000000
+   23  C  3  Z    0.000000   0.000000   0.283021   0.617139   0.729631
+   24  C  3  S    0.206437  -0.031881   0.000000  -0.000000   0.000000
+   25  C  3  X   -0.281229   0.754434   0.000000  -0.000000   0.000000
+   26  C  3  Y   -0.181619   0.477208   0.000000  -0.000000   0.000000
+   27  C  3  Z    0.000000   0.000000  -0.187366  -0.581391  -1.046929
+   28  C  4  S   -0.003575  -0.030821   0.000000  -0.000000   0.000000
+   29  C  4  S   -0.023626  -0.075780   0.000000  -0.000000   0.000000
+   30  C  4  X   -0.162921  -0.160649   0.000000  -0.000000   0.000000
+   31  C  4  Y   -0.560451  -0.057578   0.000000  -0.000000   0.000000
+   32  C  4  Z    0.000000   0.000000   0.725872  -0.483965  -0.285546
+   33  C  4  S    0.225135  -0.209242   0.000000  -0.000000   0.000000
+   34  C  4  X    0.211325   0.356943   0.000000  -0.000000   0.000000
+   35  C  4  Y    0.820984   0.364951   0.000000  -0.000000   0.000000
+   36  C  4  Z    0.000000   0.000000  -0.633495   0.559599   0.489601
+   37  H  5  S   -0.290197   0.283308   0.000000  -0.000000   0.000000
+   38  H  5  S   -0.072747  -0.106885   0.000000  -0.000000   0.000000
+   39  H  6  S   -0.061164   0.501352   0.000000  -0.000000   0.000000
+   40  H  6  S   -0.066981  -0.169106   0.000000  -0.000000   0.000000
+   41  H  7  S   -0.018795   0.236770   0.000000  -0.000000   0.000000
+   42  H  7  S   -0.006830  -0.150748   0.000000  -0.000000   0.000000
+   43  H  8  S   -0.018795  -0.236770   0.000000  -0.000000   0.000000
+   44  H  8  S   -0.006830   0.150748   0.000000  -0.000000   0.000000
+   45  H  9  S   -0.290197  -0.283308   0.000000  -0.000000   0.000000
+   46  H  9  S   -0.072747   0.106885   0.000000  -0.000000   0.000000
+   47  H 10  S   -0.061164  -0.501352   0.000000  -0.000000   0.000000
+   48  H 10  S   -0.066981   0.169106   0.000000  -0.000000   0.000000
 
                      36         37         38         39         40
                     1.1200     1.2369     1.2688     1.3349     1.3393
@@ -1159,38 +1159,38 @@ Assuming a single but multicore node.
     2  C  1  S    0.230016   0.003491  -0.009565  -0.107348   0.113337
     3  C  1  X    0.188264   0.340656   0.563023  -0.108134  -0.416139
     4  C  1  Y   -0.174987   0.167095   0.216212  -0.402640  -0.456968
-    5  C  1  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+    5  C  1  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
     6  C  1  S   -0.130733  -0.266915  -0.048507  -0.112562  -0.248509
     7  C  1  X   -0.136241  -0.815832  -0.940866   0.047932   0.648376
     8  C  1  Y   -0.002739  -0.298154  -0.292110   0.721798   1.057898
-    9  C  1  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+    9  C  1  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    10  C  2  S    0.001985  -0.029694  -0.010720  -0.017711  -0.015175
    11  C  2  S    0.252989   0.042724   0.063687   0.010916   0.119635
    12  C  2  X    0.090033  -0.345906  -0.154603  -0.027144  -0.059631
    13  C  2  Y    0.219094  -0.456748  -0.297133  -0.440946  -0.253013
-   14  C  2  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+   14  C  2  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    15  C  2  S   -0.115220   0.407410  -0.214003   0.198390  -0.146665
    16  C  2  X    0.003876   1.029959   0.322608  -0.166653  -0.458658
    17  C  2  Y   -0.110684   1.039807   0.552471   0.645141   0.629763
-   18  C  2  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+   18  C  2  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    19  C  3  S    0.001985   0.029694  -0.010720  -0.017711   0.015175
    20  C  3  S    0.252989  -0.042724   0.063687   0.010916  -0.119635
    21  C  3  X   -0.090033  -0.345906   0.154603   0.027144  -0.059631
    22  C  3  Y    0.219094   0.456748  -0.297133  -0.440946   0.253013
-   23  C  3  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+   23  C  3  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    24  C  3  S   -0.115220  -0.407410  -0.214003   0.198390   0.146665
    25  C  3  X   -0.003876   1.029959  -0.322608   0.166653  -0.458658
    26  C  3  Y   -0.110684  -1.039807   0.552471   0.645141  -0.629763
-   27  C  3  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+   27  C  3  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    28  C  4  S    0.018403  -0.011515   0.004592   0.028362  -0.004736
    29  C  4  S    0.230016  -0.003491  -0.009565  -0.107348  -0.113337
    30  C  4  X   -0.188264   0.340656  -0.563023   0.108134  -0.416139
    31  C  4  Y   -0.174987  -0.167095   0.216212  -0.402640   0.456968
-   32  C  4  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+   32  C  4  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    33  C  4  S   -0.130733   0.266915  -0.048507  -0.112562   0.248509
    34  C  4  X    0.136241  -0.815832   0.940866  -0.047932   0.648376
    35  C  4  Y   -0.002739   0.298154  -0.292110   0.721798  -1.057898
-   36  C  4  Z   -0.000000  -0.000000  -0.000000   0.000000   0.000000
+   36  C  4  Z   -0.000000  -0.000000  -0.000000  -0.000000   0.000000
    37  H  5  S    0.451775  -0.041344  -0.337188   0.467198   0.523357
    38  H  5  S   -0.181893   0.465564   0.632054  -0.671240  -1.328698
    39  H  6  S    0.482747   0.303124   0.480082   0.166642  -0.162149
@@ -1211,38 +1211,38 @@ Assuming a single but multicore node.
     2  C  1  S    0.022013  -0.069173  -0.391232  -0.655841   0.318203
     3  C  1  X   -0.329468   0.501519  -0.082319   0.213959   0.135060
     4  C  1  Y    0.299658  -0.096185  -0.104902   0.062293   0.210047
-    5  C  1  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+    5  C  1  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
     6  C  1  S    0.270903   1.054002   0.346305   0.900454  -1.114717
     7  C  1  X    0.386184  -1.125908   0.675593  -0.890861  -1.065710
     8  C  1  Y   -1.105396  -0.373437   0.712011  -0.402499  -0.314504
-    9  C  1  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+    9  C  1  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    10  C  2  S   -0.009285  -0.011842   0.013106   0.033842  -0.012684
    11  C  2  S   -0.006721  -0.064760  -0.627429  -0.633984   0.582259
    12  C  2  X   -0.465451  -0.141549   0.462246  -0.295054  -0.040310
    13  C  2  Y    0.086415   0.395978   0.255116  -0.110797  -0.383924
-   14  C  2  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+   14  C  2  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    15  C  2  S    0.220276   0.920107   1.373258   0.137376  -0.464393
    16  C  2  X    1.703600   1.208590  -1.082964   0.686111   0.568813
    17  C  2  Y   -0.664560  -1.130829  -0.620726   0.303717   2.069113
-   18  C  2  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+   18  C  2  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    19  C  3  S    0.009285   0.011842   0.013106   0.033842   0.012684
    20  C  3  S    0.006721   0.064760  -0.627429  -0.633984  -0.582259
    21  C  3  X   -0.465451  -0.141549  -0.462246   0.295054  -0.040310
    22  C  3  Y   -0.086415  -0.395978   0.255116  -0.110797   0.383924
-   23  C  3  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+   23  C  3  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    24  C  3  S   -0.220276  -0.920107   1.373258   0.137376   0.464393
    25  C  3  X    1.703600   1.208590   1.082964  -0.686111   0.568813
    26  C  3  Y    0.664560   1.130829  -0.620726   0.303717  -2.069113
-   27  C  3  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+   27  C  3  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    28  C  4  S    0.029928   0.005436   0.022476   0.022117  -0.001443
    29  C  4  S   -0.022013   0.069173  -0.391232  -0.655841  -0.318203
    30  C  4  X   -0.329468   0.501519   0.082319  -0.213959   0.135060
    31  C  4  Y   -0.299658   0.096185  -0.104902   0.062293  -0.210047
-   32  C  4  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+   32  C  4  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    33  C  4  S   -0.270903  -1.054002   0.346305   0.900454   1.114717
    34  C  4  X    0.386184  -1.125908  -0.675593   0.890861  -1.065710
    35  C  4  Y    1.105396   0.373437   0.712011  -0.402499   0.314504
-   36  C  4  Z   -0.000000  -0.000000   0.000000   0.000000  -0.000000
+   36  C  4  Z    0.000000   0.000000   0.000000   0.000000  -0.000000
    37  H  5  S   -0.263884   0.495710  -0.220302   0.332085   0.310909
    38  H  5  S    0.802435  -0.329169  -0.412933  -0.017045   0.358700
    39  H  6  S   -0.568779  -0.353464   0.458481  -0.171286  -0.263219
@@ -1263,38 +1263,38 @@ Assuming a single but multicore node.
     2  C  1  S    1.190979  -1.031282   0.521773
     3  C  1  X    0.054593  -0.013994  -0.005914
     4  C  1  Y   -0.054801   0.015616   0.173194
-    5  C  1  Z    0.000000  -0.000000  -0.000000
+    5  C  1  Z    0.000000  -0.000000   0.000000
     6  C  1  S   -1.695416   2.090277  -2.074874
     7  C  1  X    0.208400   0.321652  -1.051190
     8  C  1  Y    0.149002  -0.402813   0.272464
-    9  C  1  Z    0.000000  -0.000000  -0.000000
+    9  C  1  Z    0.000000  -0.000000   0.000000
    10  C  2  S   -0.009192  -0.000981  -0.046504
    11  C  2  S    0.214508   0.890093  -1.327411
    12  C  2  X    0.092235   0.108879  -0.020881
    13  C  2  Y    0.208779   0.080427  -0.257495
-   14  C  2  Z    0.000000  -0.000000  -0.000000
+   14  C  2  Z    0.000000  -0.000000   0.000000
    15  C  2  S   -0.284226  -1.599167   3.738950
    16  C  2  X   -0.871540   0.248016   1.163944
    17  C  2  Y   -0.488625  -0.541990   1.889720
-   18  C  2  Z    0.000000  -0.000000  -0.000000
+   18  C  2  Z    0.000000  -0.000000   0.000000
    19  C  3  S    0.009192  -0.000981   0.046504
    20  C  3  S   -0.214508   0.890093   1.327411
    21  C  3  X    0.092235  -0.108879  -0.020881
    22  C  3  Y   -0.208779   0.080427   0.257495
-   23  C  3  Z    0.000000  -0.000000  -0.000000
+   23  C  3  Z    0.000000  -0.000000   0.000000
    24  C  3  S    0.284226  -1.599167  -3.738950
    25  C  3  X   -0.871540  -0.248016   1.163944
    26  C  3  Y    0.488625  -0.541990  -1.889720
-   27  C  3  Z    0.000000  -0.000000  -0.000000
+   27  C  3  Z    0.000000  -0.000000   0.000000
    28  C  4  S    0.021879  -0.002588  -0.033345
    29  C  4  S   -1.190979  -1.031282  -0.521773
    30  C  4  X    0.054593   0.013994  -0.005914
    31  C  4  Y    0.054801   0.015616  -0.173194
-   32  C  4  Z    0.000000  -0.000000  -0.000000
+   32  C  4  Z    0.000000  -0.000000   0.000000
    33  C  4  S    1.695416   2.090277   2.074874
    34  C  4  X    0.208400  -0.321652  -1.051190
    35  C  4  Y   -0.149002  -0.402813  -0.272464
-   36  C  4  Z    0.000000  -0.000000  -0.000000
+   36  C  4  Z    0.000000  -0.000000   0.000000
    37  H  5  S   -0.190274  -0.076620   0.285792
    38  H  5  S    0.578705  -0.284098   0.303142
    39  H  6  S    0.103808  -0.030396  -0.071046
@@ -1308,8 +1308,8 @@ Assuming a single but multicore node.
    47  H 10  S   -0.103808  -0.030396   0.071046
    48  H 10  S   -0.419454  -0.261782   0.075986
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.65%
+ CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    78.67%
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -1507,11 +1507,11 @@ Assuming a single but multicore node.
     1 C                 3.772       3.772      -0.000
     2 C                 3.740       3.740       0.000
     3 C                 3.740       3.740       0.000
-    4 C                 3.772       3.772      -0.000
+    4 C                 3.772       3.772       0.000
     5 H                 0.932       0.932      -0.000
     6 H                 0.929       0.929      -0.000
     7 H                 0.924       0.924       0.000
-    8 H                 0.924       0.924      -0.000
+    8 H                 0.924       0.924       0.000
     9 H                 0.932       0.932      -0.000
    10 H                 0.929       0.929      -0.000
 
@@ -1520,17 +1520,17 @@ Assuming a single but multicore node.
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000    0.000000       -0.00 (A.U.)
+                -0.000000    0.000000    0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
      0.000000   -0.037571    0.000000    0.037571
  ...... END OF PROPERTY EVALUATION ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    79.09%
 
  BEGINNING ONE ELECTRON GRADIENT...
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    82.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.0 SECONDS, CPU UTILIZATION IS    77.42%
 
           ----------------------
           GRADIENT OF THE ENERGY
@@ -1538,8 +1538,8 @@ Assuming a single but multicore node.
  THE COARSE/FINE SCHWARZ SCREENINGS SKIPPED         9734/        4556 BLOCKS.
  THE NUMBER OF GRADIENT INTEGRAL BLOCKS COMPUTED WAS     30740
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.39%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.02%
 
           NSERCH=  0     ENERGY=    -153.9461447
 
@@ -1691,11 +1691,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.15%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.94%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.28%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.0 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    78.09%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1726,14 +1726,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.160738 eV, LUMO=    2.593283 eV, gap=   10.754021 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.81%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.42%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.27%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.55%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.73%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.94%
 
           NSERCH=  1     ENERGY=    -154.0136719
 
@@ -1813,10 +1813,10 @@ Assuming a single but multicore node.
  ------------------------------------------------------------
  C           6.0  -1.4422328549   0.5114873689   0.0000000000
  C           6.0  -0.7392955994  -0.5499969735  -0.0000000000
- C           6.0   0.7392955994  -0.5499969735   0.0000000000
+ C           6.0   0.7392955994  -0.5499969735  -0.0000000000
  C           6.0   1.4422328549   0.5114873689  -0.0000000000
  H           1.0  -0.9657579995   1.4749434190   0.0000000000
- H           1.0  -2.5160016004   0.4839993199  -0.0000000000
+ H           1.0  -2.5160016004   0.4839993199   0.0000000000
  H           1.0  -1.2453913868  -1.5004154603  -0.0000000000
  H           1.0   1.2453913868  -1.5004154603   0.0000000000
  H           1.0   0.9657579995   1.4749434189  -0.0000000000
@@ -1888,10 +1888,10 @@ Assuming a single but multicore node.
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.62%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.70%
   ...... END OF TWO-ELECTRON INTEGRALS .....
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    83.70%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.80%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -1922,14 +1922,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -9.131168 eV, LUMO=    3.731144 eV, gap=   12.862312 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.88%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.06%
  ..... END OF 1-ELECTRON GRADIENT ......
  CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.47%
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.48%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.82%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.81%
 
           NSERCH=  2     ENERGY=    -154.0448399
 
@@ -2007,14 +2007,14 @@ Assuming a single but multicore node.
  ------------------------------------------------------------
  C           6.0  -1.5899911933   0.5019595601   0.0000000000
  C           6.0  -0.7439305525  -0.5299542178  -0.0000000000
- C           6.0   0.7439305525  -0.5299542178  -0.0000000000
+ C           6.0   0.7439305525  -0.5299542178   0.0000000000
  C           6.0   1.5899911933   0.5019595601  -0.0000000000
- H           1.0  -1.2543207995   1.5171981786   0.0000000000
- H           1.0  -2.6484522858   0.3512731947  -0.0000000000
+ H           1.0  -1.2543207995   1.5171981786  -0.0000000000
+ H           1.0  -2.6484522858   0.3512731947   0.0000000000
  H           1.0  -1.1172612699  -1.5351437693  -0.0000000000
- H           1.0   1.1172612698  -1.5351437693  -0.0000000000
- H           1.0   1.2543207995   1.5171981785  -0.0000000000
- H           1.0   2.6484522858   0.3512731948   0.0000000000
+ H           1.0   1.1172612698  -1.5351437693   0.0000000000
+ H           1.0   1.2543207995   1.5171981786   0.0000000000
+ H           1.0   2.6484522859   0.3512731948  -0.0000000000
 
 
                      --------------------
@@ -2081,11 +2081,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.75%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.63%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.81%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.70%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2115,14 +2115,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.812286 eV, LUMO=    3.248888 eV, gap=   12.061174 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.87%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.01%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.52%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.70%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.09%
 
           NSERCH=  3     ENERGY=    -154.0516277
 
@@ -2155,25 +2155,25 @@ Assuming a single but multicore node.
    3 BEND      3  2  1                129.3481450       0.0242679
    4 STRETCH   4  3                     1.3344155       0.0212312
    5 BEND      4  3  2                129.3481450       0.0242679
-   6 TORSION   4  3  2  1               0.0000000      -0.0000000
+   6 TORSION   4  3  2  1               0.0000000       0.0000000
    7 STRETCH   5  1                     1.0692914      -0.0032192
    8 BEND      5  1  2                122.3563154      -0.0001477
-   9 TORSION   5  1  2  3               0.0000000      -0.0000000
+   9 TORSION   5  1  2  3               0.0000000       0.0000000
   10 STRETCH   6  1                     1.0691334      -0.0025127
   11 BEND      6  1  5                116.3979295      -0.0012965
-  12 TORSION   6  1  5  2             180.0000000       0.0000000
+  12 TORSION   6  1  5  2             180.0000000      -0.0000000
   13 STRETCH   7  2                     1.0722788      -0.0022898
   14 BEND      7  2  1                120.2766921       0.0160804
   15 TORSION   7  2  1  3             180.0000000       0.0000000
   16 STRETCH   8  3                     1.0722788      -0.0022898
   17 BEND      8  3  4                120.2766921       0.0160804
-  18 TORSION   8  3  4  2             180.0000000      -0.0000000
+  18 TORSION   8  3  4  2             180.0000000       0.0000000
   19 STRETCH   9  4                     1.0692914      -0.0032192
   20 BEND      9  4  3                122.3563154      -0.0001477
-  21 TORSION   9  4  3  7               0.0000000      -0.0000000
+  21 TORSION   9  4  3  7               0.0000000       0.0000000
   22 STRETCH  10  4                     1.0691334      -0.0025127
   23 BEND     10  4  9                116.3979295      -0.0012965
-  24 TORSION  10  4  9  3             180.0000000       0.0000000
+  24 TORSION  10  4  9  3             180.0000000      -0.0000000
 
  NOTE: CARTESIAN GRADIENTS ARE ALWAYS TAKEN TO TEST CONVERGENCE,
        SO THE FOLLOWING GRADIENTS ARE CARTESIAN.
@@ -2199,15 +2199,15 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -1.5323109369   0.5165736263  -0.0000000000
- C           6.0  -0.7420108900  -0.5505335216   0.0000000000
- C           6.0   0.7420108900  -0.5505335216  -0.0000000000
- C           6.0   1.5323109369   0.5165736263   0.0000000000
+ C           6.0  -0.7420108900  -0.5505335216  -0.0000000000
+ C           6.0   0.7420108900  -0.5505335216   0.0000000000
+ C           6.0   1.5323109369   0.5165736263  -0.0000000000
  H           1.0  -1.1539534156   1.5203220576  -0.0000000000
- H           1.0  -2.5985949617   0.4029337455  -0.0000000000
- H           1.0  -1.2088277289  -1.5189011352   0.0000000000
- H           1.0   1.2088277290  -1.5189011352  -0.0000000000
- H           1.0   1.1539534157   1.5203220577  -0.0000000000
- H           1.0   2.5985949617   0.4029337453   0.0000000000
+ H           1.0  -2.5985949617   0.4029337455   0.0000000000
+ H           1.0  -1.2088277289  -1.5189011352  -0.0000000000
+ H           1.0   1.2088277290  -1.5189011352   0.0000000000
+ H           1.0   1.1539534157   1.5203220577   0.0000000000
+ H           1.0   2.5985949617   0.4029337454  -0.0000000000
 
 
                      --------------------
@@ -2274,11 +2274,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.70%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    76.96%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    83.75%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.1 SECONDS, CPU UTILIZATION IS    77.03%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2308,14 +2308,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.814988 eV, LUMO=    3.322853 eV, gap=   12.137842 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.99%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.86%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.76%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.49%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    84.02%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.71%
 
           NSERCH=  4     ENERGY=    -154.0536615
 
@@ -2360,13 +2360,13 @@ Assuming a single but multicore node.
   15 TORSION   7  2  1  3             180.0000000       0.0000000
   16 STRETCH   8  3                     1.0750134       0.0001847
   17 BEND      8  3  4                117.7392121      -0.0048231
-  18 TORSION   8  3  4  2             180.0000000       0.0000000
+  18 TORSION   8  3  4  2             180.0000000      -0.0000000
   19 STRETCH   9  4                     1.0726907      -0.0000167
   20 BEND      9  4  3                122.8226725       0.0020765
-  21 TORSION   9  4  3  7               0.0000000       0.0000000
+  21 TORSION   9  4  3  7               0.0000000      -0.0000000
   22 STRETCH  10  4                     1.0723225      -0.0002621
   23 BEND     10  4  9                116.7370324       0.0026209
-  24 TORSION  10  4  9  3             180.0000000      -0.0000000
+  24 TORSION  10  4  9  3             180.0000000       0.0000000
 
  NOTE: CARTESIAN GRADIENTS ARE ALWAYS TAKEN TO TEST CONVERGENCE,
        SO THE FOLLOWING GRADIENTS ARE CARTESIAN.
@@ -2392,15 +2392,15 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -1.5251270979   0.5108209313  -0.0000000000
- C           6.0  -0.7384528015  -0.5449997884   0.0000000000
- C           6.0   0.7384528015  -0.5449997883  -0.0000000000
- C           6.0   1.5251270980   0.5108209313   0.0000000000
+ C           6.0  -0.7384528015  -0.5449997884  -0.0000000000
+ C           6.0   0.7384528015  -0.5449997883   0.0000000000
+ C           6.0   1.5251270980   0.5108209313  -0.0000000000
  H           1.0  -1.1421247402   1.5137464070  -0.0000000000
- H           1.0  -2.5942840249   0.4156829185  -0.0000000000
- H           1.0  -1.1868800580  -1.5224675172   0.0000000000
- H           1.0   1.1868800579  -1.5224675172  -0.0000000000
+ H           1.0  -2.5942840249   0.4156829185   0.0000000000
+ H           1.0  -1.1868800580  -1.5224675171  -0.0000000000
+ H           1.0   1.1868800579  -1.5224675172   0.0000000000
  H           1.0   1.1421247401   1.5137464069   0.0000000000
- H           1.0   2.5942840250   0.4156829187   0.0000000000
+ H           1.0   2.5942840250   0.4156829187  -0.0000000000
 
 
                      --------------------
@@ -2467,11 +2467,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.69%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    84.00%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.74%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2502,14 +2502,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.873500 eV, LUMO=    3.383712 eV, gap=   12.257213 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.04 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.96%
+ CPU     0: STEP CPU TIME=     0.02 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.65%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.74%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.1 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.32%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.96%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.52%
 
           NSERCH=  5     ENERGY=    -154.0539012
 
@@ -2542,25 +2542,25 @@ Assuming a single but multicore node.
    3 BEND      3  2  1                126.6891767      -0.0000504
    4 STRETCH   4  3                     1.3166677      -0.0045149
    5 BEND      4  3  2                126.6891767      -0.0000504
-   6 TORSION   4  3  2  1               0.0000000       0.0000000
+   6 TORSION   4  3  2  1               0.0000000      -0.0000000
    7 STRETCH   5  1                     1.0735690       0.0001277
    8 BEND      5  1  2                122.4097085      -0.0017431
    9 TORSION   5  1  2  3               0.0000000      -0.0000000
   10 STRETCH   6  1                     1.0733815       0.0005600
   11 BEND      6  1  5                115.9861375      -0.0010275
-  12 TORSION   6  1  5  2             180.0000000      -0.0000000
+  12 TORSION   6  1  5  2             180.0000000       0.0000000
   13 STRETCH   7  2                     1.0754209       0.0002254
   14 BEND      7  2  1                118.6668580       0.0001034
-  15 TORSION   7  2  1  3             180.0000000      -0.0000000
+  15 TORSION   7  2  1  3             180.0000000       0.0000000
   16 STRETCH   8  3                     1.0754209       0.0002254
   17 BEND      8  3  4                118.6668580       0.0001034
-  18 TORSION   8  3  4  2             180.0000000       0.0000000
+  18 TORSION   8  3  4  2             180.0000000      -0.0000000
   19 STRETCH   9  4                     1.0735690       0.0001277
   20 BEND      9  4  3                122.4097085      -0.0017431
-  21 TORSION   9  4  3  7               0.0000000       0.0000000
+  21 TORSION   9  4  3  7               0.0000000      -0.0000000
   22 STRETCH  10  4                     1.0733815       0.0005600
   23 BEND     10  4  9                115.9861375      -0.0010275
-  24 TORSION  10  4  9  3             180.0000000      -0.0000000
+  24 TORSION  10  4  9  3             180.0000000       0.0000000
 
  NOTE: CARTESIAN GRADIENTS ARE ALWAYS TAKEN TO TEST CONVERGENCE,
        SO THE FOLLOWING GRADIENTS ARE CARTESIAN.
@@ -2585,15 +2585,15 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -1.5272728885   0.5125449615  -0.0000000000
- C           6.0  -0.7390547596  -0.5463238899   0.0000000000
- C           6.0   0.7390547596  -0.5463238899  -0.0000000000
- C           6.0   1.5272728885   0.5125449616   0.0000000000
+ C           6.0  -0.7390547596  -0.5463238899  -0.0000000000
+ C           6.0   0.7390547596  -0.5463238899   0.0000000000
+ C           6.0   1.5272728885   0.5125449616  -0.0000000000
  H           1.0  -1.1490095312   1.5169431845  -0.0000000000
- H           1.0  -2.5947533271   0.4083055168  -0.0000000000
- H           1.0  -1.1880887746  -1.5230487752   0.0000000000
- H           1.0   1.1880887749  -1.5230487751  -0.0000000000
+ H           1.0  -2.5947533271   0.4083055168   0.0000000000
+ H           1.0  -1.1880887746  -1.5230487752  -0.0000000000
+ H           1.0   1.1880887749  -1.5230487751   0.0000000000
  H           1.0   1.1490095313   1.5169431846   0.0000000000
- H           1.0   2.5947533271   0.4083055165   0.0000000000
+ H           1.0   2.5947533271   0.4083055165  -0.0000000000
 
 
                      --------------------
@@ -2660,11 +2660,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    83.91%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.41%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    83.95%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.46%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2694,14 +2694,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.852489 eV, LUMO=    3.363617 eV, gap=   12.216106 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.12%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.26%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    83.93%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.09%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.11%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.23%
 
           NSERCH=  6     ENERGY=    -154.0539417
 
@@ -2740,7 +2740,7 @@ Assuming a single but multicore node.
    9 TORSION   5  1  2  3               0.0000000      -0.0000000
   10 STRETCH   6  1                     1.0725579      -0.0001492
   11 BEND      6  1  5                116.2139723       0.0005646
-  12 TORSION   6  1  5  2             180.0000000       0.0000000
+  12 TORSION   6  1  5  2             180.0000000      -0.0000000
   13 STRETCH   7  2                     1.0749991       0.0000112
   14 BEND      7  2  1                118.6462686       0.0002427
   15 TORSION   7  2  1  3             180.0000000       0.0000000
@@ -2752,7 +2752,7 @@ Assuming a single but multicore node.
   21 TORSION   9  4  3  7               0.0000000      -0.0000000
   22 STRETCH  10  4                     1.0725579      -0.0001492
   23 BEND     10  4  9                116.2139724       0.0005646
-  24 TORSION  10  4  9  3             180.0000000       0.0000000
+  24 TORSION  10  4  9  3             180.0000000      -0.0000000
 
  NOTE: CARTESIAN GRADIENTS ARE ALWAYS TAKEN TO TEST CONVERGENCE,
        SO THE FOLLOWING GRADIENTS ARE CARTESIAN.
@@ -2777,15 +2777,15 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -1.5276169270   0.5126007557  -0.0000000000
- C           6.0  -0.7392949004  -0.5466894444   0.0000000000
- C           6.0   0.7392949004  -0.5466894444  -0.0000000000
- C           6.0   1.5276169271   0.5126007557   0.0000000000
+ C           6.0  -0.7392949004  -0.5466894444  -0.0000000000
+ C           6.0   0.7392949004  -0.5466894443   0.0000000000
+ C           6.0   1.5276169271   0.5126007557  -0.0000000000
  H           1.0  -1.1476994618   1.5160896628  -0.0000000000
- H           1.0  -2.5956493909   0.4125819197  -0.0000000000
- H           1.0  -1.1895085490  -1.5227833936   0.0000000000
- H           1.0   1.1895085485  -1.5227833936  -0.0000000000
+ H           1.0  -2.5956493909   0.4125819197   0.0000000000
+ H           1.0  -1.1895085490  -1.5227833936  -0.0000000000
+ H           1.0   1.1895085485  -1.5227833936   0.0000000000
  H           1.0   1.1476994617   1.5160896627   0.0000000000
- H           1.0   2.5956493911   0.4125819203   0.0000000000
+ H           1.0   2.5956493911   0.4125819203  -0.0000000000
 
 
                      --------------------
@@ -2852,11 +2852,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.06%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.22%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.3 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.10%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.26%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -2885,14 +2885,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.851448 eV, LUMO=    3.361082 eV, gap=   12.212530 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.02%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.17%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    83.88%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    75.93%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.05%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    76.08%
 
           NSERCH=  7     ENERGY=    -154.0539421
 
@@ -2937,7 +2937,7 @@ Assuming a single but multicore node.
   15 TORSION   7  2  1  3             180.0000000      -0.0000000
   16 STRETCH   8  3                     1.0749194      -0.0000510
   17 BEND      8  3  4                118.5823926      -0.0002004
-  18 TORSION   8  3  4  2             180.0000000      -0.0000000
+  18 TORSION   8  3  4  2             180.0000000       0.0000000
   19 STRETCH   9  4                     1.0729992      -0.0001498
   20 BEND      9  4  3                122.6069434      -0.0004334
   21 TORSION   9  4  3  7               0.0000000       0.0000000
@@ -2968,15 +2968,15 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -1.5274316379   0.5124802588  -0.0000000000
- C           6.0  -0.7392272598  -0.5464342554   0.0000000000
- C           6.0   0.7392272599  -0.5464342554  -0.0000000000
- C           6.0   1.5274316378   0.5124802588   0.0000000000
+ C           6.0  -0.7392272598  -0.5464342554  -0.0000000000
+ C           6.0   0.7392272599  -0.5464342555   0.0000000000
+ C           6.0   1.5274316378   0.5124802588  -0.0000000000
  H           1.0  -1.1484508536   1.5164926430  -0.0000000000
- H           1.0  -2.5953314243   0.4106608074  -0.0000000000
- H           1.0  -1.1888765776  -1.5228690164   0.0000000000
- H           1.0   1.1888765780  -1.5228690163  -0.0000000000
+ H           1.0  -2.5953314243   0.4106608074   0.0000000000
+ H           1.0  -1.1888765776  -1.5228690164  -0.0000000000
+ H           1.0   1.1888765781  -1.5228690163   0.0000000000
  H           1.0   1.1484508537   1.5164926431   0.0000000000
- H           1.0   2.5953314242   0.4106608070   0.0000000000
+ H           1.0   2.5953314242   0.4106608069  -0.0000000000
 
 
                      --------------------
@@ -3043,11 +3043,11 @@ Assuming a single but multicore node.
   * ... LESS THAN  3.000
 
  ...... END OF ONE-ELECTRON INTEGRALS ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.00%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.2 SECONDS, CPU UTILIZATION IS    75.99%
   ...... END OF TWO-ELECTRON INTEGRALS .....
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    84.03%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.02%
 
           --------------------------
                  RHF SCF CALCULATION
@@ -3076,14 +3076,14 @@ Assuming a single but multicore node.
 
  Alpha HOMO=    -8.853428 eV, LUMO=    3.363723 eV, gap=   12.217152 eV
  ...... END OF RHF CALCULATION ......
- CPU     0: STEP CPU TIME=     0.03 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    84.09%
+ CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    75.92%
  ..... END OF 1-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    83.93%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    75.70%
  ...... END OF 2-ELECTRON GRADIENT ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    84.10%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    75.95%
 
           NSERCH=  8     ENERGY=    -154.0539433
 
@@ -3116,7 +3116,7 @@ Assuming a single but multicore node.
    3 BEND      3  2  1                126.6622009       0.0000182
    4 STRETCH   4  3                     1.3200629      -0.0000151
    5 BEND      4  3  2                126.6622009       0.0000181
-   6 TORSION   4  3  2  1               0.0000000       0.0000000
+   6 TORSION   4  3  2  1               0.0000000      -0.0000000
    7 STRETCH   5  1                     1.0731576      -0.0000018
    8 BEND      5  1  2                122.6579702      -0.0000182
    9 TORSION   5  1  2  3               0.0000000      -0.0000000
@@ -3128,10 +3128,10 @@ Assuming a single but multicore node.
   15 TORSION   7  2  1  3             180.0000000       0.0000000
   16 STRETCH   8  3                     1.0749927       0.0000027
   17 BEND      8  3  4                118.6116749      -0.0000113
-  18 TORSION   8  3  4  2             180.0000000       0.0000000
+  18 TORSION   8  3  4  2             180.0000000      -0.0000000
   19 STRETCH   9  4                     1.0731576      -0.0000018
   20 BEND      9  4  3                122.6579702      -0.0000182
-  21 TORSION   9  4  3  7               0.0000000       0.0000000
+  21 TORSION   9  4  3  7               0.0000000      -0.0000000
   22 STRETCH  10  4                     1.0727428       0.0000097
   23 BEND     10  4  9                116.1262600       0.0000146
   24 TORSION  10  4  9  3             180.0000000       0.0000000
@@ -3149,15 +3149,15 @@ Assuming a single but multicore node.
    ATOM   CHARGE       X              Y              Z
  ------------------------------------------------------------
  C           6.0  -1.5274316379   0.5124802588  -0.0000000000
- C           6.0  -0.7392272598  -0.5464342554   0.0000000000
- C           6.0   0.7392272599  -0.5464342554  -0.0000000000
- C           6.0   1.5274316378   0.5124802588   0.0000000000
+ C           6.0  -0.7392272598  -0.5464342554  -0.0000000000
+ C           6.0   0.7392272599  -0.5464342555   0.0000000000
+ C           6.0   1.5274316378   0.5124802588  -0.0000000000
  H           1.0  -1.1484508536   1.5164926430  -0.0000000000
- H           1.0  -2.5953314243   0.4106608074  -0.0000000000
- H           1.0  -1.1888765776  -1.5228690164   0.0000000000
- H           1.0   1.1888765780  -1.5228690163  -0.0000000000
+ H           1.0  -2.5953314243   0.4106608074   0.0000000000
+ H           1.0  -1.1888765776  -1.5228690164  -0.0000000000
+ H           1.0   1.1888765781  -1.5228690163   0.0000000000
  H           1.0   1.1484508537   1.5164926431   0.0000000000
- H           1.0   2.5953314242   0.4106608070   0.0000000000
+ H           1.0   2.5953314242   0.4106608069  -0.0000000000
 
 
                      --------------------
@@ -3235,262 +3235,262 @@ Assuming a single but multicore node.
                       1          2          3          4          5
                   -11.1778   -11.1773   -11.1657   -11.1656    -1.0906
                      A          A          A          A          A   
-    1  C  1  S    0.009706  -0.002408  -0.697722  -0.697739   0.098962
-    2  C  1  S   -0.001725  -0.003571  -0.068602  -0.068150  -0.110917
-    3  C  1  X   -0.000488  -0.001697  -0.000170   0.000112  -0.054094
-    4  C  1  Y    0.000651   0.001555  -0.000006   0.000253   0.057846
+    1  C  1  S    0.009706   0.002408  -0.697722   0.697739   0.098962
+    2  C  1  S   -0.001725   0.003571  -0.068602   0.068150  -0.110917
+    3  C  1  X   -0.000488   0.001697  -0.000170  -0.000112  -0.054094
+    4  C  1  Y    0.000651  -0.001555  -0.000006  -0.000253   0.057846
     5  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-    6  C  1  S    0.024246   0.018231   0.053737   0.049202  -0.200202
-    7  C  1  X    0.012188   0.007925   0.004521   0.002758   0.000086
-    8  C  1  Y   -0.005917  -0.007087  -0.005495  -0.004960   0.008343
+    6  C  1  S    0.024246  -0.018231   0.053737  -0.049202  -0.200202
+    7  C  1  X    0.012188  -0.007925   0.004521  -0.002758   0.000086
+    8  C  1  Y   -0.005917   0.007087  -0.005495   0.004960   0.008343
     9  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   10  C  2  S    0.698159   0.697745   0.010100  -0.002055   0.138125
-   11  C  2  S    0.071803   0.067520   0.003578   0.002950  -0.152354
-   12  C  2  X    0.000684  -0.000422  -0.001644  -0.000534  -0.012403
-   13  C  2  Y    0.001023   0.000258   0.001443   0.001921  -0.052319
+   10  C  2  S    0.698159  -0.697745   0.010100   0.002055   0.138125
+   11  C  2  S    0.071803  -0.067520   0.003578  -0.002950  -0.152354
+   12  C  2  X    0.000684   0.000422  -0.001644   0.000534  -0.012403
+   13  C  2  Y    0.001023  -0.000258   0.001443  -0.001921  -0.052319
    14  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   15  C  2  S   -0.074314  -0.041435  -0.019546  -0.017789  -0.283924
-   16  C  2  X   -0.012460   0.006480   0.008750   0.005430  -0.004088
-   17  C  2  Y   -0.015605  -0.004350  -0.011380  -0.008313  -0.007988
+   15  C  2  S   -0.074314   0.041435  -0.019546   0.017789  -0.283924
+   16  C  2  X   -0.012460  -0.006480   0.008750  -0.005430  -0.004088
+   17  C  2  Y   -0.015605   0.004350  -0.011380   0.008313  -0.007988
    18  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   19  C  3  S   -0.698159   0.697746  -0.010100  -0.002055   0.138125
-   20  C  3  S   -0.071803   0.067520  -0.003578   0.002950  -0.152354
-   21  C  3  X    0.000684   0.000422  -0.001644   0.000534   0.012403
-   22  C  3  Y   -0.001023   0.000258  -0.001443   0.001921  -0.052319
+   19  C  3  S   -0.698159  -0.697746  -0.010100   0.002055   0.138125
+   20  C  3  S   -0.071803  -0.067520  -0.003578  -0.002950  -0.152354
+   21  C  3  X    0.000684  -0.000422  -0.001644  -0.000534   0.012403
+   22  C  3  Y   -0.001023  -0.000258  -0.001443  -0.001921  -0.052319
    23  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   24  C  3  S    0.074314  -0.041435   0.019546  -0.017789  -0.283924
-   25  C  3  X   -0.012460  -0.006480   0.008750  -0.005430   0.004088
-   26  C  3  Y    0.015605  -0.004350   0.011380  -0.008313  -0.007988
+   24  C  3  S    0.074314   0.041435   0.019546   0.017789  -0.283924
+   25  C  3  X   -0.012460   0.006480   0.008750   0.005430   0.004088
+   26  C  3  Y    0.015605   0.004350   0.011380   0.008313  -0.007988
    27  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   28  C  4  S   -0.009706  -0.002408   0.697722  -0.697739   0.098962
-   29  C  4  S    0.001725  -0.003571   0.068602  -0.068150  -0.110917
-   30  C  4  X   -0.000488   0.001697  -0.000170  -0.000112   0.054094
-   31  C  4  Y   -0.000651   0.001555   0.000006   0.000253   0.057846
+   28  C  4  S   -0.009706   0.002408   0.697722   0.697739   0.098962
+   29  C  4  S    0.001725   0.003571   0.068602   0.068150  -0.110917
+   30  C  4  X   -0.000488  -0.001697  -0.000170   0.000112   0.054094
+   31  C  4  Y   -0.000651  -0.001555   0.000006  -0.000253   0.057846
    32  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   33  C  4  S   -0.024246   0.018231  -0.053737   0.049202  -0.200202
-   34  C  4  X    0.012188  -0.007925   0.004521  -0.002758  -0.000086
-   35  C  4  Y    0.005917  -0.007087   0.005495  -0.004960   0.008343
+   33  C  4  S   -0.024246  -0.018231  -0.053737  -0.049202  -0.200202
+   34  C  4  X    0.012188   0.007925   0.004521   0.002758  -0.000086
+   35  C  4  Y    0.005917   0.007087   0.005495   0.004960   0.008343
    36  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   37  H  5  S   -0.001629  -0.000974   0.001060   0.001100  -0.045436
-   38  H  5  S   -0.001564  -0.000251  -0.009899  -0.008065  -0.004851
-   39  H  6  S   -0.000186  -0.000535   0.000877   0.001035  -0.039673
-   40  H  6  S    0.002024   0.002049  -0.008668  -0.009290   0.006542
-   41  H  7  S   -0.001176  -0.001432   0.000423   0.000779  -0.060029
-   42  H  7  S    0.003990   0.008761  -0.000517  -0.001826   0.001573
-   43  H  8  S    0.001176  -0.001432  -0.000423   0.000779  -0.060029
-   44  H  8  S   -0.003990   0.008761   0.000517  -0.001826   0.001573
-   45  H  9  S    0.001629  -0.000974  -0.001060   0.001100  -0.045436
-   46  H  9  S    0.001564  -0.000251   0.009899  -0.008065  -0.004851
-   47  H 10  S    0.000186  -0.000535  -0.000877   0.001035  -0.039673
-   48  H 10  S   -0.002024   0.002049   0.008668  -0.009290   0.006542
+   37  H  5  S   -0.001629   0.000974   0.001060  -0.001100  -0.045436
+   38  H  5  S   -0.001564   0.000251  -0.009899   0.008065  -0.004851
+   39  H  6  S   -0.000186   0.000535   0.000877  -0.001035  -0.039673
+   40  H  6  S    0.002024  -0.002049  -0.008668   0.009290   0.006542
+   41  H  7  S   -0.001176   0.001432   0.000423  -0.000779  -0.060029
+   42  H  7  S    0.003990  -0.008761  -0.000517   0.001826   0.001573
+   43  H  8  S    0.001176   0.001432  -0.000423  -0.000779  -0.060029
+   44  H  8  S   -0.003990  -0.008761   0.000517   0.001826   0.001573
+   45  H  9  S    0.001629   0.000974  -0.001060  -0.001100  -0.045436
+   46  H  9  S    0.001564   0.000251   0.009899   0.008065  -0.004851
+   47  H 10  S    0.000186   0.000535  -0.000877  -0.001035  -0.039673
+   48  H 10  S   -0.002024  -0.002049   0.008668   0.009290   0.006542
 
                       6          7          8          9         10
                    -1.0002    -0.8411    -0.7272    -0.6765    -0.6170
                      A          A          A          A          A   
-    1  C  1  S    0.133056   0.107494  -0.067566   0.013446   0.002529
-    2  C  1  S   -0.144883  -0.111883   0.065685  -0.010000   0.006357
-    3  C  1  X   -0.034052   0.034283  -0.069068   0.182315   0.086822
-    4  C  1  Y    0.064625  -0.043266   0.162781   0.068135  -0.250834
+    1  C  1  S   -0.133056   0.107494  -0.067566   0.013446  -0.002529
+    2  C  1  S    0.144883  -0.111883   0.065685  -0.010000  -0.006357
+    3  C  1  X    0.034052   0.034283  -0.069068   0.182315  -0.086822
+    4  C  1  Y   -0.064625  -0.043266   0.162781   0.068135   0.250834
     5  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-    6  C  1  S   -0.305985  -0.321982   0.249711  -0.060957  -0.056078
-    7  C  1  X    0.004598   0.006286  -0.031064   0.110135   0.036595
-    8  C  1  Y    0.013847  -0.017963   0.086078   0.053509  -0.151560
+    6  C  1  S    0.305985  -0.321982   0.249711  -0.060957   0.056078
+    7  C  1  X   -0.004598   0.006286  -0.031064   0.110135  -0.036595
+    8  C  1  Y   -0.013847  -0.017963   0.086078   0.053509   0.151560
     9  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   10  C  2  S    0.097479  -0.081090   0.089626  -0.006869  -0.009857
-   11  C  2  S   -0.104193   0.083584  -0.092622   0.011110   0.016609
-   12  C  2  X    0.102612   0.122358   0.088057   0.154030  -0.184324
-   13  C  2  Y   -0.064686  -0.117002   0.060579   0.160995   0.181722
+   10  C  2  S   -0.097479  -0.081090   0.089626  -0.006869   0.009857
+   11  C  2  S    0.104193   0.083584  -0.092622   0.011110  -0.016609
+   12  C  2  X   -0.102612   0.122358   0.088057   0.154030   0.184324
+   13  C  2  Y    0.064686  -0.117002   0.060579   0.160995  -0.181722
    14  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   15  C  2  S   -0.245708   0.248461  -0.312744   0.011997   0.014999
-   16  C  2  X    0.006116   0.044813   0.042236   0.091571  -0.108239
-   17  C  2  Y   -0.020420  -0.047229   0.042096   0.112444   0.111910
+   15  C  2  S    0.245708   0.248461  -0.312744   0.011997  -0.014999
+   16  C  2  X   -0.006116   0.044813   0.042236   0.091571   0.108239
+   17  C  2  Y    0.020420  -0.047229   0.042096   0.112444  -0.111910
    18  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   19  C  3  S   -0.097479  -0.081090  -0.089626  -0.006869  -0.009857
-   20  C  3  S    0.104193   0.083584   0.092622   0.011110   0.016609
-   21  C  3  X    0.102612  -0.122358   0.088057  -0.154030   0.184324
-   22  C  3  Y    0.064686  -0.117002  -0.060579   0.160995   0.181722
+   19  C  3  S    0.097479  -0.081090  -0.089626  -0.006869   0.009857
+   20  C  3  S   -0.104193   0.083584   0.092622   0.011110  -0.016609
+   21  C  3  X   -0.102612  -0.122358   0.088057  -0.154030  -0.184324
+   22  C  3  Y   -0.064686  -0.117002  -0.060579   0.160995  -0.181722
    23  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   24  C  3  S    0.245708   0.248461   0.312744   0.011997   0.014999
-   25  C  3  X    0.006116  -0.044813   0.042236  -0.091571   0.108239
-   26  C  3  Y    0.020420  -0.047229  -0.042096   0.112444   0.111910
+   24  C  3  S   -0.245708   0.248461   0.312744   0.011997  -0.014999
+   25  C  3  X   -0.006116  -0.044813   0.042236  -0.091571  -0.108239
+   26  C  3  Y   -0.020420  -0.047229  -0.042096   0.112444  -0.111910
    27  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   28  C  4  S   -0.133056   0.107494   0.067566   0.013446   0.002529
-   29  C  4  S    0.144883  -0.111883  -0.065685  -0.010000   0.006357
-   30  C  4  X   -0.034052  -0.034283  -0.069068  -0.182315  -0.086822
-   31  C  4  Y   -0.064625  -0.043266  -0.162781   0.068135  -0.250834
+   28  C  4  S    0.133056   0.107494   0.067566   0.013446  -0.002529
+   29  C  4  S   -0.144883  -0.111883  -0.065685  -0.010000  -0.006357
+   30  C  4  X    0.034052  -0.034283  -0.069068  -0.182315   0.086822
+   31  C  4  Y    0.064625  -0.043266  -0.162781   0.068135   0.250834
    32  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   33  C  4  S    0.305985  -0.321982  -0.249711  -0.060957  -0.056078
-   34  C  4  X    0.004598  -0.006286  -0.031064  -0.110135  -0.036595
-   35  C  4  Y   -0.013847  -0.017963  -0.086078   0.053509  -0.151560
+   33  C  4  S   -0.305985  -0.321982  -0.249711  -0.060957   0.056078
+   34  C  4  X   -0.004598  -0.006286  -0.031064  -0.110135   0.036595
+   35  C  4  Y    0.013847  -0.017963  -0.086078   0.053509   0.151560
    36  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   37  H  5  S   -0.063497  -0.094762   0.124515   0.068604  -0.137426
-   38  H  5  S   -0.004809  -0.040359   0.069837   0.050143  -0.118965
-   39  H  6  S   -0.070799  -0.093147   0.087208  -0.122680  -0.041663
-   40  H  6  S   -0.007457  -0.040835   0.051092  -0.089200  -0.040955
-   41  H  7  S   -0.053035   0.085954  -0.126110  -0.119437  -0.048306
-   42  H  7  S   -0.013146   0.036936  -0.067098  -0.085294  -0.043731
-   43  H  8  S    0.053035   0.085954   0.126110  -0.119437  -0.048306
-   44  H  8  S    0.013146   0.036936   0.067098  -0.085294  -0.043731
-   45  H  9  S    0.063497  -0.094762  -0.124515   0.068604  -0.137426
-   46  H  9  S    0.004809  -0.040359  -0.069837   0.050143  -0.118965
-   47  H 10  S    0.070799  -0.093147  -0.087208  -0.122680  -0.041663
-   48  H 10  S    0.007457  -0.040835  -0.051092  -0.089200  -0.040955
+   37  H  5  S    0.063497  -0.094762   0.124515   0.068604   0.137426
+   38  H  5  S    0.004809  -0.040359   0.069837   0.050143   0.118965
+   39  H  6  S    0.070799  -0.093147   0.087208  -0.122680   0.041663
+   40  H  6  S    0.007457  -0.040835   0.051092  -0.089200   0.040955
+   41  H  7  S    0.053035   0.085954  -0.126110  -0.119437   0.048306
+   42  H  7  S    0.013146   0.036936  -0.067098  -0.085294   0.043731
+   43  H  8  S   -0.053035   0.085954   0.126110  -0.119437   0.048306
+   44  H  8  S   -0.013146   0.036936   0.067098  -0.085294   0.043731
+   45  H  9  S   -0.063497  -0.094762  -0.124515   0.068604   0.137426
+   46  H  9  S   -0.004809  -0.040359  -0.069837   0.050143   0.118965
+   47  H 10  S   -0.070799  -0.093147  -0.087208  -0.122680   0.041663
+   48  H 10  S   -0.007457  -0.040835  -0.051092  -0.089200   0.040955
 
                      11         12         13         14         15
                    -0.5872    -0.5152    -0.4895    -0.4445    -0.3254
                      A          A          A          A          A   
-    1  C  1  S   -0.009936   0.015527  -0.003490   0.000000   0.000000
-    2  C  1  S    0.016296  -0.022994   0.003367   0.000000   0.000000
-    3  C  1  X    0.267360   0.036299   0.169565   0.000000   0.000000
-    4  C  1  Y    0.005416   0.225905   0.053984   0.000000   0.000000
-    5  C  1  Z    0.000000   0.000000   0.000000   0.191164   0.262966
-    6  C  1  S   -0.008584  -0.010018   0.007921   0.000000   0.000000
-    7  C  1  X    0.187982   0.081998   0.187376   0.000000   0.000000
-    8  C  1  Y    0.037538   0.185640   0.069758   0.000000   0.000000
-    9  C  1  Z    0.000000   0.000000   0.000000   0.205824   0.318290
-   10  C  2  S   -0.018865  -0.016754   0.016952   0.000000   0.000000
-   11  C  2  S    0.022058   0.013318  -0.017842   0.000000   0.000000
-   12  C  2  X   -0.004495   0.020967  -0.249155   0.000000   0.000000
-   13  C  2  Y    0.166512  -0.206671  -0.077210   0.000000   0.000000
-   14  C  2  Z    0.000000   0.000000   0.000000   0.253488   0.203625
-   15  C  2  S    0.055466   0.073173  -0.049316   0.000000   0.000000
-   16  C  2  X    0.001607  -0.040538  -0.205838   0.000000   0.000000
-   17  C  2  Y    0.128907  -0.216532  -0.101391   0.000000   0.000000
-   18  C  2  Z    0.000000   0.000000   0.000000   0.260741   0.262484
-   19  C  3  S    0.018865   0.016754   0.016952   0.000000   0.000000
-   20  C  3  S   -0.022058  -0.013318  -0.017842   0.000000   0.000000
-   21  C  3  X   -0.004495   0.020967   0.249155   0.000000   0.000000
-   22  C  3  Y   -0.166512   0.206671  -0.077210   0.000000   0.000000
-   23  C  3  Z    0.000000   0.000000   0.000000   0.253488  -0.203625
-   24  C  3  S   -0.055466  -0.073173  -0.049316   0.000000   0.000000
-   25  C  3  X    0.001607  -0.040538   0.205838   0.000000   0.000000
-   26  C  3  Y   -0.128907   0.216532  -0.101391   0.000000   0.000000
-   27  C  3  Z    0.000000   0.000000   0.000000   0.260741  -0.262484
-   28  C  4  S    0.009936  -0.015527  -0.003490   0.000000   0.000000
-   29  C  4  S   -0.016296   0.022994   0.003367   0.000000   0.000000
-   30  C  4  X    0.267360   0.036299  -0.169565   0.000000   0.000000
-   31  C  4  Y   -0.005416  -0.225905   0.053984   0.000000   0.000000
-   32  C  4  Z    0.000000   0.000000   0.000000   0.191164  -0.262966
-   33  C  4  S    0.008584   0.010018   0.007921   0.000000   0.000000
-   34  C  4  X    0.187982   0.081998  -0.187376   0.000000   0.000000
-   35  C  4  Y   -0.037538  -0.185640   0.069758   0.000000   0.000000
-   36  C  4  Z    0.000000   0.000000   0.000000   0.205824  -0.318290
-   37  H  5  S    0.074057   0.149288   0.105736   0.000000   0.000000
-   38  H  5  S    0.045785   0.126601   0.102013   0.000000   0.000000
-   39  H  6  S   -0.171640  -0.065065  -0.140187   0.000000   0.000000
-   40  H  6  S   -0.143621  -0.040905  -0.121514   0.000000   0.000000
-   41  H  7  S   -0.081789   0.158209   0.123590   0.000000   0.000000
-   42  H  7  S   -0.065755   0.122281   0.116011   0.000000   0.000000
-   43  H  8  S    0.081789  -0.158209   0.123590   0.000000   0.000000
-   44  H  8  S    0.065755  -0.122281   0.116011   0.000000   0.000000
-   45  H  9  S   -0.074057  -0.149288   0.105736   0.000000   0.000000
-   46  H  9  S   -0.045785  -0.126601   0.102013   0.000000   0.000000
-   47  H 10  S    0.171640   0.065065  -0.140187   0.000000   0.000000
-   48  H 10  S    0.143621   0.040905  -0.121514   0.000000   0.000000
+    1  C  1  S    0.009936  -0.015527  -0.003490   0.000000   0.000000
+    2  C  1  S   -0.016296   0.022994   0.003367   0.000000   0.000000
+    3  C  1  X   -0.267360  -0.036299   0.169565   0.000000   0.000000
+    4  C  1  Y   -0.005416  -0.225905   0.053984   0.000000   0.000000
+    5  C  1  Z    0.000000   0.000000   0.000000   0.191164  -0.262966
+    6  C  1  S    0.008584   0.010018   0.007921   0.000000   0.000000
+    7  C  1  X   -0.187982  -0.081998   0.187376   0.000000   0.000000
+    8  C  1  Y   -0.037538  -0.185640   0.069758   0.000000   0.000000
+    9  C  1  Z    0.000000   0.000000   0.000000   0.205824  -0.318290
+   10  C  2  S    0.018865   0.016754   0.016952   0.000000   0.000000
+   11  C  2  S   -0.022058  -0.013318  -0.017842   0.000000   0.000000
+   12  C  2  X    0.004495  -0.020967  -0.249155   0.000000   0.000000
+   13  C  2  Y   -0.166512   0.206671  -0.077210   0.000000   0.000000
+   14  C  2  Z    0.000000   0.000000   0.000000   0.253488  -0.203625
+   15  C  2  S   -0.055466  -0.073173  -0.049316   0.000000   0.000000
+   16  C  2  X   -0.001607   0.040538  -0.205838   0.000000   0.000000
+   17  C  2  Y   -0.128907   0.216532  -0.101391   0.000000   0.000000
+   18  C  2  Z    0.000000   0.000000   0.000000   0.260741  -0.262484
+   19  C  3  S   -0.018865  -0.016754   0.016952   0.000000   0.000000
+   20  C  3  S    0.022058   0.013318  -0.017842   0.000000   0.000000
+   21  C  3  X    0.004495  -0.020967   0.249155   0.000000   0.000000
+   22  C  3  Y    0.166512  -0.206671  -0.077210   0.000000   0.000000
+   23  C  3  Z    0.000000   0.000000   0.000000   0.253488   0.203625
+   24  C  3  S    0.055466   0.073173  -0.049316   0.000000   0.000000
+   25  C  3  X   -0.001607   0.040538   0.205838   0.000000   0.000000
+   26  C  3  Y    0.128907  -0.216532  -0.101391   0.000000   0.000000
+   27  C  3  Z    0.000000   0.000000   0.000000   0.260741   0.262484
+   28  C  4  S   -0.009936   0.015527  -0.003490   0.000000   0.000000
+   29  C  4  S    0.016296  -0.022994   0.003367   0.000000   0.000000
+   30  C  4  X   -0.267360  -0.036299  -0.169565   0.000000   0.000000
+   31  C  4  Y    0.005416   0.225905   0.053984   0.000000   0.000000
+   32  C  4  Z    0.000000   0.000000   0.000000   0.191164   0.262966
+   33  C  4  S   -0.008584  -0.010018   0.007921   0.000000   0.000000
+   34  C  4  X   -0.187982  -0.081998  -0.187376   0.000000   0.000000
+   35  C  4  Y    0.037538   0.185640   0.069758   0.000000   0.000000
+   36  C  4  Z    0.000000   0.000000   0.000000   0.205824   0.318290
+   37  H  5  S   -0.074057  -0.149288   0.105736   0.000000   0.000000
+   38  H  5  S   -0.045785  -0.126601   0.102013   0.000000   0.000000
+   39  H  6  S    0.171640   0.065065  -0.140187   0.000000   0.000000
+   40  H  6  S    0.143621   0.040905  -0.121514   0.000000   0.000000
+   41  H  7  S    0.081789  -0.158209   0.123590   0.000000   0.000000
+   42  H  7  S    0.065755  -0.122281   0.116011   0.000000   0.000000
+   43  H  8  S   -0.081789   0.158209   0.123590   0.000000   0.000000
+   44  H  8  S   -0.065755   0.122281   0.116011   0.000000   0.000000
+   45  H  9  S    0.074057   0.149288   0.105736   0.000000   0.000000
+   46  H  9  S    0.045785   0.126601   0.102013   0.000000   0.000000
+   47  H 10  S   -0.171640  -0.065065  -0.140187   0.000000   0.000000
+   48  H 10  S   -0.143621  -0.040905  -0.121514   0.000000   0.000000
 
                      16         17         18         19         20
                     0.1236     0.2705     0.2834     0.2871     0.3343
                      A          A          A          A          A   
-    1  C  1  S    0.000000  -0.054699   0.000000   0.082027  -0.048397
-    2  C  1  S    0.000000   0.032119   0.000000  -0.034124   0.006254
-    3  C  1  X    0.000000  -0.075311   0.000000  -0.040179  -0.188195
-    4  C  1  Y    0.000000   0.002940   0.000000  -0.136508  -0.033179
-    5  C  1  Z    0.242144   0.000000   0.177087   0.000000   0.000000
-    6  C  1  S    0.000000   0.649838   0.000000  -1.068979   0.805028
-    7  C  1  X    0.000000  -0.396678   0.000000  -0.093208  -0.692198
-    8  C  1  Y    0.000000   0.161962   0.000000  -0.600668  -0.158623
-    9  C  1  Z    0.542948   0.000000   0.548108   0.000000   0.000000
-   10  C  2  S    0.000000  -0.050992   0.000000  -0.033609  -0.009704
-   11  C  2  S    0.000000   0.018170   0.000000   0.015911  -0.009257
-   12  C  2  X    0.000000  -0.050705   0.000000  -0.024384  -0.092511
-   13  C  2  Y    0.000000  -0.122000   0.000000  -0.047071  -0.103778
-   14  C  2  Z   -0.186857   0.000000  -0.282334   0.000000   0.000000
-   15  C  2  S    0.000000   0.793814   0.000000   0.314061   0.333892
-   16  C  2  X    0.000000  -0.226107   0.000000  -0.084061  -0.140462
-   17  C  2  Y    0.000000  -0.412414   0.000000  -0.119048  -0.401306
-   18  C  2  Z   -0.397852   0.000000  -0.767897   0.000000   0.000000
-   19  C  3  S    0.000000  -0.050992   0.000000  -0.033609   0.009704
-   20  C  3  S    0.000000   0.018170   0.000000   0.015911   0.009257
-   21  C  3  X    0.000000   0.050705   0.000000   0.024384  -0.092511
-   22  C  3  Y    0.000000  -0.122000   0.000000  -0.047071   0.103778
-   23  C  3  Z   -0.186857   0.000000   0.282334   0.000000   0.000000
-   24  C  3  S    0.000000   0.793814   0.000000   0.314061  -0.333892
-   25  C  3  X    0.000000   0.226107   0.000000   0.084061  -0.140462
-   26  C  3  Y    0.000000  -0.412414   0.000000  -0.119048   0.401306
-   27  C  3  Z   -0.397852   0.000000   0.767897   0.000000   0.000000
-   28  C  4  S    0.000000  -0.054699   0.000000   0.082027   0.048397
-   29  C  4  S    0.000000   0.032119   0.000000  -0.034124  -0.006254
-   30  C  4  X    0.000000   0.075311   0.000000   0.040179  -0.188195
-   31  C  4  Y    0.000000   0.002940   0.000000  -0.136508   0.033179
-   32  C  4  Z    0.242144   0.000000  -0.177087   0.000000   0.000000
-   33  C  4  S    0.000000   0.649838   0.000000  -1.068979  -0.805028
-   34  C  4  X    0.000000   0.396678   0.000000   0.093208  -0.692198
-   35  C  4  Y    0.000000   0.161962   0.000000  -0.600668   0.158623
-   36  C  4  Z    0.542948   0.000000  -0.548108   0.000000   0.000000
-   37  H  5  S    0.000000   0.025615   0.000000   0.019450   0.006721
-   38  H  5  S    0.000000  -0.164033   0.000000   1.200719   0.202828
-   39  H  6  S    0.000000  -0.045583   0.000000   0.013272  -0.025746
-   40  H  6  S    0.000000  -0.829273   0.000000   0.283166  -1.278162
-   41  H  7  S    0.000000  -0.038123   0.000000  -0.029054  -0.011990
-   42  H  7  S    0.000000  -0.990294   0.000000  -0.480188  -0.696181
-   43  H  8  S    0.000000  -0.038123   0.000000  -0.029054   0.011990
-   44  H  8  S    0.000000  -0.990294   0.000000  -0.480188   0.696181
-   45  H  9  S    0.000000   0.025615   0.000000   0.019450  -0.006721
-   46  H  9  S    0.000000  -0.164033   0.000000   1.200719  -0.202828
-   47  H 10  S    0.000000  -0.045583   0.000000   0.013272   0.025746
-   48  H 10  S    0.000000  -0.829273   0.000000   0.283166   1.278162
+    1  C  1  S    0.000000   0.054699   0.000000   0.082027   0.048397
+    2  C  1  S    0.000000  -0.032119   0.000000  -0.034124  -0.006254
+    3  C  1  X    0.000000   0.075311   0.000000  -0.040179   0.188195
+    4  C  1  Y    0.000000  -0.002940   0.000000  -0.136508   0.033179
+    5  C  1  Z   -0.242144   0.000000   0.177087   0.000000   0.000000
+    6  C  1  S    0.000000  -0.649838   0.000000  -1.068979  -0.805028
+    7  C  1  X    0.000000   0.396678   0.000000  -0.093208   0.692198
+    8  C  1  Y    0.000000  -0.161962   0.000000  -0.600668   0.158623
+    9  C  1  Z   -0.542948   0.000000   0.548108   0.000000   0.000000
+   10  C  2  S    0.000000   0.050992   0.000000  -0.033609   0.009704
+   11  C  2  S    0.000000  -0.018170   0.000000   0.015911   0.009257
+   12  C  2  X    0.000000   0.050705   0.000000  -0.024384   0.092511
+   13  C  2  Y    0.000000   0.122000   0.000000  -0.047071   0.103778
+   14  C  2  Z    0.186857   0.000000  -0.282334   0.000000   0.000000
+   15  C  2  S    0.000000  -0.793814   0.000000   0.314061  -0.333892
+   16  C  2  X    0.000000   0.226107   0.000000  -0.084061   0.140462
+   17  C  2  Y    0.000000   0.412414   0.000000  -0.119048   0.401306
+   18  C  2  Z    0.397852   0.000000  -0.767897   0.000000   0.000000
+   19  C  3  S    0.000000   0.050992   0.000000  -0.033609  -0.009704
+   20  C  3  S    0.000000  -0.018170   0.000000   0.015911  -0.009257
+   21  C  3  X    0.000000  -0.050705   0.000000   0.024384   0.092511
+   22  C  3  Y    0.000000   0.122000   0.000000  -0.047071  -0.103778
+   23  C  3  Z    0.186857   0.000000   0.282334   0.000000   0.000000
+   24  C  3  S    0.000000  -0.793814   0.000000   0.314061   0.333892
+   25  C  3  X    0.000000  -0.226107   0.000000   0.084061   0.140462
+   26  C  3  Y    0.000000   0.412414   0.000000  -0.119048  -0.401306
+   27  C  3  Z    0.397852   0.000000   0.767897   0.000000   0.000000
+   28  C  4  S    0.000000   0.054699   0.000000   0.082027  -0.048397
+   29  C  4  S    0.000000  -0.032119   0.000000  -0.034124   0.006254
+   30  C  4  X    0.000000  -0.075311   0.000000   0.040179   0.188195
+   31  C  4  Y    0.000000  -0.002940   0.000000  -0.136508  -0.033179
+   32  C  4  Z   -0.242144   0.000000  -0.177087   0.000000   0.000000
+   33  C  4  S    0.000000  -0.649838   0.000000  -1.068979   0.805028
+   34  C  4  X    0.000000  -0.396678   0.000000   0.093208   0.692198
+   35  C  4  Y    0.000000  -0.161962   0.000000  -0.600668  -0.158623
+   36  C  4  Z   -0.542948   0.000000  -0.548108   0.000000   0.000000
+   37  H  5  S    0.000000  -0.025615   0.000000   0.019450  -0.006721
+   38  H  5  S    0.000000   0.164033   0.000000   1.200719  -0.202828
+   39  H  6  S    0.000000   0.045583   0.000000   0.013272   0.025746
+   40  H  6  S    0.000000   0.829273   0.000000   0.283166   1.278162
+   41  H  7  S    0.000000   0.038123   0.000000  -0.029054   0.011990
+   42  H  7  S    0.000000   0.990294   0.000000  -0.480188   0.696181
+   43  H  8  S    0.000000   0.038123   0.000000  -0.029054  -0.011990
+   44  H  8  S    0.000000   0.990294   0.000000  -0.480188  -0.696181
+   45  H  9  S    0.000000  -0.025615   0.000000   0.019450   0.006721
+   46  H  9  S    0.000000   0.164033   0.000000   1.200719   0.202828
+   47  H 10  S    0.000000   0.045583   0.000000   0.013272  -0.025746
+   48  H 10  S    0.000000   0.829273   0.000000   0.283166  -1.278162
 
                      21         22         23         24         25
                     0.3823     0.3874     0.4019     0.5144     0.5717
                      A          A          A          A          A   
-    1  C  1  S    0.081099  -0.050282   0.031814   0.077272   0.054064
-    2  C  1  S   -0.037058   0.002458  -0.009706  -0.000983   0.010115
-    3  C  1  X    0.033272   0.008713   0.164066  -0.050518  -0.069646
-    4  C  1  Y   -0.037275   0.148840   0.093372   0.089809  -0.104176
+    1  C  1  S   -0.081099  -0.050282   0.031814   0.077272  -0.054064
+    2  C  1  S    0.037058   0.002458  -0.009706  -0.000983  -0.010115
+    3  C  1  X   -0.033272   0.008713   0.164066  -0.050518   0.069646
+    4  C  1  Y    0.037275   0.148840   0.093372   0.089809   0.104176
     5  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-    6  C  1  S   -0.970329   1.077965  -0.559637  -1.811223  -1.238055
-    7  C  1  X    0.284651   0.310989   0.889165  -1.135074  -1.474378
-    8  C  1  Y    0.010154   0.591979   0.700000   1.285571   0.216871
+    6  C  1  S    0.970329   1.077965  -0.559637  -1.811223   1.238055
+    7  C  1  X   -0.284651   0.310989   0.889165  -1.135074   1.474378
+    8  C  1  Y   -0.010154   0.591979   0.700000   1.285571  -0.216871
     9  C  1  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   10  C  2  S   -0.090467  -0.077462  -0.039252  -0.070105  -0.112801
-   11  C  2  S    0.049630   0.027245  -0.005487   0.006444   0.007293
-   12  C  2  X   -0.030845   0.122489  -0.093700  -0.032719   0.140087
-   13  C  2  Y   -0.084921  -0.061348  -0.097065   0.134555   0.145690
+   10  C  2  S    0.090467  -0.077462  -0.039252  -0.070105   0.112801
+   11  C  2  S   -0.049630   0.027245  -0.005487   0.006444  -0.007293
+   12  C  2  X    0.030845   0.122489  -0.093700  -0.032719  -0.140087
+   13  C  2  Y    0.084921  -0.061348  -0.097065   0.134555  -0.145690
    14  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   15  C  2  S    1.101333   1.095593   0.896115   2.040316   2.460799
-   16  C  2  X   -0.335171   0.578771  -0.540852  -0.875034   1.431337
-   17  C  2  Y   -0.672534  -0.559720  -0.437508   1.203534   1.577883
+   15  C  2  S   -1.101333   1.095593   0.896115   2.040316  -2.460799
+   16  C  2  X    0.335171   0.578771  -0.540852  -0.875034  -1.431337
+   17  C  2  Y    0.672534  -0.559720  -0.437508   1.203534  -1.577883
    18  C  2  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   19  C  3  S    0.090467   0.077462  -0.039252  -0.070105   0.112801
-   20  C  3  S   -0.049630  -0.027245  -0.005487   0.006444  -0.007293
-   21  C  3  X   -0.030845   0.122489   0.093700   0.032719   0.140087
-   22  C  3  Y    0.084921   0.061348  -0.097065   0.134555  -0.145690
+   19  C  3  S   -0.090467   0.077462  -0.039252  -0.070105  -0.112801
+   20  C  3  S    0.049630  -0.027245  -0.005487   0.006444   0.007293
+   21  C  3  X    0.030845   0.122489   0.093700   0.032719  -0.140087
+   22  C  3  Y   -0.084921   0.061348  -0.097065   0.134555   0.145690
    23  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   24  C  3  S   -1.101333  -1.095593   0.896115   2.040316  -2.460799
-   25  C  3  X   -0.335171   0.578771   0.540852   0.875034   1.431337
-   26  C  3  Y    0.672534   0.559720  -0.437508   1.203534  -1.577883
+   24  C  3  S    1.101333  -1.095593   0.896115   2.040316   2.460799
+   25  C  3  X    0.335171   0.578771   0.540852   0.875034  -1.431337
+   26  C  3  Y   -0.672534   0.559720  -0.437508   1.203534   1.577883
    27  C  3  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   28  C  4  S   -0.081099   0.050282   0.031814   0.077272  -0.054064
-   29  C  4  S    0.037058  -0.002458  -0.009706  -0.000983  -0.010115
-   30  C  4  X    0.033272   0.008713  -0.164066   0.050518  -0.069646
-   31  C  4  Y    0.037275  -0.148840   0.093372   0.089809   0.104176
+   28  C  4  S    0.081099   0.050282   0.031814   0.077272   0.054064
+   29  C  4  S   -0.037058  -0.002458  -0.009706  -0.000983   0.010115
+   30  C  4  X   -0.033272   0.008713  -0.164066   0.050518   0.069646
+   31  C  4  Y   -0.037275  -0.148840   0.093372   0.089809  -0.104176
    32  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   33  C  4  S    0.970329  -1.077965  -0.559637  -1.811223   1.238055
-   34  C  4  X    0.284651   0.310989  -0.889165   1.135074  -1.474378
-   35  C  4  Y   -0.010154  -0.591979   0.700000   1.285571  -0.216871
+   33  C  4  S   -0.970329  -1.077965  -0.559637  -1.811223  -1.238055
+   34  C  4  X   -0.284651   0.310989  -0.889165   1.135074   1.474378
+   35  C  4  Y    0.010154  -0.591979   0.700000   1.285571   0.216871
    36  C  4  Z    0.000000   0.000000   0.000000   0.000000   0.000000
-   37  H  5  S    0.027101  -0.077023   0.020481  -0.011098  -0.122674
-   38  H  5  S    0.524898  -1.301333  -0.745365  -0.098063   0.792015
-   39  H  6  S    0.001585   0.050430  -0.015202  -0.059106   0.045454
-   40  H  6  S    0.741689   0.057198   1.285087  -0.307303  -0.742244
-   41  H  7  S   -0.021774   0.037257   0.038634   0.055954  -0.015069
-   42  H  7  S   -1.324950  -0.586485  -0.931461   0.258091   0.958362
-   43  H  8  S    0.021774  -0.037257   0.038634   0.055954   0.015069
-   44  H  8  S    1.324950   0.586485  -0.931461   0.258091  -0.958362
-   45  H  9  S   -0.027101   0.077023   0.020481  -0.011098   0.122674
-   46  H  9  S   -0.524898   1.301333  -0.745365  -0.098063  -0.792015
-   47  H 10  S   -0.001585  -0.050430  -0.015202  -0.059106  -0.045454
-   48  H 10  S   -0.741689  -0.057198   1.285087  -0.307303   0.742244
+   37  H  5  S   -0.027101  -0.077023   0.020481  -0.011098   0.122674
+   38  H  5  S   -0.524898  -1.301333  -0.745365  -0.098063  -0.792015
+   39  H  6  S   -0.001585   0.050430  -0.015202  -0.059106  -0.045454
+   40  H  6  S   -0.741689   0.057198   1.285087  -0.307303   0.742244
+   41  H  7  S    0.021774   0.037257   0.038634   0.055954   0.015069
+   42  H  7  S    1.324950  -0.586485  -0.931461   0.258091  -0.958362
+   43  H  8  S   -0.021774  -0.037257   0.038634   0.055954  -0.015069
+   44  H  8  S   -1.324950   0.586485  -0.931461   0.258091   0.958362
+   45  H  9  S    0.027101   0.077023   0.020481  -0.011098  -0.122674
+   46  H  9  S    0.524898   1.301333  -0.745365  -0.098063   0.792015
+   47  H 10  S    0.001585  -0.050430  -0.015202  -0.059106   0.045454
+   48  H 10  S    0.741689  -0.057198   1.285087  -0.307303  -0.742244
 
      ----------------------------------------------------------------
      PROPERTY VALUES FOR THE RHF   SELF-CONSISTENT FIELD WAVEFUNCTION
@@ -3503,12 +3503,12 @@ Assuming a single but multicore node.
          WAVEFUNCTION NORMALIZATION =       1.0000000000
 
                 ONE ELECTRON ENERGY =    -415.0869589679
-                TWO ELECTRON ENERGY =     155.5426789481
+                TWO ELECTRON ENERGY =     155.5426789482
            NUCLEAR REPULSION ENERGY =     105.4903367343
                                       ------------------
                        TOTAL ENERGY =    -154.0539432855
 
- ELECTRON-ELECTRON POTENTIAL ENERGY =     155.5426789481
+ ELECTRON-ELECTRON POTENTIAL ENERGY =     155.5426789482
   NUCLEUS-ELECTRON POTENTIAL ENERGY =    -568.8190972639
    NUCLEUS-NUCLEUS POTENTIAL ENERGY =     105.4903367343
                                       ------------------
@@ -3529,7 +3529,7 @@ Assuming a single but multicore node.
                (K,V1,2)=    149.7807663834   -525.9852936829    136.8713368986
            PI PART(1+2)=    -20.2110710056
                (K,V1,2)=      3.9513719126    -42.8338035810     18.6713606628
-  SIGMA SKELETON, ERROR=   -133.8428536666     -0.0000000000
+  SIGMA SKELETON, ERROR=   -133.8428536666      0.0000000000
              MIXED PART= 0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00
  ...... END OF PI ENERGY ANALYSIS ......
 
@@ -3543,7 +3543,7 @@ Assuming a single but multicore node.
 
                   2.000000   2.000000   2.000000   2.000000   2.000000
 
-    1             0.004653   0.004029   0.992638   0.993817   0.340080
+    1             0.004653   0.004029   0.992639   0.993817   0.340080
     2             0.994872   0.994590   0.004774   0.003709   0.615355
     3             0.994872   0.994590   0.004774   0.003709   0.615355
     4             0.004653   0.004029   0.992639   0.993816   0.340080
@@ -3686,10 +3686,10 @@ Assuming a single but multicore node.
                        TOTAL       BONDED        FREE
       ATOM            VALENCE     VALENCE     VALENCE
     1 C                 3.766       3.766      -0.000
-    2 C                 3.728       3.728       0.000
-    3 C                 3.728       3.728      -0.000
+    2 C                 3.728       3.728      -0.000
+    3 C                 3.728       3.728       0.000
     4 C                 3.766       3.766       0.000
-    5 H                 0.926       0.926       0.000
+    5 H                 0.926       0.926      -0.000
     6 H                 0.922       0.922       0.000
     7 H                 0.916       0.916       0.000
     8 H                 0.916       0.916      -0.000
@@ -3701,45 +3701,45 @@ Assuming a single but multicore node.
           ---------------------
 
  POINT   1           X           Y           Z (BOHR)    CHARGE
-                -0.000000    0.000000    0.000000        0.00 (A.U.)
+                -0.000000    0.000000   -0.000000        0.00 (A.U.)
          DX          DY          DZ         /D/  (DEBYE)
      0.000000   -0.034162   -0.000000    0.034162
  ...... END OF PROPERTY EVALUATION ......
- CPU     0: STEP CPU TIME=     0.01 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    84.27%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.09%
   $VIB   
           IVIB=   0 IATOM=   0 ICOORD=   0 E=     -154.0539432855
- -1.190567136E-05-8.034626740E-06 3.933353335E-22 9.167456775E-06 2.362088636E-05
-  1.064306259E-22-9.167469471E-06 2.362077291E-05-2.218872280E-22 1.190555509E-05
- -8.034548097E-06-2.850529030E-22 1.450887480E-05-7.372382086E-06 3.487453085E-23
- -8.947681789E-06-8.088791000E-06 5.204788252E-23-6.201348612E-06-1.250234140E-07
-  8.661212151E-24 6.201455857E-06-1.250542790E-07-3.568506622E-23-1.450885792E-05
- -7.372360835E-06-7.963827814E-24 8.947686626E-06-8.088872821E-06-4.476055997E-23
-  2.008652251E-09-3.416186079E-02-2.413924990E-17
+ -1.190567950E-05-8.034636358E-06 9.752668502E-22 9.167454162E-06 2.362090008E-05
+  2.250683285E-22-9.167469799E-06 2.362076038E-05-5.647477698E-22 1.190554598E-05
+ -8.034539637E-06-6.566942016E-22 1.450887683E-05-7.372382079E-06 9.111329197E-23
+ -8.947682412E-06-8.088785206E-06 1.271632018E-22-6.201339789E-06-1.250206280E-07
+  1.358788898E-23 6.201464639E-06-1.250570766E-07-9.309349964E-23-1.450885599E-05
+ -7.372360819E-06-1.194057763E-23 8.947685877E-06-8.088878655E-06-1.057235127E-22
+  2.086611939E-09-3.416186079E-02-9.125481679E-17
  ......END OF GEOMETRY SEARCH......
- CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
- TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    84.25%
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.2 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.3 SECONDS, CPU UTILIZATION IS    76.08%
  AN INPUT FILE FOR -MOLPLT- HAS BEEN PUNCHED.
                580000  WORDS OF DYNAMIC MEMORY USED
- EXECUTION OF GAMESS TERMINATED NORMALLY 14:21:43 07-NOV-2026    
+ EXECUTION OF GAMESS TERMINATED NORMALLY 15:52:04 09-NOV-2026    
  DDI: 263640 bytes (0.3 MB / 0 MWords) used by master data server.
 
  ----------------------------------------
  CPU timing information for all processes
  ========================================
- 0: 0.380 + 0.47 = 0.428
- 1: 0.362 + 0.29 = 0.391
- 2: 0.360 + 0.34 = 0.394
- 3: 0.357 + 0.24 = 0.382
+ 0: 0.186 + 0.25 = 0.212
+ 1: 0.175 + 0.16 = 0.191
+ 2: 0.175 + 0.18 = 0.193
+ 3: 0.173 + 0.13 = 0.186
  ----------------------------------------
  ddikick.x: exited gracefully.
 unset echo
 ----- accounting info -----
 Files used on the parent node MonkeyBook.local were:
--rw-r--r--@ 1 blink  staff      933 Nov  7 14:21 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F05
--rw-r--r--@ 1 blink  staff  1963200 Nov  7 14:21 /Users/blink/github/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F10
+-rw-r--r--@ 1 blink  staff      933 Nov  9 15:52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F05
+-rw-r--r--@ 1 blink  staff  1963200 Nov  9 15:52 /Users/blink/github/compChem/gamess2024R2claude/gamess/scr/butadiene_cis_flat.F10
 ls: No match.
 ls: No match.
 ls: No match.
-Sat Nov  7 14:21:44 AST 2026
-1.547u 0.242s 0:01.73 102.8%	0+0k 0+0io 110pf+0w
+Mon Nov  9 15:52:05 AST 2026
+0.770u 0.140s 0:01.44 63.1%	0+0k 0+0io 93pf+0w
