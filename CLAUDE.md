@@ -58,7 +58,9 @@ computer after installing GAMESS.
 
 - Chapters are `.md` pages and `.ipynb` notebooks listed in the `myst.yml` toc.
 - Citations use `[@key]` with entries in `references.bib`.
-- GAMESS input files live in `inputs/`. Show them in pages with
+- GAMESS input files live in `inputs/chN/` and job output in `runs/chN/`, one
+  folder per chapter, so each chapter runs on its own. Each notebook's settings
+  cell sets `INPUTS`, `RUNS` and `gt.RUN_FOLDER`. Show inputs in pages with
   `{literalinclude}`, or read them in notebooks with Python.
 - Use SI units. Energies are in hartree unless stated otherwise.
 

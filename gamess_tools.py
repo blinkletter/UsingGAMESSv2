@@ -10,6 +10,8 @@ Your GAMESS location is set in ``gamess_settings.py``.  Edit that file, not
 this one.
 
 Running a job
+    RUN_FOLDER                      where jobs are written; each notebook sets
+                                    its chapter folder, e.g. Path("runs/ch2")
     run_gamess(input_file)          run GAMESS, write a .log file, return its path
     terminated_normally(log_file)   True if GAMESS finished without error
     check_installation()            print a checklist for your GAMESS setup
@@ -122,6 +124,12 @@ def check_installation(version=None):
 # Running GAMESS
 # ---------------------------------------------------------------------------
 
+# Folder where run_gamess() writes the .log, .dat, ... files of each job.
+# Every chapter keeps its own folder, so each notebook sets this in its
+# settings cell, for example:   gt.RUN_FOLDER = Path("runs/ch2")
+RUN_FOLDER = Path("runs")
+
+
 def terminated_normally(log_file):
     """True if the log file says GAMESS finished normally."""
     log_file = Path(log_file)
@@ -132,11 +140,12 @@ def run_gamess(input_file, ncpus=None, version=None, log_file=None,
                run_folder=None, rerun=True):
     """Run GAMESS on one input file and return the path of the .log file.
 
-    input_file  the .inp file (e.g. "inputs/water.inp")
+    input_file  the .inp file (e.g. "inputs/ch2/water.inp")
     ncpus       number of CPU cores (default from gamess_settings.py)
     version     the "00" in gamess.00.x (default from gamess_settings.py)
     log_file    where to write the output (default: run_folder/job.log)
-    run_folder  where the .log, .dat, .trj ... files go (default: "runs")
+    run_folder  where the .log, .dat, .trj ... files go
+                (default: RUN_FOLDER, e.g. "runs/ch2")
     rerun       False = skip the job if a finished log file already exists
 
     This does what the gms script does in a terminal:
@@ -149,7 +158,7 @@ def run_gamess(input_file, ncpus=None, version=None, log_file=None,
     job = input_file.stem                                   # "water" from "water.inp"
     ncpus = ncpus or gamess_settings.NCPUS
     version = version or gamess_settings.VERSION
-    run_folder = Path(run_folder or "runs").resolve()
+    run_folder = Path(run_folder or RUN_FOLDER).resolve()
     run_folder.mkdir(parents=True, exist_ok=True)
     log_file = Path(log_file).resolve() if log_file else run_folder / f"{job}.log"
 

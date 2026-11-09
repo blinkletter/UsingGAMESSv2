@@ -84,7 +84,7 @@ These functions turn the settings file into paths and check that your installati
 **`run_gamess(input_file)`** is the heart of the library. It does what you would do in a terminal with the `gms` script:
 
 1. Finds the input file and takes the job name from it (`water` from `water.inp`).
-2. Creates the folder `runs/` (or the `run_folder` you choose) for the results.
+2. Creates the run folder for the results: `RUN_FOLDER`, which each notebook sets to its chapter folder (for example `runs/ch2`), or the `run_folder` you choose.
 3. With `rerun=False`, skips the job if a finished log file is already there. This saves time when you run a notebook a second time.
 4. Deletes scratch files that an interrupted run of the same job left in `scr/`.
 5. Sets the variable `GMS_USERSCR` so that `rungms` writes the `.dat` and `.trj` files into the run folder, then starts `rungms` with `subprocess.run`. Everything *GAMESS* prints goes into the `.log` file.
