@@ -29,6 +29,7 @@ Reading GAMESS log files
     internal_coordinates(log_file)  bond lengths and angles (needs NZVAR)
     distance(atoms, i, j)           bond length from a geometry
     angle(atoms, i, j, k)           bond angle from a geometry
+    shortest_distance(atoms, "C", "H")  shortest C-H distance in a geometry
 
 Molecular orbitals
     occupied_orbitals(log_file)     number of doubly occupied orbitals
@@ -36,6 +37,8 @@ Molecular orbitals
     localized_orbitals(log_file)    coefficients of the localized orbitals
     localized_fock(log_file)        Fock matrix written in localized orbitals
     p_character(mo, "X")            share of each MO made of p functions on one axis
+    p_coefficients(mo, n, "C 1")    x, y and z coefficients of one atom's p functions
+    pi_orbitals(log_file, "Z")      the orbitals that are mostly p on one axis
 
 Charges and timing
     atomic_charges(log_file)        Mulliken and Lowdin charge on each atom
@@ -45,12 +48,23 @@ Vibrations and reaction paths
     frequencies(log_file)           vibrational frequencies (imaginary ones < 0)
     irc_path(log_file)              (s, energy, geometry) at each IRC point
     irc_points(log_file, bonds)     stride, energy and bond lengths at each IRC point
+    irc_table(forward, reverse)     both halves of an IRC joined into one pandas table
 
 Writing input files
     new_input(old, new, atoms, {...})  copy an input with new coordinates/keywords
     dat_group(dat_file, "$ZMAT")    copy a group such as $ZMAT, $VEC or $HESS
                                     out of a .dat file
     add_group(inp, text, new)       paste a group (e.g. $HESS) at the end of an input
+    count_unique_atoms(input_file)  number of atom lines in the $DATA group
+    saddle_input(hess_inp, hess_log, new)  SADPOINT input with the $HESS group added
+    irc_inputs(template, saddle_log, name) forward and reverse IRC input files
+
+Plots
+    plot_optimization(log_file)     relative energy at each optimisation step
+    energy_levels(ax, x, energies)  draw orbital energies as short lines
+
+Units
+    HARTREE_TO_KJMOL                2625.5 kJ/mol in one hartree
 """
 
 import os
@@ -62,6 +76,10 @@ from pathlib import Path
 import numpy as np
 
 import gamess_settings
+
+# 1 hartree = 2625.5 kJ/mol.  Multiply an energy difference in hartree by
+# this number to get kJ/mol.
+HARTREE_TO_KJMOL = 2625.5
 
 
 # ---------------------------------------------------------------------------
@@ -325,6 +343,19 @@ def angle(atoms, i, j, k):
     return float(np.degrees(np.arccos(np.clip(cos, -1.0, 1.0))))
 
 
+def shortest_distance(atoms, a, b):
+    """Shortest distance (angstrom) between an atom named `a` and one named `b`.
+
+    For example shortest_distance(atoms, "C", "H") is the shortest C-H bond.
+    Useful when the atom numbering changes from one input file to the next
+    and you don't want to look up which atoms are bonded.
+    """
+    n = len(atoms)
+    return min(distance(atoms, i, j)
+               for i in range(1, n + 1) for j in range(1, n + 1)
+               if i != j and atoms[i - 1][0] == a and atoms[j - 1][0] == b)
+
+
 def internal_coordinates(log_file):
     """The last INTERNAL COORDINATES table (only printed when NZVAR is set).
 
@@ -476,6 +507,29 @@ def localized_fock(log_file):
 # Writing new input files from old ones
 # ---------------------------------------------------------------------------
 
+def _data_atoms(lines):
+    """Line numbers (first, end) of the atom lines in the $DATA group.
+
+    The group is: $DATA, a title line, the symmetry line, a blank line
+    (missing for C1), the atoms, and $END.
+    """
+    start = next(i for i, l in enumerate(lines) if l.strip().upper() == "$DATA")
+    end = next(i for i in range(start, len(lines)) if lines[i].strip().upper() == "$END")
+    symmetry = lines[start + 2].strip().upper()
+    first_atom = start + 3 if symmetry in ("C1", "C 1") else start + 4
+    return first_atom, end
+
+
+def count_unique_atoms(input_file):
+    """Number of atom lines in the $DATA group of an input file.
+
+    With symmetry these are only the symmetry unique atoms; GAMESS makes
+    the others.  Works for Cartesian (COORD=UNIQUE) input.
+    """
+    first_atom, end = _data_atoms(Path(input_file).read_text().splitlines())
+    return end - first_atom
+
+
 def new_input(old_input, new_input_file, atoms=None, replacements=None):
     """Write a new input file based on an old one.
 
@@ -495,10 +549,7 @@ def new_input(old_input, new_input_file, atoms=None, replacements=None):
 
     if atoms is not None:
         lines = text.splitlines()
-        start = next(i for i, l in enumerate(lines) if l.strip().upper() == "$DATA")
-        end = next(i for i in range(start, len(lines)) if lines[i].strip().upper() == "$END")
-        symmetry = lines[start + 2].strip().upper()
-        first_atom = start + 3 if symmetry in ("C1", "C 1") else start + 4
+        first_atom, end = _data_atoms(lines)
         lines[first_atom:end] = atom_lines(atoms).splitlines()
         text = "\n".join(lines) + "\n"
 
@@ -539,6 +590,42 @@ def dat_group(dat_file, group, occurrence=-1):
     end = next(i for i in range(start, len(lines))
                if lines[i].strip().upper().startswith("$END"))
     return "\n".join(lines[start:end + 1]) + "\n"
+
+
+def saddle_input(hessian_input, hessian_log, new_input_file):
+    """Turn a Hessian input into a saddle point (transition state) search.
+
+    Copies `hessian_input` to `new_input_file` with RUNTYP=HESSIAN changed
+    to RUNTYP=SADPOINT and pastes the $HESS group from the .dat file that
+    sits beside `hessian_log`.  RUNTYP=SADPOINT reads that group because
+    HESS=READ is its default.
+    """
+    sadl = new_input(hessian_input, new_input_file,
+                     replacements={"RUNTYP=HESSIAN": "RUNTYP=SADPOINT"})
+    hess = dat_group(Path(hessian_log).with_suffix(".dat"), "$HESS")
+    return add_group(sadl, hess)
+
+
+def irc_inputs(template, saddle_log, name, run_folder=None):
+    """Write the forward and reverse IRC inputs that start at a saddle point.
+
+    template    an IRC input (RUNTYP=IRC, FORWRD=.TRUE. in $IRC, C1 symmetry)
+    saddle_log  the log file of the finished SADPOINT job
+    name        job name: writes name.inp and name_R.inp
+    run_folder  where to write them (default: RUN_FOLDER)
+
+    The atoms of the located saddle point replace those of the template,
+    and the $HESS group from the saddle point .dat file is pasted at the
+    end.  The reverse copy has FORWRD=.FALSE.  Returns (forward, reverse).
+    """
+    folder = Path(run_folder or RUN_FOLDER)
+    folder.mkdir(parents=True, exist_ok=True)
+    forward = new_input(template, folder / f"{name}.inp",
+                        atoms=final_geometry(saddle_log))
+    add_group(forward, dat_group(Path(saddle_log).with_suffix(".dat"), "$HESS"))
+    reverse = new_input(forward, folder / f"{name}_R.inp",
+                        replacements={"FORWRD=.TRUE.": "FORWRD=.FALSE."})
+    return forward, reverse
 
 
 # ---------------------------------------------------------------------------
@@ -598,51 +685,6 @@ def irc_path(log_file):
     return points
 
 
-# ---------------------------------------------------------------------------
-# Pi orbitals, charges and timing
-# ---------------------------------------------------------------------------
-
-def p_character(mo, axis):
-    """For each orbital, the share made of p functions along one axis.
-
-    mo    the dictionary returned by molecular_orbitals()
-    axis  "X", "Y" or "Z": the axis perpendicular to a planar molecule
-
-    Returns a numpy array with one number (0 to 1) per orbital.  A pi
-    orbital of a molecule lying in the yz-plane is built only from X
-    functions, so its share is close to 1; a sigma orbital has 0.
-    (This is the sum of squared coefficients, a rough but useful measure.)
-    """
-    rows = [i for i, label in enumerate(mo["labels"]) if label.split()[-1] == axis]
-    squares = mo["coefficients"] ** 2
-    return squares[rows].sum(axis=0) / squares.sum(axis=0)
-
-
-def atomic_charges(log_file):
-    """The last 'TOTAL MULLIKEN AND LOWDIN ATOMIC POPULATIONS' table.
-
-    Returns a list of (atom name, Mulliken charge, Lowdin charge).
-    """
-    lines = Path(log_file).read_text(errors="replace").splitlines()
-    starts = [i for i, line in enumerate(lines)
-              if "TOTAL MULLIKEN AND LOWDIN ATOMIC POPULATIONS" in line]
-    if not starts:
-        raise ValueError(f"no population analysis found in {log_file}")
-    charges = []
-    for line in lines[starts[-1] + 2:]:       # skip the title and column headers
-        parts = line.split()
-        if len(parts) != 6:
-            break
-        charges.append((parts[1], float(parts[3]), float(parts[5])))
-    return charges
-
-
-def wall_time(log_file):
-    """Total wall clock time of the job in seconds (the last value printed)."""
-    line = grep("TOTAL WALL CLOCK TIME", log_file)[-1]
-    return float(line.split("=")[1].split()[0])
-
-
 def irc_points(log_file, bonds=((1, 3), (2, 3))):
     """Table of the points along an IRC run (RUNTYP=IRC, needs NZVAR).
 
@@ -681,3 +723,152 @@ def irc_points(log_file, bonds=((1, 3), (2, 3))):
                 point.setdefault(name, float(parts[-1]))   # first table after the point
     points.append(point)
     return points
+
+
+def irc_table(forward_log, reverse_log, bonds=((1, 3), (2, 3)), names=None):
+    """Join the forward and reverse halves of an IRC into one pandas table.
+
+    forward_log, reverse_log  log files of the FORWRD=.TRUE. and .FALSE. runs
+    bonds   atom pairs whose lengths are wanted (see irc_points())
+    names   new column names, e.g. {"R(1,3)": "C-Cl1"}
+
+    The steps are the ones done by hand in the IRC data-cleaning notebook:
+    the reverse strides are made negative, the transition state is kept only
+    once, the rows are sorted by stride, and "E(kJ/mole)" is the energy
+    relative to the highest point (the transition state) in kJ/mol.
+    Columns: stride, energy, E(kJ/mole), then one column per bond.
+    """
+    import pandas as pd                       # only needed by this function
+
+    df = pd.DataFrame(irc_points(forward_log, bonds))
+    df_r = pd.DataFrame(irc_points(reverse_log, bonds))
+    df_r["stride"] = -df_r["stride"]          # reverse run goes to negative stride
+    df_r = df_r.drop(index=[0])               # the transition state only once
+
+    data = pd.concat([df, df_r]).sort_values(by="stride").reset_index(drop=True)
+    data["E(kJ/mole)"] = (data["energy"] - data["energy"].max()) * HARTREE_TO_KJMOL
+    bond_columns = [f"R({i},{j})" for i, j in bonds]
+    data = data[["stride", "energy", "E(kJ/mole)"] + bond_columns]
+    return data.rename(columns=names or {})
+
+
+# ---------------------------------------------------------------------------
+# Pi orbitals, charges and timing
+# ---------------------------------------------------------------------------
+
+def p_character(mo, axis):
+    """For each orbital, the share made of p functions along one axis.
+
+    mo    the dictionary returned by molecular_orbitals()
+    axis  "X", "Y" or "Z": the axis perpendicular to a planar molecule
+
+    Returns a numpy array with one number (0 to 1) per orbital.  A pi
+    orbital of a molecule lying in the yz-plane is built only from X
+    functions, so its share is close to 1; a sigma orbital has 0.
+    (This is the sum of squared coefficients, a rough but useful measure.)
+    """
+    rows = [i for i, label in enumerate(mo["labels"]) if label.split()[-1] == axis]
+    squares = mo["coefficients"] ** 2
+    return squares[rows].sum(axis=0) / squares.sum(axis=0)
+
+
+def p_coefficients(mo, orbital, atom="C 1"):
+    """Coefficients (x, y, z) of the first p functions of one atom in one orbital.
+
+    mo       the dictionary returned by molecular_orbitals()
+    orbital  orbital number, counted from 1 as in the log file
+    atom     the atom part of the basis-function label, e.g. "C 1" or "N 2"
+
+    A basis set such as 6-311G has several sets of p functions on each
+    atom; only the first set is used.
+    """
+    rows = [mo["labels"].index(f"{atom} {axis}") for axis in "XYZ"]
+    return mo["coefficients"][rows, orbital - 1]
+
+
+def pi_orbitals(log_file, axis="Z", limit=0.5):
+    """Find the pi orbitals of a planar molecule.
+
+    axis   the axis perpendicular to the plane of the molecule
+    limit  the smallest p_character() that counts as a pi orbital
+
+    Returns (mo, numbers, share):
+        mo       the dictionary from molecular_orbitals()
+        numbers  the column numbers of the pi orbitals (0 = orbital 1)
+        share    p_character(mo, axis) for every orbital
+    """
+    mo = molecular_orbitals(log_file)
+    share = p_character(mo, axis)
+    numbers = [n for n in range(len(mo["energies"])) if share[n] > limit]
+    return mo, numbers, share
+
+
+def atomic_charges(log_file):
+    """The last 'TOTAL MULLIKEN AND LOWDIN ATOMIC POPULATIONS' table.
+
+    Returns a list of (atom name, Mulliken charge, Lowdin charge).
+    """
+    lines = Path(log_file).read_text(errors="replace").splitlines()
+    starts = [i for i, line in enumerate(lines)
+              if "TOTAL MULLIKEN AND LOWDIN ATOMIC POPULATIONS" in line]
+    if not starts:
+        raise ValueError(f"no population analysis found in {log_file}")
+    charges = []
+    for line in lines[starts[-1] + 2:]:       # skip the title and column headers
+        parts = line.split()
+        if len(parts) != 6:
+            break
+        charges.append((parts[1], float(parts[3]), float(parts[5])))
+    return charges
+
+
+def wall_time(log_file):
+    """Total wall clock time of the job in seconds (the last value printed)."""
+    line = grep("TOTAL WALL CLOCK TIME", log_file)[-1]
+    return float(line.split("=")[1].split()[0])
+
+
+
+# ---------------------------------------------------------------------------
+# Plots
+# ---------------------------------------------------------------------------
+
+def plot_optimization(log_file, title="", zoom_from=3):
+    """Plot the relative energy (kJ/mol) at each step of an optimisation.
+
+    Two panels: all steps on the left, and on the right only the steps from
+    `zoom_from` on, where the changes are too small to see on the left.
+    Energies are relative to the final structure.
+    """
+    import matplotlib.pyplot as plt           # only needed for plots
+
+    steps, energies = np.array(nserch_energies(log_file)).T
+    relative = (energies - energies[-1]) * HARTREE_TO_KJMOL
+    fig, (left, right) = plt.subplots(1, 2, figsize=(9, 3.2))
+    left.plot(steps, relative, "o-")
+    right.plot(steps[zoom_from:], relative[zoom_from:], "o-")
+    for ax in (left, right):
+        ax.set_xlabel("optimization step (NSERCH)")
+        ax.set_ylabel("relative energy (kJ/mol)")
+    fig.suptitle(title)
+    fig.tight_layout()
+    plt.show()
+
+
+def energy_levels(ax, x, energies, color="tab:blue", labels=None):
+    """Draw orbital energies as short horizontal lines, as in an MO diagram.
+
+    ax        a matplotlib Axes, e.g. from  fig, ax = plt.subplots()
+    x         where the column of levels starts on the x axis
+    energies  orbital energies (hartree)
+    labels    optional text (e.g. symmetry labels) written left of each level
+
+    Degenerate levels (equal to 3 decimals) are drawn side by side.
+    """
+    seen = {}
+    for i, e in enumerate(energies):
+        k = seen.setdefault(round(e, 3), 0)
+        seen[round(e, 3)] += 1
+        ax.hlines(e, x + 0.3 * k, x + 0.3 * k + 0.25, color=color, lw=2)
+        if labels is not None and k == 0:
+            ax.text(x - 0.05, e, labels[i], ha="right", va="center", fontsize=8)

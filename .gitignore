@@ -8,18 +8,7 @@ _build
 __pycache__/
 .ipynb_checkpoints/
 
-# GAMESS runs, one folder per chapter (runs/ch1, runs/ch2, ...): keep the
-# small .log files, ignore data and generated files
-runs/**/*.*
-!runs/*/*.log
-
-# Butane torsion scans (chapter 5): 38 logs, up to 10 MB each. The notebooks
-# keep their saved outputs and data/butane_result.txt holds the results.
-runs/ch5/butane-SCAN_*.log
-runs/ch5/butane_SCAN_*.log
-
-# Diels-Alder scan and IRC (chapter 8A): 32 + 2 logs, about 30 MB in all. The
-# notebooks keep their saved outputs and data/cyclohexene_scan_results.txt
-# holds the scan results.
-runs/ch8/Cyclohexene_Cs_SCAN_*.log
-runs/ch8/Diels_Alder_IRC_*.log
+# GAMESS runs, one folder per chapter (runs/ch1, runs/ch2, ...): nothing in
+# runs/ is committed. The notebooks keep their saved outputs, and data/
+# holds the results tables they need. Run the notebooks to recreate runs/.
+runs/

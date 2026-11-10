@@ -13,7 +13,7 @@ computer after installing GAMESS.
 | `~/github/compChem/UsingGAMESSv2` | This book. All new and edited files go here. | Yes |
 | `~/github/compChem/UsingGAMESS` | Original book (`.md` pages + a few `.ipynb`). Source material to convert. | **No. Read only.** |
 | `~/github/docsAndSource/GAMESS-docs` | GAMESS manual (`02-docs-input.txt` is the input reference). | **No. Read only.** |
-| `~/github/compChem/gamess2024R2claude/gamess` | GAMESS 2024 R2 build (note the `gamess/` subfolder): `gamess.00.x`, `rungms`, `gms`, `auxdata/`, `scr/`, `restart/`. | **Only** run scripts such as `rungms` and `gms` may be edited, when needed. Change nothing else there. |
+| `~/github/compChem/gamess2024R2claude/gamess-gf14` | GAMESS 2024 R2 build compiled with gfortran 14 (note the `gamess-gf14/` subfolder; `gamess_settings.py` points here): `gamess.00.x`, `rungms`, `gms`, `auxdata/`, `scr/`, `restart/`. | **Only** run scripts such as `rungms` and `gms` may be edited, when needed. Change nothing else there. |
 
 - Never write build output, scratch files or test runs into the read-only folders.
 - Before editing `rungms` or `gms`, make a dated backup copy beside it and tell
